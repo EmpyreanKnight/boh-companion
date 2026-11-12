@@ -105,6 +105,7 @@ function Books({ data, q, p, focus }: Props) {
             open === b.id && (
               <tr key={b.id + ':d'} className="detail"><td colSpan={8}>
                 {!hide(b) && <Lore text={b.description} />}
+                {m ? <ReadTexts b={b} /> : !hide(b) && <details className="spoiler"><summary>What the book says (not mastered yet)</summary><ReadTexts b={b} /></details>}
                 <p><b>{b.period ?? 'Unknown period'}</b>{b.tally != null && <> · price {b.tally}</>}{b.multitudinous && ' · Multitudinous'}</p>
                 <p>Best today at <b>{r.solution.station?.name ?? '—'}</b>: {r.solution.total} of {b.mystery} <P id={b.principle} short />.</p>
                 <ul className="picks">{r.solution.picks.map((k, i) => <li key={i}><span className="slot">{k.slot}</span> {k.card ? <>{k.card.name} <b>+{k.value}</b>{k.card.via && <span className="muted small"> ({k.card.via})</span>}</> : <span className="muted">empty</span>}</li>)}</ul>
@@ -114,6 +115,14 @@ function Books({ data, q, p, focus }: Props) {
       </table></TableWrap>
     </>
   );
+}
+
+/** The two texts the game shows for a book: on starting to read it, then on mastering it. */
+function ReadTexts({ b }: { b: Book }) {
+  return (<>
+    {b.reading && <><h4>I'm reading...</h4><Lore text={b.reading} /></>}
+    {b.read && <><h4>I've read...</h4><Lore text={b.read} /></>}
+  </>);
 }
 
 function Skills({ data, q, p, focus }: Props) {

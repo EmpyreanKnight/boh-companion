@@ -31,7 +31,7 @@ browser: loadData() -> indexData() -> GameData ---+                             
 | File | Record | Key fields |
 | --- | --- | --- |
 | `skills.json` | Skill | `primary`, `secondary`, `isLanguage`, `commit[2]` as `{wisdom, element, text, title}` (the text and title the game shows on committing the skill to that Wisdom), `specialties`, `icon` |
-| `books.json` | Book | `principle`, `mystery`, `language` (skill id, or null when known by default), `languageName`, `type`, `period`, `lesson {skill, count}`, `memory`, `tally` (price), `multitudinous` |
+| `books.json` | Book | `principle`, `mystery`, `language` (skill id, or null when known by default), `languageName`, `type`, `period`, `lesson {skill, count}`, `memory`, `tally` (price), `multitudinous`, `reading` and `read` (the game's "I'm Reading..." and "I've Read..." texts, shown in that order in the Database: open for mastered books, behind a toggle otherwise) |
 | `items.json` | Item | `principles`, `aspects[]`, `yieldsMemory`, `considerDestroys`, `sources[]`, `craftable`, `icon` |
 | `workstations.json` | Workstation | `kind`, `room`, `principles[]`, `slots[][]` (aspects the 4th and 5th slots accept), `evolveVia[]`, `canCraft` |
 | `recipes.json` | Recipe | `result`, `resultName`, `resultPrinciples`, `resultAspects`, `principle`, `tier`, `skills[]`, `ingredient {aspect \| item, label, note}`; a second recipe for the same result, Principle and tier gets the id suffix `~2` |

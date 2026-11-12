@@ -112,10 +112,26 @@ def quote_parts(text):
         words = words[:-1].rstrip()      # a stray bracket typed on the wiki
     return words, parts[1] if len(parts) > 1 else None
 
+def read_texts(text):
+    """What the Librarian learns from a book, as (on starting it, on finishing it): the quotes a book page
+    introduces with "Upon choosing to master" and "After completing mastery", titled "I'm Reading..." and
+    "I've Read..." (or "Study start" and "Study end"). Falls back to the second and third quote of the page."""
+    found = []
+    for m in re.finditer(r"\{\{\s*[Qq]uote\s*\|", text or ""):
+        words, by = quote_parts(text[m.start():])
+        found.append((text[max(0, m.start() - 160):m.start()], words, by or ""))
+    def pick(lead_pattern, title_pattern, fallback):
+        for lead, words, by in found:
+            if re.search(lead_pattern, lead) or re.search(title_pattern, by, flags=re.I):
+                return words
+        return found[fallback][1] if len(found) > fallback else None
+    return (pick(r"[Uu]pon (?:choosing|starting|beginning)|choosing to master", r"I'?m Reading|Study start", 1),
+            pick(r"After (?:completing|finishing|mastering)|completing mastery|[Oo]nce mastered", r"I'?ve Read|Study end", 2))
+
 def plain_templates(s):
     """{{Lore|Edge|2}} -> "Edge 2", {{Soul|Chor}} -> "Chor", {{PAGENAME}} left to the caller."""
-    s = re.sub(r"\{\{\s*Lore\s*\|\s*(\w+)\s*(?:\|\s*(\d+))?[^}]*\}\}", lambda x: " ".join(g for g in x.groups() if g), s)
-    return re.sub(r"\{\{\s*Soul\s*\|\s*(\w+)[^}]*\}\}", r"\1", s)
+    s = re.sub(r"\{\{\s*[Ll]ore\s*\|\s*(\w+)\s*(?:\|\s*(\d+))?[^}]*\}\}", lambda x: " ".join(g for g in x.groups() if g), s)
+    return re.sub(r"\{\{\s*[Ss]oul\s*\|\s*(\w+)[^}]*\}\}", r"\1", s)
 
 def quote(text):
     """The in-game description: the first {{Quote|...}} on a page, with its attribution if it has one."""
@@ -293,6 +309,9 @@ def build_books(skills):
                      "tally": int(tally) if tally.isdigit() else None,
                      "multitudinous": "Multitudinous" in page.get("categories", []),
                      "description": quote(page.get("text"))}
+                b["reading"], b["read"] = read_texts(page.get("text"))
+                if not b["reading"] or not b["read"] or b["reading"] == b["read"]:
+                    warn(f"book {title}: reading texts not found")
                 books[b["id"]] = b
     return books
 

@@ -20,6 +20,8 @@ export interface Book {
   languageName: string | null; type: string; period: string | null;
   lesson: { skill: string; count: number } | null; memory: string | null; tally: number | null;
   multitudinous: boolean; description?: string | null;
+  reading?: string | null;   // what the Librarian learns on starting it (the game's "I'm Reading..." text)
+  read?: string | null;      // and on mastering it ("I've Read...")
 }
 export interface Item {
   id: string; name: string; icon?: boolean; principles: PMap; aspects: string[]; yieldsMemory: string | null; considerDestroys?: boolean;

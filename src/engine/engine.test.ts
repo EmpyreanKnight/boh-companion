@@ -30,6 +30,13 @@ describe('data', () => {
     expect(data.itemById['sand'].description).toBe('An hourglass, of course, is sand contained by sand.');
     expect(data.itemById['memory-sight'].description).toBe('The eye sees more than the heart knows. (Blake)');
     for (const b of data.books) { expect(b.description, b.name).toBeTruthy(); }
+    // the texts shown on starting a book and on mastering it, each distinct from the description
+    for (const b of data.books) {
+      for (const t of [b.reading, b.read]) { expect(t, b.name).toBeTruthy(); expect(t).not.toBe(b.description); expect(t).not.toMatch(/\[\[|\{\{|\|/); }
+      expect(b.reading, b.name).not.toBe(b.read);
+    }
+    expect(data.bookById['key-of-night'].reading).toMatch(/^The Worms, all of whom use grandiose/);
+    expect(data.bookById['key-of-night'].read).toMatch(/^The Worms identify the Wheel/);
     for (const x of data.items) expect(x.description).not.toMatch(/\[\[|\]\]|[{}|<>]|''/);   // no wiki markup left over
   });
   it('every skill carries the text shown on committing it to each of its Wisdoms', () => {
