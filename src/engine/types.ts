@@ -45,7 +45,8 @@ export interface Room {
   needsAssistance: boolean;
   /** What opens it: 'Assistance' (a helper), 'Item' or 'Circumstance' (named in openerName), or the aspect of a card. */
   opener: string; openerName: string | null; openerForbids: string | null;
-  description?: string | null;
+  description?: string | null;         // the text of the room once unlocked
+  lockedDescription?: string | null;   // the text shown before it is unlocked, under its locked name
   exposes: string[]; contents: string[]; workstations: string[]; openedFrom: string[];
 }
 export interface Assistant {

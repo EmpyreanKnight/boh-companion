@@ -28,6 +28,10 @@ describe('data', () => {
       for (const x of list) expect(x.description, x.name).toBeTruthy();
     }
     expect(data.itemById['sand'].description).toBe('An hourglass, of course, is sand contained by sand.');
+    // a room has two texts: under its locked name, and once unlocked
+    for (const r of data.rooms) { expect(r.lockedDescription, r.name).toBeTruthy(); expect(r.lockedDescription).not.toBe(r.description); }
+    expect(data.roomById['keepers-lodge'].lockedDescription).toMatch(/^A cottage where Hush House's groundskeeper lived/);
+    expect(data.roomById['keepers-lodge'].description).toMatch(/^For five hundred years/);
     expect(data.itemById['memory-sight'].description).toBe('The eye sees more than the heart knows. (Blake)');
     for (const b of data.books) { expect(b.description, b.name).toBeTruthy(); }
     // the texts shown on starting a book and on mastering it, each distinct from the description

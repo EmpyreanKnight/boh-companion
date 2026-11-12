@@ -105,10 +105,16 @@ function RoomDetail({ data, s }: { data: GameData; s: RoomStatus }) {
   const player = usePlayer();
   const r = s.room;
   const names = (ids: string[]) => ids.map((id) => data.roomById[id]?.name ?? id);
+  const unlocked = !!player.roomsUnlocked[r.id];
+  const lockedAs = r.lockedName && r.lockedName !== r.name ? `: ${r.lockedName}` : '';
   return (
     <div className="cols">
-      <div><h4>Access</h4>
-        <Lore text={r.description} />
+      <div>{/* the text for the room's present state is open; the other one is folded away */}
+        {unlocked ? <><h4>{r.name}</h4><Lore text={r.description} />
+            {r.lockedDescription && <details><summary>Before it was unlocked{lockedAs}</summary><Lore text={r.lockedDescription} /></details>}</>
+          : <><h4>{r.lockedName ?? r.name}</h4><Lore text={r.lockedDescription} />
+            {r.description && <details className="spoiler"><summary>Once unlocked: {r.name}</summary><Lore text={r.description} /></details>}</>}
+        <h4>Access</h4>
         <p>{r.era ? `${r.era} period. ` : ''}{r.openedFrom.length ? <>Reached from {names(r.openedFrom).map((n, i) => <span key={n}>{i > 0 && ', '}<b className={player.roomsUnlocked[r.openedFrom[i]] ? '' : 'muted'}>{n}</b></span>)}.</> : 'No prerequisite room recorded on the wiki.'}
           {!prerequisiteMet(player, r) && <span className="warn"> None of those is unlocked yet.</span>}</p>
         {r.exposes.length > 0 && <p>Opening it reveals {names(r.exposes).join(', ')}.</p>}

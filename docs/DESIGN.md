@@ -70,7 +70,10 @@ fetches only `PAGES` (and the named categories) and merges them into the existin
 icon is the image the page opens with. `build_data.py` runs last because it records which icons exist.
 
 Skills, books, items, workstations, rooms and caches also carry `description`: the in-game text, taken from the
-first `{{Quote}}` on the wiki page by `quote()` in `build_data.py`. It is display only.
+first `{{Quote}}` on the wiki page by `quote()` in `build_data.py`. It is display only. For a room that first quote
+is the text of the unlocked room; `lockedDescription` is the quote in the page's "(Locked)" section. The Hush
+House page shows the one for the room's present state and folds the other away. The game has a third text,
+shown while a room is being unlocked; the wiki does not record it, so the app has none.
 
 Static tables live in `src/engine/constants.ts`: the 13 Principles and their colours, the 9 Elements of
 the Soul with Principles per evolution level, the 9 Wisdoms in ring order, the 14 flying lines, the 9

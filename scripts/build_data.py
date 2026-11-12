@@ -507,6 +507,8 @@ def build_rooms(items, ws):
             opener, opener_name = "Item", targets[0]
         req_items = [opener_name] if opener == "Item" else []
         lm = re.search(r"==\s*([^=\n]+?)\s*\(Locked\)\s*==", text)
+        # the page opens with the text of the unlocked room; its "(Locked)" section holds the text shown before
+        locked_section = re.search(r"==\s*[^=\n]+?\s*\(Locked\)\s*==(.*?)(?:\n==[^=]|\Z)", text, flags=re.S)
         exposes = []
         em = re.search(r"Opening (?:it|them|the [^\[\n]*?) (?:will )?(?:also )?exposes?:?(.*?)(?:\n==|\Z)", text, flags=re.S)
         if em:
@@ -529,7 +531,8 @@ def build_rooms(items, ws):
                               "era": era, "requires": requires, "requiresAlso": also, "requiresItems": req_items,
                               "needsAssistance": opener == "Assistance", "opener": opener,
                               "openerName": opener_name, "openerForbids": forbids, "exposes": exposes,
-                              "contents": contents, "workstations": stations, "description": quote(text)}
+                              "contents": contents, "workstations": stations, "description": quote(text),
+                              "lockedDescription": quote(locked_section.group(1)) if locked_section else None}
     # the village, its shops and the ocean open during the introductory story, not through the house
     for name in VILLAGE_PLACES:
         rooms.pop(slug(name), None)
