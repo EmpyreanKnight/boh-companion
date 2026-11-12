@@ -86,7 +86,8 @@ Ids are slugs of the wiki page title; `slug()` exists in both Python and TypeScr
 `countRoomContents`, `assumeAllStationsUnlocked`, `planMode`, `hideUnfound`). `season` is `''` (not chosen),
 one of the four seasons, or `Numa`; the Foraging and Hush House pages share it.
 
-A workstation counts as unlocked when `assumeAllStationsUnlocked` is on (the default), its room is unlocked, or
+Of the preferences only `countRoomContents` is on by default. A workstation counts as unlocked when its room is
+unlocked, `assumeAllStationsUnlocked` is on, or
 it is ticked in the Database (`stationUnlocked`).
 
 Export writes the state as JSON; import accepts schema 1 or 2 and passes it through `migrate()`.
@@ -194,7 +195,7 @@ rows (rows are not rendered until opened), font fallback metric matching, and an
 
 ## Tests (`src/engine/engine.test.ts`)
 
-37 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
+38 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
 language rules, a recipe going from blocked to ready, flying lines, the two preset trees passing every tree
 rule, evolution arithmetic, the "what I have" sources, craftable things counting as held, foraging (seasons,
 accepted cards, order), caches, the sea and Numa, Librarians and save migration, and helper and room logic

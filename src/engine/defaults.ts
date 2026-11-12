@@ -15,6 +15,6 @@ export function startingSoul(librarian: LibrarianId, variant: ElementId | null):
 export function defaultPlayer(): PlayerState {
   return { schemaVersion: 2, skills: {}, tree: emptyTree(), soul: startingSoul('twice-born', null), booksMastered: {},
     itemsOwned: {}, stationsUnlocked: {}, roomsUnlocked: {}, pinnedRecipes: {}, journalCommitted: false,
-    settings: { assumeAllStationsUnlocked: true, planMode: false, librarian: 'twice-born', librarianVariant: null,
+    settings: { assumeAllStationsUnlocked: false, planMode: false, librarian: 'twice-born', librarianVariant: null,
       weather: '', season: '', countRoomContents: true, hideUnfound: false } };
 }

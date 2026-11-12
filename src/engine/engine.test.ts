@@ -88,6 +88,7 @@ describe('recipes', () => {
   it('Labhitic Tincture is ready with enough Edge and blocked without a skill', () => {
     const r = data.recipes.find((x) => x.resultName === 'Labhitic Tincture')!;
     const p = defaultPlayer();
+    p.settings.assumeAllStationsUnlocked = true;     // these tests are about the recipe, not about which rooms are open
     expect(planRecipe(makeCtx(data, p), r).every((x) => x.status === 'blocked')).toBe(true);
     p.skills['edicts-martial'] = 4;          // Moon 5, Edge 4
     p.soul.mettle = [1, 0, 0, 0];            // Forge 2, Edge 1
@@ -185,6 +186,7 @@ describe('what I have', () => {
 describe('crafting counts as having', () => {
   it("Torgue's Cleansing becomes a memory I can call up once a skill can craft it", () => {
     const p = defaultPlayer();
+    p.settings.assumeAllStationsUnlocked = true;     // these tests are about the recipe, not about which rooms are open
     expect(makeCtx(data, p).have.has('torgues-cleansing')).toBe(false);
     expect(craftList(makeCtx(data, p)).find((c) => c.item.id === 'torgues-cleansing')!.state).toBe('blocked');
     p.skills['sharps'] = 4;                                  // Edge 5: Prentice-level Edge
@@ -201,6 +203,7 @@ describe('crafting counts as having', () => {
     const row = craftList(makeCtx(data, p)).find((c) => c.item.id === 'torgues-cleansing')!;
     expect(row.state).toBe('have');
     const q = defaultPlayer();
+    q.settings.assumeAllStationsUnlocked = true;     // these tests are about the recipe, not about which rooms are open
     for (const s of data.skills) q.skills[s.id] = 9;
     const ctx = makeCtx(data, q);
     const chained = data.recipes.filter((r) => r.ingredient?.item && ctx.crafted.has(r.ingredient.item) && ctx.crafted.get(r.result) === r.id);
@@ -293,6 +296,15 @@ describe('the sea and Numa', () => {
     const lodge = (season: string) => roomStatuses(makeCtx(data, p), helpersIn(data, season)).find((s) => s.room.id === 'keepers-lodge')!;
     expect(lodge('').state).toBe('openable');
     expect(lodge('Numa').state).toBe('short');
+  });
+});
+
+describe('default preferences', () => {
+  it('count room contents, but a workstation is unlocked only through its room', () => {
+    const p = defaultPlayer();
+    expect(p.settings).toMatchObject({ countRoomContents: true, assumeAllStationsUnlocked: false, hideUnfound: false });
+    p.skills['sharps'] = 4;
+    expect(makeCtx(data, p).crafted.size).toBe(0);            // nothing can be crafted before a room is open
   });
 });
 

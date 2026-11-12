@@ -22,12 +22,12 @@ export function Settings({ data }: { data: GameData }) {
     <>
       <Panel title="Preferences">
         <p className="muted">Which Librarian you were is chosen on the <a href="#/">Home</a> page.</p>
-        <label className="check"><input type="checkbox" checked={player.settings.assumeAllStationsUnlocked}
-          onChange={(e) => player.setSetting('assumeAllStationsUnlocked', e.target.checked)} />
-          Treat every workstation as unlocked (turn off to use the rooms you tick on the Hush House page)</label>
         <label className="check"><input type="checkbox" checked={player.settings.countRoomContents}
           onChange={(e) => player.setSetting('countRoomContents', e.target.checked)} />
           Count things lying in rooms I have unlocked as things I have</label>
+        <label className="check"><input type="checkbox" checked={player.settings.assumeAllStationsUnlocked}
+          onChange={(e) => player.setSetting('assumeAllStationsUnlocked', e.target.checked)} />
+          Treat every workstation as unlocked (otherwise a workstation is unlocked when its room is ticked on the Hush House page)</label>
         <label className="check"><input type="checkbox" checked={player.settings.hideUnfound}
           onChange={(e) => player.setSetting('hideUnfound', e.target.checked)} />
           Spoiler guard: hide names of books I have not mastered and skills I do not own</label>
