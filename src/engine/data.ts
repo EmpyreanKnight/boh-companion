@@ -14,10 +14,12 @@ export function indexData(raw: Raw): GameData {
     itemIdByName: Object.fromEntries(raw.items.map((i) => [i.name, i.id])), roomIdByStation };
 }
 
+declare const __BUILD__: string;
+
 export async function loadData(): Promise<GameData> {
   const base = import.meta.env.BASE_URL;
   const get = async (name: string) => {
-    const r = await fetch(`${base}data/${name}.json`);
+    const r = await fetch(`${base}data/${name}.json?v=${__BUILD__}`);
     if (!r.ok) throw new Error(`Could not load ${name}.json (${r.status})`);
     return r.json();
   };
