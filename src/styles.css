@@ -151,11 +151,13 @@ select { min-width: 0; text-overflow: ellipsis; }
 .lore { font-family: var(--serif); font-style: italic; font-size: 0.8125rem; color: var(--muted); margin: 4px 0 8px; max-width: 70ch; }
 .epigraph { font-family: var(--serif); font-size: clamp(1.25rem, 0.9rem + 1.6vw, 2rem); color: var(--gold2); text-align: center; margin: 28px auto 24px; max-width: 24ch; line-height: 1.35; }
 .epigraph::before, .epigraph::after { content: ''; display: block; width: 90px; height: 1px; background: var(--gold); margin: 14px auto; opacity: .7; }
-.letter { background: var(--parch); color: var(--parch-ink); border: 1px solid #b79b5b; border-radius: 8px; padding: 22px clamp(16px, 4vw, 40px); margin: 0 auto 18px; max-width: 860px; font-family: var(--serif); font-size: 0.9375rem; line-height: 1.7; }
+.letter { background: var(--parch); color: var(--parch-ink); border: 1px solid #b79b5b; border-radius: 8px; padding: 22px clamp(16px, 4vw, 40px); margin: 0 auto 18px; max-width: 940px; font-family: var(--serif); font-size: 0.9375rem; line-height: 1.7; }
 .letter-date { text-align: right; font-style: italic; margin: 0 0 10px; }
 .letter h2 { color: var(--parch-ink); margin: 18px 0 10px; font-size: 1.25rem; }
 .letter a { color: #6b4a1e; } .letter .small { font-family: var(--sans); line-height: 1.5; }
-.origins { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px; margin-bottom: 12px; }
+/* nine Librarians: five and four on a wide page, as many as fit on a narrow one */
+.origins { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px; }
+@media (max-width: 56em) { .origins { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } }
 .letter button { font-family: var(--serif); font-size: 0.8438rem; padding: 8px 10px; background: #2b1f18; color: var(--gold2); border: 1px solid #2b1f18; border-radius: 6px; }
 .letter button.on { background: #fff3d6; color: #2b1f18; border-color: #6b4a1e; box-shadow: inset 0 0 0 1px #6b4a1e; }
 .letter .soul { color: var(--parch-ink); font-weight: 600; }
