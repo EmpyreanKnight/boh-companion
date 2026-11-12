@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Icon, Lore, P, Panel, PList, Status, TableWrap } from '../components/ui';
+import { Icon, Lore, P, Panel, PList, SeasonPicker, Status, TableWrap } from '../components/ui';
 import { ALL_SEASONS, PRINCIPLE_IDS } from '../engine/constants';
 import { HELPER_CATEGORIES, helperBest, helperPool, helpersIn, prerequisiteMet, roomStatuses, trimPlan, type RoomState, type RoomStatus } from '../engine/engine';
 import type { Assistant, GameData, PrincipleId, Room } from '../engine/types';
@@ -38,8 +38,9 @@ export function House({ data }: { data: GameData }) {
         <div className="row filters">
           <label>Show <select value={show} onChange={(e) => setShow(e.target.value as typeof show)}>
             <option value="next">rooms I can reach next</option><option value="all">all rooms</option><option value="unlocked">unlocked rooms</option></select></label>
-          <label>Season <select value={season} onChange={(e) => player.setSetting('season', e.target.value)}>
-            <option value="">any (all seasonal workers)</option>{ALL_SEASONS.map((s) => <option key={s}>{s === 'Numa' ? 'Numa (no helpers)' : s}</option>)}</select></label>
+          <span>Current season</span>
+          <SeasonPicker value={season} seasons={ALL_SEASONS} onChange={(s) => player.setSetting('season', s)} />
+          <span className="muted small">{!season ? 'No season chosen: every seasonal worker is counted.' : season === 'Numa' ? 'No helper can be hired in Numa.' : `Of the seasonal workers, only the one for ${season} is counted.`}</span>
         </div>
         {season === 'Numa' && <p className="warn">During Numa no helper can be hired: the Rectory, the Smithy and the Killes' house are closed, so rooms that need Assistance have to wait.
           The Sweet Bones offers uncanny labours for Tally instead, and <a href="#/foraging">foraging</a> yields things found in no other season.</p>}
@@ -70,6 +71,9 @@ export function House({ data }: { data: GameData }) {
           Boosts of different kinds add up, one card of each kind:
           {' '}{HELPER_CATEGORIES.map((c) => (c === 'Soul' ? 'an Element of the Soul' : c.toLowerCase())).join(', ')}, plus the one material unique to some helpers.
           Cards counted are what you have and what you can craft right now.</p>
+        <div className="row filters"><span>Current season</span>
+          <SeasonPicker value={season} seasons={ALL_SEASONS} onChange={(s) => player.setSetting('season', s)} />
+          {!helpers.includes(helper) && <span className="warn small">{helper.name} cannot be hired {season === 'Numa' ? 'during Numa' : `in ${season}`}.</span>}</div>
         <HelperTable data={data} helper={helper} best={(a, p) => helperBest(ctx, pool, a, p)} />
       </Panel>
     </>

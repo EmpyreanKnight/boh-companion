@@ -171,7 +171,7 @@ Hash routes, rendered by `src/App.tsx`. Pages only render engine results; none h
 | `#/tracker` | Tracker | Reading table with today's weather, skill levels, "What I have" (tools and inks in the house, things I can craft, memories), soul cards. |
 | `#/crafting[/<id>]` | Crafting | Recipe list and one recipe's workstations. `#/recipes/...` is the old address and still works. |
 | `#/foraging` | Foraging | Five season buttons; pressing the chosen one again shows all five seasons side by side. |
-| `#/house` | Hush House | Rooms with the best way to open each, and a per-helper table. |
+| `#/house` | Hush House | Rooms with the best way to open each, and a per-helper table. The same five season buttons as Foraging sit above the rooms and above the helper table. |
 | `#/tree` | Tree of Wisdoms | The diagram takes most of the width, the skill picker stays in view beside it and the statistics sit below. Nodes, flying lines, journal at the root, presets. "Plan ahead" (`planMode`) ignores owned skills and levels. |
 | `#/settings` | Settings | Preferences, export, import, reset. |
 

@@ -66,6 +66,14 @@ export function TableWrap({ label, children }: { label: string; children: ReactN
   return <div className="table-wrap" tabIndex={0} role="region" aria-label={label}>{children}</div>;
 }
 
+/** The current season as five buttons; pressing the chosen one again clears it. Shared by Foraging and Hush House. */
+export function SeasonPicker({ value, onChange, seasons }: { value: string; onChange: (s: string) => void; seasons: string[] }) {
+  return (
+    <div className="pfilter" role="group" aria-label="Current season">
+      {seasons.map((s) => <button key={s} className={value === s ? 'on' : ''} aria-pressed={value === s} onClick={() => onChange(value === s ? '' : s)}>{s}</button>)}
+    </div>);
+}
+
 export function Stepper({ value, min = 0, max = 9, onChange, label }: { value: number; min?: number; max?: number; onChange: (n: number) => void; label: string }) {
   return (
     <span className="stepper" role="group" aria-label={label}>

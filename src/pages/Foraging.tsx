@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ItemIcon, P, Panel, Soul, Status, TableWrap } from '../components/ui';
+import { ItemIcon, P, Panel, SeasonPicker, Soul, Status, TableWrap } from '../components/ui';
 import { ALL_SEASONS } from '../engine/constants';
 import { forageRows, type ForageRow } from '../engine/engine';
 import type { ForageDrop, GameData } from '../engine/types';
@@ -19,10 +19,7 @@ export function Foraging({ data }: { data: GameData }) {
         only reshuffled when empty, so the chances are for a full deck. Most places cannot be used at night.</p>
       <div className="row filters">
         <span>Current season</span>
-        <div className="pfilter" role="group" aria-label="Current season">
-          {ALL_SEASONS.map((s) => <button key={s} className={season === s ? 'on' : ''} aria-pressed={season === s}
-            onClick={() => player.setSetting('season', season === s ? '' : s)}>{s}</button>)}
-        </div>
+        <SeasonPicker value={season} seasons={ALL_SEASONS} onChange={(s) => player.setSetting('season', s)} />
         <span className="muted small">{season ? 'Click the season again to compare all five.' : 'No season chosen: every season is shown.'} Shared with the Hush House page.</span>
       </div>
       <p className="muted count">{all.filter((r) => r.available).length} of {all.length} places reachable{season && <> · {all.filter((r) => r.ready && r.drops.length).length} you can forage this {season === 'Numa' ? 'Numa' : season.toLowerCase()}</>}</p>
