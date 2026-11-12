@@ -107,7 +107,11 @@ tr.open > td { background: #ffffff0a; } tr.detail > td { background: #0004; padd
 .current { display: flex; align-items: center; justify-content: space-between; gap: 8px; background: var(--parch); color: var(--parch-ink); border-radius: 8px; padding: 8px 10px; margin: 8px 0; }
 .current .danger { background: #5a2a24; }
 .picker { list-style: none; padding: 0; margin: 4px 0; max-height: 300px; overflow-y: auto; }
-.picker button { display: flex; flex-direction: column; gap: 2px; width: 100%; text-align: left; margin-bottom: 4px; background: #0003; }
+.picker li { display: flex; align-items: stretch; gap: 4px; margin-bottom: 4px; }
+.picker button { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; text-align: left; background: #0003; }
+.plink { display: flex; align-items: center; padding: 0 8px; font-size: 0.7812rem; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; }
+.plink:hover { border-color: var(--gold); }
+.current a { color: inherit; }
 .picker button:not(:disabled):hover { background: #ffffff14; }
 .pname { font-weight: 600; } .pname .muted { font-weight: 400; } .pmeta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; font-size: 0.7812rem; }
 .group h4 { margin-top: 10px; }

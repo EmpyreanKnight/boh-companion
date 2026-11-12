@@ -161,7 +161,7 @@ function NodePanel({ data, wisdomId, level, onRemove }: { data: GameData; wisdom
     <Panel title={<>{w.name} · level {level}</>}>
       <p className="small muted">{w.art}. Grants <Soul id={w.elements[0]} /> or <Soul id={w.elements[1]} />, depending on the skill.
         {links.length > 0 && <> Flying line to {links.map(([lw, ll]) => `${wisdom(lw).name} ${ll}`).join(' and ')}.</>}</p>
-      {current && <div className="current"><div className="withicon"><SkillIcon skill={data.skillById[current]} size={34} /><span><b>{data.skillById[current]?.name}</b> → <Soul id={elementFor(data.skillById[current], wisdomId)!} /></span></div>
+      {current && <div className="current"><div className="withicon"><SkillIcon skill={data.skillById[current]} size={34} /><span><a href={`#/db/skills/${current}`} title="Open this skill in the Database"><b>{data.skillById[current]?.name}</b></a> → <Soul id={elementFor(data.skillById[current], wisdomId)!} /></span></div>
         <button className="danger" onClick={() => onRemove(wisdomId, level)}>Remove</button></div>}
       {!can && !current && <p className="warn">Not reachable yet: {level === 1 ? 'commit your journal at the root of the Tree' : `fill a neighbouring node${links.length ? ' or the other end of its flying line' : ''}`} first.</p>}
       {groups.map(([name, hint, list]) => list.length > 0 && (
@@ -176,6 +176,8 @@ function NodePanel({ data, wisdomId, level, onRemove }: { data: GameData; wisdom
                     <span className="muted"> · or {wisdom(r.otherWisdom).name}: {element(r.otherElement).name}</span></span>
                   {r.where && <span className="small muted">now at {wisdom(r.where.wisdom).name} {r.where.level}</span>}
                 </button>
+                {/* a separate link: the row itself is the button that commits the skill */}
+                <a className="plink" href={`#/db/skills/${r.skill.id}`} title={`Open ${r.skill.name} in the Database`} aria-label={`${r.skill.name} in the Database`}>Details</a>
               </li>);
           })}</ul></div>))}
     </Panel>
