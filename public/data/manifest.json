@@ -1,0 +1,16 @@
+{
+  "dataVersion": "2026-11-11",
+  "source": "https://book-of-hours.fandom.com",
+  "license": "CC BY-SA",
+  "counts": {
+    "skills": 73,
+    "books": 281,
+    "items": 609,
+    "workstations": 88,
+    "recipes": 141,
+    "rooms": 108,
+    "assistants": 14,
+    "foraging": 17,
+    "caches": 25
+  }
+}

@@ -1,0 +1,1139 @@
+[
+  {
+    "id": "beachcombing-crowcross-sands",
+    "name": "Beachcombing",
+    "place": "Crowcross Sands",
+    "room": "crowcross-sands",
+    "count": 1,
+    "principles": [
+      "heart",
+      "moon",
+      "rose"
+    ],
+    "soulPrinciples": [
+      "heart",
+      "moon",
+      "rose"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "heart",
+      "moon",
+      "rose"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "sand",
+        "name": "Sand",
+        "chance": {
+          "Spring": 13,
+          "Summer": 13,
+          "Autumn": 19,
+          "Winter": 47
+        }
+      },
+      {
+        "item": "mackerel",
+        "name": "Mackerel",
+        "chance": {
+          "Spring": 13,
+          "Summer": 13,
+          "Autumn": 13,
+          "Numa": 7
+        }
+      },
+      {
+        "item": "whispering-sand",
+        "name": "Whispering Sand",
+        "chance": {
+          "Spring": 7,
+          "Summer": 7,
+          "Autumn": 6,
+          "Winter": 7,
+          "Numa": 20
+        }
+      },
+      {
+        "item": "curious-seashell",
+        "name": "Curious Seashell",
+        "chance": {
+          "Spring": 7,
+          "Summer": 7,
+          "Autumn": 6,
+          "Winter": 7,
+          "Numa": 13
+        }
+      },
+      {
+        "item": "evas-locks",
+        "name": "Eva's Locks",
+        "chance": {
+          "Spring": 7,
+          "Summer": 13,
+          "Autumn": 13,
+          "Winter": 7
+        }
+      },
+      {
+        "item": "cat",
+        "name": "Stray Cat",
+        "chance": {
+          "Spring": 7,
+          "Summer": 7,
+          "Autumn": 6,
+          "Winter": 7,
+          "Numa": 7
+        }
+      },
+      {
+        "item": null,
+        "name": "Contraband Flotsam",
+        "chance": {
+          "Spring": 7,
+          "Summer": 7,
+          "Autumn": 6,
+          "Winter": 7,
+          "Numa": 7
+        },
+        "cache": "contraband-flotsam"
+      },
+      {
+        "item": null,
+        "name": "Contraband Jetsam",
+        "chance": {
+          "Spring": 7,
+          "Autumn": 6,
+          "Winter": 7,
+          "Numa": 7
+        },
+        "cache": "contraband-jetsam"
+      },
+      {
+        "item": "driftwood-fragment",
+        "name": "Driftwood Fragment",
+        "chance": {
+          "Spring": 7,
+          "Summer": 7,
+          "Autumn": 6,
+          "Winter": 7
+        }
+      },
+      {
+        "item": "sea-glass",
+        "name": "Sea-Glass",
+        "chance": {
+          "Spring": 7,
+          "Summer": 7,
+          "Autumn": 6,
+          "Winter": 7
+        }
+      },
+      {
+        "item": "vase-of-rushes",
+        "name": "Vase of Rushes",
+        "chance": {
+          "Spring": 7,
+          "Summer": 7
+        }
+      },
+      {
+        "item": "pilchards",
+        "name": "Pilchards",
+        "chance": {
+          "Spring": 13,
+          "Summer": 13,
+          "Autumn": 13,
+          "Numa": 7
+        }
+      },
+      {
+        "item": "ambergris-chunk",
+        "name": "Ambergris Chunk",
+        "chance": {
+          "Numa": 7
+        }
+      },
+      {
+        "item": "misshapen-fruit",
+        "name": "Misshapen Fruit",
+        "chance": {
+          "Numa": 7
+        }
+      },
+      {
+        "item": "human-hair",
+        "name": "Human Hair",
+        "chance": {
+          "Numa": 7
+        }
+      },
+      {
+        "item": "rose-pearl",
+        "name": "Rose-Pearl",
+        "chance": {
+          "Numa": 7
+        }
+      },
+      {
+        "item": "living-relic",
+        "name": "Savage Relic",
+        "chance": {
+          "Numa": 7
+        }
+      },
+      {
+        "item": "salt-sign",
+        "name": "Salt-Sign",
+        "chance": {
+          "Numa": 7
+        }
+      }
+    ],
+    "note": "Take a long walk along the ocean's side. If I know what to look for, I might find something the ocean has forsaken."
+  },
+  {
+    "id": "a-walk-on-the-moor-brancrug-village",
+    "name": "A Walk on the Moor",
+    "place": "Brancrug Village",
+    "room": null,
+    "count": 1,
+    "principles": [
+      "heart",
+      "scale",
+      "rose"
+    ],
+    "soulPrinciples": [
+      "heart",
+      "scale",
+      "rose"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "heart",
+      "scale",
+      "rose"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "hawthorn-blank",
+        "name": "Hawthorn Blank",
+        "chance": {
+          "Spring": 12,
+          "Summer": 9,
+          "Autumn": 11,
+          "Winter": 15
+        }
+      },
+      {
+        "item": "quartz-chunk",
+        "name": "Quartz Chunk",
+        "chance": {
+          "Spring": 12,
+          "Summer": 9,
+          "Autumn": 11,
+          "Winter": 15
+        }
+      },
+      {
+        "item": "granite-slab",
+        "name": "Granite Slab",
+        "chance": {
+          "Spring": 12,
+          "Summer": 9,
+          "Autumn": 11,
+          "Winter": 15
+        }
+      },
+      {
+        "item": "serpentinite-slab",
+        "name": "Serpentinite Slab",
+        "chance": {
+          "Spring": 12,
+          "Summer": 9,
+          "Autumn": 11,
+          "Winter": 15
+        }
+      },
+      {
+        "item": "yew-blank",
+        "name": "Yew Blank",
+        "chance": {
+          "Spring": 12,
+          "Summer": 9,
+          "Autumn": 11,
+          "Winter": 15
+        }
+      },
+      {
+        "item": "animal-bones",
+        "name": "Animal Bones",
+        "chance": {
+          "Autumn": 11,
+          "Winter": 15
+        }
+      },
+      {
+        "item": "dog",
+        "name": "Stray Dog",
+        "chance": {
+          "Spring": 6,
+          "Summer": 5,
+          "Autumn": 5,
+          "Winter": 8,
+          "Numa": 20
+        }
+      },
+      {
+        "item": null,
+        "name": "Abandoned Luggage",
+        "chance": {
+          "Spring": 6,
+          "Summer": 5
+        },
+        "cache": "abandoned-luggage"
+      },
+      {
+        "item": null,
+        "name": "Abandoned Packages",
+        "chance": {
+          "Spring": 6,
+          "Summer": 5
+        },
+        "cache": "abandoned-packages"
+      },
+      {
+        "item": "vase-of-gorse",
+        "name": "Vase of Gorse",
+        "chance": {
+          "Spring": 6,
+          "Summer": 5
+        }
+      },
+      {
+        "item": "viper-egg",
+        "name": "Viper Egg",
+        "chance": {
+          "Spring": 12
+        }
+      },
+      {
+        "item": "viper",
+        "name": "Wild Viper",
+        "chance": {
+          "Summer": 9
+        }
+      },
+      {
+        "item": "mushrooms",
+        "name": "Mushrooms",
+        "chance": {
+          "Spring": 6,
+          "Summer": 5,
+          "Autumn": 5
+        }
+      },
+      {
+        "item": "rosehips",
+        "name": "Rosehips",
+        "chance": {
+          "Summer": 9,
+          "Autumn": 5
+        }
+      },
+      {
+        "item": "basket-of-apples",
+        "name": "Basket of Apples",
+        "chance": {
+          "Summer": 9,
+          "Autumn": 11
+        }
+      },
+      {
+        "item": "blackberries",
+        "name": "Blackberries",
+        "chance": {
+          "Summer": 5,
+          "Autumn": 11
+        }
+      },
+      {
+        "item": "enduring-reflection",
+        "name": "Enduring Reflection",
+        "chance": {
+          "Numa": 20
+        }
+      },
+      {
+        "item": "earth-sign",
+        "name": "Earth-Sign",
+        "chance": {
+          "Numa": 20
+        }
+      },
+      {
+        "item": "wind-rumour",
+        "name": "Wind-Rumour",
+        "chance": {
+          "Numa": 20
+        }
+      },
+      {
+        "item": "skaptodon-fang",
+        "name": "Skaptodon Fang",
+        "chance": {
+          "Numa": 20
+        }
+      }
+    ],
+    "note": "Clamber up into the long reaches of the moors behind the village. Lean into the wind's fluttering fist. If I know what to look for, I might find something among the rocks."
+  },
+  {
+    "id": "hush-house-well-well",
+    "name": "Hush House Well",
+    "place": "Well",
+    "room": "well",
+    "count": 1,
+    "principles": [],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [],
+    "needs": null,
+    "drops": [
+      {
+        "item": "isle-water",
+        "name": "Isle-Water",
+        "chance": {
+          "Spring": 100,
+          "Summer": 100,
+          "Autumn": 100,
+          "Winter": 100
+        }
+      },
+      {
+        "item": "mist-kissed-water",
+        "name": "Mist-Kissed Water",
+        "chance": {
+          "Numa": 100
+        }
+      }
+    ],
+    "note": "Here I can draw up water - or drop something in, most likely to be lost forever."
+  },
+  {
+    "id": "beehive-kitchen-garden",
+    "name": "Beehive",
+    "place": "Kitchen Garden",
+    "room": "kitchen-garden",
+    "count": 1,
+    "principles": [
+      "nectar",
+      "scale"
+    ],
+    "soulPrinciples": [
+      "nectar",
+      "scale"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar",
+      "scale"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "honey",
+        "name": "Honey",
+        "chance": {
+          "Spring": 67,
+          "Summer": 67,
+          "Numa": 17
+        }
+      },
+      {
+        "item": "memory-regret",
+        "name": "Memory: Regret",
+        "chance": {
+          "Autumn": 43,
+          "Winter": 43
+        }
+      },
+      {
+        "item": "memory-sound",
+        "name": "Memory: Sound",
+        "chance": {
+          "Autumn": 43,
+          "Winter": 43
+        }
+      },
+      {
+        "item": "beeswax",
+        "name": "Beeswax",
+        "chance": {
+          "Spring": 33,
+          "Summer": 33,
+          "Numa": 17
+        }
+      },
+      {
+        "item": "hives-lament",
+        "name": "Hive's Lament",
+        "chance": {
+          "Autumn": 14,
+          "Winter": 14,
+          "Numa": 17
+        }
+      },
+      {
+        "item": "cuckoo-honey",
+        "name": "Cuckoo-Honey",
+        "chance": {
+          "Numa": 33
+        }
+      },
+      {
+        "item": "wistful-air",
+        "name": "Wistful Air",
+        "chance": {
+          "Numa": 17
+        }
+      }
+    ],
+    "note": "Bees, like librarians, are not to be trifled with."
+  },
+  {
+    "id": "the-sea-caves-sea-caves",
+    "name": "The Sea-Caves",
+    "place": "Sea-Caves",
+    "room": "sea-caves",
+    "count": 1,
+    "principles": [
+      "moon",
+      "scale"
+    ],
+    "soulPrinciples": [
+      "moon",
+      "scale"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "moon",
+      "scale"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "phosphorescent-scrapings",
+        "name": "Phosphorescent Scrapings",
+        "chance": {
+          "Spring": 43,
+          "Summer": 43,
+          "Autumn": 43,
+          "Winter": 43,
+          "Numa": 50
+        }
+      },
+      {
+        "item": "memory-fear",
+        "name": "Memory: Fear",
+        "chance": {
+          "Spring": 14,
+          "Summer": 14,
+          "Autumn": 29,
+          "Winter": 29
+        }
+      },
+      {
+        "item": "evas-locks",
+        "name": "Eva's Locks",
+        "chance": {
+          "Summer": 29,
+          "Autumn": 29
+        }
+      },
+      {
+        "item": "outsized-egg",
+        "name": "Outsized Egg",
+        "chance": {
+          "Spring": 14,
+          "Summer": 14
+        }
+      },
+      {
+        "item": "driftwood-fragment",
+        "name": "Driftwood Fragment",
+        "chance": {
+          "Spring": 14
+        }
+      },
+      {
+        "item": "sand",
+        "name": "Sand",
+        "chance": {
+          "Spring": 14
+        }
+      },
+      {
+        "item": null,
+        "name": "Contraband Jetsam",
+        "chance": {
+          "Winter": 14
+        },
+        "cache": "contraband-jetsam"
+      },
+      {
+        "item": "sea-glass",
+        "name": "Sea-Glass",
+        "chance": {
+          "Winter": 14
+        }
+      },
+      {
+        "item": "enduring-reflection",
+        "name": "Enduring Reflection",
+        "chance": {
+          "Numa": 25
+        }
+      },
+      {
+        "item": "salt-sign",
+        "name": "Salt-Sign",
+        "chance": {
+          "Numa": 25
+        }
+      }
+    ],
+    "note": "Splash cautiously through the shallower tunnels."
+  },
+  {
+    "id": "the-gull-colony-gull-colony",
+    "name": "The Gull-Colony",
+    "place": "Gull Colony",
+    "room": "gull-colony",
+    "count": 1,
+    "principles": [
+      "rose",
+      "scale",
+      "sky"
+    ],
+    "soulPrinciples": [
+      "rose",
+      "scale",
+      "sky"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "rose",
+      "scale",
+      "sky"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "gulls-egg",
+        "name": "Gull's Egg",
+        "chance": {
+          "Spring": 33,
+          "Summer": 33,
+          "Autumn": 33,
+          "Winter": 33,
+          "Numa": 14
+        }
+      },
+      {
+        "item": "memory-sound",
+        "name": "Memory: Sound",
+        "chance": {
+          "Spring": 33,
+          "Summer": 33,
+          "Autumn": 33,
+          "Winter": 33
+        }
+      },
+      {
+        "item": "awakened-feather",
+        "name": "Awakened Feather",
+        "chance": {
+          "Spring": 11,
+          "Summer": 11,
+          "Autumn": 11,
+          "Winter": 11,
+          "Numa": 14
+        }
+      },
+      {
+        "item": "wind-rumour",
+        "name": "Wind-Rumour",
+        "chance": {
+          "Summer": 11,
+          "Autumn": 11,
+          "Winter": 11,
+          "Numa": 14
+        }
+      },
+      {
+        "item": "gull",
+        "name": "Orphaned Chick",
+        "chance": {
+          "Spring": 22,
+          "Summer": 11
+        }
+      },
+      {
+        "item": "driftwood-fragment",
+        "name": "Driftwood Fragment",
+        "chance": {
+          "Autumn": 11,
+          "Winter": 11
+        }
+      },
+      {
+        "item": "outsized-egg",
+        "name": "Outsized Egg",
+        "chance": {
+          "Numa": 14
+        }
+      },
+      {
+        "item": "horizon-sight",
+        "name": "Horizon-Sight",
+        "chance": {
+          "Numa": 14
+        }
+      },
+      {
+        "item": "salt-sign",
+        "name": "Salt-Sign",
+        "chance": {
+          "Numa": 14
+        }
+      },
+      {
+        "item": "tanglebrag",
+        "name": "Tanglebrag",
+        "chance": {
+          "Numa": 14
+        }
+      }
+    ],
+    "note": "Steal eggs from the sea-birds, or find what the sea-birds have stolen."
+  },
+  {
+    "id": "garden-blue-crown-sea-holly-st-brandans-cloister",
+    "name": "Garden: Blue Crown, Sea Holly",
+    "place": "St Brandan's Cloister",
+    "room": "st-brandans-cloister",
+    "count": 2,
+    "principles": [
+      "nectar"
+    ],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "blue-crown",
+        "name": "Blue Crown",
+        "chance": {
+          "Spring": 100,
+          "Winter": 100
+        }
+      },
+      {
+        "item": "sea-holly",
+        "name": "Sea Holly",
+        "chance": {
+          "Summer": 100,
+          "Autumn": 100,
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "garden-catsclaw-trumpeters-lily-aglaophotis-physic-garden",
+    "name": "Garden: Catsclaw, Trumpeter's Lily, Aglaophotis",
+    "place": "Physic Garden",
+    "room": "physic-garden",
+    "count": 2,
+    "principles": [
+      "nectar"
+    ],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "catsclaw",
+        "name": "Catsclaw",
+        "chance": {
+          "Spring": 100
+        }
+      },
+      {
+        "item": "trumpeters-lily",
+        "name": "Trumpeter's Lily",
+        "chance": {
+          "Summer": 100,
+          "Autumn": 100
+        }
+      },
+      {
+        "item": "aglaophotis",
+        "name": "Aglaophotis",
+        "chance": {
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "garden-lenten-rose-fragrant-chalice-moly-scent-garden",
+    "name": "Garden: Lenten Rose, Fragrant Chalice, Moly",
+    "place": "Scent Garden",
+    "room": "scent-garden",
+    "count": 2,
+    "principles": [
+      "nectar"
+    ],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "lenten-rose",
+        "name": "Lenten Rose",
+        "chance": {
+          "Spring": 100,
+          "Winter": 100
+        }
+      },
+      {
+        "item": "fragrant-chalice",
+        "name": "Fragrant Chalice",
+        "chance": {
+          "Summer": 100,
+          "Autumn": 100
+        }
+      },
+      {
+        "item": "moly",
+        "name": "Moly",
+        "chance": {
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "garden-moth-orchid-honeyscar-jasmine-scent-garden",
+    "name": "Garden: Moth Orchid, Honeyscar Jasmine",
+    "place": "Scent Garden",
+    "room": "scent-garden",
+    "count": 2,
+    "principles": [
+      "nectar"
+    ],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "moth-orchid",
+        "name": "Moth Orchid",
+        "chance": {
+          "Spring": 100,
+          "Summer": 100
+        }
+      },
+      {
+        "item": "honeyscar-jasmine",
+        "name": "Honeyscar Jasmine",
+        "chance": {
+          "Autumn": 100,
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "garden-agave-aeterna-scent-garden",
+    "name": "Garden: Agave Aeterna",
+    "place": "Scent Garden",
+    "room": "scent-garden",
+    "count": 2,
+    "principles": [
+      "nectar"
+    ],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "agave-aeterna",
+        "name": "Agave Aeterna",
+        "chance": {
+          "Summer": 100
+        }
+      },
+      {
+        "item": "agave-aeterna",
+        "name": "Agave Aeterna ×2",
+        "chance": {
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "garden-bowl-of-sea-blest-pears-pyrus-auricalcinus-practic-garden",
+    "name": "Garden: Bowl of Sea-Blest Pears, Pyrus Auricalcinus",
+    "place": "Practic Garden",
+    "room": "practic-garden",
+    "count": 2,
+    "principles": [
+      "nectar"
+    ],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "bowl-of-sea-blest-pears",
+        "name": "Bowl of Sea-Blest Pears",
+        "chance": {
+          "Summer": 100,
+          "Autumn": 100
+        }
+      },
+      {
+        "item": "pyrus-auricalcinus",
+        "name": "Pyrus Auricalcinus",
+        "chance": {
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "garden-bunch-of-grapes-kitchen-garden",
+    "name": "Garden: Bunch of Grapes",
+    "place": "Kitchen Garden",
+    "room": "kitchen-garden",
+    "count": 1,
+    "principles": [
+      "nectar"
+    ],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "bunch-of-grapes",
+        "name": "Bunch of Grapes",
+        "chance": {
+          "Spring": 100,
+          "Summer": 100,
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "garden-sack-of-vegetables-kitchen-garden",
+    "name": "Garden: Sack of Vegetables",
+    "place": "Kitchen Garden",
+    "room": "kitchen-garden",
+    "count": 3,
+    "principles": [
+      "nectar"
+    ],
+    "soulPrinciples": [
+      "heart"
+    ],
+    "soulElements": null,
+    "skillPrinciples": [
+      "nectar"
+    ],
+    "needs": null,
+    "drops": [
+      {
+        "item": "sack-of-vegetables",
+        "name": "Sack of Vegetables",
+        "chance": {
+          "Summer": 100,
+          "Autumn": 100,
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "seas-edge-swim-crowcross-sands",
+    "name": "Sea's Edge: swim",
+    "place": "Crowcross Sands",
+    "room": "crowcross-sands",
+    "count": 1,
+    "principles": [],
+    "soulPrinciples": [],
+    "soulElements": [
+      "health"
+    ],
+    "skillPrinciples": [],
+    "needs": null,
+    "drops": [
+      {
+        "item": "memory-salt",
+        "name": "Memory: Salt",
+        "chance": {
+          "Spring": 100,
+          "Summer": 100,
+          "Autumn": 100,
+          "Winter": 100
+        }
+      },
+      {
+        "item": "curious-hunch",
+        "name": "Curious Hunch",
+        "chance": {
+          "Numa": 100
+        }
+      },
+      {
+        "item": "memory-solace",
+        "name": "Memory: Solace",
+        "with": "Basket of Towels",
+        "chance": {
+          "Spring": 100,
+          "Summer": 100,
+          "Autumn": 100,
+          "Winter": 100
+        }
+      }
+    ],
+    "note": "You cannot swim in Stormy weather. Swimming during Numa or Winter gives you a Malady - the Winter Malady can be prevented by using a Basket of Towels."
+  },
+  {
+    "id": "seas-edge-renounce-a-penny-crowcross-sands",
+    "name": "Sea's Edge: renounce a penny",
+    "place": "Crowcross Sands",
+    "room": "crowcross-sands",
+    "count": 1,
+    "principles": [],
+    "soulPrinciples": [],
+    "soulElements": [],
+    "skillPrinciples": [],
+    "needs": "Penny",
+    "drops": [
+      {
+        "item": "memory-impulse",
+        "name": "Memory: Impulse",
+        "chance": {
+          "Spring": 100,
+          "Summer": 100,
+          "Autumn": 100,
+          "Winter": 100
+        }
+      },
+      {
+        "item": "horizon-sight",
+        "name": "Horizon-Sight",
+        "chance": {
+          "Numa": 100
+        }
+      }
+    ],
+    "note": null
+  },
+  {
+    "id": "brancrug-boathouse-swim-boathouse",
+    "name": "Brancrug Boathouse: swim",
+    "place": "Boathouse",
+    "room": "boathouse",
+    "count": 1,
+    "principles": [],
+    "soulPrinciples": [],
+    "soulElements": [
+      "health"
+    ],
+    "skillPrinciples": [],
+    "needs": null,
+    "drops": [
+      {
+        "item": "memory-salt",
+        "name": "Memory: Salt",
+        "chance": {
+          "Spring": 100,
+          "Summer": 100,
+          "Autumn": 100,
+          "Winter": 100
+        }
+      },
+      {
+        "item": "curious-hunch",
+        "name": "Curious Hunch",
+        "chance": {
+          "Numa": 100
+        }
+      },
+      {
+        "item": "memory-solace",
+        "name": "Memory: Solace",
+        "with": "Basket of Towels",
+        "chance": {
+          "Spring": 100,
+          "Summer": 100,
+          "Autumn": 100,
+          "Winter": 100
+        }
+      }
+    ],
+    "note": "You cannot swim in Stormy weather. Swimming during Numa or Winter gives you a Malady - the Winter Malady can be prevented by using a Basket of Towels."
+  }
+]

@@ -1,0 +1,3 @@
+Icons in this folder are artwork from Book of Hours by Weather Factory, downloaded from the
+Book of Hours Wiki (https://book-of-hours.fandom.com). They are NOT covered by this
+repository's CC BY-SA licence. Build with VITE_ICONS=off to ship without them.

@@ -1,0 +1,1546 @@
+[
+  {
+    "id": "abandoned-luggage",
+    "name": "Abandoned Luggage",
+    "icon": true,
+    "principles": {
+      "heart": 1,
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "Long past the help of any lost-and-found.",
+    "sources": [
+      {
+        "name": "Loading Dock",
+        "repeatable": false
+      },
+      {
+        "name": "A Walk on the Moor (Spring, Summer)",
+        "repeatable": true
+      },
+      {
+        "name": "Contraband Jetsam",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": null,
+        "cache": null,
+        "name": "Glinting Cranial Tchotchke",
+        "chance": 25.0
+      },
+      {
+        "item": "hallowed-anthropoderm",
+        "cache": null,
+        "name": "Hallowed Anthropoderm",
+        "chance": 25.0
+      },
+      {
+        "item": "lignum-vitae-blank",
+        "cache": null,
+        "name": "Lignum Vitae Blank",
+        "chance": 25.0
+      },
+      {
+        "item": "skinshuck-mead",
+        "cache": null,
+        "name": "Skinshuck Mead",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "abandoned-packages",
+    "name": "Abandoned Packages",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "Battered but unbreached.",
+    "sources": [
+      {
+        "name": "Gaol Cellar",
+        "repeatable": false
+      },
+      {
+        "name": "A Walk on the Moor (Spring, Summer)",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "glue",
+        "cache": null,
+        "name": "Glue",
+        "chance": 6.7
+      },
+      {
+        "item": "basket-of-clean-linen",
+        "cache": null,
+        "name": "Basket of Clean Linen",
+        "chance": 6.7
+      },
+      {
+        "item": "basket-of-towels",
+        "cache": null,
+        "name": "Basket of Towels",
+        "chance": 6.7
+      },
+      {
+        "item": "refulgin",
+        "cache": null,
+        "name": "Refulgin",
+        "chance": 6.7
+      },
+      {
+        "item": "paint-red",
+        "cache": null,
+        "name": "Paint: Red",
+        "chance": 6.7
+      },
+      {
+        "item": "paint-pink",
+        "cache": null,
+        "name": "Paint: Pink",
+        "chance": 6.7
+      },
+      {
+        "item": "paint-yellow",
+        "cache": null,
+        "name": "Paint: Yellow",
+        "chance": 6.7
+      },
+      {
+        "item": "paint-green",
+        "cache": null,
+        "name": "Paint: Green",
+        "chance": 6.7
+      },
+      {
+        "item": "paint-blue",
+        "cache": null,
+        "name": "Paint: Blue",
+        "chance": 6.7
+      },
+      {
+        "item": "paint-dusk-blue",
+        "cache": null,
+        "name": "Paint: Dusk-Blue",
+        "chance": 6.7
+      },
+      {
+        "item": "warmly-coloured-yarns",
+        "cache": null,
+        "name": "Warmly Coloured Yarns",
+        "chance": 6.7
+      },
+      {
+        "item": "dandelion-wine",
+        "cache": null,
+        "name": "Dandelion Wine",
+        "chance": 6.7
+      },
+      {
+        "item": "scrumpy",
+        "cache": null,
+        "name": "Scrumpy",
+        "chance": 6.7
+      },
+      {
+        "item": "wormy-pumpkin",
+        "cache": null,
+        "name": "Wormy Pumpkin",
+        "chance": 6.7
+      },
+      {
+        "item": "quire-of-paper",
+        "cache": null,
+        "name": "Quire of Paper",
+        "chance": 6.7
+      }
+    ]
+  },
+  {
+    "id": "ambered-casket",
+    "name": "Ambered Casket",
+    "icon": true,
+    "principles": {
+      "forge": 1
+    },
+    "description": "A treasure stored by an adept on the cusp of ascension to Lantern-long.",
+    "sources": [
+      {
+        "name": "Silver Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Coppery Casket",
+      "Ironclad Casket"
+    ],
+    "drops": [
+      {
+        "item": "chronsichord",
+        "cache": null,
+        "name": "Chronsichord",
+        "chance": 25.0
+      },
+      {
+        "item": "iotic-essence",
+        "cache": null,
+        "name": "Iotic Essence",
+        "chance": 25.0
+      },
+      {
+        "item": "orpiment-exultant",
+        "cache": null,
+        "name": "Orpiment Exultant",
+        "chance": 25.0
+      },
+      {
+        "item": "uzult",
+        "cache": null,
+        "name": "Uzult",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "attache-case",
+    "name": "Attaché Case",
+    "icon": true,
+    "principles": {
+      "nectar": 1
+    },
+    "description": "A treasure stored by a diplomat-folklorist.",
+    "sources": [
+      {
+        "name": "Ivory Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Hive Casket",
+      "Records Box",
+      "Mottled Casket"
+    ],
+    "drops": [
+      {
+        "item": "forbidden-epic",
+        "cache": null,
+        "name": "Forbidden Epic",
+        "chance": 25.0
+      },
+      {
+        "item": "january-sanguinary",
+        "cache": null,
+        "name": "January Sanguinary",
+        "chance": 25.0
+      },
+      {
+        "item": "marakat",
+        "cache": null,
+        "name": "Marakat",
+        "chance": 25.0
+      },
+      {
+        "item": "porphyrine",
+        "cache": null,
+        "name": "Porphyrine",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "bag-of-tricks",
+    "name": "Bag of Tricks",
+    "icon": true,
+    "principles": {
+      "moth": 1
+    },
+    "description": "'Useful': a treacherously subjective term. Does this contain anything useful?",
+    "sources": [
+      {
+        "name": "Motley Tower: Regensburg Room",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": "Memory: Touch",
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "armagnac-dys",
+        "cache": null,
+        "name": "Armagnac d'Ys",
+        "chance": 15.4
+      },
+      {
+        "item": "arsenic",
+        "cache": null,
+        "name": "Arsenic",
+        "chance": 7.7
+      },
+      {
+        "item": "bolt-of-pale-silk",
+        "cache": null,
+        "name": "Bolt of Pale Silk",
+        "chance": 7.7
+      },
+      {
+        "item": "cinnabar",
+        "cache": null,
+        "name": "Cinnabar",
+        "chance": 7.7
+      },
+      {
+        "item": "domaine-raveline",
+        "cache": null,
+        "name": "Domaine Raveline",
+        "chance": 7.7
+      },
+      {
+        "item": "nivine-parchment",
+        "cache": null,
+        "name": "Nivine Parchment",
+        "chance": 7.7
+      },
+      {
+        "item": "paint-bosk-green",
+        "cache": null,
+        "name": "Paint: Bosk-Green",
+        "chance": 7.7
+      },
+      {
+        "item": "paint-moth-gold",
+        "cache": null,
+        "name": "Paint: Moth-Gold",
+        "chance": 7.7
+      },
+      {
+        "item": "schloss-jannings",
+        "cache": null,
+        "name": "Schloss Jannings",
+        "chance": 7.7
+      },
+      {
+        "item": "t-r-n-limited-drinking-cocoa",
+        "cache": null,
+        "name": "T.R.N. Limited Drinking Cocoa",
+        "chance": 7.7
+      },
+      {
+        "item": "veiled-goddess-lapsang-souchong",
+        "cache": null,
+        "name": "Veiled Goddess Lapsang Souchong",
+        "chance": 7.7
+      },
+      {
+        "item": "wire-silver",
+        "cache": null,
+        "name": "Wire (Silver)",
+        "chance": 7.7
+      }
+    ]
+  },
+  {
+    "id": "box-of-oddities",
+    "name": "Box of Oddities",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "A tiny treasury of forgotten things. Perhaps there's a real oddity in here somewhere.",
+    "sources": [
+      {
+        "name": "Foundry",
+        "repeatable": false
+      },
+      {
+        "name": "Pantry",
+        "repeatable": false
+      },
+      {
+        "name": "Gaol Cellar",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": "Memory: Sight",
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": null,
+        "cache": null,
+        "name": "Bronze Spintria",
+        "chance": 12.5
+      },
+      {
+        "item": null,
+        "cache": null,
+        "name": "Iron Spintria",
+        "chance": 12.5
+      },
+      {
+        "item": "yellowing-newspaper",
+        "cache": null,
+        "name": "Yellowing Newspaper",
+        "chance": 12.5
+      },
+      {
+        "item": "pale-mommet",
+        "cache": null,
+        "name": "Pale Mommet",
+        "chance": 12.5
+      },
+      {
+        "item": "dearday-lens",
+        "cache": null,
+        "name": "Dearday Lens",
+        "chance": 12.5
+      },
+      {
+        "item": "amethyst-ampoule",
+        "cache": null,
+        "name": "Amethyst Ampoule",
+        "chance": 12.5
+      },
+      {
+        "item": "witching-tisane",
+        "cache": null,
+        "name": "Witching Tisane",
+        "chance": 12.5
+      },
+      {
+        "item": "bitterblack-salts",
+        "cache": null,
+        "name": "Bitterblack Salts",
+        "chance": 12.5
+      }
+    ]
+  },
+  {
+    "id": "box-of-rarities",
+    "name": "Box of Rarities",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "A tiny treasury of forgotten things. Perhaps there's a real rarity in here somewhere.",
+    "sources": [
+      {
+        "name": "Foundry",
+        "repeatable": false
+      },
+      {
+        "name": "Stores",
+        "repeatable": false
+      },
+      {
+        "name": "Contraband Jetsam",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": "Memory: Sight",
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "dearday-lens",
+        "cache": null,
+        "name": "Dearday Lens",
+        "chance": 12.5
+      },
+      {
+        "item": "desiccated-witchworms",
+        "cache": null,
+        "name": "Desiccated Witchworms",
+        "chance": 12.5
+      },
+      {
+        "item": "flushed-mommet",
+        "cache": null,
+        "name": "Flushed Mommet",
+        "chance": 12.5
+      },
+      {
+        "item": "gervinite",
+        "cache": null,
+        "name": "Gervinite",
+        "chance": 12.5
+      },
+      {
+        "item": null,
+        "cache": null,
+        "name": "Silver Spintria",
+        "chance": 12.5
+      },
+      {
+        "item": "wolf-snow-ampoule",
+        "cache": null,
+        "name": "Wolf-Snow Ampoule",
+        "chance": 12.5
+      },
+      {
+        "item": "year-tally",
+        "cache": null,
+        "name": "Year-Tally",
+        "chance": 12.5
+      },
+      {
+        "item": "yellowing-newspaper",
+        "cache": null,
+        "name": "Yellowing Newspaper",
+        "chance": 12.5
+      }
+    ]
+  },
+  {
+    "id": "contraband-flotsam",
+    "name": "Contraband Flotsam",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "Salt-stained and wave-wracked.",
+    "sources": [
+      {
+        "name": "Servants' Hall",
+        "repeatable": false
+      },
+      {
+        "name": "Beachcombing",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": null,
+        "cache": "forsaken-packages",
+        "name": "Forsaken Packages",
+        "chance": 25.0
+      },
+      {
+        "item": null,
+        "cache": "lost-packages",
+        "name": "Lost Packages",
+        "chance": 25.0
+      },
+      {
+        "item": null,
+        "cache": "slim-parcel",
+        "name": "Slim Parcel",
+        "chance": 25.0
+      },
+      {
+        "item": null,
+        "cache": "tall-parcel",
+        "name": "Tall Parcel",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "contraband-jetsam",
+    "name": "Contraband Jetsam",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "Flung overboard in furtive haste.",
+    "sources": [
+      {
+        "name": "Pantry",
+        "repeatable": false
+      },
+      {
+        "name": "Servants' Quarters - South",
+        "repeatable": false
+      },
+      {
+        "name": "Stores",
+        "repeatable": false
+      },
+      {
+        "name": "Beachcombing (any except Summer)",
+        "repeatable": true
+      },
+      {
+        "name": "The Sea-Caves (Winter)",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": null,
+        "cache": "abandoned-luggage",
+        "name": "Abandoned Luggage",
+        "chance": 33.3
+      },
+      {
+        "item": "ambergris-chunk",
+        "cache": null,
+        "name": "Ambergris Chunk",
+        "chance": 33.3
+      },
+      {
+        "item": null,
+        "cache": "box-of-rarities",
+        "name": "Box of Rarities",
+        "chance": 33.3
+      }
+    ]
+  },
+  {
+    "id": "coppery-casket",
+    "name": "Coppery Casket",
+    "icon": true,
+    "principles": {
+      "forge": 1
+    },
+    "description": "A treasure stored by the doomed child of two immortals, seeking sanctuary at Hush House from the terrible hunger of their parents.",
+    "sources": [
+      {
+        "name": "Iron Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": "Memory: Touch",
+    "sharedWith": [
+      "Ironclad Casket",
+      "Ambered Casket"
+    ],
+    "drops": [
+      {
+        "item": "chronsichord",
+        "cache": null,
+        "name": "Chronsichord",
+        "chance": 25.0
+      },
+      {
+        "item": "iotic-essence",
+        "cache": null,
+        "name": "Iotic Essence",
+        "chance": 25.0
+      },
+      {
+        "item": "orpiment-exultant",
+        "cache": null,
+        "name": "Orpiment Exultant",
+        "chance": 25.0
+      },
+      {
+        "item": "uzult",
+        "cache": null,
+        "name": "Uzult",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "crate-of-supplies",
+    "name": "Crate of Supplies",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "Something set helpfully aside.",
+    "sources": [
+      {
+        "name": "Windlit Gallery",
+        "repeatable": false
+      },
+      {
+        "name": "Smuggler's Den",
+        "repeatable": false
+      },
+      {
+        "name": "Loading Dock",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "bolt-of-buttercup-linen",
+        "cache": null,
+        "name": "Bolt of Buttercup Linen",
+        "chance": 5.6
+      },
+      {
+        "item": "bolt-of-moss-green-velvet",
+        "cache": null,
+        "name": "Bolt of Moss-Green Velvet",
+        "chance": 5.6
+      },
+      {
+        "item": "bolt-of-pale-silk",
+        "cache": null,
+        "name": "Bolt of Pale Silk",
+        "chance": 5.6
+      },
+      {
+        "item": "glue",
+        "cache": null,
+        "name": "Glue",
+        "chance": 5.6
+      },
+      {
+        "item": "kerosene",
+        "cache": null,
+        "name": "Kerosene",
+        "chance": 5.6
+      },
+      {
+        "item": "oscillate-oil",
+        "cache": null,
+        "name": "Oscillate Oil",
+        "chance": 5.6
+      },
+      {
+        "item": "paraffin",
+        "cache": null,
+        "name": "Paraffin",
+        "chance": 5.6
+      },
+      {
+        "item": "petrol",
+        "cache": null,
+        "name": "Petrol",
+        "chance": 5.6
+      },
+      {
+        "item": "saw",
+        "cache": null,
+        "name": "Saw",
+        "chance": 5.6
+      },
+      {
+        "item": "scintillate-oil",
+        "cache": null,
+        "name": "Scintillate Oil",
+        "chance": 5.6
+      },
+      {
+        "item": "square",
+        "cache": null,
+        "name": "Square",
+        "chance": 5.6
+      },
+      {
+        "item": "turpentine",
+        "cache": null,
+        "name": "Turpentine",
+        "chance": 5.6
+      },
+      {
+        "item": "umbrous-oil",
+        "cache": null,
+        "name": "Umbrous Oil",
+        "chance": 5.6
+      },
+      {
+        "item": "wire-copper",
+        "cache": null,
+        "name": "Wire (Copper)",
+        "chance": 11.1
+      },
+      {
+        "item": "wire-silver",
+        "cache": null,
+        "name": "Wire (Silver)",
+        "chance": 5.6
+      },
+      {
+        "item": "wire-steel",
+        "cache": null,
+        "name": "Wire (Steel)",
+        "chance": 5.6
+      },
+      {
+        "item": "wire-tin",
+        "cache": null,
+        "name": "Wire (Tin)",
+        "chance": 5.6
+      }
+    ]
+  },
+  {
+    "id": "forsaken-packages",
+    "name": "Forsaken Packages",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "They plead mutely to be opened. No-one else ever cared to.",
+    "sources": [
+      {
+        "name": "Smuggler's Den",
+        "repeatable": false
+      },
+      {
+        "name": "Contraband Flotsam",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "domaine-raveline",
+        "cache": null,
+        "name": "Domaine Raveline",
+        "chance": 33.3
+      },
+      {
+        "item": "cranial-tchotchke",
+        "cache": null,
+        "name": "Cranial Tchotchke",
+        "chance": 33.3
+      },
+      {
+        "item": "lignum-vitae-blank",
+        "cache": null,
+        "name": "Lignum Vitae Blank",
+        "chance": 33.3
+      }
+    ]
+  },
+  {
+    "id": "hive-casket",
+    "name": "Hive Casket",
+    "icon": true,
+    "principles": {
+      "nectar": 1
+    },
+    "description": "A treasure stored by a visionary apiarist with Blomberende lineage.",
+    "sources": [
+      {
+        "name": "Iron Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Attaché Case",
+      "Mottled Casket",
+      "Records Box"
+    ],
+    "drops": [
+      {
+        "item": "forbidden-epic",
+        "cache": null,
+        "name": "Forbidden Epic",
+        "chance": 25.0
+      },
+      {
+        "item": "january-sanguinary",
+        "cache": null,
+        "name": "January Sanguinary",
+        "chance": 25.0
+      },
+      {
+        "item": "marakat",
+        "cache": null,
+        "name": "Marakat",
+        "chance": 25.0
+      },
+      {
+        "item": "porphyrine",
+        "cache": null,
+        "name": "Porphyrine",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "imperial-casket",
+    "name": "Imperial Casket",
+    "icon": true,
+    "principles": {
+      "lantern": 1
+    },
+    "description": "A treasure stored by an exiled empress.",
+    "sources": [
+      {
+        "name": "Ivory Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Royal Casket"
+    ],
+    "drops": [
+      {
+        "item": "didumos",
+        "cache": null,
+        "name": "Didumos",
+        "chance": 25.0
+      },
+      {
+        "item": "earthquake-name",
+        "cache": null,
+        "name": "Earthquake Name",
+        "chance": 25.0
+      },
+      {
+        "item": "forbidden-epic",
+        "cache": null,
+        "name": "Forbidden Epic",
+        "chance": 25.0
+      },
+      {
+        "item": "year-tally",
+        "cache": null,
+        "name": "Year-Tally",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "investigators-suitcase",
+    "name": "Investigator's Suitcase",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "A suitcase that once belonged to someone in the habit of shining a light in dark places.",
+    "sources": [
+      {
+        "name": "Servants' Quarters - North",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "labhitic-tincture",
+        "cache": null,
+        "name": "Labhitic Tincture",
+        "chance": 33.3
+      },
+      {
+        "item": "evening-isles-coffee",
+        "cache": null,
+        "name": "Evening Isles Coffee",
+        "chance": 33.3
+      },
+      {
+        "item": "roscraggan-whisky",
+        "cache": null,
+        "name": "Roscraggan Whisky",
+        "chance": 33.3
+      }
+    ]
+  },
+  {
+    "id": "ironclad-casket",
+    "name": "Ironclad Casket",
+    "icon": true,
+    "principles": {
+      "forge": 1
+    },
+    "description": "A treasure stored by an esoteric anarch on the eve of her failed revolution.",
+    "sources": [
+      {
+        "name": "Ivory Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Coppery Casket",
+      "Ambered Casket"
+    ],
+    "drops": [
+      {
+        "item": "chronsichord",
+        "cache": null,
+        "name": "Chronsichord",
+        "chance": 25.0
+      },
+      {
+        "item": "iotic-essence",
+        "cache": null,
+        "name": "Iotic Essence",
+        "chance": 25.0
+      },
+      {
+        "item": "orpiment-exultant",
+        "cache": null,
+        "name": "Orpiment Exultant",
+        "chance": 25.0
+      },
+      {
+        "item": "uzult",
+        "cache": null,
+        "name": "Uzult",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "lost-packages",
+    "name": "Lost Packages",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "The label is smeared to unreadable fog.",
+    "sources": [
+      {
+        "name": "Wine Cellar",
+        "repeatable": false
+      },
+      {
+        "name": "Contraband Flotsam",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "domaine-raveline",
+        "cache": null,
+        "name": "Domaine Raveline",
+        "chance": 9.1
+      },
+      {
+        "item": "veiled-goddess-lapsang-souchong",
+        "cache": null,
+        "name": "Veiled Goddess Lapsang Souchong",
+        "chance": 9.1
+      },
+      {
+        "item": "dawnlion-coffee",
+        "cache": null,
+        "name": "Dawnlion Coffee",
+        "chance": 18.2
+      },
+      {
+        "item": "paint-palest-blue",
+        "cache": null,
+        "name": "Paint: Palest Blue",
+        "chance": 9.1
+      },
+      {
+        "item": "paint-green",
+        "cache": null,
+        "name": "Paint: Green",
+        "chance": 9.1
+      },
+      {
+        "item": "paint-pink",
+        "cache": null,
+        "name": "Paint: Pink",
+        "chance": 9.1
+      },
+      {
+        "item": "strathcoyne-whisky",
+        "cache": null,
+        "name": "Strathcoyne Whisky",
+        "chance": 9.1
+      },
+      {
+        "item": "wire-steel",
+        "cache": null,
+        "name": "Wire (Steel)",
+        "chance": 9.1
+      },
+      {
+        "item": "canvas",
+        "cache": null,
+        "name": "Canvas",
+        "chance": 9.1
+      },
+      {
+        "item": "paint-bosk-green",
+        "cache": null,
+        "name": "Paint: Bosk-Green",
+        "chance": 9.1
+      }
+    ]
+  },
+  {
+    "id": "morbid-casket",
+    "name": "Morbid Casket",
+    "icon": true,
+    "principles": {
+      "moon": 1
+    },
+    "description": "A treasure bequeathed by a death-haunted merchant-prince in his last days.",
+    "sources": [
+      {
+        "name": "Iron Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Scaled Casket",
+      "Scarred Casket"
+    ],
+    "drops": [
+      {
+        "item": "ashartine",
+        "cache": null,
+        "name": "Ashartine",
+        "chance": 25.0
+      },
+      {
+        "item": "black-sapphire-wash",
+        "cache": null,
+        "name": "Black Sapphire Wash",
+        "chance": 25.0
+      },
+      {
+        "item": "nillycant",
+        "cache": null,
+        "name": "Nillycant",
+        "chance": 25.0
+      },
+      {
+        "item": "serpent-milk",
+        "cache": null,
+        "name": "Serpent-Milk",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "mottled-casket",
+    "name": "Mottled Casket",
+    "icon": true,
+    "principles": {
+      "nectar": 1
+    },
+    "description": "A treasure donated by a disgraced Tragularius assassin.",
+    "sources": [
+      {
+        "name": "Silver Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Attaché Case",
+      "Hive Casket",
+      "Records Box"
+    ],
+    "drops": [
+      {
+        "item": "forbidden-epic",
+        "cache": null,
+        "name": "Forbidden Epic",
+        "chance": 25.0
+      },
+      {
+        "item": "january-sanguinary",
+        "cache": null,
+        "name": "January Sanguinary",
+        "chance": 25.0
+      },
+      {
+        "item": "marakat",
+        "cache": null,
+        "name": "Marakat",
+        "chance": 25.0
+      },
+      {
+        "item": "porphyrine",
+        "cache": null,
+        "name": "Porphyrine",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "records-box",
+    "name": "Records Box",
+    "icon": true,
+    "principles": {
+      "nectar": 1
+    },
+    "description": "A treasure stored by a musician-spy.",
+    "sources": [
+      {
+        "name": "Ivory Vault",
+        "repeatable": false
+      },
+      {
+        "name": "Loading Dock",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Attaché Case",
+      "Hive Casket",
+      "Mottled Casket"
+    ],
+    "drops": [
+      {
+        "item": "forbidden-epic",
+        "cache": null,
+        "name": "Forbidden Epic",
+        "chance": 25.0
+      },
+      {
+        "item": "january-sanguinary",
+        "cache": null,
+        "name": "January Sanguinary",
+        "chance": 25.0
+      },
+      {
+        "item": "marakat",
+        "cache": null,
+        "name": "Marakat",
+        "chance": 25.0
+      },
+      {
+        "item": "porphyrine",
+        "cache": null,
+        "name": "Porphyrine",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "royal-casket",
+    "name": "Royal Casket",
+    "icon": true,
+    "principles": {
+      "lantern": 1
+    },
+    "description": "A treasure stored by a king before his final sacrifice.",
+    "sources": [
+      {
+        "name": "Silver Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Imperial Casket"
+    ],
+    "drops": [
+      {
+        "item": "didumos",
+        "cache": null,
+        "name": "Didumos",
+        "chance": 25.0
+      },
+      {
+        "item": "earthquake-name",
+        "cache": null,
+        "name": "Earthquake Name",
+        "chance": 25.0
+      },
+      {
+        "item": "forbidden-epic",
+        "cache": null,
+        "name": "Forbidden Epic",
+        "chance": 25.0
+      },
+      {
+        "item": "year-tally",
+        "cache": null,
+        "name": "Year-Tally",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "scaled-casket",
+    "name": "Scaled Casket",
+    "icon": true,
+    "principles": {
+      "moon": 1
+    },
+    "description": "A treasure left behind by an explorer on the eve of his final voyage.",
+    "sources": [
+      {
+        "name": "Ivory Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Morbid Casket",
+      "Scarred Casket"
+    ],
+    "drops": [
+      {
+        "item": "ashartine",
+        "cache": null,
+        "name": "Ashartine",
+        "chance": 25.0
+      },
+      {
+        "item": "black-sapphire-wash",
+        "cache": null,
+        "name": "Black Sapphire Wash",
+        "chance": 25.0
+      },
+      {
+        "item": "nillycant",
+        "cache": null,
+        "name": "Nillycant",
+        "chance": 25.0
+      },
+      {
+        "item": "serpent-milk",
+        "cache": null,
+        "name": "Serpent-Milk",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "scarred-casket",
+    "name": "Scarred Casket",
+    "icon": true,
+    "principles": {
+      "moon": 1
+    },
+    "description": "A treasure stored by an accursed tomb-robber - or something that walked in her shape.",
+    "sources": [
+      {
+        "name": "Ivory Vault",
+        "repeatable": false
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [
+      "Morbid Casket",
+      "Scaled Casket"
+    ],
+    "drops": [
+      {
+        "item": "ashartine",
+        "cache": null,
+        "name": "Ashartine",
+        "chance": 25.0
+      },
+      {
+        "item": "black-sapphire-wash",
+        "cache": null,
+        "name": "Black Sapphire Wash",
+        "chance": 25.0
+      },
+      {
+        "item": "nillycant",
+        "cache": null,
+        "name": "Nillycant",
+        "chance": 25.0
+      },
+      {
+        "item": "serpent-milk",
+        "cache": null,
+        "name": "Serpent-Milk",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "slim-parcel",
+    "name": "Slim Parcel",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "Carefully wrapped in brown paper.",
+    "sources": [
+      {
+        "name": "Stores",
+        "repeatable": false
+      },
+      {
+        "name": "Servants' Hall",
+        "repeatable": false
+      },
+      {
+        "name": "Servants' Quarters - South",
+        "repeatable": false
+      },
+      {
+        "name": "Contraband Flotsam",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "roscraggan-whisky",
+        "cache": null,
+        "name": "Roscraggan Whisky",
+        "chance": 25.0
+      },
+      {
+        "item": "domaine-raveline",
+        "cache": null,
+        "name": "Domaine Raveline",
+        "chance": 25.0
+      },
+      {
+        "item": "t-r-n-limited-drinking-cocoa",
+        "cache": null,
+        "name": "T.R.N. Limited Drinking Cocoa",
+        "chance": 25.0
+      },
+      {
+        "item": "rubywise-ruin",
+        "cache": null,
+        "name": "Rubywise Ruin",
+        "chance": 25.0
+      }
+    ]
+  },
+  {
+    "id": "tall-parcel",
+    "name": "Tall Parcel",
+    "icon": true,
+    "principles": {
+      "knock": 1,
+      "rose": 1
+    },
+    "description": "Tightly wrapped in oilcloth.",
+    "sources": [
+      {
+        "name": "Pantry",
+        "repeatable": false
+      },
+      {
+        "name": "Deep Well Descent",
+        "repeatable": false
+      },
+      {
+        "name": "Contraband Flotsam",
+        "repeatable": true
+      }
+    ],
+    "alsoGives": null,
+    "sharedWith": [],
+    "drops": [
+      {
+        "item": "basket-of-apples",
+        "cache": null,
+        "name": "Basket of Apples",
+        "chance": 6.2
+      },
+      {
+        "item": "basket-of-leeks",
+        "cache": null,
+        "name": "Basket of Leeks",
+        "chance": 6.2
+      },
+      {
+        "item": "basket-of-onions",
+        "cache": null,
+        "name": "Basket of Onions",
+        "chance": 6.2
+      },
+      {
+        "item": "pickled-mushrooms",
+        "cache": null,
+        "name": "Pickled Mushrooms",
+        "chance": 6.2
+      },
+      {
+        "item": "elderflower-cordial",
+        "cache": null,
+        "name": "Elderflower Cordial",
+        "chance": 6.2
+      },
+      {
+        "item": "rosehip-jam",
+        "cache": null,
+        "name": "Rosehip Jam",
+        "chance": 6.2
+      },
+      {
+        "item": "blackberry-jam",
+        "cache": null,
+        "name": "Blackberry Jam",
+        "chance": 6.2
+      },
+      {
+        "item": "flour",
+        "cache": null,
+        "name": "Flour",
+        "chance": 6.2
+      },
+      {
+        "item": "golden-marrow",
+        "cache": null,
+        "name": "Golden Marrow",
+        "chance": 6.2
+      },
+      {
+        "item": "amber-pumpkin",
+        "cache": null,
+        "name": "Amber Pumpkin",
+        "chance": 6.2
+      },
+      {
+        "item": "soft-amber-pumpkin",
+        "cache": null,
+        "name": "Soft Amber Pumpkin",
+        "chance": 6.2
+      },
+      {
+        "item": "pale-marrow",
+        "cache": null,
+        "name": "Pale Marrow",
+        "chance": 6.2
+      },
+      {
+        "item": "acrid-marrow",
+        "cache": null,
+        "name": "Acrid Marrow",
+        "chance": 6.2
+      },
+      {
+        "item": "dark-marrow",
+        "cache": null,
+        "name": "Dark Marrow",
+        "chance": 6.2
+      },
+      {
+        "item": "evening-isles-coffee",
+        "cache": null,
+        "name": "Evening Isles Coffee",
+        "chance": 6.2
+      },
+      {
+        "item": "schloss-jannings",
+        "cache": null,
+        "name": "Schloss Jannings",
+        "chance": 6.2
+      }
+    ]
+  }
+]

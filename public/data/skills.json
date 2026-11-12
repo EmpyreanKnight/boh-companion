@@ -1,0 +1,1500 @@
+[
+  {
+    "id": "anbary-and-lapidary",
+    "name": "Anbary & Lapidary",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "forge",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "fet"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "phost"
+      }
+    ],
+    "description": "'Lightning is a little life, and jewels are its eyes.' (Eva Dewulf)",
+    "specialties": []
+  },
+  {
+    "id": "applebright-euphonies",
+    "name": "Applebright Euphonies",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "grail",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "ereb"
+      },
+      {
+        "wisdom": "illumination",
+        "element": "mettle"
+      }
+    ],
+    "description": "‘Breath is the temptation of the soul.’ Pleasures and insights that the Church would call ‘the Secrets', the Sisterhood ‘the Mysteries’, and the Bureau 'unsanctioned.’",
+    "specialties": []
+  },
+  {
+    "id": "auroral-contemplations",
+    "name": "Auroral Contemplations",
+    "icon": true,
+    "primary": "lantern",
+    "secondary": "edge",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      }
+    ],
+    "description": "'To know what will pass in what has passed.' The practitioners of this discipline see endings and beginnings, passages and transitions, in the same mode as dawn and sunset.",
+    "specialties": []
+  },
+  {
+    "id": "bells-and-brazieries",
+    "name": "Bells & Brazieries",
+    "icon": true,
+    "primary": "forge",
+    "secondary": "sky",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      }
+    ],
+    "description": "That resonance which lingers from the hammer's touch.",
+    "specialties": []
+  },
+  {
+    "id": "coil-and-chasm",
+    "name": "Coil & Chasm",
+    "icon": true,
+    "primary": "scale",
+    "secondary": "nectar",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "nyctodromy",
+        "element": "shapt"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "ereb"
+      }
+    ],
+    "description": "Worms, Seven-Coils, dangerous places; how earthquakes are bound and why they are released.",
+    "specialties": []
+  },
+  {
+    "id": "cracktrack",
+    "name": "Cracktrack",
+    "icon": true,
+    "primary": "nectar",
+    "secondary": "scale",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "chor"
+      }
+    ],
+    "description": "A primal language.",
+    "specialties": []
+  },
+  {
+    "id": "deep-mandaic",
+    "name": "Deep Mandaic",
+    "icon": true,
+    "primary": "forge",
+    "secondary": "lantern",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "phost"
+      }
+    ],
+    "description": "A resonant language.",
+    "specialties": []
+  },
+  {
+    "id": "desires-and-dissolutions",
+    "name": "Desires & Dissolutions",
+    "icon": true,
+    "primary": "grail",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "ereb"
+      },
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      }
+    ],
+    "description": "The boundaries between flesh, pearl, and pleasure are equally contingent.",
+    "specialties": []
+  },
+  {
+    "id": "disciplines-of-the-hammer",
+    "name": "Disciplines of the Hammer",
+    "icon": true,
+    "primary": "edge",
+    "secondary": "forge",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "shapt"
+      }
+    ],
+    "description": "To purify and to combine the selves and the essences. The Hammer shapes gates and shatters doors, within us and without.",
+    "specialties": []
+  },
+  {
+    "id": "disciplines-of-the-scar",
+    "name": "Disciplines of the Scar",
+    "icon": true,
+    "primary": "edge",
+    "secondary": "lantern",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      },
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      }
+    ],
+    "description": "To master boundaries through their determination. The Scar marks wisdom and regrets; one is often born from the other.",
+    "specialties": []
+  },
+  {
+    "id": "door-and-wall",
+    "name": "Door & Wall",
+    "icon": true,
+    "primary": "knock",
+    "secondary": "forge",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "fet"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "shapt"
+      }
+    ],
+    "description": "The lock seeks its key, the wall seeks its door, and we who would pass learn at last that they are not our servants. (Willem Harries)",
+    "specialties": []
+  },
+  {
+    "id": "drums-and-dances",
+    "name": "Drums & Dances",
+    "icon": true,
+    "primary": "heart",
+    "secondary": "nectar",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      },
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      }
+    ],
+    "description": "The first musics were not made by mortals, but taken; from sand-coil and sea-thorn, from flint-heart and dragon-womb.",
+    "specialties": []
+  },
+  {
+    "id": "edicts-inviolable",
+    "name": "Edicts Inviolable",
+    "icon": true,
+    "primary": "heart",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "chor"
+      }
+    ],
+    "description": "The precepts of occlusion and dissolution; their jealous enforcement is the nature of the Calyptra",
+    "specialties": []
+  },
+  {
+    "id": "edicts-liminal",
+    "name": "Edicts Liminal",
+    "icon": true,
+    "primary": "moth",
+    "secondary": "knock",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "ereb"
+      }
+    ],
+    "description": "The precepts of limitation and division; established by the enigmatic conclave of Hours sometimes called the Chancel.",
+    "specialties": []
+  },
+  {
+    "id": "edicts-martial",
+    "name": "Edicts Martial",
+    "icon": true,
+    "primary": "moon",
+    "secondary": "edge",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      }
+    ],
+    "description": "The precepts of struggle and conflict which drive the cosmic engine of change sometimes called the Corrivality.",
+    "specialties": []
+  },
+  {
+    "id": "ericapaean",
+    "name": "Ericapaean",
+    "icon": true,
+    "primary": "lantern",
+    "secondary": "winter",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      },
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      }
+    ],
+    "description": "An elegant language.",
+    "specialties": []
+  },
+  {
+    "id": "fucine",
+    "name": "Fucine",
+    "icon": true,
+    "primary": "heart",
+    "secondary": "knock",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      }
+    ],
+    "description": "A dry language.",
+    "specialties": []
+  },
+  {
+    "id": "furs-and-feathers",
+    "name": "Furs & Feathers",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "scale",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      }
+    ],
+    "description": "Beasts, birds, husbandry, harvest.",
+    "specialties": []
+  },
+  {
+    "id": "glassblowing-and-vesselcrafting",
+    "name": "Glassblowing & Vesselcrafting",
+    "icon": true,
+    "primary": "knock",
+    "secondary": "sky",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "wist"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "phost"
+      }
+    ],
+    "description": "We are all vessels. Let us contain only what will grace us when the light shines through. (Thirza Blake)",
+    "specialties": []
+  },
+  {
+    "id": "glaziery-and-lightsmithing",
+    "name": "Glaziery & Lightsmithing",
+    "icon": true,
+    "primary": "lantern",
+    "secondary": "sky",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "phost"
+      }
+    ],
+    "description": "Break a window. What have you made? A way? A new light? A weapon? (Natalia Brulleau)",
+    "specialties": [
+      "Chandlery"
+    ]
+  },
+  {
+    "id": "herbs-and-infusions",
+    "name": "Herbs & Infusions",
+    "icon": true,
+    "primary": "heart",
+    "secondary": "nectar",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "ereb"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "health"
+      }
+    ],
+    "description": "Pluck it, powder it, mix it, warm it, drink it. But not that one.",
+    "specialties": [
+      "Effective Against Corruption"
+    ]
+  },
+  {
+    "id": "hill-and-hollow",
+    "name": "Hill & Hollow",
+    "icon": true,
+    "primary": "moon",
+    "secondary": "scale",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "chor"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "health"
+      }
+    ],
+    "description": "The ways of the hill-children and the gods-from-stone. Old paths, old secrets, the songs that still echo beneath the earth.",
+    "specialties": [
+      "Effective Against Infestations"
+    ]
+  },
+  {
+    "id": "horns-and-ivories",
+    "name": "Horns & Ivories",
+    "icon": true,
+    "primary": "scale",
+    "secondary": "knock",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "ereb"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "shapt"
+      }
+    ],
+    "description": "The Hunter, the Way, and their memories.",
+    "specialties": []
+  },
+  {
+    "id": "hyksos",
+    "name": "Hyksos",
+    "icon": true,
+    "primary": "grail",
+    "secondary": "edge",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "nyctodromy",
+        "element": "shapt"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "ereb"
+      }
+    ],
+    "description": "A sly language.",
+    "specialties": []
+  },
+  {
+    "id": "inks-of-containment",
+    "name": "Inks of Containment",
+    "icon": true,
+    "primary": "winter",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "health"
+      }
+    ],
+    "description": "The inks in which the Histories are preserved.",
+    "specialties": [
+      "Effective Against Theoplasmic Contamination"
+    ]
+  },
+  {
+    "id": "inks-of-power",
+    "name": "Inks of Power",
+    "icon": true,
+    "primary": "rose",
+    "secondary": "scale",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      }
+    ],
+    "description": "The inks in which the Histories are written.",
+    "specialties": []
+  },
+  {
+    "id": "inks-of-revelation",
+    "name": "Inks of Revelation",
+    "icon": true,
+    "primary": "lantern",
+    "secondary": "moth",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "wist"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "phost"
+      }
+    ],
+    "description": "The inks in which the Histories are revealed.",
+    "specialties": []
+  },
+  {
+    "id": "insects-and-nectars",
+    "name": "Insects & Nectars",
+    "icon": true,
+    "primary": "nectar",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "ereb"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      }
+    ],
+    "description": "The Hive, the Nest, and the Chrysalis are the three secret principalities of the lesser world. Two of those three know the temptations of sweetness.",
+    "specialties": [
+      "Chandlery"
+    ]
+  },
+  {
+    "id": "kernewek-henavek",
+    "name": "Kernewek Henavek",
+    "icon": true,
+    "primary": "scale",
+    "secondary": "forge",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      }
+    ],
+    "description": "A forgotten language.",
+    "specialties": []
+  },
+  {
+    "id": "killasimi",
+    "name": "Killasimi",
+    "icon": true,
+    "primary": "winter",
+    "secondary": "moon",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "ereb"
+      }
+    ],
+    "description": "A woven language.",
+    "specialties": []
+  },
+  {
+    "id": "leaves-and-thorns",
+    "name": "Leaves & Thorns",
+    "icon": true,
+    "primary": "nectar",
+    "secondary": "grail",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "chor"
+      },
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      }
+    ],
+    "description": "There is no scent without sorrow.",
+    "specialties": []
+  },
+  {
+    "id": "lockworks-and-clockworks",
+    "name": "Lockworks & Clockworks",
+    "icon": true,
+    "primary": "knock",
+    "secondary": "sky",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "shapt"
+      }
+    ],
+    "description": "The little ways of little machines.",
+    "specialties": []
+  },
+  {
+    "id": "maggephene-mysteries",
+    "name": "Maggephene Mysteries",
+    "icon": true,
+    "primary": "moon",
+    "secondary": "heart",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "health"
+      }
+    ],
+    "description": "The greater plagues may not be cured, only bound. The very greatest of all may only be entreated… and it is death to do so improperly.",
+    "specialties": [
+      "Effective Against Corruption"
+    ]
+  },
+  {
+    "id": "meniscate-reflections",
+    "name": "Meniscate Reflections",
+    "icon": true,
+    "primary": "forge",
+    "secondary": "edge",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "health"
+      }
+    ],
+    "description": "\"Without is purified, within is erased.\"",
+    "specialties": [
+      "Effective Against Theoplasmic Contamination"
+    ]
+  },
+  {
+    "id": "orchids-and-narcotics",
+    "name": "Orchids & Narcotics",
+    "icon": true,
+    "primary": "grail",
+    "secondary": "nectar",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "ereb"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "shapt"
+      }
+    ],
+    "description": "There is no greed without beauty.",
+    "specialties": []
+  },
+  {
+    "id": "ouranoscopy",
+    "name": "Ouranoscopy",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "fet"
+      },
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      }
+    ],
+    "description": "Consider the Star. Hath each Star, is Seven Names. Observe that these Names are Never Shared. (Thomas Dewulf)",
+    "specialties": []
+  },
+  {
+    "id": "path-and-pilgrim",
+    "name": "Path & Pilgrim",
+    "icon": true,
+    "primary": "rose",
+    "secondary": "scale",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "chor"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      }
+    ],
+    "description": "The traveller is always returning. One who does not is no traveller. (Arun Peel)",
+    "specialties": []
+  },
+  {
+    "id": "pearl-and-tide",
+    "name": "Pearl & Tide",
+    "icon": true,
+    "primary": "rose",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      }
+    ],
+    "description": "The depths of the sea, the waves upon the shore, and the memories of their withdrawal.",
+    "specialties": []
+  },
+  {
+    "id": "pentiments-and-precursors",
+    "name": "Pentiments & Precursors",
+    "icon": true,
+    "primary": "scale",
+    "secondary": "grail",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "chor"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "ereb"
+      }
+    ],
+    "description": "Feats and feits of forgotten things: the Carapace Cross, the line of Antaios, the world of a low red sun. 'Though much is taken, much abides.'",
+    "specialties": []
+  },
+  {
+    "id": "preliminal-meter",
+    "name": "Preliminal Meter",
+    "icon": true,
+    "primary": "knock",
+    "secondary": "rose",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      }
+    ],
+    "description": "'Nine modes, nine horizons': the subtle rhythms of words which open ways.",
+    "specialties": []
+  },
+  {
+    "id": "purifications-and-exaltations",
+    "name": "Purifications & Exaltations",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "lantern",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "phost"
+      }
+    ],
+    "description": "'No-one ever truly wants to be truly changed. Azoth and refulgin are justly feared. But no-one who has been changed would choose to go back.' - George Collers",
+    "specialties": [
+      "Effective Against Corruption"
+    ]
+  },
+  {
+    "id": "putrefactions-and-calcinations",
+    "name": "Putrefactions & Calcinations",
+    "icon": true,
+    "primary": "winter",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "ereb"
+      }
+    ],
+    "description": "Death alters; Snow endures. (Solomon Husher)",
+    "specialties": []
+  },
+  {
+    "id": "pyroglyphics",
+    "name": "Pyroglyphics",
+    "icon": true,
+    "primary": "forge",
+    "secondary": "lantern",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      }
+    ],
+    "description": "One script that all the world must read, even the blind, and it is written in flames.' Matters of fireworks and their kin - lights, colours, infernal detonations.",
+    "specialties": [
+      "Chandlery"
+    ]
+  },
+  {
+    "id": "quenchings-and-quellings",
+    "name": "Quenchings & Quellings",
+    "icon": true,
+    "primary": "winter",
+    "secondary": "heart",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "health"
+      }
+    ],
+    "description": "Arts which quench fires and bring solace to the troubled mind. 'A true adept is never troubled by fire, nor by fever, nor by restless spirit'. (Ambrose Westcott)",
+    "specialties": [
+      "Effective Against Theoplasmic Contamination"
+    ]
+  },
+  {
+    "id": "ragged-crossroads",
+    "name": "Ragged Crossroads",
+    "icon": true,
+    "primary": "edge",
+    "secondary": "winter",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "shapt"
+      }
+    ],
+    "description": "\"To understand why four paths were not taken.\"",
+    "specialties": []
+  },
+  {
+    "id": "ramsund",
+    "name": "Ramsund",
+    "icon": true,
+    "primary": "moth",
+    "secondary": "sky",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "trist"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "chor"
+      }
+    ],
+    "description": "A lively language.",
+    "specialties": []
+  },
+  {
+    "id": "resurgences-and-emergences",
+    "name": "Resurgences & Emergences",
+    "icon": true,
+    "primary": "moth",
+    "secondary": "grail",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "chor"
+      }
+    ],
+    "description": "Birth and death are only directions. Between the two we find a crossroads.",
+    "specialties": [
+      "Effective Against Infestations"
+    ]
+  },
+  {
+    "id": "rhyme-and-remembrance",
+    "name": "Rhyme & Remembrance",
+    "icon": true,
+    "primary": "winter",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "trist"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "ereb"
+      }
+    ],
+    "description": "To speak with the dead; to torment the living; to celebrate both.",
+    "specialties": []
+  },
+  {
+    "id": "rites-of-the-roots",
+    "name": "Rites of the Roots",
+    "icon": true,
+    "primary": "nectar",
+    "secondary": "moth",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "ereb"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "health"
+      }
+    ],
+    "description": "The oldest Hours are the gods-from-blood, who rose from sacrifice. That blood was always spilt on the roots, and the rites of its spilling are still remembered.",
+    "specialties": []
+  },
+  {
+    "id": "sabazine",
+    "name": "Sabazine",
+    "icon": true,
+    "primary": "moth",
+    "secondary": "lantern",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "trist"
+      },
+      {
+        "wisdom": "horomachistry",
+        "element": "fet"
+      }
+    ],
+    "description": "An enigmatic language.",
+    "specialties": []
+  },
+  {
+    "id": "sacra-limiae",
+    "name": "Sacra Limiae",
+    "icon": true,
+    "primary": "moth",
+    "secondary": "sky",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      }
+    ],
+    "description": "The rites of an order of immortals who have tried to remain apart. These rites touch on secrets of Hours of the Mansus - chiefly gods-who-were-flesh and gods-from-Light.",
+    "specialties": [
+      "Effective Against Curses"
+    ]
+  },
+  {
+    "id": "sacra-solis-invicti",
+    "name": "Sacra Solis Invicti",
+    "icon": true,
+    "primary": "lantern",
+    "secondary": "sky",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "fet"
+      },
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      }
+    ],
+    "description": "The rites of the Church of the Unconquered Sun, and certain secrets of the gods-from-Light.",
+    "specialties": [
+      "Effective Against Curses"
+    ]
+  },
+  {
+    "id": "sand-stories",
+    "name": "Sand Stories",
+    "icon": true,
+    "primary": "rose",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "trist"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "shapt"
+      }
+    ],
+    "description": "Of wandering tribes, watchful vagabonds, and winged devourers.",
+    "specialties": []
+  },
+  {
+    "id": "sea-stories",
+    "name": "Sea Stories",
+    "icon": true,
+    "primary": "moon",
+    "secondary": "grail",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "chor"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "shapt"
+      }
+    ],
+    "description": "The sea has always been the widest road.",
+    "specialties": []
+  },
+  {
+    "id": "serpents-and-venoms",
+    "name": "Serpents & Venoms",
+    "icon": true,
+    "primary": "scale",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "shapt"
+      }
+    ],
+    "description": "These are the Mother's neglected children, and we prefer that they pass not through any door.",
+    "specialties": []
+  },
+  {
+    "id": "sharps",
+    "name": "Sharps",
+    "icon": true,
+    "primary": "edge",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "wist"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "shapt"
+      }
+    ],
+    "description": "Knives, dangers, and things out of place.",
+    "specialties": []
+  },
+  {
+    "id": "sickle-and-eclipse",
+    "name": "Sickle & Eclipse",
+    "icon": true,
+    "primary": "edge",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "nyctodromy",
+        "element": "shapt"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "chor"
+      }
+    ],
+    "description": "Salt and silver; balance, necessity and rebuke.",
+    "specialties": [
+      "Effective Against Corruption"
+    ]
+  },
+  {
+    "id": "sights-and-sensations",
+    "name": "Sights & Sensations",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "winter",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "wist"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      }
+    ],
+    "description": "To mix the rarest colours, a merciless detachment is required.",
+    "specialties": []
+  },
+  {
+    "id": "sky-stories",
+    "name": "Sky Stories",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "rose",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "trist"
+      },
+      {
+        "wisdom": "horomachistry",
+        "element": "fet"
+      }
+    ],
+    "description": "The nine winds gossip, and sometimes we can listen.",
+    "specialties": []
+  },
+  {
+    "id": "snow-stories",
+    "name": "Snow Stories",
+    "icon": true,
+    "primary": "winter",
+    "secondary": "moon",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "trist"
+      },
+      {
+        "wisdom": "hushery",
+        "element": "wist"
+      }
+    ],
+    "description": "Of wind, woe, and winter.",
+    "specialties": []
+  },
+  {
+    "id": "solutions-and-separations",
+    "name": "Solutions & Separations",
+    "icon": true,
+    "primary": "moth",
+    "secondary": "knock",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "shapt"
+      }
+    ],
+    "description": "The surgeon plies the knife and the mason plies the chisel. There are subtler tools than either.",
+    "specialties": []
+  },
+  {
+    "id": "spices-and-savours",
+    "name": "Spices & Savours",
+    "icon": true,
+    "primary": "nectar",
+    "secondary": "forge",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      }
+    ],
+    "description": "There is no sacrifice without sustenance.",
+    "specialties": []
+  },
+  {
+    "id": "stitching-and-binding",
+    "name": "Stitching & Binding",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "heart",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "ithastry",
+        "element": "wist"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "chor"
+      }
+    ],
+    "description": "Nothing is entirely broken nor entirely whole - not so long as we have our needles.",
+    "specialties": [
+      "Effective Against Infestations"
+    ]
+  },
+  {
+    "id": "stone-stories",
+    "name": "Stone Stories",
+    "icon": true,
+    "primary": "scale",
+    "secondary": "nectar",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "trist"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "chor"
+      }
+    ],
+    "description": "Of the earth, of its forms, of dwellers living and dead.",
+    "specialties": [
+      "Effective Against Infestations"
+    ]
+  },
+  {
+    "id": "strings-and-songs",
+    "name": "Strings & Songs",
+    "icon": true,
+    "primary": "sky",
+    "secondary": "heart",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "chor"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "shapt"
+      }
+    ],
+    "description": "The harmonies of the lower skies are here reproduced.",
+    "specialties": []
+  },
+  {
+    "id": "surgeries-and-exsanguinations",
+    "name": "Surgeries & Exsanguinations",
+    "icon": true,
+    "primary": "heart",
+    "secondary": "knock",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "hushery",
+        "element": "wist"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "chor"
+      }
+    ],
+    "description": "Surgery entails the flow of blood, and the flow of blood entails purification, but the door also opens the other way.",
+    "specialties": [
+      "Effective Against Infestations"
+    ]
+  },
+  {
+    "id": "the-great-signs-and-the-great-scars",
+    "name": "The Great Signs and the Great Scars",
+    "icon": true,
+    "primary": "grail",
+    "secondary": "knock",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "horomachistry",
+        "element": "fet"
+      },
+      {
+        "wisdom": "hushery",
+        "element": "trist"
+      }
+    ],
+    "description": "Some glyphs are too obscure to reside in any language, but too potent to remain unwritten.",
+    "specialties": []
+  },
+  {
+    "id": "transformations-and-liberations",
+    "name": "Transformations & Liberations",
+    "icon": true,
+    "primary": "forge",
+    "secondary": "moth",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "mettle"
+      },
+      {
+        "wisdom": "ithastry",
+        "element": "phost"
+      }
+    ],
+    "description": "Forge and Moth are less different than we think. Every change is in some way a release.",
+    "specialties": [
+      "Chandlery"
+    ]
+  },
+  {
+    "id": "tridesma-hiera",
+    "name": "Tridesma Hiera",
+    "icon": true,
+    "primary": "moon",
+    "secondary": "grail",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "the-bosk",
+        "element": "ereb"
+      },
+      {
+        "wisdom": "preservation",
+        "element": "health"
+      }
+    ],
+    "description": "The rites of the Sisterhood of the Triple Knot, which include certain mysteries of the dwellers in the Wood behind the World.",
+    "specialties": [
+      "Effective Against Curses"
+    ]
+  },
+  {
+    "id": "vak",
+    "name": "Vak",
+    "icon": true,
+    "primary": "knock",
+    "secondary": "rose",
+    "isLanguage": true,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "chor"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      }
+    ],
+    "description": "A bold language.",
+    "specialties": []
+  },
+  {
+    "id": "watchmans-paradoxes",
+    "name": "Watchman's Paradoxes",
+    "icon": true,
+    "primary": "lantern",
+    "secondary": "sky",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "illumination",
+        "element": "phost"
+      },
+      {
+        "wisdom": "nyctodromy",
+        "element": "fet"
+      }
+    ],
+    "description": "That amber preserves and is preserved by light; that to hatch is not to die; that the Sun.' There is a place behind the world called the Mansus. Deeds that would be impossible in the world are inevitable there. The Watchman, who knows all the ways of the Mansus, also knows how to make these deeds possible in the waking world.",
+    "specialties": []
+  },
+  {
+    "id": "weaving-and-knotworking",
+    "name": "Weaving & Knotworking",
+    "icon": true,
+    "primary": "heart",
+    "secondary": "moth",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "chor"
+      },
+      {
+        "wisdom": "the-bosk",
+        "element": "health"
+      }
+    ],
+    "description": "'Hee hee hee hee hee hee hee hee hee. Hee.' (Valentine Dewulf)",
+    "specialties": []
+  },
+  {
+    "id": "wolf-stories",
+    "name": "Wolf Stories",
+    "icon": true,
+    "primary": "moon",
+    "secondary": "scale",
+    "isLanguage": false,
+    "commit": [
+      {
+        "wisdom": "birdsong",
+        "element": "trist"
+      },
+      {
+        "wisdom": "skolekosophy",
+        "element": "ereb"
+      }
+    ],
+    "description": "\"Sometimes we eat the wolf, and sometimes the wolf eats us.\"",
+    "specialties": []
+  }
+]

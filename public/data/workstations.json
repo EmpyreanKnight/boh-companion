@@ -1,0 +1,2110 @@
+[
+  {
+    "id": "alchemists-glassware",
+    "name": "Alchemist's Glassware",
+    "kind": "Other",
+    "room": "Fludd Gallery",
+    "principles": [
+      "winter",
+      "lantern",
+      "grail",
+      "forge"
+    ],
+    "slots": [
+      [
+        "Leaf",
+        "Root",
+        "Material",
+        "Remains",
+        "Flower"
+      ],
+      [
+        "Liquid",
+        "Fuel"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Fragile vessels in which new substances are quickened."
+  },
+  {
+    "id": "altar-of-the-knot",
+    "name": "Altar of the Knot",
+    "kind": "Shrine",
+    "room": "Our Lady Beneath",
+    "principles": [
+      "moth",
+      "moon",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen",
+        "Material",
+        "Mark",
+        "Co-operative"
+      ],
+      [
+        "Woven",
+        "Memory",
+        "Material",
+        "Flower"
+      ]
+    ],
+    "evolveVia": [
+      "the-bosk"
+    ],
+    "canCraft": true,
+    "description": "History is woven; a knot is a testament."
+  },
+  {
+    "id": "altar-ascite",
+    "name": "Altar: Ascite",
+    "kind": "Shrine",
+    "room": "Chapel Ascite",
+    "principles": [
+      "edge",
+      "scale",
+      "winter",
+      "knock"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Tool",
+        "Omen",
+        "Mark",
+        "Co-operative"
+      ],
+      [
+        "Tool",
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "nyctodromy"
+    ],
+    "canCraft": true,
+    "description": "The Horned-Axe, who opens the way and keeps the threshold, is accounted the last of the Gods-from-Stone."
+  },
+  {
+    "id": "altar-malachite",
+    "name": "Altar: Malachite",
+    "kind": "Shrine",
+    "room": "Chapel Malachite",
+    "principles": [
+      "moth",
+      "nectar",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen",
+        "Sustenance",
+        "Mark",
+        "Co-operative"
+      ],
+      [
+        "Flower",
+        "Memory",
+        "Woven",
+        "Remains",
+        "Root",
+        "Sustenance"
+      ]
+    ],
+    "evolveVia": [
+      "preservation"
+    ],
+    "canCraft": true,
+    "description": "Honey, the blood; copper, the heart; yew, the root."
+  },
+  {
+    "id": "altar-st-tentreto",
+    "name": "Altar: St Tentreto",
+    "kind": "Shrine",
+    "room": "Shrine to St Tentreto",
+    "principles": [
+      "moon",
+      "moth",
+      "knock",
+      "scale"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Memory",
+        "Blank",
+        "Co-operative"
+      ],
+      [
+        "Memory",
+        "Liquid",
+        "Co-operative"
+      ]
+    ],
+    "evolveVia": [
+      "horomachistry",
+      "nyctodromy"
+    ],
+    "canCraft": true,
+    "description": "Saint Tentreto of the Deep Door, who is four times winged: for the Scīmafectra-kind; the Glaeterfleoge-kind; the Thritige-kind; for the kind-within."
+  },
+  {
+    "id": "barbers-chair",
+    "name": "Barber's Chair",
+    "kind": "Other",
+    "room": "Motley Tower: Illopoly's Nook",
+    "principles": [
+      "heart",
+      "grail",
+      "moth"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "preservation"
+    ],
+    "canCraft": true,
+    "description": "No-one emerges unchanged from a barber's chair. Perhaps they'll just be a little bit more beautiful."
+  },
+  {
+    "id": "cage",
+    "name": "Cage",
+    "kind": "Other",
+    "room": "Gullscry Tower: Eales' Room",
+    "principles": [
+      "moth",
+      "moon",
+      "knock",
+      "scale"
+    ],
+    "slots": [
+      [
+        "Co-operative",
+        "Sustenance",
+        "Beverage"
+      ],
+      [
+        "Co-operative",
+        "Sustenance",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Valentine Dewulf put his only friends in cages. Did he close the cage doors?"
+  },
+  {
+    "id": "calicite-altar",
+    "name": "Calicite Altar",
+    "kind": "Shrine",
+    "room": "Chapel Calicite",
+    "principles": [
+      "moon",
+      "heart",
+      "grail"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Co-operative",
+        "Omen",
+        "Mark",
+        "Beverage"
+      ],
+      [
+        "Woven",
+        "Memory",
+        "Flower",
+        "Remains",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [
+      "the-bosk"
+    ],
+    "canCraft": true,
+    "description": "The Red Grail, birth and appetite, denied and condemned by the clergy of the Sun for her temptress-role in the Sun's division. Those of us who oppose Eternity might instead give her thanks and praise. But cautiously."
+  },
+  {
+    "id": "catacombs-altar",
+    "name": "Catacombs Altar",
+    "kind": "Shrine",
+    "room": "Catacombs",
+    "principles": [
+      "moon",
+      "scale",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen",
+        "Remains",
+        "Mark",
+        "Co-operative"
+      ],
+      [
+        "Memory",
+        "Remains"
+      ]
+    ],
+    "evolveVia": [
+      "hushery"
+    ],
+    "canCraft": true,
+    "description": "'BONE IS THE MEMORY THAT DOES NOT DIE.'"
+  },
+  {
+    "id": "chrysalis",
+    "name": "Chrysalis",
+    "kind": "Other",
+    "room": "Cell: ?",
+    "principles": [
+      "nectar",
+      "heart",
+      "scale",
+      "moth"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Liquid"
+      ],
+      [
+        "Memory",
+        "Liquid"
+      ]
+    ],
+    "evolveVia": [
+      "the-bosk"
+    ],
+    "canCraft": true,
+    "description": "Something might emerge, if it could only be assured of a hospitable History. Until that time, its dreams might be audible to one who presses an ear against its trembling, sky-scented warmth."
+  },
+  {
+    "id": "columbic-sarcophagus",
+    "name": "Columbic Sarcophagus",
+    "kind": "Other",
+    "room": "Columbic Crypt",
+    "principles": [
+      "moth",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Remains",
+        "Omen"
+      ],
+      [
+        "Memory",
+        "Remains",
+        "Pigment"
+      ]
+    ],
+    "evolveVia": [
+      "hushery"
+    ],
+    "canCraft": true,
+    "description": "'Sarcophagus': the eater of flesh. No bones remain, but the marble is chilly with power."
+  },
+  {
+    "id": "condignator",
+    "name": "Condignator",
+    "kind": "Other",
+    "room": "Crucible Tower: Interview Laboratory",
+    "principles": [
+      "edge",
+      "forge",
+      "knock",
+      "lantern"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Co-operative",
+        "Fuel",
+        "Memory",
+        "Remains",
+        "Tool"
+      ],
+      [
+        "Soul",
+        "Co-operative",
+        "Fuel",
+        "Memory",
+        "Remains",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [
+      "skolekosophy"
+    ],
+    "canCraft": true,
+    "description": "The terrible heart of the Governor's terrible project."
+  },
+  {
+    "id": "deeplight-corals",
+    "name": "Deeplight Corals",
+    "kind": "Other",
+    "room": "Deeplight Caves",
+    "principles": [
+      "nectar",
+      "rose",
+      "scale",
+      "moon"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "the-bosk"
+    ],
+    "canCraft": true,
+    "description": "Where the wild few traffic with the tides."
+  },
+  {
+    "id": "desk-ambrose",
+    "name": "Desk: Ambrose",
+    "kind": "Desk",
+    "room": "Westcott Room",
+    "principles": [
+      "forge",
+      "knock",
+      "lantern",
+      "sky"
+    ],
+    "slots": [
+      [
+        "Readable",
+        "Blank"
+      ],
+      [
+        "Ink",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Ambrose did most of his work downstairs in the foundry and kitchen, or upstairs in the laboratory that later became the Fludd Gallery, but it was at this desk that he composed 'The Temptations of Architecture' and wrote long cross letters to the Times about the flaws of the British constitution."
+  },
+  {
+    "id": "desk-eva",
+    "name": "Desk: Eva",
+    "kind": "Desk",
+    "room": "Watchman's Tower: First Floor",
+    "principles": [
+      "edge",
+      "grail",
+      "moon",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Readable",
+        "Blank"
+      ],
+      [
+        "Ink",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "A magnificent eighteenth-century secretary desk commissioned for Lady Eva Dewulf, last of the Brancrug Dewulfs."
+  },
+  {
+    "id": "desk-governor",
+    "name": "Desk: Governor",
+    "kind": "Desk",
+    "room": "Crucible Tower: Governor's Office",
+    "principles": [
+      "lantern",
+      "edge",
+      "moth",
+      "forge"
+    ],
+    "slots": [
+      [
+        "Readable",
+        "Blank"
+      ],
+      [
+        "Ink",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "A desk as severe and as practical as Collers himself."
+  },
+  {
+    "id": "desk-natan",
+    "name": "Desk: Natan",
+    "kind": "Desk",
+    "room": "Motley Tower: Regensburg Room",
+    "principles": [
+      "heart",
+      "knock",
+      "rose",
+      "moth"
+    ],
+    "slots": [
+      [
+        "Readable",
+        "Blank"
+      ],
+      [
+        "Ink",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "It's an apothecary's desk, all right, but it dates from at least a hundred years after Natan of Regensburg came here. Of course his son, his grandson, and his great-grand-son were all Natans too…"
+  },
+  {
+    "id": "desk-nonna",
+    "name": "Desk: Nonna",
+    "kind": "Desk",
+    "room": "Chapter House",
+    "principles": [
+      "lantern",
+      "grail",
+      "nectar",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Readable",
+        "Blank"
+      ],
+      [
+        "Ink",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Abbess Nonna, apothecary, scholar, dancer."
+  },
+  {
+    "id": "desk-pale",
+    "name": "Desk: Pale",
+    "kind": "Desk",
+    "room": "Long Tower: Solomon's Study",
+    "principles": [
+      "lantern",
+      "scale",
+      "sky",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Readable",
+        "Blank"
+      ],
+      [
+        "Ink",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Solomon Husher himself commissioned this from Lockwood Fen bog-yew, blackened and half-fossilised by centuries underwater. Here at this desk he wrote his doomy allegory of Winter and its romance with the sun. When he blotted the last word on his manuscript and rose from his work, the timber had turned pale as fresh-cut maple. Or so the story goes."
+  },
+  {
+    "id": "desk-reading-room",
+    "name": "Desk: Reading Room",
+    "kind": "Desk",
+    "room": "Reading Room",
+    "principles": [
+      "heart",
+      "lantern",
+      "moon",
+      "sky"
+    ],
+    "slots": [
+      [
+        "Readable",
+        "Blank"
+      ],
+      [
+        "Ink",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "The bookwheel is a Dewulf heirloom - a gift to Eva Dewulf from her admirer, the adept Franklin Bancroft. The desk and lectern are much more recent. Steel plaques on both read 'TO GERVINUS VAN LAUREN - IN GRATITUDE FOR HIS ASSISTANCE IN THE CLOSING OF THE WINDING STAIR - E. ABNEY-HASTINGS, NOCTURNAL SECRETARY, 1928'"
+  },
+  {
+    "id": "desk-vagabond",
+    "name": "Desk: Vagabond",
+    "kind": "Desk",
+    "room": "Map Room",
+    "principles": [
+      "edge",
+      "knock",
+      "rose",
+      "scale"
+    ],
+    "slots": [
+      [
+        "Readable",
+        "Blank"
+      ],
+      [
+        "Ink",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "An elegant relic, repurposed by Greene for his small and secret war."
+  },
+  {
+    "id": "dispensary",
+    "name": "Dispensary",
+    "kind": "Other",
+    "room": "Motley Tower: Dispensary",
+    "principles": [
+      "nectar",
+      "knock",
+      "moth",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Flower",
+        "Remains"
+      ],
+      [
+        "Fuel",
+        "Liquid",
+        "Remains"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "A well-appointed laboratory for a scholar of unconventional therapies."
+  },
+  {
+    "id": "entrance-hall-fireplace",
+    "name": "Entrance Hall Fireplace",
+    "kind": "Fireplace",
+    "room": "Entrance Hall",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Visitors found the warmth welcome after the battering winds of the bridge crossing."
+  },
+  {
+    "id": "exercise-yard",
+    "name": "Exercise Yard",
+    "kind": "Other",
+    "room": "Gaol Yard",
+    "principles": [
+      "winter",
+      "edge",
+      "heart",
+      "knock"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "ithastry"
+    ],
+    "canCraft": true,
+    "description": "The prisoners in the Cucurbit were permitted to grow neither too strong, nor too weak. Here they were subjected to an exacting regime which developed both their bodies and their souls, in accordance with the Governor's designs."
+  },
+  {
+    "id": "foundry-workstation",
+    "name": "Foundry (Workstation)",
+    "kind": "Other",
+    "room": "Foundry",
+    "principles": [
+      "knock",
+      "edge",
+      "scale",
+      "forge"
+    ],
+    "slots": [
+      [
+        "Glass",
+        "Metal",
+        "Stone"
+      ],
+      [
+        "Liquid",
+        "Fuel"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Even metal cannot resist these suasions."
+  },
+  {
+    "id": "governors-phonograph",
+    "name": "Governor's Phonograph",
+    "kind": "Other",
+    "room": "Crucible Tower: Governor's Quarters",
+    "principles": [
+      "rose",
+      "scale",
+      "heart",
+      "sky"
+    ],
+    "slots": [
+      [
+        "Phonograph Record"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Collers generally preferred his devices to be as gleamingly modern as possible, but he preferred phonograph cylinders over the newer gramophone records. The cylinder, like the records, exemplified ingenuity and reliably repeated the desired sounds, but they also could be consigned neatly to a cubbyhole without causing any sort of fuss."
+  },
+  {
+    "id": "great-clock",
+    "name": "Great Clock",
+    "kind": "Other",
+    "room": "Tower Clock",
+    "principles": [
+      "forge",
+      "knock",
+      "sky",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "horomachistry"
+    ],
+    "canCraft": true,
+    "description": "Every flame has its fuel, and every tick has its tock."
+  },
+  {
+    "id": "guest-bed-adept-cell",
+    "name": "Guest Bed: Adept Cell",
+    "kind": "Bed",
+    "room": "Cell: Adepts",
+    "principles": [
+      "scale",
+      "lantern",
+      "winter",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "A bed stamped with sigils to discourage access to the Mansus in dream."
+  },
+  {
+    "id": "guest-bed-hermit",
+    "name": "Guest Bed: Hermit",
+    "kind": "Bed",
+    "room": "Hermit Cell",
+    "principles": [
+      "scale",
+      "moon",
+      "sky",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "A snug nook where absolutely nobody will bother you."
+  },
+  {
+    "id": "guest-bed-infirmary",
+    "name": "Guest Bed: Infirmary",
+    "kind": "Bed",
+    "room": "Infirmary",
+    "principles": [
+      "nectar",
+      "edge",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Clean white sheets and the unmistakable military ping of a steel bed-frame."
+  },
+  {
+    "id": "guest-bed-librarians-quarters",
+    "name": "Guest Bed: Librarian's Quarters",
+    "kind": "Bed",
+    "room": "Librarian's Quarters",
+    "principles": [
+      "lantern",
+      "rose",
+      "sky",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Librarians are prone to back-ache, and the mattress here has always been a hard one, even in Westcott's time."
+  },
+  {
+    "id": "guest-bed-lodge",
+    "name": "Guest Bed: Lodge",
+    "kind": "Bed",
+    "room": "Keeper's Lodge",
+    "principles": [
+      "scale",
+      "forge",
+      "knock",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Stout, rustic, snug."
+  },
+  {
+    "id": "guest-bed-long-cell",
+    "name": "Guest Bed: Long Cell",
+    "kind": "Bed",
+    "room": "Cell: Long",
+    "principles": [
+      "scale",
+      "lantern",
+      "edge",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "A bunk-bed constructed for two immortals who could neither be together, nor apart."
+  },
+  {
+    "id": "guest-bed-motley",
+    "name": "Guest Bed: Motley",
+    "kind": "Bed",
+    "room": "Motley Tower: Regensburg Room",
+    "principles": [
+      "forge",
+      "rose",
+      "moth",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "An exile slept here, long ago."
+  },
+  {
+    "id": "guest-bed-pale",
+    "name": "Guest Bed: Pale",
+    "kind": "Bed",
+    "room": "Pale Chamber",
+    "principles": [
+      "grail",
+      "sky",
+      "winter",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Seven generations of Dewulfs slept here… as did Kitty Mazarine, who never cared much for tradition."
+  },
+  {
+    "id": "guest-bed-servants-quarters",
+    "name": "Guest Bed: Servant's Quarters",
+    "kind": "Bed",
+    "room": "Servants' Quarters - North",
+    "principles": [
+      "forge",
+      "nectar",
+      "scale",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Narrow, but comfortable."
+  },
+  {
+    "id": "guest-bed-severn-chamber",
+    "name": "Guest Bed: Severn Chamber",
+    "kind": "Bed",
+    "room": "Severn Chamber",
+    "principles": [
+      "grail",
+      "moon",
+      "rose",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "For those who prefer their mattresses soft."
+  },
+  {
+    "id": "guest-bed-solomon",
+    "name": "Guest Bed: Solomon",
+    "kind": "Bed",
+    "room": "Long Tower: Solomon's Quarters",
+    "principles": [
+      "rose",
+      "lantern",
+      "winter",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Julian Coseley and Solomon Husher - both great sages of Winter - slept in this bed. Although not simultaneously. No-one, the story runs, has ever managed a serene night's sleep in it since."
+  },
+  {
+    "id": "guest-bed-violet-chamber",
+    "name": "Guest Bed: Violet Chamber",
+    "kind": "Bed",
+    "room": "Violet Chamber",
+    "principles": [
+      "grail",
+      "knock",
+      "moth",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Restorative",
+        "Beverage"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Six generations of Dewulf heirs were born in this room. It would have been seven, but Hafren Waters had the ill grace to give birth to Baron Walter in (family legend has it) a cow-byre outside Kerisham."
+  },
+  {
+    "id": "gullscry-workbench",
+    "name": "Gullscry Workbench",
+    "kind": "Workbench",
+    "room": "Gullscry Tower: Valentine's Room",
+    "principles": [
+      "forge",
+      "sky",
+      "winter",
+      "knock"
+    ],
+    "slots": [
+      [
+        "Made of Wood",
+        "Wood",
+        "Woven",
+        "Remains",
+        "Tool",
+        "Ductile"
+      ],
+      [
+        "Wood",
+        "Tool",
+        "Remains",
+        "Ductile",
+        "Made of Wood"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Labour solemnly."
+  },
+  {
+    "id": "hall-of-division-fireplace",
+    "name": "Hall of Division Fireplace",
+    "kind": "Fireplace",
+    "room": "Hall of Division",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "The firelight reflections in the mirrors are difficult to describe without risking a foray into pentameter."
+  },
+  {
+    "id": "hearth-hall-of-voices",
+    "name": "Hearth: Hall of Voices",
+    "kind": "Other",
+    "room": "Hall of Voices",
+    "principles": [
+      "moon",
+      "edge",
+      "nectar",
+      "grail"
+    ],
+    "slots": [
+      [
+        "Leaf",
+        "Beverage",
+        "Flower",
+        "Fuel",
+        "Root",
+        "Cooking Ingredient",
+        "Sustenance"
+      ],
+      [
+        "Kitchenware",
+        "Knife"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Here, the priestesses prepared those meals which they would not, or could not, entrust to their servants."
+  },
+  {
+    "id": "hermits-stove",
+    "name": "Hermit's Stove",
+    "kind": "Fireplace",
+    "room": "Hermit Cell",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Grumbling like an old man."
+  },
+  {
+    "id": "hermits-workbench",
+    "name": "Hermit's Workbench",
+    "kind": "Workbench",
+    "room": "Hermit Cell",
+    "principles": [
+      "forge",
+      "sky",
+      "scale",
+      "moon"
+    ],
+    "slots": [
+      [
+        "Stone",
+        "Made of Wood",
+        "Woven",
+        "Remains",
+        "Tool",
+        "Ductile"
+      ],
+      [
+        "Ductile",
+        "Tool",
+        "Remains",
+        "Stone",
+        "Made of Wood"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Labour in solitude."
+  },
+  {
+    "id": "infirmary-fireplace",
+    "name": "Infirmary Fireplace",
+    "kind": "Fireplace",
+    "room": "Infirmary",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "A welcome warmth."
+  },
+  {
+    "id": "instrument-bells",
+    "name": "Instrument: Bells",
+    "kind": "Instrument",
+    "room": "Bells",
+    "principles": [
+      "sky",
+      "forge"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Sound",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "ithastry"
+    ],
+    "canCraft": true,
+    "description": "These are the sounds which may answer thunder."
+  },
+  {
+    "id": "instrument-grand-piano",
+    "name": "Instrument: Grand Piano",
+    "kind": "Instrument",
+    "room": "Mazarine Room",
+    "principles": [
+      "sky",
+      "rose"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Sound",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "'Simplicity is the final achievement. After one has played a vast quantity of notes and more notes, it is simplicity that emerges as the crowning reward of art.' (Fryderyk Chopin)"
+  },
+  {
+    "id": "instrument-hallowed-drum",
+    "name": "Instrument: Hallowed Drum",
+    "kind": "Instrument",
+    "room": "Mazarine Room",
+    "principles": [
+      "sky",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Sound",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "preservation"
+    ],
+    "canCraft": true,
+    "description": "'Celebrate the god of joy - with your own joy!' - The Bacchae [The skin of these drums was the skin of something rare.]"
+  },
+  {
+    "id": "instrument-hunters-harp",
+    "name": "Instrument: Hunter's Harp",
+    "kind": "Instrument",
+    "room": "Windlit Gallery",
+    "principles": [
+      "sky",
+      "scale"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Sound",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "nyctodromy"
+    ],
+    "canCraft": true,
+    "description": "This was once strung with yeth-hound gut. Those strings must be long gone, but there's still an unusual savagery to the harp's notes."
+  },
+  {
+    "id": "instrument-organ",
+    "name": "Instrument: Organ",
+    "kind": "Instrument",
+    "room": "Nave of the Abbey Church",
+    "principles": [
+      "sky",
+      "forge"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Sound",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "'One must practice slowly, then more slowly, and finally slowly.' (Camille Saint-Saens)"
+  },
+  {
+    "id": "instrument-piano",
+    "name": "Instrument: Piano",
+    "kind": "Instrument",
+    "room": "Servants' Hall",
+    "principles": [
+      "sky",
+      "moth"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Sound",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "A gift from Kitty Mazarine, who would sometimes pop by of an evening to sing. But her successor Solomon, never one for music, disliked the way its notes would drift up the stairs to the Reading Room, and forbade the staff to play their piano before sunset."
+  },
+  {
+    "id": "instrument-quivering-double-bass",
+    "name": "Instrument: Quivering Double Bass",
+    "kind": "Instrument",
+    "room": "Mazarine Room",
+    "principles": [
+      "sky",
+      "grail"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Sound",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "birdsong"
+    ],
+    "canCraft": true,
+    "description": "'The better it gets, the fewer of us know it.' - Ray Brown [This instrument is possessed of a restless energy.]"
+  },
+  {
+    "id": "instrument-sunset-harp",
+    "name": "Instrument: Sunset Harp",
+    "kind": "Instrument",
+    "room": "Mazarine Room",
+    "principles": [
+      "sky",
+      "moon"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Sound",
+        "Omen"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "birdsong"
+    ],
+    "canCraft": true,
+    "description": "I have been a string in a harp; disguised for nine years in water, in the foam of the sea.' - The Battle of the Trees [This harp is strung with something that glimmers redly as waves at sunset.]"
+  },
+  {
+    "id": "kitchen-range-gaol",
+    "name": "Kitchen Range: Gaol",
+    "kind": "Kitchen Range",
+    "room": "Gaol Kitchen",
+    "principles": [
+      "scale",
+      "lantern",
+      "nectar",
+      "grail"
+    ],
+    "slots": [
+      [
+        "Leaf",
+        "Beverage",
+        "Flower",
+        "Fuel",
+        "Root",
+        "Cooking Ingredient",
+        "Sustenance"
+      ],
+      [
+        "Kitchenware",
+        "Knife"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "The food served in Brancrug Gaol was unexpectedly hearty and tasty - in keeping with Collers' more humane theories of rehabilitation."
+  },
+  {
+    "id": "kitchen-range-servants",
+    "name": "Kitchen Range: Servants",
+    "kind": "Kitchen Range",
+    "room": "Kitchen",
+    "principles": [
+      "scale",
+      "heart",
+      "nectar",
+      "grail"
+    ],
+    "slots": [
+      [
+        "Leaf",
+        "Beverage",
+        "Flower",
+        "Fuel",
+        "Root",
+        "Cooking Ingredient",
+        "Sustenance"
+      ],
+      [
+        "Kitchenware",
+        "Knife"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "It's good luck for the villagers to bring little gifts of food to the Librarian. That's already become a tradition. But sometimes the Librarian wants a hot meal, and, these days, the Librarian is the only entity in the house that can cook."
+  },
+  {
+    "id": "librarians-quarters-fireplace",
+    "name": "Librarian's Quarters Fireplace",
+    "kind": "Fireplace",
+    "room": "Librarian's Quarters",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Even when the wind buffets at the windows, the fire in the hearth keeps the room cosy."
+  },
+  {
+    "id": "loading-dock-crane",
+    "name": "Loading Dock Crane",
+    "kind": "Other",
+    "room": "Loading Dock",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Long ago, this was the route by which provisions entered the gaol, and by which prisoners failed to escape. [Discard objects here, or release beasts.]"
+  },
+  {
+    "id": "lodge-fireplace",
+    "name": "Lodge Fireplace",
+    "kind": "Fireplace",
+    "room": "Keeper's Lodge",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Fire always accepts gifts. And boils the kettle for tea."
+  },
+  {
+    "id": "loggia-prospect",
+    "name": "Loggia Prospect",
+    "kind": "Prospect",
+    "room": "Gullscry Loggia",
+    "principles": [
+      "moon",
+      "rose"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Co-operative",
+        "Blank"
+      ],
+      [
+        "Memory",
+        "Pigment"
+      ]
+    ],
+    "evolveVia": [
+      "hushery"
+    ],
+    "canCraft": true,
+    "description": "Take counsel with the seas."
+  },
+  {
+    "id": "long-tower-study-fireplace",
+    "name": "Long Tower Study Fireplace",
+    "kind": "Fireplace",
+    "room": "Long Tower: Solomon's Study",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "The fireplace doesn't exactly warm the room, but it keeps the chill more or less at bay."
+  },
+  {
+    "id": "loom",
+    "name": "Loom",
+    "kind": "Other",
+    "room": "Servants' Hall",
+    "principles": [
+      "heart",
+      "moth",
+      "nectar",
+      "rose"
+    ],
+    "slots": [
+      [
+        "Fabric and Fibre"
+      ],
+      [
+        "Fabric and Fibre"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "And there the golden threads they wove - and in the Moon's House, fast they tied them. (From the Lay of Helgi Hundingsbane)"
+  },
+  {
+    "id": "mirrors",
+    "name": "Mirrors",
+    "kind": "Other",
+    "room": "Hall of Division",
+    "principles": [
+      "grail",
+      "knock",
+      "winter",
+      "lantern"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Memory",
+        "Light"
+      ]
+    ],
+    "evolveVia": [
+      "nyctodromy"
+    ],
+    "canCraft": true,
+    "description": "It was often said of Lady Eva, later, that she was always good with mirrors."
+  },
+  {
+    "id": "necropsy-table",
+    "name": "Necropsy Table",
+    "kind": "Other",
+    "room": "Examination Room",
+    "principles": [
+      "scale",
+      "heart",
+      "knock",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Carcass",
+        "Tool",
+        "Material",
+        "Remains"
+      ],
+      [
+        "Carcass",
+        "Tool",
+        "Material",
+        "Remains"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "A hygienic place for scrupulous examination of whatever might remain."
+  },
+  {
+    "id": "nocturnary",
+    "name": "Nocturnary",
+    "kind": "Other",
+    "room": "Night Gallery",
+    "principles": [
+      "winter",
+      "nectar",
+      "grail",
+      "moon"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Memory",
+        "Liquid",
+        "Remains",
+        "Omen"
+      ]
+    ],
+    "evolveVia": [
+      "skolekosophy"
+    ],
+    "canCraft": true,
+    "description": "Constructed by Thirza for her own murky purposes; maintained by the Suppression Bureau for its murkier ones; and available, now, for mine."
+  },
+  {
+    "id": "oubliette-containment",
+    "name": "Oubliette Containment",
+    "kind": "Other",
+    "room": "Oubliette",
+    "principles": [
+      "winter",
+      "edge",
+      "lantern",
+      "forge"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Gem",
+        "Memory",
+        "Remains",
+        "Metal",
+        "Fuel"
+      ]
+    ],
+    "evolveVia": [
+      "ithastry"
+    ],
+    "canCraft": true,
+    "description": "Fire, iron, dusk, air, all wrenched into a configuration designed to confine something very dangerous. That something is long-gone, but the configuration still has its uses."
+  },
+  {
+    "id": "pale-chamber-fireplace",
+    "name": "Pale Chamber Fireplace",
+    "kind": "Fireplace",
+    "room": "Pale Chamber",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "Fire always accepts gifts. And boils the kettle for tea."
+  },
+  {
+    "id": "practic-garden-dummy",
+    "name": "Practic Garden Dummy",
+    "kind": "Other",
+    "room": "Practic Garden",
+    "principles": [
+      "edge",
+      "scale",
+      "heart",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "illumination"
+    ],
+    "canCraft": true,
+    "description": "Since the Napoleonic War, he has been punched, thumped, stabbed and shot by amateurs, by professionals, and by tipsy guests after dinner. No wonder he looks so cross."
+  },
+  {
+    "id": "practice-equipment",
+    "name": "Practice Equipment",
+    "kind": "Other",
+    "room": "Duelling Hall",
+    "principles": [
+      "edge",
+      "scale",
+      "lantern",
+      "heart"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [
+      "illumination"
+    ],
+    "canCraft": true,
+    "description": "Still the best place in the House to get hurt."
+  },
+  {
+    "id": "projector",
+    "name": "Projector",
+    "kind": "Other",
+    "room": "Patients' Lounge",
+    "principles": [
+      "lantern",
+      "forge",
+      "grail",
+      "sky"
+    ],
+    "slots": [
+      [
+        "Reel of Film"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Governor Collers had this installed in the 20s, as a treat for prisoners allowed to recover in the infirmary. Or so he said. Rumour had it he was a secret Keaton fan, and didn't want to motor all the way up to Exeter to see the latest feature."
+  },
+  {
+    "id": "pumps-lower-level",
+    "name": "Pumps: Lower Level",
+    "kind": "Other",
+    "room": "Lower Pump Room",
+    "principles": [
+      "forge",
+      "knock"
+    ],
+    "slots": [
+      [
+        "Liquid",
+        "Fuel"
+      ],
+      [
+        "Metal"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "These machines are of different and newer manufacture than the ones above. They include something like a generator, too. But they're in even worse condition. I'll need to provide suitable materials and fuel - and I'll need Scholar-level of Forge to jury-rig them."
+  },
+  {
+    "id": "pumps-upper-level",
+    "name": "Pumps: Upper Level",
+    "kind": "Other",
+    "room": "Upper Pump Room",
+    "principles": [
+      "forge",
+      "knock"
+    ],
+    "slots": [
+      [
+        "Liquid",
+        "Fuel"
+      ],
+      [
+        "Metal"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "The Curia installed these pumps to drain the lower levels - but they installed them in the late nineteenth century. I'll need to provide suitable materials and fuel - and I'll need a Prentice-level of Forge to jury-rig them."
+  },
+  {
+    "id": "refectory-fireplace",
+    "name": "Refectory Fireplace",
+    "kind": "Fireplace",
+    "room": "Refectory",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "The fire mutters companionably in the grate."
+  },
+  {
+    "id": "rowenarium-workstation",
+    "name": "Rowenarium (Workstation)",
+    "kind": "Other",
+    "room": "Rowenarium (Room)",
+    "principles": [
+      "rose",
+      "winter",
+      "grail",
+      "moth"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Co-operative",
+        "Remains",
+        "Omen"
+      ],
+      [
+        "Memory",
+        "Key",
+        "Remains",
+        "Pigment"
+      ]
+    ],
+    "evolveVia": [
+      "skolekosophy"
+    ],
+    "canCraft": true,
+    "description": "Rowena the Ligeian, protectress of the House, holds the Mare's Key of worm-stone, which opens the door to Nowhere. Now and then, she has lent it unwisely. But only once has she lent it to Ys."
+  },
+  {
+    "id": "sacred-spring-workstation",
+    "name": "Sacred Spring (Workstation)",
+    "kind": "Other",
+    "room": "Sacred Spring",
+    "principles": [
+      "nectar",
+      "grail",
+      "moon"
+    ],
+    "slots": [
+      [
+        "Soul"
+      ],
+      [
+        "Memory",
+        "Remains",
+        "Pigment"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Here a pilgrim would bathe, make offerings, or drown, as they might prefer."
+  },
+  {
+    "id": "sculptors-bench",
+    "name": "Sculptor's Bench",
+    "kind": "Other",
+    "room": "Crucible Tower: Governor's Quarters",
+    "principles": [
+      "forge",
+      "lantern",
+      "scale",
+      "knock"
+    ],
+    "slots": [
+      [
+        "Stone",
+        "Made of Wood",
+        "Woven",
+        "Remains",
+        "Tool",
+        "Ductile"
+      ],
+      [
+        "Ductile",
+        "Tool",
+        "Remains",
+        "Stone",
+        "Made of Wood"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Labour seriously."
+  },
+  {
+    "id": "servants-hall-fireplace",
+    "name": "Servants' Hall Fireplace",
+    "kind": "Fireplace",
+    "room": "Servants' Hall",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "The coals glow."
+  },
+  {
+    "id": "shrine-st-januarius",
+    "name": "Shrine: St Januarius",
+    "kind": "Shrine",
+    "room": "Atrium",
+    "principles": [
+      "rose",
+      "sky",
+      "heart",
+      "knock"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen",
+        "Mark",
+        "Light",
+        "Co-operative"
+      ],
+      [
+        "Fuel",
+        "Memory",
+        "Pigment",
+        "Light"
+      ]
+    ],
+    "evolveVia": [
+      "nyctodromy"
+    ],
+    "canCraft": true,
+    "description": "St Januarius is the Name which was wounded; the Name of exceptions; the little god at the door."
+  },
+  {
+    "id": "shrine-the-chancel",
+    "name": "Shrine: the Chancel",
+    "kind": "Shrine",
+    "room": "Chancel of the Abbey Church",
+    "principles": [
+      "moth",
+      "winter",
+      "edge"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen",
+        "Mark",
+        "Light",
+        "Co-operative"
+      ],
+      [
+        "Fuel",
+        "Memory",
+        "Pigment",
+        "Light"
+      ]
+    ],
+    "evolveVia": [
+      "horomachistry"
+    ],
+    "canCraft": true,
+    "description": "We do not name these Hours, but we acknowledge that together they are the Chancel, the Cruciate, and the Rode."
+  },
+  {
+    "id": "shrine-the-madrugad",
+    "name": "Shrine: the Madrugad",
+    "kind": "Shrine",
+    "room": "Glorious Stair",
+    "principles": [
+      "sky",
+      "winter",
+      "forge"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen",
+        "Mark",
+        "Light",
+        "Co-operative"
+      ],
+      [
+        "Fuel",
+        "Memory",
+        "Pigment",
+        "Light"
+      ]
+    ],
+    "evolveVia": [
+      "ithastry"
+    ],
+    "canCraft": true,
+    "description": "The Madrugad is the Hour which cannot be unbalanced; which quells and quiets; which comes before the sun."
+  },
+  {
+    "id": "shrine-the-watchman",
+    "name": "Shrine: the Watchman",
+    "kind": "Shrine",
+    "room": "Radiant Stair",
+    "principles": [
+      "rose",
+      "sky",
+      "lantern"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen",
+        "Mark",
+        "Light",
+        "Co-operative"
+      ],
+      [
+        "Pigment",
+        "Lens",
+        "Gem",
+        "Memory",
+        "Light",
+        "Fuel"
+      ]
+    ],
+    "evolveVia": [
+      "illumination"
+    ],
+    "canCraft": true,
+    "description": "The Watchman is the Hour which navigates; which illuminates; which is not compassionate"
+  },
+  {
+    "id": "solar-altar",
+    "name": "Solar Altar",
+    "kind": "Shrine",
+    "room": "Nave of the Abbey Church",
+    "principles": [
+      "lantern",
+      "sky",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Omen",
+        "Mark",
+        "Light",
+        "Co-operative"
+      ],
+      [
+        "Pigment",
+        "Lens",
+        "Gem",
+        "Memory",
+        "Light",
+        "Fuel"
+      ]
+    ],
+    "evolveVia": [
+      "hushery"
+    ],
+    "canCraft": true,
+    "description": "The Sun-in-Splendour is the Hour which was sundered; the Hour which is not conquered; the Hour from which proceed all the other Hours of the day. Or so the Church teaches."
+  },
+  {
+    "id": "spire-prospect",
+    "name": "Spire Prospect",
+    "kind": "Prospect",
+    "room": "Spire",
+    "principles": [
+      "moth",
+      "sky"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Co-operative",
+        "Blank"
+      ],
+      [
+        "Memory",
+        "Pigment"
+      ]
+    ],
+    "evolveVia": [
+      "hushery"
+    ],
+    "canCraft": true,
+    "description": "Take counsel with the skies."
+  },
+  {
+    "id": "staff-room-stove",
+    "name": "Staff-Room Stove",
+    "kind": "Fireplace",
+    "room": "Staff-Room",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "A quiet little furnace."
+  },
+  {
+    "id": "telescope",
+    "name": "Telescope",
+    "kind": "Other",
+    "room": "Watchman's Tower: Observatory",
+    "principles": [
+      "forge",
+      "moon",
+      "rose",
+      "sky"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Lens",
+        "Tool"
+      ],
+      [
+        "Lens",
+        "Memory",
+        "Tool"
+      ]
+    ],
+    "evolveVia": [
+      "horomachistry"
+    ],
+    "canCraft": true,
+    "description": "The scholars of the House watched the courses of the stars to determine their pasts and understand their future."
+  },
+  {
+    "id": "thirzas-phonograph",
+    "name": "Thirza's Phonograph",
+    "kind": "Other",
+    "room": "Severn Chamber",
+    "principles": [
+      "knock",
+      "moon",
+      "heart",
+      "sky"
+    ],
+    "slots": [
+      [
+        "Phonograph Record"
+      ],
+      [
+        "Memory"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Thirza Blake invited a nameless friend (or according to Brancrug tradition, her sister) to Hush House to recover from an illness. Thirza was uncharacteristically secretive about the whole business, perhaps because her own solicitude embarrassed her. She cooked her guest's meals herself; read to her in the afternoons; and purchased this phonograph so her guest could listen to Viennese opera."
+  },
+  {
+    "id": "tower-top-prospect",
+    "name": "Tower-Top Prospect",
+    "kind": "Prospect",
+    "room": "Gullscry Tower: Summit",
+    "principles": [
+      "sky",
+      "winter"
+    ],
+    "slots": [
+      [
+        "Soul",
+        "Co-operative",
+        "Blank"
+      ],
+      [
+        "Memory",
+        "Pigment"
+      ]
+    ],
+    "evolveVia": [
+      "hushery"
+    ],
+    "canCraft": true,
+    "description": "Remember what has passed."
+  },
+  {
+    "id": "westcott-room-fireplace",
+    "name": "Westcott Room Fireplace",
+    "kind": "Fireplace",
+    "room": "Westcott Room",
+    "principles": [],
+    "slots": [],
+    "evolveVia": [],
+    "canCraft": false,
+    "description": "This is the only place in the House where fire was permitted near books."
+  },
+  {
+    "id": "windlit-workbench",
+    "name": "Windlit Workbench",
+    "kind": "Workbench",
+    "room": "Windlit Gallery",
+    "principles": [
+      "forge",
+      "lantern",
+      "heart",
+      "knock"
+    ],
+    "slots": [
+      [
+        "Made of Wood",
+        "Wood",
+        "Woven",
+        "Remains",
+        "Tool",
+        "Ductile"
+      ],
+      [
+        "Wood",
+        "Tool",
+        "Remains",
+        "Ductile",
+        "Made of Wood"
+      ]
+    ],
+    "evolveVia": [],
+    "canCraft": true,
+    "description": "Labour quietly."
+  }
+]

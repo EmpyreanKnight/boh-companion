@@ -1,0 +1,3498 @@
+[
+  {
+    "id": "labhitic-tincture--edge-prentice",
+    "result": "labhitic-tincture",
+    "resultName": "Labhitic Tincture",
+    "principle": "edge",
+    "tier": "prentice",
+    "skills": [
+      "disciplines-of-the-hammer",
+      "edicts-martial",
+      "ragged-crossroads",
+      "sickle-and-eclipse"
+    ],
+    "resultPrinciples": {
+      "edge": 2,
+      "lantern": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "torgues-cleansing--edge-prentice",
+    "result": "torgues-cleansing",
+    "resultName": "Torgue's Cleansing",
+    "principle": "edge",
+    "tier": "prentice",
+    "skills": [
+      "auroral-contemplations",
+      "disciplines-of-the-scar",
+      "meniscate-reflections",
+      "sharps"
+    ],
+    "resultPrinciples": {
+      "edge": 2
+    },
+    "resultAspects": [
+      "Memory"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "perinculate--edge-scholar",
+    "result": "perinculate",
+    "resultName": "Perinculate",
+    "principle": "edge",
+    "tier": "scholar",
+    "skills": [
+      "disciplines-of-the-scar",
+      "edicts-martial",
+      "sickle-and-eclipse"
+    ],
+    "resultPrinciples": {
+      "edge": 4,
+      "grail": 1,
+      "scale": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "aspect": "Leaf",
+      "label": "Leaf"
+    }
+  },
+  {
+    "id": "winning-move--edge-scholar",
+    "result": "winning-move",
+    "resultName": "Winning Move",
+    "principle": "edge",
+    "tier": "scholar",
+    "skills": [
+      "auroral-contemplations",
+      "disciplines-of-the-hammer",
+      "meniscate-reflections",
+      "ragged-crossroads",
+      "sharps"
+    ],
+    "resultPrinciples": {
+      "edge": 3
+    },
+    "resultAspects": [
+      "Memory",
+      "Evolve via Illumination"
+    ],
+    "ingredient": {
+      "aspect": "Memory",
+      "label": "Memory"
+    }
+  },
+  {
+    "id": "serpent-milk--edge-keeper",
+    "result": "serpent-milk",
+    "resultName": "Serpent-Milk",
+    "principle": "edge",
+    "tier": "keeper",
+    "skills": [
+      "disciplines-of-the-scar",
+      "meniscate-reflections",
+      "sharps",
+      "sickle-and-eclipse"
+    ],
+    "resultPrinciples": {
+      "edge": 6,
+      "knock": 2,
+      "scale": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "perinculate",
+      "label": "Perinculate"
+    }
+  },
+  {
+    "id": "invincible-audacity--edge-keeper",
+    "result": "invincible-audacity",
+    "resultName": "Invincible Audacity",
+    "principle": "edge",
+    "tier": "keeper",
+    "skills": [
+      "auroral-contemplations",
+      "disciplines-of-the-hammer",
+      "edicts-martial"
+    ],
+    "resultPrinciples": {
+      "edge": 6,
+      "forge": 3,
+      "lantern": 3
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Evolve via Illumination",
+      "Evolve via Ithastry"
+    ],
+    "ingredient": {
+      "item": "winning-move",
+      "label": "Winning Move"
+    }
+  },
+  {
+    "id": "bitterblack-salts--forge-prentice",
+    "result": "bitterblack-salts",
+    "resultName": "Bitterblack Salts",
+    "principle": "forge",
+    "tier": "prentice",
+    "skills": [
+      "anbary-and-lapidary",
+      "bells-and-brazieries",
+      "disciplines-of-the-hammer",
+      "door-and-wall",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "forge": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material",
+      "Pigment"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "westcotts-compounds--forge-prentice",
+    "result": "westcotts-compounds",
+    "resultName": "Westcott's Compounds",
+    "principle": "forge",
+    "tier": "prentice",
+    "skills": [
+      "meniscate-reflections",
+      "pyroglyphics",
+      "spices-and-savours"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "grail": 1,
+      "lantern": 1,
+      "moth": 1,
+      "nectar": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "iotic-essence--forge-scholar",
+    "result": "iotic-essence",
+    "resultName": "Iotic Essence",
+    "principle": "forge",
+    "tier": "scholar",
+    "skills": [
+      "anbary-and-lapidary",
+      "meniscate-reflections",
+      "pyroglyphics",
+      "spices-and-savours",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "forge": 5,
+      "lantern": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment",
+      "Fuel"
+    ],
+    "ingredient": {
+      "aspect": "Liquid",
+      "label": "Liquid"
+    }
+  },
+  {
+    "id": "wire-orichalcum--forge-scholar",
+    "result": "wire-orichalcum",
+    "resultName": "Wire (Orichalcum)",
+    "principle": "forge",
+    "tier": "scholar",
+    "skills": [
+      "bells-and-brazieries",
+      "disciplines-of-the-hammer",
+      "door-and-wall"
+    ],
+    "resultPrinciples": {
+      "forge": 4,
+      "lantern": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material",
+      "Metal"
+    ],
+    "ingredient": {
+      "aspect": "Metal",
+      "label": "Metal"
+    }
+  },
+  {
+    "id": "azoth--forge-keeper",
+    "result": "azoth",
+    "resultName": "Azoth",
+    "principle": "forge",
+    "tier": "keeper",
+    "skills": [
+      "bells-and-brazieries",
+      "disciplines-of-the-hammer",
+      "door-and-wall",
+      "meniscate-reflections",
+      "purifications-and-exaltations",
+      "pyroglyphics"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "knock": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid"
+    ],
+    "ingredient": {
+      "item": "wire-orichalcum",
+      "label": "Wire (Orichalcum)"
+    }
+  },
+  {
+    "id": "azoth--forge-keeper~2",
+    "result": "azoth",
+    "resultName": "Azoth",
+    "principle": "forge",
+    "tier": "keeper",
+    "skills": [
+      "spices-and-savours"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "knock": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid"
+    ],
+    "ingredient": {
+      "item": "honeyscar-jasmine",
+      "label": "Honeyscar Jasmine"
+    }
+  },
+  {
+    "id": "iotic-essence--forge-keeper",
+    "result": "iotic-essence",
+    "resultName": "Iotic Essence",
+    "principle": "forge",
+    "tier": "keeper",
+    "skills": [
+      "disciplines-of-the-hammer",
+      "meniscate-reflections",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "forge": 5,
+      "lantern": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment",
+      "Fuel"
+    ],
+    "ingredient": {
+      "item": "bitterblack-salts",
+      "label": "Bitterblack Salts"
+    }
+  },
+  {
+    "id": "iotic-essence--forge-keeper~2",
+    "result": "iotic-essence",
+    "resultName": "Iotic Essence",
+    "principle": "forge",
+    "tier": "keeper",
+    "skills": [
+      "disciplines-of-the-hammer",
+      "meniscate-reflections",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "forge": 5,
+      "lantern": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment",
+      "Fuel"
+    ],
+    "ingredient": {
+      "item": "xanthotic-essence",
+      "label": "Xanthotic Essence"
+    }
+  },
+  {
+    "id": "orpiment-exultant--forge-keeper",
+    "result": "orpiment-exultant",
+    "resultName": "Orpiment Exultant",
+    "principle": "forge",
+    "tier": "keeper",
+    "skills": [
+      "anbary-and-lapidary",
+      "inks-of-power",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "forge": 7,
+      "heart": 7,
+      "sky": 7
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink",
+      "Encaustum Terminale"
+    ],
+    "ingredient": {
+      "item": "iotic-essence",
+      "label": "Iotic Essence"
+    }
+  },
+  {
+    "id": "witching-tisane--grail-prentice",
+    "result": "witching-tisane",
+    "resultName": "Witching Tisane",
+    "principle": "grail",
+    "tier": "prentice",
+    "skills": [
+      "desires-and-dissolutions",
+      "leaves-and-thorns",
+      "orchids-and-narcotics",
+      "sea-stories",
+      "the-great-signs-and-the-great-scars"
+    ],
+    "resultPrinciples": {
+      "grail": 2,
+      "heart": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "beguiling-melody--grail-prentice",
+    "result": "beguiling-melody",
+    "resultName": "Beguiling Melody",
+    "principle": "grail",
+    "tier": "prentice",
+    "skills": [
+      "applebright-euphonies",
+      "pentiments-and-precursors",
+      "resurgences-and-emergences",
+      "tridesma-hiera"
+    ],
+    "resultPrinciples": {
+      "grail": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Memory",
+      "Sound"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "pale-mommet--grail-scholar",
+    "result": "pale-mommet",
+    "resultName": "Pale Mommet",
+    "principle": "grail",
+    "tier": "scholar",
+    "skills": [
+      "pentiments-and-precursors",
+      "resurgences-and-emergences",
+      "sea-stories",
+      "the-great-signs-and-the-great-scars",
+      "tridesma-hiera"
+    ],
+    "resultPrinciples": {
+      "grail": 4,
+      "heart": 2,
+      "moth": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Device",
+      "Inert",
+      "Woven"
+    ],
+    "ingredient": {
+      "aspect": "Fabric and Fibre",
+      "label": "Fabric and Fibre",
+      "note": "Fabric and Fibre"
+    }
+  },
+  {
+    "id": "rubywise-ruin--grail-scholar",
+    "result": "rubywise-ruin",
+    "resultName": "Rubywise Ruin",
+    "principle": "grail",
+    "tier": "scholar",
+    "skills": [
+      "applebright-euphonies",
+      "desires-and-dissolutions",
+      "leaves-and-thorns",
+      "orchids-and-narcotics"
+    ],
+    "resultPrinciples": {
+      "grail": 4,
+      "heart": 2,
+      "moth": 2,
+      "nectar": 2,
+      "rose": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "aspect": "Flower",
+      "label": "Flower"
+    }
+  },
+  {
+    "id": "flushed-mommet--grail-keeper",
+    "result": "flushed-mommet",
+    "resultName": "Flushed Mommet",
+    "principle": "grail",
+    "tier": "keeper",
+    "skills": [
+      "desires-and-dissolutions",
+      "furs-and-feathers",
+      "pentiments-and-precursors",
+      "resurgences-and-emergences",
+      "the-great-signs-and-the-great-scars"
+    ],
+    "resultPrinciples": {
+      "grail": 6,
+      "heart": 3,
+      "moth": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Device",
+      "Inert",
+      "Woven"
+    ],
+    "ingredient": {
+      "item": "pale-mommet",
+      "label": "Pale Mommet"
+    }
+  },
+  {
+    "id": "sacrament-calicite--grail-keeper",
+    "result": "sacrament-calicite",
+    "resultName": "Sacrament Calicite",
+    "principle": "grail",
+    "tier": "keeper",
+    "skills": [
+      "applebright-euphonies",
+      "leaves-and-thorns",
+      "orchids-and-narcotics",
+      "sea-stories",
+      "tridesma-hiera"
+    ],
+    "resultPrinciples": {
+      "grail": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "rubywise-ruin",
+      "label": "Rubywise Ruin"
+    }
+  },
+  {
+    "id": "perhibiate--heart-prentice",
+    "result": "perhibiate",
+    "resultName": "Perhibiate",
+    "principle": "heart",
+    "tier": "prentice",
+    "skills": [
+      "stitching-and-binding",
+      "weaving-and-knotworking"
+    ],
+    "resultPrinciples": {
+      "heart": 2,
+      "lantern": 2,
+      "scale": 2,
+      "winter": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "regensburg-balm--heart-prentice",
+    "result": "regensburg-balm",
+    "resultName": "Regensburg Balm",
+    "principle": "heart",
+    "tier": "prentice",
+    "skills": [
+      "edicts-inviolable",
+      "herbs-and-infusions",
+      "maggephene-mysteries",
+      "quenchings-and-quellings",
+      "surgeries-and-exsanguinations"
+    ],
+    "resultPrinciples": {
+      "heart": 2,
+      "nectar": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "cheerful-ditty--heart-prentice",
+    "result": "cheerful-ditty",
+    "resultName": "Cheerful Ditty",
+    "principle": "heart",
+    "tier": "prentice",
+    "skills": [
+      "drums-and-dances",
+      "strings-and-songs"
+    ],
+    "resultPrinciples": {
+      "heart": 2,
+      "sky": 1
+    },
+    "resultAspects": [
+      "Memory",
+      "Sound"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "frith-weft--heart-scholar",
+    "result": "frith-weft",
+    "resultName": "Frith-Weft",
+    "principle": "heart",
+    "tier": "scholar",
+    "skills": [
+      "stitching-and-binding",
+      "weaving-and-knotworking"
+    ],
+    "resultPrinciples": {
+      "heart": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Fabric and Fibre"
+    ],
+    "ingredient": {
+      "aspect": "Fabric and Fibre",
+      "label": "Fabric and Fibre"
+    }
+  },
+  {
+    "id": "gideons-soaks--heart-scholar",
+    "result": "gideons-soaks",
+    "resultName": "Gideon's Soaks",
+    "principle": "heart",
+    "tier": "scholar",
+    "skills": [
+      "edicts-inviolable",
+      "herbs-and-infusions",
+      "maggephene-mysteries",
+      "quenchings-and-quellings",
+      "surgeries-and-exsanguinations"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "heart": 4,
+      "nectar": 3,
+      "winter": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid"
+    ],
+    "ingredient": {
+      "aspect": "Liquid",
+      "label": "Liquid"
+    }
+  },
+  {
+    "id": "thunderskins-paean--heart-scholar",
+    "result": "thunderskins-paean",
+    "resultName": "Thunderskin's Paean",
+    "principle": "heart",
+    "tier": "scholar",
+    "skills": [
+      "drums-and-dances",
+      "strings-and-songs"
+    ],
+    "resultPrinciples": {
+      "grail": 1,
+      "heart": 4,
+      "scale": 1
+    },
+    "resultAspects": [
+      "Memory",
+      "Sound",
+      "Evolve via Preservation"
+    ],
+    "ingredient": {
+      "aspect": "Instrument",
+      "label": "Instrument"
+    }
+  },
+  {
+    "id": "january-sanguinary--heart-keeper",
+    "result": "january-sanguinary",
+    "resultName": "January Sanguinary",
+    "principle": "heart",
+    "tier": "keeper",
+    "skills": [
+      "edicts-inviolable",
+      "herbs-and-infusions",
+      "maggephene-mysteries",
+      "surgeries-and-exsanguinations"
+    ],
+    "resultPrinciples": {
+      "heart": 5,
+      "knock": 3,
+      "sky": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid"
+    ],
+    "ingredient": {
+      "item": "gideons-soaks",
+      "label": "Gideon's Soaks"
+    }
+  },
+  {
+    "id": "swaddled-thunder--heart-keeper",
+    "result": "swaddled-thunder",
+    "resultName": "Swaddled Thunder",
+    "principle": "heart",
+    "tier": "keeper",
+    "skills": [
+      "quenchings-and-quellings",
+      "stitching-and-binding",
+      "weaving-and-knotworking"
+    ],
+    "resultPrinciples": {
+      "heart": 6,
+      "sky": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Device",
+      "Fabric and Fibre"
+    ],
+    "ingredient": {
+      "item": "frith-weft",
+      "label": "Frith-Weft"
+    }
+  },
+  {
+    "id": "swaddled-thunder--heart-keeper~2",
+    "result": "swaddled-thunder",
+    "resultName": "Swaddled Thunder",
+    "principle": "heart",
+    "tier": "keeper",
+    "skills": [
+      "drums-and-dances",
+      "strings-and-songs"
+    ],
+    "resultPrinciples": {
+      "heart": 6,
+      "sky": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Device",
+      "Fabric and Fibre"
+    ],
+    "ingredient": {
+      "item": "thunderskins-paean",
+      "label": "Thunderskin's Paean"
+    }
+  },
+  {
+    "id": "amethyst-ampoule--knock-prentice",
+    "result": "amethyst-ampoule",
+    "resultName": "Amethyst Ampoule",
+    "principle": "knock",
+    "tier": "prentice",
+    "skills": [
+      "glassblowing-and-vesselcrafting",
+      "lockworks-and-clockworks",
+      "solutions-and-separations",
+      "surgeries-and-exsanguinations",
+      "the-great-signs-and-the-great-scars"
+    ],
+    "resultPrinciples": {
+      "heart": 2,
+      "knock": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Glass"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "secret-threshold--knock-prentice",
+    "result": "secret-threshold",
+    "resultName": "Secret Threshold",
+    "principle": "knock",
+    "tier": "prentice",
+    "skills": [
+      "door-and-wall",
+      "edicts-liminal",
+      "horns-and-ivories",
+      "preliminal-meter"
+    ],
+    "resultPrinciples": {
+      "knock": 2,
+      "rose": 1
+    },
+    "resultAspects": [
+      "Memory"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "gervinite--knock-scholar",
+    "result": "gervinite",
+    "resultName": "Gervinite",
+    "principle": "knock",
+    "tier": "scholar",
+    "skills": [
+      "lockworks-and-clockworks"
+    ],
+    "resultPrinciples": {
+      "knock": 4,
+      "rose": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Material",
+      "Metal"
+    ],
+    "ingredient": {
+      "aspect": "Glass",
+      "label": "Glass"
+    }
+  },
+  {
+    "id": "glassfinger-toxin--knock-scholar",
+    "result": "glassfinger-toxin",
+    "resultName": "Glassfinger Toxin",
+    "principle": "knock",
+    "tier": "scholar",
+    "skills": [
+      "door-and-wall",
+      "edicts-liminal",
+      "solutions-and-separations",
+      "surgeries-and-exsanguinations"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "knock": 4,
+      "lantern": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid"
+    ],
+    "ingredient": {
+      "aspect": "Liquid",
+      "label": "Liquid"
+    }
+  },
+  {
+    "id": "wire-orichalcum--knock-scholar",
+    "result": "wire-orichalcum",
+    "resultName": "Wire (Orichalcum)",
+    "principle": "knock",
+    "tier": "scholar",
+    "skills": [
+      "glassblowing-and-vesselcrafting"
+    ],
+    "resultPrinciples": {
+      "forge": 4,
+      "lantern": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material",
+      "Metal"
+    ],
+    "ingredient": {
+      "aspect": "Metal",
+      "label": "Metal"
+    }
+  },
+  {
+    "id": "chimeric-larva--knock-scholar",
+    "result": "chimeric-larva",
+    "resultName": "Chimeric Larva",
+    "principle": "knock",
+    "tier": "scholar",
+    "skills": [
+      "horns-and-ivories"
+    ],
+    "resultPrinciples": {
+      "knock": 2,
+      "moon": 2,
+      "moth": 4
+    },
+    "resultAspects": [
+      "Beast",
+      "Comfort",
+      "Co-operative"
+    ],
+    "ingredient": {
+      "aspect": "Egg",
+      "label": "Egg"
+    }
+  },
+  {
+    "id": "curious-hunch--knock-scholar",
+    "result": "curious-hunch",
+    "resultName": "Curious Hunch",
+    "principle": "knock",
+    "tier": "scholar",
+    "skills": [
+      "preliminal-meter",
+      "the-great-signs-and-the-great-scars"
+    ],
+    "resultPrinciples": {
+      "heart": 3,
+      "knock": 4,
+      "lantern": 3,
+      "moth": 3
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Omen",
+      "Evolve via Nyctodromy"
+    ],
+    "ingredient": {
+      "aspect": "Memory",
+      "label": "Memory"
+    }
+  },
+  {
+    "id": "chronsichord--knock-keeper",
+    "result": "chronsichord",
+    "resultName": "Chronsichord",
+    "principle": "knock",
+    "tier": "keeper",
+    "skills": [
+      "glassblowing-and-vesselcrafting",
+      "glaziery-and-lightsmithing",
+      "lockworks-and-clockworks",
+      "preliminal-meter",
+      "the-great-signs-and-the-great-scars"
+    ],
+    "resultPrinciples": {
+      "forge": 3,
+      "knock": 6,
+      "sky": 3,
+      "winter": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Device"
+    ],
+    "ingredient": {
+      "item": "gervinite",
+      "label": "Gervinite"
+    }
+  },
+  {
+    "id": "january-sanguinary--knock-keeper",
+    "result": "january-sanguinary",
+    "resultName": "January Sanguinary",
+    "principle": "knock",
+    "tier": "keeper",
+    "skills": [
+      "surgeries-and-exsanguinations"
+    ],
+    "resultPrinciples": {
+      "heart": 5,
+      "knock": 3,
+      "sky": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid"
+    ],
+    "ingredient": {
+      "item": "glassfinger-toxin",
+      "label": "Glassfinger Toxin"
+    }
+  },
+  {
+    "id": "sacrament-ascite--knock-keeper",
+    "result": "sacrament-ascite",
+    "resultName": "Sacrament Ascite",
+    "principle": "knock",
+    "tier": "keeper",
+    "skills": [
+      "door-and-wall",
+      "edicts-liminal",
+      "glassblowing-and-vesselcrafting",
+      "horns-and-ivories",
+      "solutions-and-separations"
+    ],
+    "resultPrinciples": {
+      "knock": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "glassfinger-toxin",
+      "label": "Glassfinger Toxin"
+    }
+  },
+  {
+    "id": "dearday-lens--lantern-prentice",
+    "result": "dearday-lens",
+    "resultName": "Dearday Lens",
+    "principle": "lantern",
+    "tier": "prentice",
+    "skills": [
+      "disciplines-of-the-scar",
+      "glassblowing-and-vesselcrafting",
+      "glaziery-and-lightsmithing",
+      "pyroglyphics"
+    ],
+    "resultPrinciples": {
+      "edge": 1,
+      "forge": 1,
+      "lantern": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Device",
+      "Lens",
+      "Glass"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "eigengrau--lantern-prentice",
+    "result": "eigengrau",
+    "resultName": "Eigengrau",
+    "principle": "lantern",
+    "tier": "prentice",
+    "skills": [
+      "auroral-contemplations"
+    ],
+    "resultPrinciples": {
+      "moon": 1,
+      "winter": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "refulgin--lantern-prentice",
+    "result": "refulgin",
+    "resultName": "Refulgin",
+    "principle": "lantern",
+    "tier": "prentice",
+    "skills": [
+      "inks-of-revelation",
+      "purifications-and-exaltations",
+      "sacra-solis-invicti",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "lantern": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Material",
+      "Pigment"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "tanglebrag--lantern-prentice",
+    "result": "tanglebrag",
+    "resultName": "Tanglebrag",
+    "principle": "lantern",
+    "tier": "prentice",
+    "skills": [
+      "watchmans-paradoxes"
+    ],
+    "resultPrinciples": {
+      "lantern": 1,
+      "moth": 2,
+      "nectar": 1,
+      "scale": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "ichor-vitreous--lantern-scholar",
+    "result": "ichor-vitreous",
+    "resultName": "Ichor Vitreous",
+    "principle": "lantern",
+    "tier": "scholar",
+    "skills": [
+      "glassblowing-and-vesselcrafting",
+      "glaziery-and-lightsmithing",
+      "inks-of-revelation",
+      "sacra-solis-invicti",
+      "watchmans-paradoxes"
+    ],
+    "resultPrinciples": {
+      "lantern": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "aspect": "Glass",
+      "label": "Glass"
+    }
+  },
+  {
+    "id": "xanthotic-essence--lantern-scholar",
+    "result": "xanthotic-essence",
+    "resultName": "Xanthotic Essence",
+    "principle": "lantern",
+    "tier": "scholar",
+    "skills": [
+      "auroral-contemplations",
+      "purifications-and-exaltations",
+      "pyroglyphics",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "knock": 2,
+      "lantern": 5
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "aspect": "Liquid",
+      "label": "Liquid"
+    }
+  },
+  {
+    "id": "old-moment--lantern-scholar",
+    "result": "old-moment",
+    "resultName": "Old Moment",
+    "principle": "lantern",
+    "tier": "scholar",
+    "skills": [
+      "disciplines-of-the-scar"
+    ],
+    "resultPrinciples": {
+      "lantern": 2,
+      "moth": 2,
+      "scale": 4
+    },
+    "resultAspects": [
+      "Memory",
+      "Evolve via Preservation"
+    ],
+    "ingredient": {
+      "aspect": "Memory",
+      "label": "Memory"
+    }
+  },
+  {
+    "id": "ashartine--lantern-keeper",
+    "result": "ashartine",
+    "resultName": "Ashartine",
+    "principle": "lantern",
+    "tier": "keeper",
+    "skills": [
+      "glassblowing-and-vesselcrafting",
+      "glaziery-and-lightsmithing",
+      "pyroglyphics",
+      "watchmans-paradoxes"
+    ],
+    "resultPrinciples": {
+      "forge": 1,
+      "lantern": 6,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "item": "ichor-vitreous",
+      "label": "Ichor Vitreous"
+    }
+  },
+  {
+    "id": "porphyrine--lantern-keeper",
+    "result": "porphyrine",
+    "resultName": "Porphyrine",
+    "principle": "lantern",
+    "tier": "keeper",
+    "skills": [
+      "auroral-contemplations"
+    ],
+    "resultPrinciples": {
+      "knock": 7,
+      "moon": 7,
+      "rose": 7
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink",
+      "Encaustum Terminale"
+    ],
+    "ingredient": {
+      "item": "ichor-auroral",
+      "label": "Ichor Auroral"
+    }
+  },
+  {
+    "id": "uzult--lantern-keeper",
+    "result": "uzult",
+    "resultName": "Uzult",
+    "principle": "lantern",
+    "tier": "keeper",
+    "skills": [
+      "anbary-and-lapidary",
+      "glaziery-and-lightsmithing",
+      "inks-of-revelation",
+      "sacra-solis-invicti",
+      "watchmans-paradoxes"
+    ],
+    "resultPrinciples": {
+      "lantern": 7,
+      "moth": 7,
+      "sky": 7
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink",
+      "Encaustum Terminale"
+    ],
+    "ingredient": {
+      "item": "xanthotic-essence",
+      "label": "Xanthotic Essence"
+    }
+  },
+  {
+    "id": "xanthotic-essence--lantern-keeper",
+    "result": "xanthotic-essence",
+    "resultName": "Xanthotic Essence",
+    "principle": "lantern",
+    "tier": "keeper",
+    "skills": [
+      "purifications-and-exaltations"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "knock": 2,
+      "lantern": 5
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "item": "bitterblack-salts",
+      "label": "Bitterblack Salts"
+    }
+  },
+  {
+    "id": "xanthotic-essence--lantern-keeper~2",
+    "result": "xanthotic-essence",
+    "resultName": "Xanthotic Essence",
+    "principle": "lantern",
+    "tier": "keeper",
+    "skills": [
+      "purifications-and-exaltations"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "knock": 2,
+      "lantern": 5
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "item": "iotic-essence",
+      "label": "Iotic Essence"
+    }
+  },
+  {
+    "id": "earthquake-name--lantern-keeper",
+    "result": "earthquake-name",
+    "resultName": "Earthquake Name",
+    "principle": "lantern",
+    "tier": "keeper",
+    "skills": [
+      "disciplines-of-the-scar"
+    ],
+    "resultPrinciples": {
+      "forge": 3,
+      "scale": 6
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Omen",
+      "Evolve via Skolekosophy",
+      "Evolve via Ithastry"
+    ],
+    "ingredient": {
+      "item": "old-moment",
+      "label": "Old Moment"
+    }
+  },
+  {
+    "id": "catwink--moon-prentice",
+    "result": "catwink",
+    "resultName": "Catwink",
+    "principle": "moon",
+    "tier": "prentice",
+    "skills": [
+      "edicts-inviolable",
+      "inks-of-containment",
+      "putrefactions-and-calcinations",
+      "sand-stories",
+      "sickle-and-eclipse"
+    ],
+    "resultPrinciples": {
+      "edge": 1,
+      "grail": 1,
+      "moon": 2,
+      "scale": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Ink",
+      "Liquid"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "eigengrau--moon-prentice",
+    "result": "eigengrau",
+    "resultName": "Eigengrau",
+    "principle": "moon",
+    "tier": "prentice",
+    "skills": [
+      "maggephene-mysteries",
+      "pearl-and-tide"
+    ],
+    "resultPrinciples": {
+      "moon": 1,
+      "winter": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "midnight-mark--moon-prentice",
+    "result": "midnight-mark",
+    "resultName": "Midnight Mark",
+    "principle": "moon",
+    "tier": "prentice",
+    "skills": [
+      "desires-and-dissolutions",
+      "insects-and-nectars",
+      "rhyme-and-remembrance",
+      "serpents-and-venoms",
+      "sharps",
+      "snow-stories",
+      "wolf-stories"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "moth": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Mark"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "salt-sign--moon-prentice",
+    "result": "salt-sign",
+    "resultName": "Salt-Sign",
+    "principle": "moon",
+    "tier": "prentice",
+    "skills": [
+      "hill-and-hollow",
+      "sea-stories"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "rose": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Mark"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "bittersweet-certainty--moon-prentice",
+    "result": "bittersweet-certainty",
+    "resultName": "Bittersweet Certainty",
+    "principle": "moon",
+    "tier": "prentice",
+    "skills": [
+      "ouranoscopy"
+    ],
+    "resultPrinciples": {
+      "lantern": 1,
+      "winter": 2
+    },
+    "resultAspects": [
+      "Memory",
+      "Sound"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "confounding-parable--moon-prentice",
+    "result": "confounding-parable",
+    "resultName": "Confounding Parable",
+    "principle": "moon",
+    "tier": "prentice",
+    "skills": [
+      "tridesma-hiera"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "rose": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Memory"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "old-wound--moon-prentice",
+    "result": "old-wound",
+    "resultName": "Old Wound",
+    "principle": "moon",
+    "tier": "prentice",
+    "skills": [
+      "edicts-martial"
+    ],
+    "resultPrinciples": {
+      "edge": 1,
+      "moon": 2,
+      "winter": 3
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "asimel--moon-scholar",
+    "result": "asimel",
+    "resultName": "Asimel",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "pearl-and-tide",
+      "putrefactions-and-calcinations",
+      "sea-stories"
+    ],
+    "resultPrinciples": {
+      "knock": 3,
+      "moon": 5,
+      "moth": 1,
+      "rose": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "aspect": "Liquid",
+      "label": "Liquid"
+    }
+  },
+  {
+    "id": "asimel--moon-scholar~2",
+    "result": "asimel",
+    "resultName": "Asimel",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "ouranoscopy"
+    ],
+    "resultPrinciples": {
+      "knock": 3,
+      "moon": 5,
+      "moth": 1,
+      "rose": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "aspect": "Lens",
+      "label": "Lens"
+    }
+  },
+  {
+    "id": "essential-periost--moon-scholar",
+    "result": "essential-periost",
+    "resultName": "Essential Periost",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "sharps",
+      "sickle-and-eclipse",
+      "wolf-stories"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "nectar": 4,
+      "scale": 4,
+      "winter": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Remains"
+    ],
+    "ingredient": {
+      "aspect": "Remains",
+      "label": "Remains"
+    }
+  },
+  {
+    "id": "leathy--moon-scholar",
+    "result": "leathy",
+    "resultName": "Leathy",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "inks-of-containment"
+    ],
+    "resultPrinciples": {
+      "moth": 4,
+      "nectar": 2,
+      "scale": 2,
+      "grail": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative"
+    ],
+    "ingredient": {
+      "aspect": "Beverage",
+      "label": "Beverage"
+    }
+  },
+  {
+    "id": "pyrus-auricalcinus--moon-scholar",
+    "result": "pyrus-auricalcinus",
+    "resultName": "Pyrus Auricalcinus",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "desires-and-dissolutions"
+    ],
+    "resultPrinciples": {
+      "forge": 4,
+      "nectar": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Sustenance",
+      "Fruit"
+    ],
+    "ingredient": {
+      "aspect": "Wood",
+      "label": "Wood"
+    }
+  },
+  {
+    "id": "solomons-preparation--moon-scholar",
+    "result": "solomons-preparation",
+    "resultName": "Solomon’s Preparation",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "edicts-inviolable",
+      "maggephene-mysteries"
+    ],
+    "resultPrinciples": {
+      "moon": 1,
+      "moth": 1,
+      "winter": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative"
+    ],
+    "ingredient": {
+      "aspect": "Flower",
+      "label": "Flower"
+    }
+  },
+  {
+    "id": "chimeric-larva--moon-scholar",
+    "result": "chimeric-larva",
+    "resultName": "Chimeric Larva",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "hill-and-hollow",
+      "insects-and-nectars"
+    ],
+    "resultPrinciples": {
+      "knock": 2,
+      "moon": 2,
+      "moth": 4
+    },
+    "resultAspects": [
+      "Beast",
+      "Comfort",
+      "Co-operative"
+    ],
+    "ingredient": {
+      "aspect": "Egg",
+      "label": "Egg"
+    }
+  },
+  {
+    "id": "stymphling--moon-scholar",
+    "result": "stymphling",
+    "resultName": "Stymphling",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "rhyme-and-remembrance",
+      "sand-stories",
+      "serpents-and-venoms",
+      "snow-stories",
+      "tridesma-hiera"
+    ],
+    "resultPrinciples": {
+      "moon": 3,
+      "scale": 3
+    },
+    "resultAspects": [
+      "Beast",
+      "Comfort",
+      "Co-operative"
+    ],
+    "ingredient": {
+      "aspect": "Egg",
+      "label": "Egg"
+    }
+  },
+  {
+    "id": "wormwood-dream--moon-scholar",
+    "result": "wormwood-dream",
+    "resultName": "Wormwood Dream",
+    "principle": "moon",
+    "tier": "scholar",
+    "skills": [
+      "edicts-martial"
+    ],
+    "resultPrinciples": {
+      "edge": 3,
+      "moon": 6,
+      "winter": 6
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Omen",
+      "Evolve via Nyctodromy",
+      "Evolve via Skolekosophy"
+    ],
+    "ingredient": {
+      "aspect": "Memory",
+      "label": "Memory"
+    }
+  },
+  {
+    "id": "black-sapphire-wash--moon-keeper",
+    "result": "black-sapphire-wash",
+    "resultName": "Black Sapphire Wash",
+    "principle": "moon",
+    "tier": "keeper",
+    "skills": [
+      "desires-and-dissolutions",
+      "pearl-and-tide",
+      "putrefactions-and-calcinations",
+      "sea-stories",
+      "tridesma-hiera"
+    ],
+    "resultPrinciples": {
+      "moon": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "item": "asimel",
+      "label": "Asimel"
+    }
+  },
+  {
+    "id": "sacrament-ascite--moon-keeper",
+    "result": "sacrament-ascite",
+    "resultName": "Sacrament Ascite",
+    "principle": "moon",
+    "tier": "keeper",
+    "skills": [
+      "serpents-and-venoms"
+    ],
+    "resultPrinciples": {
+      "knock": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "glassfinger-toxin",
+      "label": "Glassfinger Toxin"
+    }
+  },
+  {
+    "id": "skinshuck-mead--moon-keeper",
+    "result": "skinshuck-mead",
+    "resultName": "Skinshuck Mead",
+    "principle": "moon",
+    "tier": "keeper",
+    "skills": [
+      "insects-and-nectars"
+    ],
+    "resultPrinciples": {
+      "moth": 6,
+      "nectar": 2,
+      "scale": 2,
+      "heart": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "cuckoo-honey",
+      "label": "Cuckoo-Honey"
+    }
+  },
+  {
+    "id": "perilous-imago--moon-keeper",
+    "result": "perilous-imago",
+    "resultName": "Perilous Imago",
+    "principle": "moon",
+    "tier": "keeper",
+    "skills": [
+      "insects-and-nectars"
+    ],
+    "resultPrinciples": {
+      "knock": 2,
+      "moon": 2,
+      "moth": 6,
+      "scale": 2
+    },
+    "resultAspects": [
+      "Beast",
+      "Comfort",
+      "Co-operative"
+    ],
+    "ingredient": {
+      "item": "chimeric-larva",
+      "label": "Chimeric Larva"
+    }
+  },
+  {
+    "id": "didumos--moon-keeper",
+    "result": "didumos",
+    "resultName": "Didumos",
+    "principle": "moon",
+    "tier": "keeper",
+    "skills": [
+      "ouranoscopy"
+    ],
+    "resultPrinciples": {
+      "knock": 3,
+      "lantern": 3,
+      "sky": 6,
+      "winter": 3
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Evolve via Horomachistry",
+      "Evolve via Hushery"
+    ],
+    "ingredient": {
+      "item": "asimel",
+      "label": "Asimel"
+    }
+  },
+  {
+    "id": "forbidden-epic--moon-keeper",
+    "result": "forbidden-epic",
+    "resultName": "Forbidden Epic",
+    "principle": "moon",
+    "tier": "keeper",
+    "skills": [
+      "edicts-martial"
+    ],
+    "resultPrinciples": {
+      "edge": 6,
+      "moon": 4,
+      "rose": 4
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Evolve via Horomachistry",
+      "Evolve via Birdsong"
+    ],
+    "ingredient": {
+      "item": "confounding-parable",
+      "label": "Confounding Parable"
+    }
+  },
+  {
+    "id": "wormwood-dream--moon-keeper",
+    "result": "wormwood-dream",
+    "resultName": "Wormwood Dream",
+    "principle": "moon",
+    "tier": "keeper",
+    "skills": [
+      "edicts-inviolable",
+      "rhyme-and-remembrance",
+      "sickle-and-eclipse",
+      "snow-stories",
+      "wolf-stories"
+    ],
+    "resultPrinciples": {
+      "edge": 3,
+      "moon": 6,
+      "winter": 6
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Omen",
+      "Evolve via Nyctodromy",
+      "Evolve via Skolekosophy"
+    ],
+    "ingredient": {
+      "item": "stymphling",
+      "label": "Stymphling"
+    }
+  },
+  {
+    "id": "paint-moth-gold--moth-prentice",
+    "result": "paint-moth-gold",
+    "resultName": "Paint: Moth-Gold",
+    "principle": "moth",
+    "tier": "prentice",
+    "skills": [
+      "inks-of-revelation"
+    ],
+    "resultPrinciples": {
+      "moth": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "tanglebrag--moth-prentice",
+    "result": "tanglebrag",
+    "resultName": "Tanglebrag",
+    "principle": "moth",
+    "tier": "prentice",
+    "skills": [
+      "edicts-liminal",
+      "resurgences-and-emergences",
+      "rites-of-the-roots",
+      "weaving-and-knotworking"
+    ],
+    "resultPrinciples": {
+      "lantern": 1,
+      "moth": 2,
+      "nectar": 1,
+      "scale": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "westcotts-compounds--moth-prentice",
+    "result": "westcotts-compounds",
+    "resultName": "Westcott's Compounds",
+    "principle": "moth",
+    "tier": "prentice",
+    "skills": [
+      "sacra-limiae",
+      "solutions-and-separations"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "grail": 1,
+      "lantern": 1,
+      "moth": 1,
+      "nectar": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "asimel--moth-scholar",
+    "result": "asimel",
+    "resultName": "Asimel",
+    "principle": "moth",
+    "tier": "scholar",
+    "skills": [
+      "inks-of-revelation"
+    ],
+    "resultPrinciples": {
+      "knock": 3,
+      "moon": 5,
+      "moth": 1,
+      "rose": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "aspect": "Liquid",
+      "label": "Liquid"
+    }
+  },
+  {
+    "id": "chimeric-larva--moth-scholar",
+    "result": "chimeric-larva",
+    "resultName": "Chimeric Larva",
+    "principle": "moth",
+    "tier": "scholar",
+    "skills": [
+      "resurgences-and-emergences",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "knock": 2,
+      "moon": 2,
+      "moth": 4
+    },
+    "resultAspects": [
+      "Beast",
+      "Comfort",
+      "Co-operative"
+    ],
+    "ingredient": {
+      "aspect": "Egg",
+      "label": "Egg"
+    }
+  },
+  {
+    "id": "nameday-riddle--moth-scholar",
+    "result": "nameday-riddle",
+    "resultName": "Nameday Riddle",
+    "principle": "moth",
+    "tier": "scholar",
+    "skills": [
+      "edicts-liminal",
+      "rites-of-the-roots",
+      "sacra-limiae",
+      "solutions-and-separations",
+      "weaving-and-knotworking"
+    ],
+    "resultPrinciples": {
+      "knock": 2,
+      "moth": 3
+    },
+    "resultAspects": [
+      "Memory"
+    ],
+    "ingredient": {
+      "aspect": "Memory",
+      "label": "Memory"
+    }
+  },
+  {
+    "id": "skinshuck-mead--moth-keeper",
+    "result": "skinshuck-mead",
+    "resultName": "Skinshuck Mead",
+    "principle": "moth",
+    "tier": "keeper",
+    "skills": [
+      "edicts-liminal",
+      "rites-of-the-roots",
+      "sacra-limiae",
+      "solutions-and-separations",
+      "resurgences-and-emergences",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "moth": 6,
+      "nectar": 2,
+      "scale": 2,
+      "heart": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "cuckoo-honey",
+      "label": "Cuckoo-Honey"
+    }
+  },
+  {
+    "id": "skinshuck-mead--moth-keeper~2",
+    "result": "skinshuck-mead",
+    "resultName": "Skinshuck Mead",
+    "principle": "moth",
+    "tier": "keeper",
+    "skills": [
+      "edicts-liminal",
+      "rites-of-the-roots",
+      "sacra-limiae",
+      "solutions-and-separations"
+    ],
+    "resultPrinciples": {
+      "moth": 6,
+      "nectar": 2,
+      "scale": 2,
+      "heart": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "honey",
+      "label": "Honey"
+    }
+  },
+  {
+    "id": "perilous-imago--moth-keeper",
+    "result": "perilous-imago",
+    "resultName": "Perilous Imago",
+    "principle": "moth",
+    "tier": "keeper",
+    "skills": [
+      "resurgences-and-emergences",
+      "transformations-and-liberations"
+    ],
+    "resultPrinciples": {
+      "knock": 2,
+      "moon": 2,
+      "moth": 6,
+      "scale": 2
+    },
+    "resultAspects": [
+      "Beast",
+      "Comfort",
+      "Co-operative"
+    ],
+    "ingredient": {
+      "item": "chimeric-larva",
+      "label": "Chimeric Larva"
+    }
+  },
+  {
+    "id": "thirzas-cordials--nectar-prentice",
+    "result": "thirzas-cordials",
+    "resultName": "Thirza's Cordials",
+    "principle": "nectar",
+    "tier": "prentice",
+    "skills": [
+      "coil-and-chasm",
+      "herbs-and-infusions",
+      "orchids-and-narcotics",
+      "spices-and-savours",
+      "stone-stories"
+    ],
+    "resultPrinciples": {
+      "moth": 2,
+      "nectar": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "yewgall-ink--nectar-prentice",
+    "result": "yewgall-ink",
+    "resultName": "Yewgall Ink",
+    "principle": "nectar",
+    "tier": "prentice",
+    "skills": [
+      "inks-of-containment",
+      "inks-of-power",
+      "inks-of-revelation",
+      "insects-and-nectars",
+      "leaves-and-thorns",
+      "rites-of-the-roots"
+    ],
+    "resultPrinciples": {
+      "moth": 1,
+      "nectar": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "savage-hymn--nectar-prentice",
+    "result": "savage-hymn",
+    "resultName": "Savage Hymn",
+    "principle": "nectar",
+    "tier": "prentice",
+    "skills": [
+      "drums-and-dances"
+    ],
+    "resultPrinciples": {
+      "scale": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Memory",
+      "Sound"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "essential-periost--nectar-scholar",
+    "result": "essential-periost",
+    "resultName": "Essential Periost",
+    "principle": "nectar",
+    "tier": "scholar",
+    "skills": [
+      "stone-stories"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "nectar": 4,
+      "scale": 4,
+      "winter": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Remains"
+    ],
+    "ingredient": {
+      "aspect": "Remains",
+      "label": "Remains"
+    }
+  },
+  {
+    "id": "leathy--nectar-scholar",
+    "result": "leathy",
+    "resultName": "Leathy",
+    "principle": "nectar",
+    "tier": "scholar",
+    "skills": [
+      "herbs-and-infusions",
+      "insects-and-nectars",
+      "orchids-and-narcotics",
+      "rites-of-the-roots"
+    ],
+    "resultPrinciples": {
+      "moth": 4,
+      "nectar": 2,
+      "scale": 2,
+      "grail": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative"
+    ],
+    "ingredient": {
+      "aspect": "Beverage",
+      "label": "Beverage"
+    }
+  },
+  {
+    "id": "pyrus-auricalcinus--nectar-scholar",
+    "result": "pyrus-auricalcinus",
+    "resultName": "Pyrus Auricalcinus",
+    "principle": "nectar",
+    "tier": "scholar",
+    "skills": [
+      "coil-and-chasm",
+      "leaves-and-thorns",
+      "spices-and-savours"
+    ],
+    "resultPrinciples": {
+      "forge": 4,
+      "nectar": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Sustenance",
+      "Fruit"
+    ],
+    "ingredient": {
+      "aspect": "Wood",
+      "label": "Wood"
+    }
+  },
+  {
+    "id": "hives-lament--nectar-scholar",
+    "result": "hives-lament",
+    "resultName": "Hive's Lament",
+    "principle": "nectar",
+    "tier": "scholar",
+    "skills": [
+      "drums-and-dances"
+    ],
+    "resultPrinciples": {
+      "moth": 2,
+      "nectar": 4,
+      "winter": 2
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Sound",
+      "Evolve via The Bosk"
+    ],
+    "ingredient": {
+      "aspect": "Instrument",
+      "label": "Instrument"
+    }
+  },
+  {
+    "id": "marakat--nectar-keeper",
+    "result": "marakat",
+    "resultName": "Marakat",
+    "principle": "nectar",
+    "tier": "keeper",
+    "skills": [
+      "inks-of-power",
+      "insects-and-nectars",
+      "tridesma-hiera"
+    ],
+    "resultPrinciples": {
+      "grail": 7,
+      "knock": 7,
+      "nectar": 7
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink",
+      "Encaustum Terminale"
+    ],
+    "ingredient": {
+      "item": "leathy",
+      "label": "Leathy"
+    }
+  },
+  {
+    "id": "sacrament-malachite--nectar-keeper",
+    "result": "sacrament-malachite",
+    "resultName": "Sacrament Malachite",
+    "principle": "nectar",
+    "tier": "keeper",
+    "skills": [
+      "coil-and-chasm",
+      "drums-and-dances",
+      "herbs-and-infusions",
+      "leaves-and-thorns",
+      "rites-of-the-roots",
+      "spices-and-savours"
+    ],
+    "resultPrinciples": {
+      "nectar": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "pyrus-auricalcinus",
+      "label": "Pyrus Auricalcinus"
+    }
+  },
+  {
+    "id": "sacrament-malachite--nectar-keeper~2",
+    "result": "sacrament-malachite",
+    "resultName": "Sacrament Malachite",
+    "principle": "nectar",
+    "tier": "keeper",
+    "skills": [
+      "stone-stories"
+    ],
+    "resultPrinciples": {
+      "nectar": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "essential-periost",
+      "label": "Essential Periost"
+    }
+  },
+  {
+    "id": "salt-sign--rose-prentice",
+    "result": "salt-sign",
+    "resultName": "Salt-Sign",
+    "principle": "rose",
+    "tier": "prentice",
+    "skills": [
+      "inks-of-power",
+      "path-and-pilgrim",
+      "pearl-and-tide",
+      "sand-stories"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "rose": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Mark"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "confounding-parable--rose-prentice",
+    "result": "confounding-parable",
+    "resultName": "Confounding Parable",
+    "principle": "rose",
+    "tier": "prentice",
+    "skills": [
+      "preliminal-meter",
+      "sky-stories"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "rose": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Memory"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "ichor-auroral--rose-scholar",
+    "result": "ichor-auroral",
+    "resultName": "Ichor Auroral",
+    "principle": "rose",
+    "tier": "scholar",
+    "skills": [
+      "auroral-contemplations",
+      "inks-of-power",
+      "sand-stories"
+    ],
+    "resultPrinciples": {
+      "lantern": 4,
+      "rose": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "aspect": "Light",
+      "label": "Light"
+    }
+  },
+  {
+    "id": "enduring-reflection--rose-scholar",
+    "result": "enduring-reflection",
+    "resultName": "Enduring Reflection",
+    "principle": "rose",
+    "tier": "scholar",
+    "skills": [
+      "path-and-pilgrim",
+      "pearl-and-tide",
+      "preliminal-meter",
+      "sky-stories"
+    ],
+    "resultPrinciples": {
+      "heart": 1,
+      "knock": 1,
+      "rose": 3
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Evolve via Nyctodromy"
+    ],
+    "ingredient": {
+      "aspect": "Memory",
+      "label": "Memory"
+    }
+  },
+  {
+    "id": "porphyrine--rose-keeper",
+    "result": "porphyrine",
+    "resultName": "Porphyrine",
+    "principle": "rose",
+    "tier": "keeper",
+    "skills": [
+      "inks-of-power",
+      "inks-of-revelation",
+      "sand-stories"
+    ],
+    "resultPrinciples": {
+      "knock": 7,
+      "moon": 7,
+      "rose": 7
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink",
+      "Encaustum Terminale"
+    ],
+    "ingredient": {
+      "item": "ichor-auroral",
+      "label": "Ichor Auroral"
+    }
+  },
+  {
+    "id": "porphyrine--rose-keeper~2",
+    "result": "porphyrine",
+    "resultName": "Porphyrine",
+    "principle": "rose",
+    "tier": "keeper",
+    "skills": [
+      "pearl-and-tide"
+    ],
+    "resultPrinciples": {
+      "knock": 7,
+      "moon": 7,
+      "rose": 7
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink",
+      "Encaustum Terminale"
+    ],
+    "ingredient": {
+      "item": "lenten-rose",
+      "label": "Lenten Rose"
+    }
+  },
+  {
+    "id": "horizon-sight--rose-keeper",
+    "result": "horizon-sight",
+    "resultName": "Horizon-Sight",
+    "principle": "rose",
+    "tier": "keeper",
+    "skills": [
+      "path-and-pilgrim",
+      "preliminal-meter",
+      "sand-stories",
+      "sky-stories"
+    ],
+    "resultPrinciples": {
+      "rose": 4
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Evolve via Hushery"
+    ],
+    "ingredient": {
+      "item": "enduring-reflection",
+      "label": "Enduring Reflection"
+    }
+  },
+  {
+    "id": "bisclavrets-knot--scale-prentice",
+    "result": "bisclavrets-knot",
+    "resultName": "Bisclavret's Knot",
+    "principle": "scale",
+    "tier": "prentice",
+    "skills": [
+      "coil-and-chasm",
+      "furs-and-feathers",
+      "hill-and-hollow",
+      "horns-and-ivories",
+      "path-and-pilgrim",
+      "pentiments-and-precursors",
+      "serpents-and-venoms",
+      "wolf-stories"
+    ],
+    "resultPrinciples": {
+      "moth": 1,
+      "scale": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Mark"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "perhibiate--scale-prentice",
+    "result": "perhibiate",
+    "resultName": "Perhibiate",
+    "principle": "scale",
+    "tier": "prentice",
+    "skills": [
+      "inks-of-power"
+    ],
+    "resultPrinciples": {
+      "heart": 2,
+      "lantern": 2,
+      "scale": 2,
+      "winter": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "savage-hymn--scale-prentice",
+    "result": "savage-hymn",
+    "resultName": "Savage Hymn",
+    "principle": "scale",
+    "tier": "prentice",
+    "skills": [
+      "drums-and-dances",
+      "stone-stories"
+    ],
+    "resultPrinciples": {
+      "scale": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Memory",
+      "Sound"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "glassfinger-toxin--scale-scholar",
+    "result": "glassfinger-toxin",
+    "resultName": "Glassfinger Toxin",
+    "principle": "scale",
+    "tier": "scholar",
+    "skills": [
+      "serpents-and-venoms"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "knock": 4,
+      "lantern": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid"
+    ],
+    "ingredient": {
+      "aspect": "Liquid",
+      "label": "Liquid"
+    }
+  },
+  {
+    "id": "perinculate--scale-scholar",
+    "result": "perinculate",
+    "resultName": "Perinculate",
+    "principle": "scale",
+    "tier": "scholar",
+    "skills": [
+      "inks-of-power"
+    ],
+    "resultPrinciples": {
+      "edge": 4,
+      "grail": 1,
+      "scale": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "aspect": "Leaf",
+      "label": "Leaf"
+    }
+  },
+  {
+    "id": "living-relic--scale-scholar",
+    "result": "living-relic",
+    "resultName": "Living Relic",
+    "principle": "scale",
+    "tier": "scholar",
+    "skills": [
+      "furs-and-feathers",
+      "hill-and-hollow",
+      "pentiments-and-precursors",
+      "stone-stories"
+    ],
+    "resultPrinciples": {
+      "heart": 1,
+      "scale": 4,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Beast",
+      "Comfort",
+      "Co-operative"
+    ],
+    "ingredient": {
+      "aspect": "Egg",
+      "label": "Egg"
+    }
+  },
+  {
+    "id": "old-moment--scale-scholar",
+    "result": "old-moment",
+    "resultName": "Old Moment",
+    "principle": "scale",
+    "tier": "scholar",
+    "skills": [
+      "coil-and-chasm",
+      "horns-and-ivories",
+      "path-and-pilgrim",
+      "wolf-stories"
+    ],
+    "resultPrinciples": {
+      "lantern": 2,
+      "moth": 2,
+      "scale": 4
+    },
+    "resultAspects": [
+      "Memory",
+      "Evolve via Preservation"
+    ],
+    "ingredient": {
+      "aspect": "Memory",
+      "label": "Memory"
+    }
+  },
+  {
+    "id": "houndsgall--scale-keeper",
+    "result": "houndsgall",
+    "resultName": "Houndsgall",
+    "principle": "scale",
+    "tier": "keeper",
+    "skills": [
+      "horns-and-ivories",
+      "inks-of-containment",
+      "path-and-pilgrim",
+      "pentiments-and-precursors"
+    ],
+    "resultPrinciples": {
+      "edge": 1,
+      "heart": 2,
+      "scale": 5
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "item": "living-relic",
+      "label": "Living Relic"
+    }
+  },
+  {
+    "id": "serpent-milk--scale-keeper",
+    "result": "serpent-milk",
+    "resultName": "Serpent-Milk",
+    "principle": "scale",
+    "tier": "keeper",
+    "skills": [
+      "serpents-and-venoms"
+    ],
+    "resultPrinciples": {
+      "edge": 6,
+      "knock": 2,
+      "scale": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": {
+      "item": "perinculate",
+      "label": "Perinculate"
+    }
+  },
+  {
+    "id": "earthquake-name--scale-keeper",
+    "result": "earthquake-name",
+    "resultName": "Earthquake Name",
+    "principle": "scale",
+    "tier": "keeper",
+    "skills": [
+      "coil-and-chasm",
+      "hill-and-hollow",
+      "stone-stories",
+      "wolf-stories"
+    ],
+    "resultPrinciples": {
+      "forge": 3,
+      "scale": 6
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Omen",
+      "Evolve via Skolekosophy",
+      "Evolve via Ithastry"
+    ],
+    "ingredient": {
+      "item": "old-moment",
+      "label": "Old Moment"
+    }
+  },
+  {
+    "id": "awakened-feather--sky-prentice",
+    "result": "awakened-feather",
+    "resultName": "Awakened Feather",
+    "principle": "sky",
+    "tier": "prentice",
+    "skills": [
+      "anbary-and-lapidary",
+      "furs-and-feathers",
+      "lockworks-and-clockworks",
+      "sacra-limiae",
+      "sights-and-sensations",
+      "stitching-and-binding"
+    ],
+    "resultPrinciples": {
+      "scale": 1,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Material",
+      "Remains"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "dearday-lens--sky-prentice",
+    "result": "dearday-lens",
+    "resultName": "Dearday Lens",
+    "principle": "sky",
+    "tier": "prentice",
+    "skills": [
+      "glassblowing-and-vesselcrafting",
+      "glaziery-and-lightsmithing"
+    ],
+    "resultPrinciples": {
+      "edge": 1,
+      "forge": 1,
+      "lantern": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Device",
+      "Lens",
+      "Glass"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "stargall-ink--sky-prentice",
+    "result": "stargall-ink",
+    "resultName": "Stargall Ink",
+    "principle": "sky",
+    "tier": "prentice",
+    "skills": [
+      "inks-of-containment",
+      "inks-of-power",
+      "inks-of-revelation"
+    ],
+    "resultPrinciples": {
+      "forge": 1,
+      "rose": 1,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "confounding-parable--sky-prentice",
+    "result": "confounding-parable",
+    "resultName": "Confounding Parable",
+    "principle": "sky",
+    "tier": "prentice",
+    "skills": [
+      "applebright-euphonies",
+      "sacra-solis-invicti"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "rose": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Memory"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "torgues-cleansing--sky-prentice",
+    "result": "torgues-cleansing",
+    "resultName": "Torgue's Cleansing",
+    "principle": "sky",
+    "tier": "prentice",
+    "skills": [
+      "purifications-and-exaltations"
+    ],
+    "resultPrinciples": {
+      "edge": 2
+    },
+    "resultAspects": [
+      "Memory"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "wistful-air--sky-prentice",
+    "result": "wistful-air",
+    "resultName": "Wistful Air",
+    "principle": "sky",
+    "tier": "prentice",
+    "skills": [
+      "bells-and-brazieries",
+      "ouranoscopy",
+      "sky-stories",
+      "strings-and-songs",
+      "watchmans-paradoxes"
+    ],
+    "resultPrinciples": {
+      "rose": 2,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Memory",
+      "Sound"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "gervinite--sky-scholar",
+    "result": "gervinite",
+    "resultName": "Gervinite",
+    "principle": "sky",
+    "tier": "scholar",
+    "skills": [
+      "glaziery-and-lightsmithing"
+    ],
+    "resultPrinciples": {
+      "knock": 4,
+      "rose": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Material",
+      "Metal"
+    ],
+    "ingredient": {
+      "aspect": "Metal",
+      "label": "Metal"
+    }
+  },
+  {
+    "id": "ichor-auroral--sky-scholar",
+    "result": "ichor-auroral",
+    "resultName": "Ichor Auroral",
+    "principle": "sky",
+    "tier": "scholar",
+    "skills": [
+      "sights-and-sensations",
+      "watchmans-paradoxes"
+    ],
+    "resultPrinciples": {
+      "lantern": 4,
+      "rose": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "aspect": "Light",
+      "label": "Light"
+    }
+  },
+  {
+    "id": "ichor-vitreous--sky-scholar",
+    "result": "ichor-vitreous",
+    "resultName": "Ichor Vitreous",
+    "principle": "sky",
+    "tier": "scholar",
+    "skills": [
+      "glassblowing-and-vesselcrafting"
+    ],
+    "resultPrinciples": {
+      "lantern": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "aspect": "Glass",
+      "label": "Glass"
+    }
+  },
+  {
+    "id": "mazarine-fife--sky-scholar",
+    "result": "mazarine-fife",
+    "resultName": "Mazarine Fife",
+    "principle": "sky",
+    "tier": "scholar",
+    "skills": [
+      "ouranoscopy",
+      "sacra-limiae",
+      "sacra-solis-invicti"
+    ],
+    "resultPrinciples": {
+      "sky": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Instrument"
+    ],
+    "ingredient": {
+      "aspect": "Wood",
+      "label": "Wood"
+    }
+  },
+  {
+    "id": "wire-orichalcum--sky-scholar",
+    "result": "wire-orichalcum",
+    "resultName": "Wire (Orichalcum)",
+    "principle": "sky",
+    "tier": "scholar",
+    "skills": [
+      "lockworks-and-clockworks"
+    ],
+    "resultPrinciples": {
+      "forge": 4,
+      "lantern": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Material",
+      "Metal"
+    ],
+    "ingredient": {
+      "aspect": "Metal",
+      "label": "Metal"
+    }
+  },
+  {
+    "id": "xanthotic-essence--sky-scholar",
+    "result": "xanthotic-essence",
+    "resultName": "Xanthotic Essence",
+    "principle": "sky",
+    "tier": "scholar",
+    "skills": [
+      "anbary-and-lapidary"
+    ],
+    "resultPrinciples": {
+      "forge": 2,
+      "knock": 2,
+      "lantern": 5
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Pigment"
+    ],
+    "ingredient": {
+      "aspect": "Liquid",
+      "label": "Liquid"
+    }
+  },
+  {
+    "id": "living-relic--sky-scholar",
+    "result": "living-relic",
+    "resultName": "Living Relic",
+    "principle": "sky",
+    "tier": "scholar",
+    "skills": [
+      "stitching-and-binding"
+    ],
+    "resultPrinciples": {
+      "heart": 1,
+      "scale": 4,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Beast",
+      "Comfort",
+      "Co-operative"
+    ],
+    "ingredient": {
+      "aspect": "Egg",
+      "label": "Egg"
+    }
+  },
+  {
+    "id": "ascendant-harmony--sky-scholar",
+    "result": "ascendant-harmony",
+    "resultName": "Ascendant Harmony",
+    "principle": "sky",
+    "tier": "scholar",
+    "skills": [
+      "applebright-euphonies",
+      "bells-and-brazieries",
+      "furs-and-feathers",
+      "purifications-and-exaltations",
+      "sky-stories",
+      "strings-and-songs"
+    ],
+    "resultPrinciples": {
+      "lantern": 2,
+      "sky": 4
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Sound",
+      "Evolve via Birdsong"
+    ],
+    "ingredient": {
+      "aspect": "Instrument",
+      "label": "Instrument"
+    }
+  },
+  {
+    "id": "ashartine--sky-keeper",
+    "result": "ashartine",
+    "resultName": "Ashartine",
+    "principle": "sky",
+    "tier": "keeper",
+    "skills": [
+      "anbary-and-lapidary",
+      "glassblowing-and-vesselcrafting"
+    ],
+    "resultPrinciples": {
+      "forge": 1,
+      "lantern": 6,
+      "sky": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "item": "ichor-vitreous",
+      "label": "Ichor Vitreous"
+    }
+  },
+  {
+    "id": "chronsichord--sky-keeper",
+    "result": "chronsichord",
+    "resultName": "Chronsichord",
+    "principle": "sky",
+    "tier": "keeper",
+    "skills": [
+      "lockworks-and-clockworks"
+    ],
+    "resultPrinciples": {
+      "forge": 3,
+      "knock": 6,
+      "sky": 3,
+      "winter": 3
+    },
+    "resultAspects": [
+      "Thing",
+      "Tool",
+      "Device"
+    ],
+    "ingredient": {
+      "item": "wire-silver",
+      "label": "Wire (Silver)"
+    }
+  },
+  {
+    "id": "year-tally--sky-keeper",
+    "result": "year-tally",
+    "resultName": "Year-Tally",
+    "principle": "sky",
+    "tier": "keeper",
+    "skills": [
+      "ouranoscopy"
+    ],
+    "resultPrinciples": {
+      "winter": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Mark"
+    ],
+    "ingredient": {
+      "item": "essential-periost",
+      "label": "Essential Periost"
+    }
+  },
+  {
+    "id": "didumos--sky-keeper",
+    "result": "didumos",
+    "resultName": "Didumos",
+    "principle": "sky",
+    "tier": "keeper",
+    "skills": [
+      "applebright-euphonies",
+      "bells-and-brazieries",
+      "ouranoscopy",
+      "sacra-limiae",
+      "sights-and-sensations"
+    ],
+    "resultPrinciples": {
+      "knock": 3,
+      "lantern": 3,
+      "sky": 6,
+      "winter": 3
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Evolve via Horomachistry",
+      "Evolve via Hushery"
+    ],
+    "ingredient": {
+      "item": "ascendant-harmony",
+      "label": "Ascendant Harmony"
+    }
+  },
+  {
+    "id": "wind-in-waiting--sky-keeper",
+    "result": "wind-in-waiting",
+    "resultName": "Wind-in-Waiting",
+    "principle": "sky",
+    "tier": "keeper",
+    "skills": [
+      "furs-and-feathers",
+      "sacra-solis-invicti",
+      "sky-stories",
+      "strings-and-songs"
+    ],
+    "resultPrinciples": {
+      "grail": 3,
+      "moth": 3,
+      "scale": 3,
+      "sky": 6
+    },
+    "resultAspects": [
+      "Memory",
+      "Persistent",
+      "Evolve via The Bosk",
+      "Evolve via Birdsong"
+    ],
+    "ingredient": {
+      "item": "mazarine-fife",
+      "label": "Mazarine Fife"
+    }
+  },
+  {
+    "id": "eigengrau--winter-prentice",
+    "result": "eigengrau",
+    "resultName": "Eigengrau",
+    "principle": "winter",
+    "tier": "prentice",
+    "skills": [
+      "inks-of-containment",
+      "quenchings-and-quellings",
+      "sights-and-sensations"
+    ],
+    "resultPrinciples": {
+      "moon": 1,
+      "winter": 1
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative",
+      "Intoxicating"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "yewgall-ink--winter-prentice",
+    "result": "yewgall-ink",
+    "resultName": "Yewgall Ink",
+    "principle": "winter",
+    "tier": "prentice",
+    "skills": [
+      "putrefactions-and-calcinations"
+    ],
+    "resultPrinciples": {
+      "moth": 1,
+      "nectar": 2
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "bittersweet-certainty--winter-prentice",
+    "result": "bittersweet-certainty",
+    "resultName": "Bittersweet Certainty",
+    "principle": "winter",
+    "tier": "prentice",
+    "skills": [
+      "ouranoscopy",
+      "ragged-crossroads",
+      "rhyme-and-remembrance",
+      "snow-stories"
+    ],
+    "resultPrinciples": {
+      "lantern": 1,
+      "winter": 2
+    },
+    "resultAspects": [
+      "Memory",
+      "Sound"
+    ],
+    "ingredient": null
+  },
+  {
+    "id": "essential-periost--winter-scholar",
+    "result": "essential-periost",
+    "resultName": "Essential Periost",
+    "principle": "winter",
+    "tier": "scholar",
+    "skills": [
+      "rhyme-and-remembrance",
+      "snow-stories"
+    ],
+    "resultPrinciples": {
+      "moon": 2,
+      "nectar": 4,
+      "scale": 4,
+      "winter": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Remains"
+    ],
+    "ingredient": {
+      "aspect": "Remains",
+      "label": "Remains"
+    }
+  },
+  {
+    "id": "perinculate--winter-scholar",
+    "result": "perinculate",
+    "resultName": "Perinculate",
+    "principle": "winter",
+    "tier": "scholar",
+    "skills": [
+      "putrefactions-and-calcinations"
+    ],
+    "resultPrinciples": {
+      "edge": 4,
+      "grail": 1,
+      "scale": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink"
+    ],
+    "ingredient": {
+      "aspect": "Leaf",
+      "label": "Leaf"
+    }
+  },
+  {
+    "id": "solomons-preparation--winter-scholar",
+    "result": "solomons-preparation",
+    "resultName": "Solomon’s Preparation",
+    "principle": "winter",
+    "tier": "scholar",
+    "skills": [
+      "inks-of-containment",
+      "quenchings-and-quellings",
+      "ragged-crossroads",
+      "sights-and-sensations"
+    ],
+    "resultPrinciples": {
+      "moon": 1,
+      "moth": 1,
+      "winter": 4
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Beverage",
+      "Restorative"
+    ],
+    "ingredient": {
+      "aspect": "Flower",
+      "label": "Flower"
+    }
+  },
+  {
+    "id": "nillycant--winter-keeper",
+    "result": "nillycant",
+    "resultName": "Nillycant",
+    "principle": "winter",
+    "tier": "keeper",
+    "skills": [
+      "inks-of-containment",
+      "sights-and-sensations"
+    ],
+    "resultPrinciples": {
+      "edge": 7,
+      "scale": 7,
+      "winter": 7
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink",
+      "Encaustum Terminale"
+    ],
+    "ingredient": {
+      "item": "solomons-preparation",
+      "label": "Solomon’s Preparation"
+    }
+  },
+  {
+    "id": "nillycant--winter-keeper~2",
+    "result": "nillycant",
+    "resultName": "Nillycant",
+    "principle": "winter",
+    "tier": "keeper",
+    "skills": [
+      "ragged-crossroads"
+    ],
+    "resultPrinciples": {
+      "edge": 7,
+      "scale": 7,
+      "winter": 7
+    },
+    "resultAspects": [
+      "Thing",
+      "Liquid",
+      "Ink",
+      "Encaustum Terminale"
+    ],
+    "ingredient": {
+      "item": "glassfinger-toxin",
+      "label": "Glassfinger Toxin"
+    }
+  },
+  {
+    "id": "wyrd-weft--winter-keeper",
+    "result": "wyrd-weft",
+    "resultName": "Wyrd-Weft",
+    "principle": "winter",
+    "tier": "keeper",
+    "skills": [
+      "stitching-and-binding",
+      "weaving-and-knotworking"
+    ],
+    "resultPrinciples": {
+      "heart": 3,
+      "winter": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Fabric and Fibre"
+    ],
+    "ingredient": {
+      "aspect": "Fabric and Fibre",
+      "label": "Fabric and Fibre"
+    }
+  },
+  {
+    "id": "year-tally--winter-keeper",
+    "result": "year-tally",
+    "resultName": "Year Tally",
+    "principle": "winter",
+    "tier": "keeper",
+    "skills": [
+      "putrefactions-and-calcinations",
+      "ragged-crossroads",
+      "rhyme-and-remembrance",
+      "snow-stories"
+    ],
+    "resultPrinciples": {
+      "winter": 6
+    },
+    "resultAspects": [
+      "Thing",
+      "Mark"
+    ],
+    "ingredient": {
+      "item": "essential-periost",
+      "label": "Essential Periost"
+    }
+  }
+]

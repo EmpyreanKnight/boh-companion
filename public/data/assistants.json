@@ -1,0 +1,205 @@
+[
+  {
+    "id": "the-blacksmith",
+    "name": "The Blacksmith",
+    "kind": "Villager",
+    "season": null,
+    "principles": {
+      "forge": 2,
+      "edge": 2
+    },
+    "unique": "Metal",
+    "hire": "Edge, Forge, or Heart",
+    "fee": 12,
+    "icon": true
+  },
+  {
+    "id": "the-coffinmaker",
+    "name": "The Coffinmaker",
+    "kind": "Villager",
+    "season": null,
+    "principles": {
+      "winter": 2,
+      "sky": 1
+    },
+    "unique": "Wood",
+    "hire": "Winter",
+    "fee": 12,
+    "icon": true
+  },
+  {
+    "id": "the-midwife",
+    "name": "The Midwife",
+    "kind": "Villager",
+    "season": null,
+    "principles": {
+      "grail": 2,
+      "heart": 1
+    },
+    "unique": "Fabric and Fibre",
+    "hire": "Grail",
+    "fee": 12,
+    "icon": true
+  },
+  {
+    "id": "the-rector",
+    "name": "The Rector",
+    "kind": "Villager",
+    "season": null,
+    "principles": {
+      "lantern": 2,
+      "knock": 1
+    },
+    "unique": "Candle",
+    "hire": "Lantern or Knock",
+    "fee": 12,
+    "icon": true
+  },
+  {
+    "id": "the-miner",
+    "name": "The Miner",
+    "kind": "Seasonal worker",
+    "season": "Spring",
+    "principles": {
+      "scale": 2,
+      "forge": 1,
+      "moon": 1
+    },
+    "unique": null,
+    "hire": null,
+    "fee": 12,
+    "icon": true
+  },
+  {
+    "id": "the-barber",
+    "name": "The Barber",
+    "kind": "Seasonal worker",
+    "season": "Summer",
+    "principles": {
+      "moth": 2,
+      "rose": 1
+    },
+    "unique": null,
+    "hire": null,
+    "fee": 12,
+    "icon": true
+  },
+  {
+    "id": "the-orchard-keeper",
+    "name": "The Orchard-Keeper",
+    "kind": "Seasonal worker",
+    "season": "Autumn",
+    "principles": {
+      "nectar": 2,
+      "heart": 1
+    },
+    "unique": null,
+    "hire": null,
+    "fee": 12,
+    "icon": true
+  },
+  {
+    "id": "the-fisherman",
+    "name": "The Fisherman",
+    "kind": "Seasonal worker",
+    "season": "Winter",
+    "principles": {
+      "moon": 2,
+      "sky": 1
+    },
+    "unique": null,
+    "hire": null,
+    "fee": 12,
+    "icon": true
+  },
+  {
+    "id": "a-fugitive",
+    "name": "A Fugitive",
+    "kind": "Unusual helper",
+    "season": null,
+    "principles": {
+      "scale": 4,
+      "edge": 4,
+      "heart": 4
+    },
+    "unique": null,
+    "hire": null,
+    "fee": 24,
+    "icon": true
+  },
+  {
+    "id": "consulting-engineer",
+    "name": "Consulting Engineer",
+    "kind": "Unusual helper",
+    "season": null,
+    "principles": {
+      "forge": 4,
+      "sky": 4,
+      "lantern": 4
+    },
+    "unique": "Fuel",
+    "hire": null,
+    "fee": 24,
+    "icon": true
+  },
+  {
+    "id": "elegiac-poet",
+    "name": "Elegiac Poet",
+    "kind": "Unusual helper",
+    "season": null,
+    "principles": {
+      "winter": 4,
+      "moth": 4,
+      "sky": 4
+    },
+    "unique": "Flower",
+    "hire": null,
+    "fee": 24,
+    "icon": true
+  },
+  {
+    "id": "surrealist-painter",
+    "name": "Surrealist Painter",
+    "kind": "Unusual helper",
+    "season": null,
+    "principles": {
+      "grail": 4,
+      "moth": 4,
+      "rose": 4
+    },
+    "unique": "Pigment",
+    "hire": null,
+    "fee": 24,
+    "icon": true
+  },
+  {
+    "id": "travelling-musician",
+    "name": "Travelling Musician",
+    "kind": "Unusual helper",
+    "season": null,
+    "principles": {
+      "sky": 4,
+      "rose": 4,
+      "nectar": 4
+    },
+    "unique": null,
+    "hire": null,
+    "fee": 24,
+    "icon": true
+  },
+  {
+    "id": "unusual-nun",
+    "name": "Unusual Nun",
+    "kind": "Unusual helper",
+    "season": null,
+    "principles": {
+      "knock": 4,
+      "moon": 4,
+      "grail": 4
+    },
+    "unique": "Omen",
+    "hire": null,
+    "fee": 24,
+    "icon": true
+  }
+]

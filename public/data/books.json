@@ -1,0 +1,5060 @@
+[
+  {
+    "id": "a-catalogue-of-uncharted-pleasures",
+    "name": "A Catalogue of Uncharted Pleasures",
+    "principle": "grail",
+    "mystery": 12,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "orchids-and-narcotics",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "'The Dark Gentleman' is the only, and rather grandiosely, identified author of this often-copied work."
+  },
+  {
+    "id": "a-childs-treasury-of-golden-afternoons",
+    "name": "A Child's Treasury of Golden Afternoons",
+    "principle": "edge",
+    "mystery": 10,
+    "language": "hyksos",
+    "languageName": "Hyksos",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "sharps",
+      "count": 2
+    },
+    "memory": "Numen: Merciless Alteration",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "Once upon a time, a very bad man encoded very bad secrets into the charming illustrations of a book of charming stories. Wake the pictures, and you will see. [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "a-descent-of-the-shell",
+    "name": "A Descent of the Shell",
+    "principle": "forge",
+    "mystery": 14,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "purifications-and-exaltations",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A treatise on eggs, light, and optics by Abbess Melancthe, dazzlingly illuminated with renderings of the Abbess' visions."
+  },
+  {
+    "id": "a-journey-to-the-grove",
+    "name": "A Journey to the Grove",
+    "principle": "grail",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "orchids-and-narcotics",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Black Elie, who much later became Damascene Matriarch of the Sisterhood of the Knot, recounts her journey to the Grove of Green Immortals."
+  },
+  {
+    "id": "a-light-in-the-inkwell",
+    "name": "A Light in the Inkwell",
+    "principle": "lantern",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "inks-of-revelation",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Musgrave, fourth of the Dewulf line, writes tentatively about the 'Covenant of Brancrug' and the legacy of the sacred inks he calls 'encausta revelationia'."
+  },
+  {
+    "id": "a-manual-for-departure",
+    "name": "A Manual for Departure",
+    "principle": "knock",
+    "mystery": 14,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "door-and-wall",
+      "count": 2
+    },
+    "memory": "Secret Threshold",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The author, who identifies itself as the Jekadu, claims to be one of the Great Hooded Princes of the Land of the River. The style is informal, even chatty."
+  },
+  {
+    "id": "a-novel-method-for-invocation-and-contrition",
+    "name": "A Novel Method for Invocation & Contrition",
+    "principle": "rose",
+    "mystery": 14,
+    "language": "ericapaean",
+    "languageName": "Ericapaean",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 2
+    },
+    "memory": "Confounding Parable",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Ingenious and rather beautiful techniques for entreating the Names of the Hours, developed by Rory Morrow, who styled himself 'the Sage-Knight'."
+  },
+  {
+    "id": "a-pale-lady-and-a-prince-of-wines",
+    "name": "A Pale Lady and a Prince of Wines",
+    "principle": "moon",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sea-stories",
+      "count": 1
+    },
+    "memory": "Memory: Salt",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "An anonymous biography of Eva Dewulf, last of the Dewulfs, focused rather salaciously on her personal troubles and intrigues."
+  },
+  {
+    "id": "a-second-glory",
+    "name": "A Second Glory",
+    "principle": "winter",
+    "mystery": 12,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "snow-stories",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The priest Juceh celebrates the extirpation of the Gods-who-were-stone, those Hours who preceded humanity."
+  },
+  {
+    "id": "a-seventh-voice",
+    "name": "A Seventh Voice",
+    "principle": "sky",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 2
+    },
+    "memory": "Confounding Parable",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Samuel Savage's cycle of comic poems about a band of players who double as footpads seeking a seventh member."
+  },
+  {
+    "id": "a-shape-in-smoke",
+    "name": "A Shape in Smoke",
+    "principle": "forge",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "pyroglyphics",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Ambrose Westcott's exposition on tobacco-blending and 'the Oracles of the Pipe.'"
+  },
+  {
+    "id": "a-tower-falls",
+    "name": "A Tower Falls",
+    "principle": "knock",
+    "mystery": 16,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Phonograph Record",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 3
+    },
+    "memory": "Confounding Parable",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The phonograph is packaged in glossy amethyst purple card with the words A TOWER FALLS in nine languages on both sides. There is no other identifying information at all."
+  },
+  {
+    "id": "a-tower-rises",
+    "name": "A Tower Rises",
+    "principle": "rose",
+    "mystery": 18,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Phonograph Record",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 3
+    },
+    "memory": "Confounding Parable",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The phonograph is packaged in glossy card the bright pink of a dog-rose, with the words A TOWER RISES in nine languages on both sides. There is no other identifying information at all."
+  },
+  {
+    "id": "a-true-history-of-valentine-dewulf",
+    "name": "A True History of Valentine Dewulf",
+    "principle": "sky",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "furs-and-feathers",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Written in the third person by Valentine Dewulf. Rarely coherent, though it includes some useful footnotes on falconry and on exotic veterinary medicine. (Description)"
+  },
+  {
+    "id": "a-true-and-complete-accounting-of-the-asclepian-mysteries-of-the-roots-of-the-house",
+    "name": "A True and Complete Accounting of the Asclepian Mysteries of the Roots of the House",
+    "principle": "heart",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "weaving-and-knotworking",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Descriptions of the 'Asclepian Mysteries', reproduced by one 'Rylee Grese' from - supposedly - a much older text. It's unlikely to be genuine, but it makes a reference to 'The House without Walls and its Wood' right there in the prologue."
+  },
+  {
+    "id": "advice-on-containment",
+    "name": "Advice on Containment",
+    "principle": "knock",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "glassblowing-and-vesselcrafting",
+      "count": 1
+    },
+    "memory": "Memory: Pattern",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Thirza Blake discusses ways 'to keep Wood-things out of trouble, and Mansus-things in it.'"
+  },
+  {
+    "id": "against-vitruvius",
+    "name": "Against Vitruvius",
+    "principle": "sky",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "lockworks-and-clockworks",
+      "count": 1
+    },
+    "memory": "Memory: Pattern",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A fourteenth-century treatise on esoteric mechanics and parahydraulics by Abbot Ranulph, best known now as a mason-architect."
+  },
+  {
+    "id": "against-the-sisterhood-of-the-knot-and-the-foulness-of-their-depraved-customs",
+    "name": "Against the Sisterhood of the Knot and the Foulness of their Depraved Customs",
+    "principle": "sky",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sky-stories",
+      "count": 1
+    },
+    "memory": "Memory: Intuition",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Hieronymus Pseudo-Hypnerotomachus wrote this furious screed about the sinister influence of the Sisterhood of the Knot on his own Church of the Unconquered Sun."
+  },
+  {
+    "id": "ambrosial",
+    "name": "Ambrosial!",
+    "principle": "forge",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "spices-and-savours",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Ambrose Westcott's inventive - one might say pioneering, or indeed buccaneering - essays into kitchencraft."
+  },
+  {
+    "id": "amiranis-beteli",
+    "name": "Amiranis Beteli",
+    "principle": "forge",
+    "mystery": 10,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Tablet",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "bells-and-brazieries",
+      "count": 2
+    },
+    "memory": "Numen: the Bells of Ys",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "A fragment of iron-alloy meteorite carefully inscribed and polished. [This object houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "an-almanac-of-entrances",
+    "name": "An Almanac of Entrances",
+    "principle": "knock",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "edicts-liminal",
+      "count": 2
+    },
+    "memory": "Secret Threshold",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A handbook of sealed and unsealed byways and shortcuts through the Bounds, compiled by Willem Harries in the 1860s - during his term as Librarian of Hush House."
+  },
+  {
+    "id": "an-echo-of-silence",
+    "name": "An Echo of Silence",
+    "principle": "moth",
+    "mystery": 10,
+    "language": "sabazine",
+    "languageName": "Sabazine",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "sacra-limiae",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A very heterodox history of the House of Lethe as recorded by 'the Serenity' - a Lethean adept who declares that the House of Lethe was created explicitly to prevent the ascension of any more mortals to Name or Hour status."
+  },
+  {
+    "id": "an-exorcists-field-manual",
+    "name": "An Exorcist's Field Manual",
+    "principle": "moon",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "edicts-martial",
+      "count": 1
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "A practical guide to 'troublesome Dead', grounded in theory but with a clear focus on their disposal, by the redoubtable Detective-Ostiary Wheelock of the Suppression Bureau."
+  },
+  {
+    "id": "an-impertinent-vitulation",
+    "name": "An Impertinent Vitulation",
+    "principle": "grail",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "leaves-and-thorns",
+      "count": 1
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A book of kitchen-garden techniques and aphrodisiac recipes recorded by Ernestine Peterhans, the 'Iron Seneschale' of Hush House for three generations of Dewulfs. (Description)"
+  },
+  {
+    "id": "an-introduction-to-histories",
+    "name": "An Introduction to Histories",
+    "principle": "winter",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "snow-stories",
+      "count": 1
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The seventeenth-century mystic and antiquarian Claude Hersault describes divergent incidents in five major Histories."
+  },
+  {
+    "id": "an-investigation-of-a-foundered-country",
+    "name": "An Investigation of A Foundered Country",
+    "principle": "moon",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Phonograph Record",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "hill-and-hollow",
+      "count": 1
+    },
+    "memory": "Memory: A Stolen Secret",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Subtitled 'Recordings from the Atlantic Coast.'"
+  },
+  {
+    "id": "annals-of-st-brandans",
+    "name": "Annals of St Brandan's",
+    "principle": "winter",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "inks-of-containment",
+      "count": 1
+    },
+    "memory": "Memory: Regret",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Over a hundred years of the abbey's annals, from 1230 to 1350."
+  },
+  {
+    "id": "apollo-and-marsyas",
+    "name": "Apollo and Marsyas",
+    "principle": "heart",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "surgeries-and-exsanguinations",
+      "count": 1
+    },
+    "memory": "Memory: Storm",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The libretto of a lost opera concerning the contest between Apollo and Marsyas, and its tragic outcome. The librettist is identified only by their initials."
+  },
+  {
+    "id": "as-the-sun-his-course",
+    "name": "As The Sun His Course",
+    "principle": "edge",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sickle-and-eclipse",
+      "count": 2
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Joel of the Bridge, a retired soldier and sometime tollkeeper, wrote this epic poem about Alexander's famously inexplicable decision at Issus to withdraw from the war with the Achaemenids, and his subsequent return to Macedonia."
+  },
+  {
+    "id": "ascite-supplications",
+    "name": "Ascite Supplications",
+    "principle": "scale",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "stone-stories",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Prayers addressed to the Horned-Axe by the Sisterhood of the Triple Knot. (Description)"
+  },
+  {
+    "id": "bancroft-diaries",
+    "name": "Bancroft Diaries",
+    "principle": "lantern",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "pyroglyphics",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Lord Franklin Bancroft was initiated into the arts of the Flowermaker by the 'rose-witch' Fionna Ayrshire. He rose to become a Society provider of occult services and secret pleasures, before his abrupt disappearance in 1790."
+  },
+  {
+    "id": "black-nephrite",
+    "name": "Black Nephrite",
+    "principle": "moon",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "wolf-stories",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "One of Valentine Dewulf's dream-journals, in which he records his visions of 'a place that is no place, beneath the house that is no house.'"
+  },
+  {
+    "id": "book-of-miah",
+    "name": "Book of Miah",
+    "principle": "rose",
+    "mystery": 10,
+    "language": "hyksos",
+    "languageName": "Hyksos",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sand-stories",
+      "count": 2
+    },
+    "memory": "Memory: Intuition",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "An account of the 'five visits of the Desert Wanderer' - probably the Hour called the Vagabond - to the city Miah. She begins as a delighted child - perhaps even a mortal - but things then go badly…"
+  },
+  {
+    "id": "book-of-true-blood",
+    "name": "Book of True Blood",
+    "principle": "edge",
+    "mystery": 14,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "meniscate-reflections",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Cassius the Thoman reveals the deeds of the Unnumbered Legion, the secret army that protected Rome against the Shadowless Empire."
+  },
+  {
+    "id": "by-their-marks-shall-ye-know-them",
+    "name": "By Their Marks Shall Ye Know them",
+    "principle": "knock",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "surgeries-and-exsanguinations",
+      "count": 1
+    },
+    "memory": "Memory: Pattern",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A monster-hunting initiate of the Hour named the Colonel, who identifies herself as 'Little Sophia', provides advice on finding the weak spots of Long."
+  },
+  {
+    "id": "colours-in-the-liver",
+    "name": "COLOURS IN THE LIVER",
+    "principle": "grail",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Reel of Film",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "resurgences-and-emergences",
+      "count": 1
+    },
+    "memory": "Memory: Revelation",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Ilse Bischoff's most controversial film, blamed for outbreaks of cannibalistic killings in Tiflis and Leipzig."
+  },
+  {
+    "id": "calicite-supplications",
+    "name": "Calicite Supplications",
+    "principle": "grail",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "tridesma-hiera",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Prayers addressed to the Red Grail by the Sisterhood of the Triple Knot."
+  },
+  {
+    "id": "cardeas-delights",
+    "name": "Cardea's Delights",
+    "principle": "knock",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "the-great-signs-and-the-great-scars",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The third volume of Abbot Geffrey's hypothetical theological dialogues in the Socratic mode."
+  },
+  {
+    "id": "chione-at-abydos",
+    "name": "Chione at Abydos",
+    "principle": "winter",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "snow-stories",
+      "count": 1
+    },
+    "memory": "Memory: Regret",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A play dealing with the nine-year sojourn of a snow-goddess in the Thracian city of Abydos, by 'Apollo Fireweaver'. In English, published in 1892; purportedly from an older Greek text."
+  },
+  {
+    "id": "codex-acephali",
+    "name": "Codex Acephali",
+    "principle": "moon",
+    "mystery": 10,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "snow-stories",
+      "count": 2
+    },
+    "memory": "Memory: Regret",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Sometimes called 'The Book of the Clean Skull'. The book contains accounts of enlightenments available through the gradual, surgical removal of the lobes of the brain."
+  },
+  {
+    "id": "collected-hush-house-lectures",
+    "name": "Collected Hush House Lectures",
+    "principle": "moon",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sickle-and-eclipse",
+      "count": 1
+    },
+    "memory": "Memory: Intuition",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "In the 1800s, Dr Arun Peel was invited to give a series of lectures to the Curia. They combine his pithy view of the Histories with his particular brand of unhelpfully ironical insight."
+  },
+  {
+    "id": "commandments-for-the-preservation-of-all-that-exists",
+    "name": "Commandments For the Preservation of All That Exists",
+    "principle": "heart",
+    "mystery": 14,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "stitching-and-binding",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Black Elie, Damascene Matriarch of the Sisterhood of the Knot, was imprisoned by the emperor Didius Julianus. She reportedly instructed that these secret doctrines be recorded in writing to preserve against their loss. Regrettably, the story goes, Didius Julianus ordered that the work be entombed with her in an unmarked sepulcher."
+  },
+  {
+    "id": "cucurbit-prisoner-records-1927",
+    "name": "Cucurbit Prisoner Records 1927",
+    "principle": "nectar",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "insects-and-nectars",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Accounts by Governor Collers' private secretary of interventions and experiments in the last years of the Cucurbit prison, focusing particularly on prisoners he believes might have Carapace Cross lineage."
+  },
+  {
+    "id": "cucurbit-prisoner-records-1928",
+    "name": "Cucurbit Prisoner Records 1928",
+    "principle": "scale",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "hill-and-hollow",
+      "count": 2
+    },
+    "memory": "Memory: Salt",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Accounts by Governor Collers' private secretary of interventions and experiments in the last years of the Cucurbit prison, focusing particularly on the 'hill-children', wild Wood-things that have found a shape in the physical world."
+  },
+  {
+    "id": "damascene-traditions-of-the-house-of-lethe",
+    "name": "Damascene Traditions of the House of Lethe",
+    "principle": "sky",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "sacra-limiae",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The House of Lethe was an order of immortals who sought obscurity, rejecting their past and future. If the author of this short text is to be believed, the initiates of the Damascene branch were much more radical than their fellows elsewhere."
+  },
+  {
+    "id": "de-bellis-murorum",
+    "name": "De Bellis Murorum",
+    "principle": "edge",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "disciplines-of-the-scar",
+      "count": 1
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "An eighteenth-century epic poem by the pseudonymous 'Solipsistos'."
+  },
+  {
+    "id": "de-horis-book-1",
+    "name": "De Horis book 1",
+    "principle": "nectar",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "rites-of-the-roots",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "An occasionally coherent catalogue of the secret gods, organised by hour. This is a reprint, but in the original Latin."
+  },
+  {
+    "id": "de-horis-book-2",
+    "name": "De Horis book 2",
+    "principle": "edge",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "disciplines-of-the-hammer",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "In Latin. A nineteenth-century reprint (by the indefatigable Nathaniel Darcy-Evers) of a fourteenth-century Latin translation of a fourth-century work."
+  },
+  {
+    "id": "de-horis-book-3",
+    "name": "De Horis book 3",
+    "principle": "edge",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "disciplines-of-the-scar",
+      "count": 1
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "In Latin. A nineteenth-century reprint (by the indefatigable Nathaniel Darcy-Evers) of a fourteenth-century Latin translation of a fourth-century work."
+  },
+  {
+    "id": "de-ratio-quercuum",
+    "name": "De Ratio Quercuum",
+    "principle": "nectar",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "rites-of-the-roots",
+      "count": 2
+    },
+    "memory": "Earth-Sign",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "In English the title translates roughly as 'the Account of the Oaks'; but this is Nathaniel Darcy-Evers' fascinating, if haphazard, survey of the occult properties of every tree he can find, not just oaks."
+  },
+  {
+    "id": "de-motu-corporum-vetitorum",
+    "name": "De motu corporum vetitorum",
+    "principle": "sky",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "ouranoscopy",
+      "count": 2
+    },
+    "memory": "Memory: Storm",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The author rejoices in the name of 'Abelard Hubris', and the title might be translated as 'On the Forbidden Motions of Bodies' - evidently a reference to Newton's 'De Motu Corporem', published some twenty years previously."
+  },
+  {
+    "id": "deaths-and-their-evasions",
+    "name": "Deaths and their Evasions",
+    "principle": "knock",
+    "mystery": 14,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "edicts-liminal",
+      "count": 2
+    },
+    "memory": "Memory: A Stolen Secret",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Father Stanislav John Schaller writes of the means and limitation of passage between the orders of the Mansus - Know, Long, Names, Hours. Unusually, Father John has written this book in Fucine - for, he says, especial secrecy."
+  },
+  {
+    "id": "experiment-beyond-sight",
+    "name": "EXPERIMENT BEYOND SIGHT",
+    "principle": "moon",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Reel of Film",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "edicts-inviolable",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Ilse Bischoff's bewildering, widely derided final film."
+  },
+  {
+    "id": "each-flame-his-fuel",
+    "name": "Each Flame His Fuel",
+    "principle": "sky",
+    "mystery": 14,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "glaziery-and-lightsmithing",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A work by Omar, the Blaze, an initiate or craftsmaster at the Labyrinth of Lions."
+  },
+  {
+    "id": "echidnalia",
+    "name": "Echidnalia",
+    "principle": "scale",
+    "mystery": 21,
+    "language": "cracktrack",
+    "languageName": "Cracktrack",
+    "type": "Multitudinous",
+    "period": "Curia",
+    "lesson": {
+      "skill": "stone-stories",
+      "count": 3
+    },
+    "memory": "Memory: Impulse",
+    "tally": 2,
+    "multitudinous": true,
+    "description": "Part genealogy, part taxonomy, part family gossip - a closely detailed, highly specialised account of one branch of the complex brood of children associated with the Ligeian Echidna."
+  },
+  {
+    "id": "enchiridion-tragularis",
+    "name": "Enchiridion Tragularis",
+    "principle": "moon",
+    "mystery": 14,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "serpents-and-venoms",
+      "count": 2
+    },
+    "memory": "Memory: Intuition",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The poison-manual of the order of assassins called the Tragulari."
+  },
+  {
+    "id": "ettery-after",
+    "name": "Ettery After",
+    "principle": "winter",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "inks-of-containment",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "An anonymous erotic novel occasionally claimed to have been written by Eva Dewulf, although at least two duels were fought in her honour to avenge this slander. (Description)"
+  },
+  {
+    "id": "evas-treasury",
+    "name": "Eva's Treasury",
+    "principle": "sky",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "anbary-and-lapidary",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Eva Dewulf, last of the Brancrugs, discusses the occult and aesthetic properties of jewels and other precious minerals."
+  },
+  {
+    "id": "exercises-in-the-continuity-of-self",
+    "name": "Exercises in the Continuity of Self",
+    "principle": "winter",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "rhyme-and-remembrance",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Techniques proposed by the Haustorium - the most inaccessible and upsetting of the libraries of the Watchman's Tree - for 'the persistence of memory after the body is discarded'."
+  },
+  {
+    "id": "exorcism-for-girls",
+    "name": "Exorcism for Girls",
+    "principle": "edge",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sickle-and-eclipse",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Simple but forceful techniques for 'rousting unbefitting spirits', written in straightforward and colourful language."
+  },
+  {
+    "id": "fekris-herbary",
+    "name": "Fekri's Herbary",
+    "principle": "nectar",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "herbs-and-infusions",
+      "count": 1
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The early wisdom of Ehsan Fekri, at that point a travelling healer, much later the Secretary Salvant of the Curia of the Isle."
+  },
+  {
+    "id": "five-creations",
+    "name": "Five Creations",
+    "principle": "moth",
+    "mystery": 14,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "resurgences-and-emergences",
+      "count": 2
+    },
+    "memory": "Memory: Gossip",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The itinerant scholar Shohei debated five possible origins for humanity with a hooded figure since claimed to be the Beach-Crow. Shohei later claimed that all these accounts had proven false, but the debate was, nevertheless, recorded."
+  },
+  {
+    "id": "from-history-to-eternity",
+    "name": "From History to Eternity",
+    "principle": "moth",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "inks-of-revelation",
+      "count": 2
+    },
+    "memory": "Memory: Intuition",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "A contraband manual of the Inks of Revelation. The author explains in a brief foreword that she is a high-ranking officer of 'an agency of the Duties' and that, though she supports its mission, she has concerns about the long-term consequences of its work. (Description)"
+  },
+  {
+    "id": "glimmerings",
+    "name": "Glimmerings",
+    "principle": "forge",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "sights-and-sensations",
+      "count": 2
+    },
+    "memory": "Bittersweet Certainty",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "An anonymous prison diary written by a dreamer convicted of 'oneiric irresponsibility' and confined to the Cucurbit."
+  },
+  {
+    "id": "gospel-of-nicodemus",
+    "name": "Gospel of Nicodemus",
+    "principle": "lantern",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "sacra-solis-invicti",
+      "count": 1
+    },
+    "memory": "Memory: Revelation",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "An apocryphal account of the works and experiences of the Shepherd Illuminate by one of his supposed companions."
+  },
+  {
+    "id": "green-jasper-tablet",
+    "name": "Green Jasper Tablet",
+    "principle": "nectar",
+    "mystery": 10,
+    "language": "cracktrack",
+    "languageName": "Cracktrack",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "rites-of-the-roots",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Supposedly copied from a tablet of green jasper which serves as the Covenant-stone of the Monastery of the Fifth Cup - the token which gives that Library shelter beneath the Watchman's Tree."
+  },
+  {
+    "id": "honey-the-comprehensive-guide",
+    "name": "Honey: the Comprehensive Guide",
+    "principle": "nectar",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "insects-and-nectars",
+      "count": 1
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Harvey Hattington - pilot, polymath, confectioner - writes with great enthusiasm about the 'marvellous work of the Bee'."
+  },
+  {
+    "id": "how-the-end-will-begin",
+    "name": "How the End will Begin",
+    "principle": "edge",
+    "mystery": 14,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "ragged-crossroads",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A prophecy of the Wars of the Roads, recorded in the Subcontinent in the days before the Great Hooded Princes."
+  },
+  {
+    "id": "hunting-journals-of-bryan-dewulf",
+    "name": "Hunting Journals of Bryan Dewulf",
+    "principle": "scale",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "furs-and-feathers",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Bryan Dewulf, the son of the 3rd Baron Brancrug, gives advice on hunting in the Bounds. (Description)"
+  },
+  {
+    "id": "in-memory-of-gods",
+    "name": "In Memory of Gods",
+    "principle": "winter",
+    "mystery": 12,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "ragged-crossroads",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The 'Barrowchild', a nameless Gaulish adept who joined an organisation identified as the Ordo Limiae, writes regretfully of the destruction of the gods-who-were-stone - the Hours who preceded humanity."
+  },
+  {
+    "id": "in-the-mountains-as-upon-the-plain-there-may-not-be-a-path-where-none-has-passed",
+    "name": "In The Mountains As Upon The Plain There May Not Be A Path Where None Has Passed",
+    "principle": "sky",
+    "mystery": 18,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sky-stories",
+      "count": 3
+    },
+    "memory": "Memory: Gossip",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Ninegala of Lagash describes the secrets to be found in mountains."
+  },
+  {
+    "id": "in-the-malleary",
+    "name": "In the Malleary",
+    "principle": "lantern",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "anbary-and-lapidary",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A lively account of the creation of each jewel at the world's beginning."
+  },
+  {
+    "id": "inaam-kapigiginlupir-garkie-cryppys",
+    "name": "Inaam, Kapigiginlupir, Garkie, Cryppys",
+    "principle": "moth",
+    "mystery": 14,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "transformations-and-liberations",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "In which four enigmatic figures tell the stories they've heard over the years at the Roost, the secret location where the aviform Hours congregate."
+  },
+  {
+    "id": "isaac-of-karths-history-of-the-shadowless-kings",
+    "name": "Isaac of Karth's History of the Shadowless Kings",
+    "principle": "rose",
+    "mystery": 14,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sand-stories",
+      "count": 2
+    },
+    "memory": "Confounding Parable",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "'A True and Accurate History of the Shadowless Kings, by Isaac of Karth.' Isaac describes the thousand-year ascendancy of the Shadowless Empire."
+  },
+  {
+    "id": "it-is-written",
+    "name": "It Is Written",
+    "principle": "scale",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "inks-of-power",
+      "count": 2
+    },
+    "memory": "Confounding Parable",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Musgrave, fourth of the Dewulf line, writes tentatively about the 'Covenant of Brancrug' and the legacy of the sacred inks he calls 'encausta potentialia'."
+  },
+  {
+    "id": "journal-of-sir-david-greene-1903",
+    "name": "Journal of Sir David Greene, 1903",
+    "principle": "edge",
+    "mystery": 14,
+    "language": "hyksos",
+    "languageName": "Hyksos",
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "sharps",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A confidential journal kept by Greene, former Nocturnal Branch Superindent but, by 1903, Librarian of the House. Greene has kept his journal in Hyksos, presumably as an extra measure of privacy."
+  },
+  {
+    "id": "journal-of-thomas-dewulf",
+    "name": "Journal of Thomas Dewulf",
+    "principle": "sky",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "ouranoscopy",
+      "count": 1
+    },
+    "memory": "Memory: Salt",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Thomas Dewulf, 2nd Baron Brancrug, was nicknamed 'Baron Silence of Castle Silence' for his taciturn severity - most likely the origin, eventually, of the name 'Hush House'."
+  },
+  {
+    "id": "journal-of-walter-dewulf",
+    "name": "Journal of Walter Dewulf",
+    "principle": "forge",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "door-and-wall",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Walter Dewulf, 3rd Baron Brancrug, was grandson of Thomas, son of the disgraced Giles, who eloped with 'Pale Hafren'. The Dewulf line might have ended here if the Seneschale Ernestine - by then over eighty - had not managed to reconcile Thomas with a dying Giles."
+  },
+  {
+    "id": "just-verse",
+    "name": "Just Verse",
+    "principle": "rose",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 1
+    },
+    "memory": "Memory: Pattern",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "A rare surviving copy of Christopher Illopoly's notoriously unsuccessful volume of experimental poetry, published in 1912. (Description)"
+  },
+  {
+    "id": "key-of-night",
+    "name": "Key of Night",
+    "principle": "scale",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "pentiments-and-precursors",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The deliberations leading to a manifesto of the 'Worms of a Scale', as recorded around 1900 in the Bar Vienna, in the cellar of the Hotel Ciervo in Noon. (Description)"
+  },
+  {
+    "id": "kitling-ripe-and-the-moldywarps-grave-and-other-stories",
+    "name": "Kitling Ripe and the Moldywarp's Grave (and Other Stories)",
+    "principle": "moth",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "resurgences-and-emergences",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A lusciously illustrated tome of loosely connected children's stories. Few of them are remotely suitable for children."
+  },
+  {
+    "id": "kitling-ripes-tasty-treats",
+    "name": "Kitling Ripe's Tasty Treats",
+    "principle": "nectar",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "spices-and-savours",
+      "count": 1
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The Velvet is the Hour of secrets; and so very little is known of the - Moth-long? Nectar-long? - who ascend to immortality under her auspices. But this book (by 'Kitling's Friend') purports to be part cook-book, and part manual for immortality. (Description)"
+  },
+  {
+    "id": "kopralith-omphalos",
+    "name": "Kopralith Omphalos",
+    "principle": "moth",
+    "mystery": 10,
+    "language": "killasimi",
+    "languageName": "Killasimi",
+    "type": "Tablet",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "weaving-and-knotworking",
+      "count": 2
+    },
+    "memory": "Numen: Weaving the World",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "What is this? A tufted fossil of silken fibre, big as a child. [This object houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "lady-evas-repose",
+    "name": "Lady Eva's Repose",
+    "principle": "winter",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "rhyme-and-remembrance",
+      "count": 1
+    },
+    "memory": "Memory: Regret",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A 'meditation' on the drowning of Lady Eva Dewulf and her two grandchildren, written in the years when the estate was abandoned by Father Theo, once the Dewulf family chaplain, one of the few to remain on the Isle in those desolate years."
+  },
+  {
+    "id": "lake-fucino-recordings",
+    "name": "Lake Fucino Recordings",
+    "principle": "heart",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Phonograph Record",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "drums-and-dances",
+      "count": 2
+    },
+    "memory": "Beguiling Melody",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Recordings of the folk-dances of the Fucine Marshes."
+  },
+  {
+    "id": "letters-to-my-successor",
+    "name": "Letters To My Successor",
+    "principle": "lantern",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "inks-of-revelation",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Advice from Gervinus van Lauren, eleventh Librarian of Hush House, to the one who will come after him."
+  },
+  {
+    "id": "letters-from-a-fugitive",
+    "name": "Letters from a Fugitive",
+    "principle": "rose",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "path-and-pilgrim",
+      "count": 1
+    },
+    "memory": "Confounding Parable",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Lars Westergren, explorer and murderer, spent seven years escaping justice through his knowledge of byways and shortcuts in the Bounds. Throughout that time he wrote regularly to his daughter, possibly in part to taunt his pursuers. (Description)"
+  },
+  {
+    "id": "malachite-supplications",
+    "name": "Malachite Supplications",
+    "principle": "moon",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "tridesma-hiera",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Prayers addressed to the Malachite by the Sisterhood of the Triple Knot."
+  },
+  {
+    "id": "medusas-lament",
+    "name": "Medusa's Lament",
+    "principle": "scale",
+    "mystery": 14,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "horns-and-ivories",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "On the death of the Hour called Seven-Coils, 'the Father of the Mother'. (Description)"
+  },
+  {
+    "id": "medusan-commentaries",
+    "name": "Medusan Commentaries",
+    "principle": "grail",
+    "mystery": 21,
+    "language": "killasimi",
+    "languageName": "Killasimi",
+    "type": "Multitudinous",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "pentiments-and-precursors",
+      "count": 3
+    },
+    "memory": "Memory: Fear",
+    "tally": 3,
+    "multitudinous": true,
+    "description": "Haustorial discussions of Medusa's histories."
+  },
+  {
+    "id": "musgraves-sketches",
+    "name": "Musgrave's Sketches",
+    "principle": "winter",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sights-and-sensations",
+      "count": 2
+    },
+    "memory": "Bittersweet Certainty",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Musgrave, 4th Baron Brancrug, was widely mocked as 'the Bleating Baron' and 'the Lamb Dewulf', but these sketches reveal a complex, sombre inner life."
+  },
+  {
+    "id": "my-deeds-my-powers-my-achievements-and-the-injustices-perpetrated-against-me",
+    "name": "My Deeds, My Powers, My Achievements and the Injustices Perpetrated Against Me",
+    "principle": "forge",
+    "mystery": 16,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "transformations-and-liberations",
+      "count": 3
+    },
+    "memory": "Memory: Foresight",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A diatribe by Hokobald of Pocsind, formerly of the order of immortals called the House of Lethe (later the Ordo Limiae; much latter the Obliviates). He has scores to settle."
+  },
+  {
+    "id": "naenian-sketches",
+    "name": "Naenian Sketches",
+    "principle": "winter",
+    "mystery": 21,
+    "language": "sabazine",
+    "languageName": "Sabazine",
+    "type": "Multitudinous",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "sights-and-sensations",
+      "count": 3
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 1,
+    "multitudinous": true,
+    "description": "Travelogues and studies exchanged by raggies and ghouls - that is, the Long who've ascended under the patronage of the Sun-in-Rags and those who won the attention of the Elegiast."
+  },
+  {
+    "id": "nix-abolix",
+    "name": "Nix Abolix",
+    "principle": "moon",
+    "mystery": 16,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "wolf-stories",
+      "count": 3
+    },
+    "memory": "Memory: Fear",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A grim treatise on 'those feasts that occur, those feasts that are not to be witnessed.'"
+  },
+  {
+    "id": "notes-on-bindings",
+    "name": "Notes on Bindings",
+    "principle": "heart",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "stitching-and-binding",
+      "count": 2
+    },
+    "memory": "Memory: Solace",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Gideon Dewulf, 5th Baron Brancrug, discusses techniques shared between medical suturing, tailoring, and - carefully, allusively - the binding of restless spirits."
+  },
+  {
+    "id": "nyns-cages-avignon-text",
+    "name": "Nyn's Cages (Avignon Text)",
+    "principle": "heart",
+    "mystery": 16,
+    "language": "ericapaean",
+    "languageName": "Ericapaean",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "quenchings-and-quellings",
+      "count": 3
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The 'merciful measures' of the witch Nyn."
+  },
+  {
+    "id": "nyns-cages-bruges-text-illuminated",
+    "name": "Nyn's Cages (Bruges Text, Illuminated)",
+    "principle": "winter",
+    "mystery": 10,
+    "language": "ericapaean",
+    "languageName": "Ericapaean",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "quenchings-and-quellings",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The 'merciful measures' of the witch Nyn. This is only a partial version of the original, but it contains illustrations by Nyn's pupil, Mabelie of Bruges, which supplement the original."
+  },
+  {
+    "id": "oghkor-oghkor-tissilak-oghkor",
+    "name": "OGHKOR OGHKOR TISSILAK OGHKOR",
+    "principle": "knock",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "the-great-signs-and-the-great-scars",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A surprisingly chatty text by an entity that identifies itself as 'the Excellency Gnathobasis'."
+  },
+  {
+    "id": "oblations-in-iron",
+    "name": "Oblations in Iron",
+    "principle": "winter",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "inks-of-containment",
+      "count": 1
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A Monster-hunting initiate of the Hour named the Colonel, who identifies herself as 'Little Sophia', records the exhibits she has rendered to the Worm Museum in the Mansus."
+  },
+  {
+    "id": "observations-on-the-peacock-door",
+    "name": "Observations on the Peacock Door",
+    "principle": "moon",
+    "mystery": 10,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "sickle-and-eclipse",
+      "count": 2
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Ninegala of Lagash discusses the Peacock Door, the highest door available to mortals in the Mansus: 'a rent, an imperfection, an abrasion.'."
+  },
+  {
+    "id": "old-coppernose-and-the-softer-metal",
+    "name": "Old Coppernose and the Softer Metal",
+    "principle": "forge",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "bells-and-brazieries",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A disgraceful compendium of ribald poetry about the habits and corruptions of Henry VIII."
+  },
+  {
+    "id": "on-imperfections",
+    "name": "On Imperfections",
+    "principle": "knock",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "glassblowing-and-vesselcrafting",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Poemander, light-smith and Lantern-long, describes the process of 'transinhabitation', which he calls 'a manifestation of imperfection."
+  },
+  {
+    "id": "on-matthias-and-the-amethyst-imago-loss",
+    "name": "On Matthias and the Amethyst Imago: Loss",
+    "principle": "moth",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "solutions-and-separations",
+      "count": 1
+    },
+    "memory": "Memory: A Stolen Secret",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "An account of an occult romance. A certain Para, son of Aaron, claims to have written this in a single night as part of his initiation into the Damascene branch of the House of Lethe - that order of immortals who rejected their past and future."
+  },
+  {
+    "id": "on-matthias-and-the-amethyst-imago-pursuit",
+    "name": "On Matthias and the Amethyst Imago: Pursuit",
+    "principle": "grail",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "desires-and-dissolutions",
+      "count": 1
+    },
+    "memory": "Memory: Gossip",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "An account of an occult romance. A certain Mek claims to have written this in a single night as part of his initiation into the Theban branch of the House of Lethe - that order of immortals who used the arts of water to conceal themselves."
+  },
+  {
+    "id": "on-matthias-and-the-amethyst-imago-transformation",
+    "name": "On Matthias and the Amethyst Imago: Transformation",
+    "principle": "forge",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "spices-and-savours",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "An account of an occult romance. A certain Iyavogos claims to have written this in a single night as part of his initiation into the Aleppine branch of the House of Lethe - that order of immortals who would not pledge themselves to any Hour."
+  },
+  {
+    "id": "on-resonance",
+    "name": "On Resonance",
+    "principle": "sky",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "bells-and-brazieries",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Experiments in ithastry by the 'sky-smith' Everett Vinzant."
+  },
+  {
+    "id": "on-thirstlies-ivories-and-lovelies",
+    "name": "On Thirstlies, Ivories and Lovelies",
+    "principle": "grail",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "resurgences-and-emergences",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Fionna Ayrshire recounts her visits in dreams to the 'Red Church' in the Mansus, and her conversations with the Names of the Grail."
+  },
+  {
+    "id": "on-what-is-contained-by-silver",
+    "name": "On What is Contained By Silver",
+    "principle": "sky",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "glassblowing-and-vesselcrafting",
+      "count": 1
+    },
+    "memory": "Memory: Pattern",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A dire bestiary of the horrors to be found in mirrors. This is a recent edition of a third century text by 'Poemander'. (Description)"
+  },
+  {
+    "id": "on-the-matter-and-the-deeds-of-serpents",
+    "name": "On the Matter and the Deeds of Serpents",
+    "principle": "knock",
+    "mystery": 12,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "edicts-liminal",
+      "count": 2
+    },
+    "memory": "Secret Threshold",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "This was probably the 'prophecies of the naga' rendered into English, and illustrated, by 'William Midnight' in Paris in the 1880s; but it shows a number of divergences from that text. It's certainly quite recent by the standards of Vak texts."
+  },
+  {
+    "id": "on-the-white",
+    "name": "On the White",
+    "principle": "winter",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "quenchings-and-quellings",
+      "count": 1
+    },
+    "memory": "Memory: Regret",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Solomon Husher writes, perhaps allegorically, of Winter, and its long slow doomed romance with the Sun. The epigraph is 'Sunset at Noon'. (Description)"
+  },
+  {
+    "id": "on-the-winding-stair",
+    "name": "On the Winding Stair",
+    "principle": "knock",
+    "mystery": 8,
+    "language": "ramsund",
+    "languageName": "Ramsund",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "door-and-wall",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Gregory Wheelock, the master mason and architect employed by Walter Dewulf to construct the Winding Stair and the guest chambers in Hush House, describes a more ambitious and dangerous project."
+  },
+  {
+    "id": "one-hundred-and-eight",
+    "name": "One Hundred And Eight",
+    "principle": "scale",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "pentiments-and-precursors",
+      "count": 1
+    },
+    "memory": "Confounding Parable",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Eva Dewulf discurses on the Fifth History, and particularly on those who are said to have 'passed over' from it - the Great Hooded Princes, the Knock-long who ascended under the Mother of Ants but now (so Eva claims) honour the Horned-Axe."
+  },
+  {
+    "id": "one-thousand-threads",
+    "name": "One Thousand Threads",
+    "principle": "grail",
+    "mystery": 12,
+    "language": "killasimi",
+    "languageName": "Killasimi",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "tridesma-hiera",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The fate-supplications of the Matriarch of the Well, recorded in darkness by her weavers and her daughters…"
+  },
+  {
+    "id": "opening-the-sky",
+    "name": "Opening the Sky",
+    "principle": "sky",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Phonograph Record",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "strings-and-songs",
+      "count": 2
+    },
+    "memory": "Cheerful Ditty",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "An unusual recording of Verro's 'Opening the Sky', composed for the coronation of the New King, Henry IX. The record bears the Suppression stamp EXPUNGE."
+  },
+  {
+    "id": "operations-of-a-certain-finality",
+    "name": "Operations of a Certain Finality",
+    "principle": "winter",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "putrefactions-and-calcinations",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Subtitled 'The Hammer's Sundering'. The work of an anonymous adept who violently despised the Invisible Serapeum, the library of the Watchman's Tree in Alexandria."
+  },
+  {
+    "id": "opus-magnum-caeruleum",
+    "name": "Opus Magnum Caeruleum",
+    "principle": "lantern",
+    "mystery": 14,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "pyroglyphics",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Ambrose Westcott used to render the title of this venerable and anonymous work mockingly as 'the Big Blue Business'. A kinder translation would be 'the Great Work in Azure'."
+  },
+  {
+    "id": "perugian-diaries",
+    "name": "Perugian Diaries",
+    "principle": "sky",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "strings-and-songs",
+      "count": 1
+    },
+    "memory": "Cheerful Ditty",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "In 1907, at the age of eighteen, Christopher Illopoly left Strathcoyne's household to study theology at the University of Perugia in Italy, enrolling under the name 'Christopher Strathcoyne'."
+  },
+  {
+    "id": "plantagenet-mysteries",
+    "name": "Plantagenet Mysteries",
+    "principle": "moth",
+    "mystery": 21,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Multitudinous",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "transformations-and-liberations",
+      "count": 3
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": true,
+    "description": "Exhaustive attempts to analyse and renew the Blood of the Sun by one of the numerous occult societies, after the manner of the Endeavour Club, for whatever squalid political motive."
+  },
+  {
+    "id": "prophecies-of-glory",
+    "name": "Prophecies of Glory",
+    "principle": "lantern",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "watchmans-paradoxes",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Religious and patriotic fables collected, or composed, by William Gore."
+  },
+  {
+    "id": "quirinic-meditations",
+    "name": "Quirinic Meditations",
+    "principle": "lantern",
+    "mystery": 21,
+    "language": "ericapaean",
+    "languageName": "Ericapaean",
+    "type": "Multitudinous",
+    "period": "Solar",
+    "lesson": {
+      "skill": "auroral-contemplations",
+      "count": 3
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 4,
+    "multitudinous": true,
+    "description": "Battle-apothegms of the Name Quirinus."
+  },
+  {
+    "id": "rapt-in-the-king",
+    "name": "Rapt in the King",
+    "principle": "heart",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "drums-and-dances",
+      "count": 2
+    },
+    "memory": "Earth-Sign",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Detailed accounts of secret bachanals and ecstatic dances observed in necropolises and graveyards in Southern Europe, in Egypt and in Anatolia. The author is a self-confessed ghoul, an eater of buried flesh: he claims to have witnessed the dances while at his feasting."
+  },
+  {
+    "id": "recordings-from-the-althiban-abyss",
+    "name": "Recordings from the Althiban Abyss",
+    "principle": "scale",
+    "mystery": 4,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Phonograph Record",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "stone-stories",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Recordings from a subterranean space in the mountains near Baghdad of 'conversations' between the entomologist Juliana Zawistowski and an unidentified presence."
+  },
+  {
+    "id": "serpent-root",
+    "name": "Serpent-Root",
+    "principle": "nectar",
+    "mystery": 10,
+    "language": "cracktrack",
+    "languageName": "Cracktrack",
+    "type": "Tablet",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "rites-of-the-roots",
+      "count": 2
+    },
+    "memory": "Numen: Loopholes",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "A mass of root-stock, shiny with age but still somehow viable. Tiny spidery scratchings, marked with embedded egg-shell shards, encode a cryptic message. [This object houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "seven-faces-of-icarus",
+    "name": "Seven Faces of Icarus",
+    "principle": "sky",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "furs-and-feathers",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "In the early 1530s, the last Abbot of St Brandan's, called 'Roaring Richard', set down his conversations with the illiterate local cunning-man, Red William."
+  },
+  {
+    "id": "seven-shards",
+    "name": "Seven Shards",
+    "principle": "edge",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "disciplines-of-the-hammer",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The Lionsmith, one of the two great Hours of struggle, broke his sword into seven shards. Natalia Brulleau, fifth Librarian of Hush House, describes the nature of each of those shards, allegorically and otherwise."
+  },
+  {
+    "id": "shuritic-book-of-suns",
+    "name": "Shuritic Book of Suns",
+    "principle": "sky",
+    "mystery": 10,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Scroll",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sacra-solis-invicti",
+      "count": 2
+    },
+    "memory": "Numen: the Great Counterfeit",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "A radically different text from any of the other versions of the Book of Suns, attributed to Hagar, Queen of Shur, Mother of Wolves. [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "singlefoot-songs",
+    "name": "Singlefoot Songs",
+    "principle": "scale",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "hill-and-hollow",
+      "count": 1
+    },
+    "memory": "Savage Hymn",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Father Stanislav John Schaller, priest and diplomat, writes of his time on the slopes of Huashan - 'near to the Grove of the Green Immortals, but never too near.'"
+  },
+  {
+    "id": "skin-of-silver",
+    "name": "Skin of Silver",
+    "principle": "forge",
+    "mystery": 10,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "disciplines-of-the-hammer",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The epic of the final battle of the Lionsmith with the remnant-giant Antaios."
+  },
+  {
+    "id": "snare-of-the-tree-collected-proverbs-of-aunt-mopsy",
+    "name": "Snare of the Tree: Collected Proverbs of Aunt Mopsy",
+    "principle": "grail",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "applebright-euphonies",
+      "count": 2
+    },
+    "memory": "Confounding Parable",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "‘Once in the Wood, we call a visit. Twice in the Wood, we call a journey. Thrice, we call coming home.’"
+  },
+  {
+    "id": "stolen-histories",
+    "name": "Stolen Histories",
+    "principle": "scale",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "coil-and-chasm",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The agitator and pamphleteer Alexander Sparrow inveighs against the 'monstrous Serpents, Thieves of History.'"
+  },
+  {
+    "id": "sunrise-awakenings",
+    "name": "Sunrise Awakenings",
+    "principle": "lantern",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "auroral-contemplations",
+      "count": 1
+    },
+    "memory": "Memory: Revelation",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "An uncharacteristically poignant meditation by the Edge-long Twrog of Meirionnydd, who later came to Hush House under a variety of other names, often in search of some sort of fight."
+  },
+  {
+    "id": "sunset-celia-and-the-end-of-days",
+    "name": "Sunset Celia and the End of Days",
+    "principle": "sky",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sacra-limiae",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "An Obliviate adept identified only as 'the Emiliano' rants desperately about the part Sunset Celia played in the Intercalate, as 'the proxy of the Sun'."
+  },
+  {
+    "id": "sunset-passages",
+    "name": "Sunset Passages",
+    "principle": "forge",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sacra-solis-invicti",
+      "count": 1
+    },
+    "memory": "Memory: Revelation",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A miscellany of the funerary prayers, ceremonies and hymns of the Church of the Unconquered Sun, which was ascendant in the Third and Fourth Histories. It schismed during the Intercalate, when the Sun was divided, and has not survived as a significant force."
+  },
+  {
+    "id": "the-open-head",
+    "name": "THE OPEN HEAD",
+    "principle": "edge",
+    "mystery": 8,
+    "language": "hyksos",
+    "languageName": "Hyksos",
+    "type": "Reel of Film",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "disciplines-of-the-scar",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Ilse Bischoff's hallucinatory quasi-documentary, notionally about the Greco-Turkish War of the previous decade."
+  },
+  {
+    "id": "the-account-of-kanishk-at-the-spiders-door",
+    "name": "The Account of Kanishk at the Spider's Door",
+    "principle": "moon",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sharps",
+      "count": 1
+    },
+    "memory": "Memory: A Stolen Secret",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Lok Kahuli, Kanishk's victim and lover, wrote this account, perhaps posthumously."
+  },
+  {
+    "id": "the-admonitory-automata-project",
+    "name": "The Admonitory Automata Project",
+    "principle": "forge",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Reel of Film",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "lockworks-and-clockworks",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Footage of experimental devices under development in the Cucurbit under Governor Collers' supervision."
+  },
+  {
+    "id": "the-alloy-of-the-white-rose",
+    "name": "The Alloy of the White Rose",
+    "principle": "lantern",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "purifications-and-exaltations",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "An account by 'Mistress White-Flower' of the alchemical techniques favoured by the House of York, also identified with the 'Dawn Road'. These techniques failed to bring them victory in the War of the Roads, but are 'not to be discounted'."
+  },
+  {
+    "id": "the-amalgam-of-the-red-rose",
+    "name": "The Amalgam of the Red Rose",
+    "principle": "forge",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "meniscate-reflections",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "An account by 'Mistress Red-Flower' of the alchemical operations favoured by the House of Lancaster, also identified with the 'Sunset Road'. These operations ultimately led to their victory in the War of the Roads, but are described as 'now debased'."
+  },
+  {
+    "id": "the-ascendant",
+    "name": "The Ascendant",
+    "principle": "edge",
+    "mystery": 10,
+    "language": "hyksos",
+    "languageName": "Hyksos",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "edicts-martial",
+      "count": 2
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The Edge-long Dardesh boasts of her victories over her brother-enemy Tareg in the days of the Shadowless Empire. (The Ascendant)"
+  },
+  {
+    "id": "the-barrowchilds-elegies",
+    "name": "The Barrowchild's Elegies",
+    "principle": "winter",
+    "mystery": 10,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "rhyme-and-remembrance",
+      "count": 2
+    },
+    "memory": "Memory: Regret",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The Barrowchild, a Gaulish adept who won a place in the ranks of the Ordo Limiae, enumerates the 'great shadows' laid to rest in tombs of power, and discusses their various conditions."
+  },
+  {
+    "id": "the-bee-keepers-ends",
+    "name": "The Bee-Keeper's Ends",
+    "principle": "nectar",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "insects-and-nectars",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Dialogues with bees and uses for honey, as erratically recorded by Ricardo Milagro, gardener of Hush House in Musgrave's time."
+  },
+  {
+    "id": "the-berrybook",
+    "name": "The Berrybook",
+    "principle": "nectar",
+    "mystery": 8,
+    "language": "killasimi",
+    "languageName": "Killasimi",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "leaves-and-thorns",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Thirza Blake, seventh librarian of Hush House, talks about fruit. For no other apparent reason but that it was the kind of thing she did, she talks about fruit in the woven language Killasimi."
+  },
+  {
+    "id": "the-black-book-of-brittany",
+    "name": "The Black Book of Brittany",
+    "principle": "moon",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "inks-of-containment",
+      "count": 2
+    },
+    "memory": "Bittersweet Certainty",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A volume of ink-lore gifted to St Brandan's by Brian of Brittany, who was made Earl of Cornwall after the Norman Conquest."
+  },
+  {
+    "id": "the-book-of-cinders",
+    "name": "The Book of Cinders",
+    "principle": "forge",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "pyroglyphics",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Ostensibly an eighteenth-century fireworks manual, but with some exotic ingredient choices and a substantial section on 'teframancy', divination from ashes."
+  },
+  {
+    "id": "the-book-of-dissolution",
+    "name": "The Book of Dissolution",
+    "principle": "forge",
+    "mystery": 12,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "transformations-and-liberations",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Alexander Probst recovered a copy of this work from a mountain-temple in Persia. Other copies surface now and then, usually seared on rock."
+  },
+  {
+    "id": "the-book-of-masks",
+    "name": "The Book of Masks",
+    "principle": "moth",
+    "mystery": 14,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "weaving-and-knotworking",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Athena Vana's work on the rogue Hour called the Vagabond, who is also known as the Laughingthrush, the Centipede, the Pilgrim, and by many other names - or as Vana has it, 'masks'."
+  },
+  {
+    "id": "the-book-of-thrones",
+    "name": "The Book of Thrones",
+    "principle": "edge",
+    "mystery": 12,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "auroral-contemplations",
+      "count": 2
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A legend of the Shadowless Empire, transcribed by Alexander Peterhans from annals at a secret shrine in Anatolia."
+  },
+  {
+    "id": "the-book-of-the-centipede",
+    "name": "The Book of the Centipede",
+    "principle": "rose",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sand-stories",
+      "count": 1
+    },
+    "memory": "Memory: Intuition",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "In the mid 1860s one 'Madam Yi' presented an entertainment based, she claimed, on this book."
+  },
+  {
+    "id": "the-book-of-the-extinguished-heart",
+    "name": "The Book of the Extinguished Heart",
+    "principle": "heart",
+    "mystery": 16,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "quenchings-and-quellings",
+      "count": 3
+    },
+    "memory": "Bittersweet Certainty",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "In the days of the Shadowless Kings, Ennis Lazali was executed for prophesying the Division of the Sun. If any of his captors grew Long, they probably feel rather abashed now."
+  },
+  {
+    "id": "the-book-of-the-white-cat",
+    "name": "The Book of the White Cat",
+    "principle": "sky",
+    "mystery": 16,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "watchmans-paradoxes",
+      "count": 3
+    },
+    "memory": "Memory: Revelation",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Stories brought by a blind white cat to Penelope of Gordion."
+  },
+  {
+    "id": "the-burning-woman",
+    "name": "The Burning Woman",
+    "principle": "forge",
+    "mystery": 14,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "transformations-and-liberations",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A transcription of the play by Menander the Victor, possibly the dramatist of that name, into Phrygian, with commentaries."
+  },
+  {
+    "id": "the-carbonek-schism",
+    "name": "The Carbonek Schism",
+    "principle": "moth",
+    "mystery": 6,
+    "language": "sabazine",
+    "languageName": "Sabazine",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "sacra-limiae",
+      "count": 1
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The order of Obliviates, on the brink of schism, assembles in a Bounds-house identified only as 'Carbonek', after the Fisher-King's castle of legend. There the Know and the Long of the order debate their long policy of non-involvement in 'matters of Feather and Scale'."
+  },
+  {
+    "id": "the-carmine-petal-revised",
+    "name": "The Carmine Petal: Revised",
+    "principle": "forge",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "disciplines-of-the-hammer",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "An apparently theoretical project proposed by 'Lionel' of the Society of the Noble Endeavour which might permit the imprisonment of a renegade Forge-Name. A very heavily revised edition of an earlier and even more controversial work."
+  },
+  {
+    "id": "the-carmine-petal-unexpurgated",
+    "name": "The Carmine Petal: Unexpurgated",
+    "principle": "forge",
+    "mystery": 18,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "disciplines-of-the-hammer",
+      "count": 3
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A project proposed by 'Lionel' of the Society of the Noble Endeavour by which, he claims, he succeeded in creating a sanctuary for a fugitive Forge-Name. The unexpurgated version."
+  },
+  {
+    "id": "the-ceaseless-tantra",
+    "name": "The Ceaseless Tantra",
+    "principle": "heart",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "weaving-and-knotworking",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The avant-garde choreographer Nicholas Keirle supposedly incorporated this Tantra into his menacing ballets."
+  },
+  {
+    "id": "the-chandlers-wish",
+    "name": "The Chandler's Wish",
+    "principle": "lantern",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "inks-of-revelation",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Formulae and instructions invoking Moth, Lantern and - exceptionally, paradoxically - the liminal and theoretical Hour called the Chandler. The author is anonymous, admitting only that they are 'one who is not yet nameless."
+  },
+  {
+    "id": "the-concursum-diaries",
+    "name": "The Concursum Diaries",
+    "principle": "rose",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "path-and-pilgrim",
+      "count": 2
+    },
+    "memory": "Memory: Intuition",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The diaries of the explorer and murderer Lars Westergren. He's unhelpfully translated them into Phrygian, for privacy."
+  },
+  {
+    "id": "the-crossing-to-noon",
+    "name": "The Crossing to Noon",
+    "principle": "moon",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sea-stories",
+      "count": 2
+    },
+    "memory": "Memory: Salt",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The mystic Garcia Sauri gives a picaresque account of the adventures of Franklin Bancroft, 'Prince of Wines', and Eva Dewulf, 'the Pale Lady', on their way to the hidden island of Noon."
+  },
+  {
+    "id": "the-deaths-of-the-moon",
+    "name": "The Deaths of the Moon",
+    "principle": "moon",
+    "mystery": 8,
+    "language": "killasimi",
+    "languageName": "Killasimi",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "snow-stories",
+      "count": 2
+    },
+    "memory": "Memory: Salt",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A Haustorial tract on various forms of survival after death."
+  },
+  {
+    "id": "the-debate-of-seven-cups",
+    "name": "The Debate of Seven Cups",
+    "principle": "moth",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "solutions-and-separations",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "‘Distillations of Spirit’ recorded by an alchemist who identifies himself in the foreword as ‘But Sir Thomas Browne’s Reflexion.’"
+  },
+  {
+    "id": "the-deeds-of-the-scarred-captain",
+    "name": "The Deeds of the Scarred Captain",
+    "principle": "edge",
+    "mystery": 12,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "sharps",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Painstakingly assembled by the soldier of fortune and sometime remittance man, Pavel Shulga, during his years in Greece."
+  },
+  {
+    "id": "the-devoured-tantra",
+    "name": "The Devoured Tantra",
+    "principle": "grail",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "applebright-euphonies",
+      "count": 1
+    },
+    "memory": "Confounding Parable",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The diplomat-priest Stanislav John Schaller transcribed this from the library of a Red Long, but his manuscript remains in a private collection in Kerisham."
+  },
+  {
+    "id": "the-dream-of-the-conspiracy-of-the-lower-skies",
+    "name": "The Dream of the Conspiracy of the Lower Skies",
+    "principle": "grail",
+    "mystery": 16,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "the-great-signs-and-the-great-scars",
+      "count": 3
+    },
+    "memory": "Memory: Gossip",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The disgraced oracle Damaon Azenaten sifts through the tall tales of Penelope of Gordion, the work of the court poet Kalle and the forbidden fragments of the work of the adept Arrettrez, indentifying common themes."
+  },
+  {
+    "id": "the-elations-of-limentinus",
+    "name": "The Elations of Limentinus",
+    "principle": "knock",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "the-great-signs-and-the-great-scars",
+      "count": 1
+    },
+    "memory": "Memory: Pattern",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The second volume of Abbot Geffrey's hypothetical theological debates in the Socratic mode."
+  },
+  {
+    "id": "the-encircling-tantra",
+    "name": "The Encircling Tantra",
+    "principle": "scale",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "horns-and-ivories",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The explorer and entrepreneur T. Everett Duplantis once attempted to plunder the temple where this text was held. His fate is recorded in an appendix."
+  },
+  {
+    "id": "the-fallen-cross",
+    "name": "The Fallen Cross",
+    "principle": "sky",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "ouranoscopy",
+      "count": 1
+    },
+    "memory": "Memory: Regret",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "In which Julian Coseley, magus, immortal, occasional anarchist, argues that through language the Carapace Cross decayed to seed the lives of our ancestors. (Description)"
+  },
+  {
+    "id": "the-fire-circle-tantra",
+    "name": "The Fire-Circle Tantra",
+    "principle": "moth",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Scroll",
+    "period": "Curia",
+    "lesson": {
+      "skill": "solutions-and-separations",
+      "count": 2
+    },
+    "memory": "Memory: Intuition",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The one known extant copy of this in Western Europe was stolen from the British Library in 1892. One Harvey Hattington confessed to the crime and claimed to have eaten it, with butter and garlic, in a moment of ungovernable whimsy."
+  },
+  {
+    "id": "the-five-letters-on-memory",
+    "name": "The Five Letters On Memory",
+    "principle": "winter",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "rhyme-and-remembrance",
+      "count": 1
+    },
+    "memory": "Memory: Regret",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Julian Coseley's epistolary treatise on 'matters memorial and mnemonic', addressed to his then-friend Claude Hersault, the mystic and antiquarian."
+  },
+  {
+    "id": "the-flayed-tantra",
+    "name": "The Flayed Tantra",
+    "principle": "heart",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Scroll",
+    "period": "Curia",
+    "lesson": {
+      "skill": "maggephene-mysteries",
+      "count": 2
+    },
+    "memory": "Memory: Storm",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "This Tantra is recorded as being spoken by an enigmatic individual identified as 'Peel', with many of the qualities of the mythological naga. The Flayed Tantra played a notable part in Alexander Sparrow's paranoid pamphleteering."
+  },
+  {
+    "id": "the-focus-of-amber",
+    "name": "The Focus of Amber",
+    "principle": "sky",
+    "mystery": 16,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "glaziery-and-lightsmithing",
+      "count": 3
+    },
+    "memory": "Memory: Revelation",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Omar, the Blaze, spent seven years manning a lighthouse in Tyre, in atonement for the extinguishing of a sacred flame. By the end of his stint, he was so terrified of fire that he could not stand to share a room with a candle. This work was written in partial penance."
+  },
+  {
+    "id": "the-geminiad-i",
+    "name": "The Geminiad i",
+    "principle": "heart",
+    "mystery": 10,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "weaving-and-knotworking",
+      "count": 2
+    },
+    "memory": "Memory: Solace",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A fragile manuscript, illuminated with twinned shapes of sad and luminous beauty, and with all the phases of the moon. It might be as old as the seventh century, but the language - Fucine - is much older. The cover is tooled goatskin decorated with garnet."
+  },
+  {
+    "id": "the-geminiad-ii",
+    "name": "The Geminiad ii",
+    "principle": "grail",
+    "mystery": 10,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "pentiments-and-precursors",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A fragile manuscript, illuminated with twinned shapes of sad and luminous beauty, and with all the phases of the moon. It might be as old as the seventh century, but the language - Fucine - is much older. The cover is a dark and exotic leather with a smooth, almost chitinous surface, decorated with jasper."
+  },
+  {
+    "id": "the-geminiad-iii",
+    "name": "The Geminiad iii",
+    "principle": "moth",
+    "mystery": 12,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "resurgences-and-emergences",
+      "count": 2
+    },
+    "memory": "Beguiling Melody",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A fragile manuscript, illuminated with twinned shapes of sad and luminous beauty, and with all the phases of the moon. It might be as old as the seventh century, but the language - Fucine - is much older. Coral decorates its cover, and its page-edges are sharp enough to slash a throat."
+  },
+  {
+    "id": "the-gospel-of-zacchaeus",
+    "name": "The Gospel of Zacchaeus",
+    "principle": "knock",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "horns-and-ivories",
+      "count": 2
+    },
+    "memory": "Memory: A Stolen Secret",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "An extremely heterodox account of the Nazarene Messiah and his works, describing his ascension to the Mansus through the opening of his body."
+  },
+  {
+    "id": "the-grand-passage-of-the-hours",
+    "name": "The Grand Passage of the Hours",
+    "principle": "knock",
+    "mystery": 12,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "door-and-wall",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The Limian Burzghash's gazetteer of the patterns and rhythms of the Hours' progress through the Mansus, from Concursum to Malleary, Malleary to Wood…"
+  },
+  {
+    "id": "the-high-mysteries-of-the-innermost-chamber-of-our-church-solar",
+    "name": "The High Mysteries of the Innermost Chamber of our Church Solar",
+    "principle": "lantern",
+    "mystery": 14,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "sacra-solis-invicti",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The secret rites of the Church of the Unconquered Sun, which held power in at least two Histories."
+  },
+  {
+    "id": "the-high-traditions-of-the-noble-endeavour",
+    "name": "The High Traditions of the Noble Endeavour",
+    "principle": "edge",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "disciplines-of-the-hammer",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A blandly positive work on the Endeavour Club, published by the Endeavour Club. The Club was founded in 1862 but claims to draw from much older traditions."
+  },
+  {
+    "id": "the-hissing-key",
+    "name": "The Hissing Key",
+    "principle": "scale",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "serpents-and-venoms",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "An account of the ascent of the Hour called the Mother of Ants, by the Bosk-scholar Mek, of the Theban branch of the House of Lethe."
+  },
+  {
+    "id": "the-history-of-inks",
+    "name": "The History of Inks",
+    "principle": "rose",
+    "mystery": 14,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "inks-of-power",
+      "count": 2
+    },
+    "memory": "Memory: Intuition",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A legendary grimoire of exotic ink-making lore. The cover and some of the pages, unfortunately are stained and crusted with something more like mucus than ink. (Description)"
+  },
+  {
+    "id": "the-humours-of-a-gentleman",
+    "name": "The Humours of a Gentleman",
+    "principle": "sky",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "sky-stories",
+      "count": 1
+    },
+    "memory": "Memory: Gossip",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Samuel Savage's satirical comedy, on the intrigues of the ailing, but cunning John Sonne, his mistress Maevelin, her lover Leo, and the upstart Corvino."
+  },
+  {
+    "id": "the-incandescent-tantra",
+    "name": "The Incandescent Tantra",
+    "principle": "forge",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Scroll",
+    "period": "Curia",
+    "lesson": {
+      "skill": "transformations-and-liberations",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Michael Blockley, the eccentric iron magnate, was fond of quoting from this tantra. Blockley died in a factory fire."
+  },
+  {
+    "id": "the-instruments-of-the-heart",
+    "name": "The Instruments of the Heart",
+    "principle": "heart",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "drums-and-dances",
+      "count": 2
+    },
+    "memory": "Cheerful Ditty",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Sister Isabel, then Precentress of the Abbey-Church of St Brandan's, engages in dialogues with a Heart-long of a kind called 'duendrazon' that has taken partial possession of her body."
+  },
+  {
+    "id": "the-intimations-of-skin",
+    "name": "The Intimations of Skin",
+    "principle": "grail",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "desires-and-dissolutions",
+      "count": 2
+    },
+    "memory": "Beguiling Melody",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Fiendishly complex, weirdly distorted illustrations of 'congress and anatomy' by the haunted visionary painter Niels Frederik Malskær."
+  },
+  {
+    "id": "the-invisible-opera-unfinished-recording",
+    "name": "The Invisible Opera (Unfinished Recording)",
+    "principle": "sky",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Phonograph Record",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "strings-and-songs",
+      "count": 2
+    },
+    "memory": "Cheerful Ditty",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "A recording of a 1911 attempt at a performance of 'Wings within Wings', the so-called Invisible Opera."
+  },
+  {
+    "id": "the-iron-book",
+    "name": "The Iron Book",
+    "principle": "edge",
+    "mystery": 8,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "disciplines-of-the-hammer",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A manual of the Ordo Limiae, an order of quasi-immortals who maintained a secret enclave at the source of the river Limia, in the Roman province of Hispania Gallaecia. This manual was compiled by one Melerai Yivni, who claims to have travelled to join the Ordo from 'the Crossroads of the Waters'."
+  },
+  {
+    "id": "the-ivory-book",
+    "name": "The Ivory Book",
+    "principle": "winter",
+    "mystery": 8,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "quenchings-and-quellings",
+      "count": 2
+    },
+    "memory": "Memory: Regret",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A manual of the Ordo Limiae, an order of quasi-immortals who maintained a secret enclave at the source of the river Limia, in the Roman province of Hispania Gallaecia. This manual was compiled by one Kurenai, who claims to have fled 'the tyranny of the Chrysanthemum Throne' to cross the world and join the Ordo."
+  },
+  {
+    "id": "the-kerisham-portolan",
+    "name": "The Kerisham Portolan",
+    "principle": "moon",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sea-stories",
+      "count": 1
+    },
+    "memory": "Memory: Gossip",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A beautifully illustrated and heavily annotated 'portolan' - a nautical atlas of ports and destinations."
+  },
+  {
+    "id": "the-known-unknown-tantra",
+    "name": "The Known-Unknown Tantra",
+    "principle": "lantern",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "watchmans-paradoxes",
+      "count": 1
+    },
+    "memory": "Memory: Revelation",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Carlos Garcia Sauri, the ectastic mystic of the Pyrenees, was known to recite this in three languages, though he had never visited the Subcontinent."
+  },
+  {
+    "id": "the-larquebine-codex",
+    "name": "The Larquebine Codex",
+    "principle": "moon",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sea-stories",
+      "count": 1
+    },
+    "memory": "Memory: Salt",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Christoph Larquebus claimed to have purchased two hand-written copies of the Codex from a family of witches on the shores of the Sea of Marmara. A third was 'given to the Sea'."
+  },
+  {
+    "id": "the-leonine-tantra",
+    "name": "The Leonine Tantra",
+    "principle": "edge",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Scroll",
+    "period": "Curia",
+    "lesson": {
+      "skill": "edicts-martial",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "In the most notorious translation of the Leonine Tantra, Ashley Phillips is listed as the translator, but their existence is explicitly denied in the prologue. This confusion is characteristic of books which mention the Great Hooded Princes."
+  },
+  {
+    "id": "the-lion-and-the-glass",
+    "name": "The Lion and the Glass",
+    "principle": "sky",
+    "mystery": 12,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "glaziery-and-lightsmithing",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "An early work by Omar the Blaze, a novice or apprentice at the Labyrinth of Lions."
+  },
+  {
+    "id": "the-locksmiths-dream-incursus",
+    "name": "The Locksmith's Dream: Incursus",
+    "principle": "lantern",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "glaziery-and-lightsmithing",
+      "count": 1
+    },
+    "memory": "Confounding Parable",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The fifth (and final?) volume of Teresa Galmier's notorious work, which began as an examination of parallels in the mystic dreams of artisans but became an account of her own occult journey. This volume was apparently never published nor, allegedly, even written. Yet here it is."
+  },
+  {
+    "id": "the-locksmiths-dream-portions-and-proportions",
+    "name": "The Locksmith's Dream: Portions and Proportions",
+    "principle": "sky",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "lockworks-and-clockworks",
+      "count": 1
+    },
+    "memory": "Confounding Parable",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The second volume of Teresa Galmier's examination of parallels in the mystic dreams of artisans. The frontispiece has been slashed with a razor."
+  },
+  {
+    "id": "the-locksmiths-dream-stolen-reflections",
+    "name": "The Locksmith's Dream: Stolen Reflections",
+    "principle": "sky",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "watchmans-paradoxes",
+      "count": 1
+    },
+    "memory": "Memory: Revelation",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The fourth volume of Teresa Galmier's expansive work - no longer a discussion of the dreams of artisans, but a valuable survey of other works. The tone is calmer than that of 'Trespasses', but occasionally fearful, even paranoid. This volume was published in 1926 but almost immediately recalled and pulped by the publisher - at the request of the author or possibly the authorities, depending which story you believe. A few copies survive."
+  },
+  {
+    "id": "the-locksmiths-dream-trespasses",
+    "name": "The Locksmith's Dream: Trespasses",
+    "principle": "knock",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "edicts-liminal",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The third volume of Teresa Galmier's examination of parallels in the mystic dreams of artisans."
+  },
+  {
+    "id": "the-locksmiths-dream-a-light-through-the-keyhole",
+    "name": "The Locksmith's Dream: a Light through the Keyhole",
+    "principle": "lantern",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "purifications-and-exaltations",
+      "count": 1
+    },
+    "memory": "Memory: Revelation",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The first volume of Teresa Galmier's examination of parallels in the mystic dreams of artisans."
+  },
+  {
+    "id": "the-manner-in-which-the-alchemist-was-spared",
+    "name": "The Manner in which the Alchemist was Spared",
+    "principle": "forge",
+    "mystery": 14,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "anbary-and-lapidary",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "In 1782, Anaël Verdier used this text as the basis for a presentation to the Academy of Sciences in Paris. He was executed in secret the following morning without trial."
+  },
+  {
+    "id": "the-messenger-awaiting-her-destination",
+    "name": "The Messenger Awaiting Her Destination",
+    "principle": "forge",
+    "mystery": 16,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "door-and-wall",
+      "count": 3
+    },
+    "memory": "Memory: Pattern",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The Limian Burzghash records his prophecies of a City Unbuilt, and entreaties to its Herald."
+  },
+  {
+    "id": "the-mirror-of-melancthe",
+    "name": "The Mirror of Melancthe",
+    "principle": "sky",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "sights-and-sensations",
+      "count": 2
+    },
+    "memory": "Memory: Solace",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The day-book and dream-journal of Abbess Melancthe, venerated as a saint and respected as an alchemist."
+  },
+  {
+    "id": "the-moons-egg",
+    "name": "The Moon's Egg",
+    "principle": "moon",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "pearl-and-tide",
+      "count": 1
+    },
+    "memory": "Confounding Parable",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The third and last volume of the meditations of Abbot Thomas of the Abbey of the Black Dove."
+  },
+  {
+    "id": "the-morphy-codex",
+    "name": "The Morphy Codex",
+    "principle": "moon",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "tridesma-hiera",
+      "count": 1
+    },
+    "memory": "Beguiling Melody",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A priestess of the Sisterhood of the Knot claims to have discerned the true meaning of the Thunderskin's birth."
+  },
+  {
+    "id": "the-most-sorrowful-end-of-the-lady-nonna",
+    "name": "The Most Sorrowful End of the Lady Nonna",
+    "principle": "nectar",
+    "mystery": 4,
+    "language": "kernewek-henavek",
+    "languageName": "Kernewek Henavek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "herbs-and-infusions",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "An unauthorised account of the death of Abbess Nonna, written by Eusebia, one of the two sisters accused of having murdered Nonna through 'poisoning and Arts unsanctioned.' Eusebia, awaiting execution, intends to hide this account in her cell..."
+  },
+  {
+    "id": "the-orchid-transfigurations-noon",
+    "name": "The Orchid Transfigurations: Noon",
+    "principle": "heart",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "maggephene-mysteries",
+      "count": 1
+    },
+    "memory": "Memory: Solace",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The third volume of a compilation of quasi-Rosicrucian allegories, supposedly by Robert Fludd. This is in the original Latin."
+  },
+  {
+    "id": "the-orchid-transfigurations-a-birth",
+    "name": "The Orchid Transfigurations: a Birth",
+    "principle": "grail",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "resurgences-and-emergences",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The second volume of a compilation of quasi-Rosicrucian allegories, supposedly by Robert Fludd. This is in the original Latin."
+  },
+  {
+    "id": "the-orchid-transfigurations-a-feast",
+    "name": "The Orchid Transfigurations: a Feast",
+    "principle": "grail",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "desires-and-dissolutions",
+      "count": 1
+    },
+    "memory": "Memory: Intuition",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A compilation of quasi-Rosicrucian allegories, supposedly by Robert Fludd. This is in the original Latin."
+  },
+  {
+    "id": "the-origins-of-hours",
+    "name": "The Origins of Hours",
+    "principle": "sky",
+    "mystery": 16,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sacra-limiae",
+      "count": 3
+    },
+    "memory": "Confounding Parable",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The sage and ecstatic Soham, a frequent visitor to the Mansus, claimed to have discoursed with the Beachcrow in person. Soham later insisted on a sky-burial."
+  },
+  {
+    "id": "the-other-eye-of-the-serpent",
+    "name": "The Other Eye of the Serpent",
+    "principle": "sky",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "anbary-and-lapidary",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "In which the heresiarch Cygnifer attempts to resolve certain mysteries of Lightning."
+  },
+  {
+    "id": "the-other-line",
+    "name": "The Other Line",
+    "principle": "heart",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 1
+    },
+    "memory": "Confounding Parable",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "One of Samuel Savage's more thoughtful works: an allegorical play about the City Clarity, a city that is also a book, and the sentences which inhabit it."
+  },
+  {
+    "id": "the-queens-turn",
+    "name": "The Queen's Turn",
+    "principle": "moon",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "hill-and-hollow",
+      "count": 2
+    },
+    "memory": "Memory: Salt",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "A sixteenth-century translation of the Barrowchild's account of 'Lagiah's Turn' - when Lagiah, the Queen Unsated, was offered the opportunity to enter the service of the Hours of the Triple Knot, as long as she repudiated her brother-lover Antaios."
+  },
+  {
+    "id": "the-queens-of-the-rivers",
+    "name": "The Queens of the Rivers",
+    "principle": "scale",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "path-and-pilgrim",
+      "count": 1
+    },
+    "memory": "Memory: Gossip",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "A surreal contemporary play by the enigmatic Monica Medina, in which the Queens of the Rivers are murdered, one by one. (Description)"
+  },
+  {
+    "id": "the-radical-measure",
+    "name": "The Radical Measure",
+    "principle": "rose",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Manifesto for experimental and dangerous-sounding invocatory poetry, written some time in the nineteenth century by Dr Arun Peel. A notoriously inconsistent and incoherent text, apparently produced in a tearing hurry."
+  },
+  {
+    "id": "the-radical-measure-glossed",
+    "name": "The Radical Measure (Glossed)",
+    "principle": "rose",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": null,
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The original 'Radical Measures' was a manifesto for experimental poetry with occult properties, written in the nineteenth century by Dr Arun Peel. The original is notoriously incoherent - much later, Christopher Illopoly took on the task of editing and glossing it. He has taken some liberties, but the updated version is generally well regarded."
+  },
+  {
+    "id": "the-raptures-of-forculus",
+    "name": "The Raptures of Forculus",
+    "principle": "knock",
+    "mystery": 4,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "the-great-signs-and-the-great-scars",
+      "count": 1
+    },
+    "memory": "Memory: Pattern",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The first volume of Abbot Geffrey's hypothetical theological debates in the Socratic mode."
+  },
+  {
+    "id": "the-red-book-of-brittany",
+    "name": "The Red Book of Brittany",
+    "principle": "rose",
+    "mystery": 12,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "inks-of-power",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A volume of ink-lore gifted to St Brandan's by Brian of Brittany, who was made Earl of Cornwall after the Norman Conquest."
+  },
+  {
+    "id": "the-republic-of-teeth",
+    "name": "The Republic of Teeth",
+    "principle": "scale",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "serpents-and-venoms",
+      "count": 1
+    },
+    "memory": "Memory: Intuition",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "An eccentric political tract by Valentine Dewulf."
+  },
+  {
+    "id": "the-road-to-janus",
+    "name": "The Road to Janus",
+    "principle": "knock",
+    "mystery": 18,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "door-and-wall",
+      "count": 3
+    },
+    "memory": "Memory: Pattern",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The Limian Burzghash makes a series of prophecies regarding 'the Initiates of the House of Silence', with intricate, if unhelpful, predictions on their passage through the House."
+  },
+  {
+    "id": "the-rose-of-hypatia",
+    "name": "The Rose of Hypatia",
+    "principle": "moth",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "weaving-and-knotworking",
+      "count": 2
+    },
+    "memory": "Memory: Solace",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A volume of collected teachings of the Sisterhood of the Knot, that arcane-contemplative order that existed in all histories, but in some was very powerful indeed. This was recorded by 'Hypatia', and dedicated to St Nympha."
+  },
+  {
+    "id": "the-rose-of-nuriel",
+    "name": "The Rose of Nuriel",
+    "principle": "grail",
+    "mystery": 10,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "the-great-signs-and-the-great-scars",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A volume of collected teachings of the Sisterhood of the Knot, that arcane-contemplative order that existed in all histories, but in some was very powerful indeed. This was recorded by 'Nuriel', and dedicated to St Tryphon."
+  },
+  {
+    "id": "the-rose-of-waznei",
+    "name": "The Rose of Waznei",
+    "principle": "lantern",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "auroral-contemplations",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The heretical teachings of a disgraced offshoot of the Sisterhood of the Knot, that arcane-contemplative order that existed in all histories. This was recorded by 'Waznei', and dedicated to St Respicius."
+  },
+  {
+    "id": "the-scar-in-the-sky",
+    "name": "The Scar in the Sky",
+    "principle": "winter",
+    "mystery": 14,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "quenchings-and-quellings",
+      "count": 2
+    },
+    "memory": "Memory: Regret",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Nyn wrote this, and came to regret it."
+  },
+  {
+    "id": "the-sea-does-not-regret",
+    "name": "The Sea Does Not Regret",
+    "principle": "moon",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "pearl-and-tide",
+      "count": 1
+    },
+    "memory": "Memory: Salt",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Ehsan Fekri, one-time Secretary Salvant of the Curia of the Isle - responsible for the Curia's healing efforts - writes of his experiences in Brancrug, and hints at his travels elsewhere."
+  },
+  {
+    "id": "the-secret-colours",
+    "name": "The Secret Colours",
+    "principle": "moon",
+    "mystery": 14,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "sickle-and-eclipse",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Black Elie, disgraced Damascene Matriarch of the Sisterhood of the Triple Knot, wrote this while fleeing the 'agents of the Duty.'"
+  },
+  {
+    "id": "the-serenity-of-the-black-wood",
+    "name": "The Serenity of the Black Wood",
+    "principle": "moth",
+    "mystery": 12,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "sacra-limiae",
+      "count": 2
+    },
+    "memory": "Confounding Parable",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "An allegorical history of the House of Lethe, which it is here implied was inspired by the Centipede. 'Sereno Blackwood' is an occult alias to this day."
+  },
+  {
+    "id": "the-sevenfold-slaying-of-the-seven-coiled",
+    "name": "The Sevenfold Slaying of the Seven-Coiled",
+    "principle": "edge",
+    "mystery": 16,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "disciplines-of-the-scar",
+      "count": 3
+    },
+    "memory": "Memory: Fear",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "An account of the destruction of a primaeval Hour, a god-who-was-Stone."
+  },
+  {
+    "id": "the-shadow-in-the-stair",
+    "name": "The Shadow in the Stair",
+    "principle": "nectar",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "coil-and-chasm",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Ernestine Peterhans records her conversations with the 'little darkness' in Hush House's Stair Tenebrous, which she calls 'Donkerling'."
+  },
+  {
+    "id": "the-shaven-lock-tantra",
+    "name": "The Shaven Lock Tantra",
+    "principle": "moth",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "rites-of-the-roots",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Also known as 'The One Who Has Shaven His Hair'. This, the story goes, is the lore that even the shapechanging Vanaras rejected."
+  },
+  {
+    "id": "the-silver-book",
+    "name": "The Silver Book",
+    "principle": "moth",
+    "mystery": 8,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "edicts-liminal",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "A manual of the Ordo Limiae, an order of quasi-immortals who maintained a secret enclave at the source of the river Limia, in the Roman province of Hispania Gallaecia. This manual was compiled by one Burzghash, who explains that he came to join the Ordo from the 'city of messenger eagles' after he abandoned the service of the Ivory Dove."
+  },
+  {
+    "id": "the-six-letters-on-necessity",
+    "name": "The Six Letters on Necessity",
+    "principle": "moth",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "transformations-and-liberations",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Warnings and confessions about the cost of the secret arts, addressed to a student by the seventeenth-century magus (and reputed immortal) Julian Coseley."
+  },
+  {
+    "id": "the-skeleton-songs",
+    "name": "The Skeleton Songs",
+    "principle": "grail",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "resurgences-and-emergences",
+      "count": 1
+    },
+    "memory": "Beguiling Melody",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Poems of greedy delight composed by the possibly pseudonymous Arabella Dusk, the rumoured heiress-turned-madam-turned-poetess."
+  },
+  {
+    "id": "the-sky-in-the-scar",
+    "name": "The Sky in the Scar",
+    "principle": "edge",
+    "mystery": 10,
+    "language": "sabazine",
+    "languageName": "Sabazine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sickle-and-eclipse",
+      "count": 2
+    },
+    "memory": "Numen: Back Into Balance",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "Gnomic exhortations that might be described as 'emergency procedures' for the return of the travelling kinds of the Carapace Cross. [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "the-sky-the-soul",
+    "name": "The Sky, the Soul",
+    "principle": "lantern",
+    "mystery": 12,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "pyroglyphics",
+      "count": 2
+    },
+    "memory": "Memory: Foresight",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The grand labour of Kalle, an ascetic poet writing at the court of the Shadowless Kings."
+  },
+  {
+    "id": "the-songs-of-the-carapace-cross",
+    "name": "The Songs of the Carapace Cross",
+    "principle": "moth",
+    "mystery": 16,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "edicts-liminal",
+      "count": 3
+    },
+    "memory": "Memory: Pattern",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Micah Xi, sometimes called the Magus of Quartz, etched this work in acid on stone. It has been reproduced many times in many languages since, but the reproductions are often lost to landslides."
+  },
+  {
+    "id": "the-sun-disfigured",
+    "name": "The Sun Disfigured",
+    "principle": "grail",
+    "mystery": 10,
+    "language": "cracktrack",
+    "languageName": "Cracktrack",
+    "type": "Scroll",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "applebright-euphonies",
+      "count": 2
+    },
+    "memory": "Numen: the Sun's Weakness",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "A scroll of anthropoderm parchment, written in the golden ink called Uzult. [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "the-suns-design",
+    "name": "The Sun's Design",
+    "principle": "lantern",
+    "mystery": 10,
+    "language": "cracktrack",
+    "languageName": "Cracktrack",
+    "type": "Tablet",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "watchmans-paradoxes",
+      "count": 2
+    },
+    "memory": "Numen: the Paths of the Sun",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "A scorched slab of black corundum, minutely scratched on every side with intricate ideoglyphs. [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "the-suns-lament",
+    "name": "The Sun's Lament",
+    "principle": "edge",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "ragged-crossroads",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The first volume of the meditations of Abbot Thomas of the Abbey of the Black Dove."
+  },
+  {
+    "id": "the-tantra-of-worms",
+    "name": "The Tantra of Worms",
+    "principle": "scale",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "coil-and-chasm",
+      "count": 2
+    },
+    "memory": "Memory: Fear",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The entomologist Juliana Zawistowski eventually came to insist that this text was written by insects inhabiting a human skin. She never presented evidence for her claim. There are diagrams. The diagrams are not good to look upon."
+  },
+  {
+    "id": "the-temptations-of-architecture",
+    "name": "The Temptations of Architecture",
+    "principle": "forge",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "door-and-wall",
+      "count": 2
+    },
+    "memory": "Secret Threshold",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "The antiquarian and nyctodromist Ambrose Westcott writes of the 'dangers of doors', with particular reference to a house in the bounds named 'Treowen'."
+  },
+  {
+    "id": "the-thirsting-tantra",
+    "name": "The Thirsting Tantra",
+    "principle": "grail",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Scroll",
+    "period": "Curia",
+    "lesson": {
+      "skill": "orchids-and-narcotics",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "C.G. Burial, the temperance campaigner, published elements of this in a pamphlet, which had to be withdrawn and destroyed after it became popular."
+  },
+  {
+    "id": "the-three-and-the-three-kerisham-manuscript",
+    "name": "The Three and the Three (Kerisham Manuscript)",
+    "principle": "moon",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "edicts-inviolable",
+      "count": 2
+    },
+    "memory": "Memory: Intuition",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A more recent version of a much older text, this book describes the operations of the Chancel and the Calyptra, two triads of Hours with subtle, far-reaching powers and responsibilities. It has been heavily censored, but even so contains potent secrets."
+  },
+  {
+    "id": "the-three-and-the-three-st-chiavi-manuscript",
+    "name": "The Three and the Three (St Chiavi Manuscript)",
+    "principle": "moon",
+    "mystery": 18,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "edicts-inviolable",
+      "count": 3
+    },
+    "memory": "Numen: Three Rules",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "This book describes the operations of the Chancel and the Calyptra, two triads of Hours with subtle, far-reaching powers and responsibilities. Of all the extant versions, this one has best survived the interventions of the Calyptra. [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "the-three-and-the-three-vatican-manuscript",
+    "name": "The Three and the Three (Vatican Manuscript)",
+    "principle": "moon",
+    "mystery": 14,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "edicts-inviolable",
+      "count": 2
+    },
+    "memory": "Memory: Intuition",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A Church-authorised version of an older text, this book describes the Chancel and the Calyptra, two triads of Hours with subtle, far-reaching powers and responsibilities. It has clearly been reworked to fit Church doctrine."
+  },
+  {
+    "id": "the-time-of-division",
+    "name": "The Time of Division",
+    "principle": "heart",
+    "mystery": 14,
+    "language": "deep-mandaic",
+    "languageName": "Deep Mandaic",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "surgeries-and-exsanguinations",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "In which Amira Zahra prophesies the events later known as the Intercalate, when the Hour called Sun-in-Splendour will be divided."
+  },
+  {
+    "id": "the-treatise-on-underplaces",
+    "name": "The Treatise on Underplaces",
+    "principle": "knock",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "horns-and-ivories",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Herein, the seventeenth-century mystic and antiquarian Claude Hersault describes the 'Bounds' or 'Underplaces' on the borders of dream. He warns that they shift over time."
+  },
+  {
+    "id": "the-tripled-heart",
+    "name": "The Tripled Heart",
+    "principle": "grail",
+    "mystery": 4,
+    "language": "kernewek-henavek",
+    "languageName": "Kernewek Henavek",
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "tridesma-hiera",
+      "count": 1
+    },
+    "memory": "Memory: Intuition",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Sacred poems composed in honour of the Hours venerated by the Sisterhood of the Triple Knot."
+  },
+  {
+    "id": "the-turquoise-hand",
+    "name": "The Turquoise Hand",
+    "principle": "rose",
+    "mystery": 10,
+    "language": "ramsund",
+    "languageName": "Ramsund",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "pentiments-and-precursors",
+      "count": 2
+    },
+    "memory": "Numen: That Old Lost Music",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "A calligraphic manual of Ramsund which employs as exemplar-text Farid ud-Din's 'Conference of the Birds'. [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "the-twelve-letters-on-consequence",
+    "name": "The Twelve Letters On Consequence",
+    "principle": "moon",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "putrefactions-and-calcinations",
+      "count": 1
+    },
+    "memory": "Memory: Regret",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Julian Coseley's epistolary treatise on 'what may come after', addressed to his once-friend Claude Hersault, the mystic and antiquarian."
+  },
+  {
+    "id": "the-twin-serpent-tantra",
+    "name": "The Twin-Serpent Tantra",
+    "principle": "knock",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "edicts-liminal",
+      "count": 2
+    },
+    "memory": "Memory: Pattern",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Just before the outbreak of the Great War, 'Alexander Sparrow' - almost certainly a pseudonym - published leaflets claiming the influence of 'Snake Princes' on world affairs. The text called the Twin-Serpent Tantra was his primary inspiration. (Description)"
+  },
+  {
+    "id": "the-victory-of-crowns",
+    "name": "The Victory of Crowns",
+    "principle": "edge",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "sharps",
+      "count": 1
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Erratic accounts by 'Arun' of the hunting and consumption of supposed immortals by shadowy assassins. Published in the late nineteenth century."
+  },
+  {
+    "id": "the-viennese-conundra",
+    "name": "The Viennese Conundra",
+    "principle": "moon",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "wolf-stories",
+      "count": 1
+    },
+    "memory": "Memory: Fear",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Van Driel describes odd events in Vienna - the disappearance of children; epidemics of parasite activity; animal mutilations; nightmares of worms; the activities of a charitable organisation, the New Ligeians, that funds the burial of the poor. She proposes peculiar connections between these activities."
+  },
+  {
+    "id": "the-vinzant-inscriptions",
+    "name": "The Vinzant Inscriptions",
+    "principle": "forge",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Phrygian",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "transformations-and-liberations",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Everett Vinzant transcribed these from a cliff in Anatolia, where he famously survived a lightning-strike. He died seven years later to the day. His bones, the legend has it, were hot to the touch. (Description)"
+  },
+  {
+    "id": "the-voyages-of-ferninshun-of-oreol",
+    "name": "The Voyages of Ferninshun of Oreol",
+    "principle": "moon",
+    "mystery": 18,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sea-stories",
+      "count": 3
+    },
+    "memory": "Memory: Salt",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The impossible travels of a sea-captain of the late Phoenician era. Suppressed throughout recorded history: those who read it were said to disappear. (Description)"
+  },
+  {
+    "id": "the-war-of-the-roads-1451-1551",
+    "name": "The War of the Roads, 1451-1551",
+    "principle": "edge",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "meniscate-reflections",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Willis-Ford describes the War of the Roads, an event in a History other than our own, in detail - from its beginnings as a martial-philosophical dispute between the Dawn and Sunset Roads of alchemy, to a war which ravaged half of Europe."
+  },
+  {
+    "id": "the-watchful-tantra",
+    "name": "The Watchful Tantra",
+    "principle": "lantern",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Sanskrit",
+    "type": "Scroll",
+    "period": "Curia",
+    "lesson": {
+      "skill": "purifications-and-exaltations",
+      "count": 2
+    },
+    "memory": "Memory: Revelation",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "Notorious for its involvement in the deaths of Dafydd Jones and Meredith Blaine, two early physicists who each claimed to have the only copy and who ultimately fought a duel over it in 1840."
+  },
+  {
+    "id": "the-white-book-of-brittany",
+    "name": "The White Book of Brittany",
+    "principle": "winter",
+    "mystery": 10,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "ragged-crossroads",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "A volume of death-lore gifted to St Brandan's by Brian of Brittany, who was made Earl of Cornwall after the Norman Conquest."
+  },
+  {
+    "id": "the-winds-ruin",
+    "name": "The Wind's Ruin",
+    "principle": "grail",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Solar",
+    "lesson": {
+      "skill": "applebright-euphonies",
+      "count": 1
+    },
+    "memory": "Beguiling Melody",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "The second volume of the meditations of Abbot Thomas of the Abbey of the Black Dove."
+  },
+  {
+    "id": "the-wonderful-shape",
+    "name": "The Wonderful Shape",
+    "principle": "grail",
+    "mystery": 10,
+    "language": "killasimi",
+    "languageName": "Killasimi",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "tridesma-hiera",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Blessings and invocations of the Triple Knot recorded at a sanctuary in Cyprus notable for its weavers, sculptors, and gardeners."
+  },
+  {
+    "id": "the-world-despoild",
+    "name": "The World Despoil'd",
+    "principle": "moon",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "maggephene-mysteries",
+      "count": 1
+    },
+    "memory": "Memory: Solace",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Subtitled 'the Flowers in the Waste': an epic poem that presents a medical treatise through allegory. The author is Gideon Dewulf, 5th Baron Brancrug, sometimes unkindly called 'the Cutter'."
+  },
+  {
+    "id": "the-world-does-not-weep",
+    "name": "The World Does Not Weep",
+    "principle": "winter",
+    "mystery": 10,
+    "language": null,
+    "languageName": "Aramaic",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "putrefactions-and-calcinations",
+      "count": 2
+    },
+    "memory": "Memory: Hindsight",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "'Brown' Joshua found this in a well in Hamath. There's an unlikely story that it was abandoned by Alexander during his retreat from Issus."
+  },
+  {
+    "id": "the-wound-wounds",
+    "name": "The Wound-Wounds",
+    "principle": "edge",
+    "mystery": 18,
+    "language": "killasimi",
+    "languageName": "Killasimi",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "disciplines-of-the-scar",
+      "count": 3
+    },
+    "memory": "Memory: Regret",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "'A history of a hundred wars', sewn into a design of metallic threads that pursues itself across every page..."
+  },
+  {
+    "id": "the-writing-on-the-wall",
+    "name": "The Writing on the Wall",
+    "principle": "nectar",
+    "mystery": 10,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Thing",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "spices-and-savours",
+      "count": 2
+    },
+    "memory": "Numen: an Irresistible Feast",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "The most delicious traditions of the Carapace Cross, as recorded on the walls of the Mansus and transcribed into a book of ninety-nine pages by one known only as 'cc'. Although this book does not exist, it is read to a sleeper under certain very specific circumstances - and certain fragments jotted down on waking. [This 'book' houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "those-indignities-perpetrated-by-the-deceitful-fraternity-of-obliviates",
+    "name": "Those Indignities Perpetrated By the Deceitful Fraternity of Obliviates",
+    "principle": "winter",
+    "mystery": 6,
+    "language": null,
+    "languageName": "Latin",
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "ragged-crossroads",
+      "count": 1
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "It's not clear whether 'C.R.O.D', who is identified only by his initials, was in fact an initiate of the Obliviate order of immortal adepts. He wrote in the sixteenth century, after the order - if he is to be believed - had passed the height of its power."
+  },
+  {
+    "id": "those-who-do-not-sleep",
+    "name": "Those Who Do Not Sleep",
+    "principle": "heart",
+    "mystery": 12,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "surgeries-and-exsanguinations",
+      "count": 2
+    },
+    "memory": "Memory: Storm",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "The mystic Brodnax discusses the origins of the Sister-and-Witch, and of the Thunderskin."
+  },
+  {
+    "id": "three-flowers-hath-the-tree",
+    "name": "Three Flowers Hath the Tree",
+    "principle": "nectar",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "leaves-and-thorns",
+      "count": 1
+    },
+    "memory": "Memory: Gossip",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Ernestine Peterhans records her observations of the growths of trees and flowers around the Isle, and the omens and portents she attempts to draw from them - particularly the yew-tree in Earl Brian's Meadow, whose flowerings are sometimes eccentric. (Description)"
+  },
+  {
+    "id": "to-a-pale-lady",
+    "name": "To a Pale Lady",
+    "principle": "moon",
+    "mystery": 8,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "pearl-and-tide",
+      "count": 2
+    },
+    "memory": "Memory: Salt",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A collection of Franklin Bancroft's letters to Eva Dewulf."
+  },
+  {
+    "id": "towards-a-fundamental-aesthetic",
+    "name": "Towards a Fundamental Aesthetic",
+    "principle": "knock",
+    "mystery": 10,
+    "language": "ericapaean",
+    "languageName": "Ericapaean",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "glassblowing-and-vesselcrafting",
+      "count": 2
+    },
+    "memory": "Numen: Inescapable Confinement",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "Or, 'The House of Glass'. Julian Coseley considered this his masterwork. [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "towards-a-fundamental-aesthetic-second-edition",
+    "name": "Towards a Fundamental Aesthetic: Second Edition",
+    "principle": "winter",
+    "mystery": 10,
+    "language": "ericapaean",
+    "languageName": "Ericapaean",
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "sights-and-sensations",
+      "count": 2
+    },
+    "memory": "Numen: a Final Understanding",
+    "tally": 8,
+    "multitudinous": false,
+    "description": "Or, 'The Refinements of Light'. Julian Coseley had never wanted or expected to write a second edition of his masterwork... [This book houses a numen - a truth so powerful it can perhaps believe itself.]"
+  },
+  {
+    "id": "travelling-at-night-vol-1",
+    "name": "Travelling at Night, vol 1",
+    "principle": "knock",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "edicts-liminal",
+      "count": 1
+    },
+    "memory": "Memory: Impulse",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The annotated dream-journals of Christopher Illopoly, sometimes called 'the only readable occultist': literate, entertaining, bewildering."
+  },
+  {
+    "id": "travelling-at-night-vol-2",
+    "name": "Travelling at Night, vol 2",
+    "principle": "sky",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "sights-and-sensations",
+      "count": 1
+    },
+    "memory": "Memory: Solace",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The annotated dream-journals of Christopher Illopoly, sometimes called 'the only readable occultist': literate, entertaining, bewildering."
+  },
+  {
+    "id": "travelling-at-night-vol-3",
+    "name": "Travelling at Night, vol 3",
+    "principle": "knock",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "door-and-wall",
+      "count": 1
+    },
+    "memory": "Memory: Pattern",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The annotated dream-journals of Christopher Illopoly, sometimes called 'the only readable occultist': literate, entertaining, bewildering."
+  },
+  {
+    "id": "twenty-six-enticements-seven-torments",
+    "name": "Twenty-Six Enticements, Seven Torments",
+    "principle": "grail",
+    "mystery": 14,
+    "language": "fucine",
+    "languageName": "Fucine",
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "resurgences-and-emergences",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "The painter Niels Frederik Malskær, notoriously, attempted a series of paintings based on the Torments. By the Fifth Torment, the demands of the painting had grown so dire that he died of blood loss. The diagrams in this text are thankfully less detailed."
+  },
+  {
+    "id": "two-wombs-one-heart",
+    "name": "Two Wombs, One Heart",
+    "principle": "heart",
+    "mystery": 8,
+    "language": "killasimi",
+    "languageName": "Killasimi",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "stitching-and-binding",
+      "count": 2
+    },
+    "memory": "Memory: Satisfaction",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A fanciful account by Thirza Blake of the early life of the Twins - their time as mortals before they became Hours or even Long, in a 'dry kingdom beyond the Western Sea' which Thirza suggests might have been ancient Mexico."
+  },
+  {
+    "id": "ud-rocashaas",
+    "name": "Ud Rocashaas",
+    "principle": "scale",
+    "mystery": 10,
+    "language": "kernewek-henavek",
+    "languageName": "Kernewek Henavek",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "stone-stories",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "An anonymous confessional account of unsanctioned activities by the nuns of St Brandan's. The title is a Henavek phrase that might be translated as 'the spirit flees the shadowed places.'"
+  },
+  {
+    "id": "unhatched-hymns",
+    "name": "Unhatched Hymns",
+    "principle": "lantern",
+    "mystery": 10,
+    "language": "sabazine",
+    "languageName": "Sabazine",
+    "type": "Codex",
+    "period": "Solar Gothic",
+    "lesson": {
+      "skill": "sacra-solis-invicti",
+      "count": 2
+    },
+    "memory": "Savage Hymn",
+    "tally": 4,
+    "multitudinous": false,
+    "description": "Hymns attributed to Saint Lucia the Eyeless, patron of glassworkers and Name of the Hour called Meniscate."
+  },
+  {
+    "id": "velletri-interviews",
+    "name": "Velletri Interviews",
+    "principle": "heart",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Phonograph Record",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "edicts-inviolable",
+      "count": 1
+    },
+    "memory": "Memory: A Stolen Secret",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Interrogation of a man named Lacombe, a former Nocturnal Branch inspector now identified as 'terminally robigoid'."
+  },
+  {
+    "id": "vinzants-minglings",
+    "name": "Vinzant's Minglings",
+    "principle": "forge",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "bells-and-brazieries",
+      "count": 1
+    },
+    "memory": "Memory: Foresight",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "The metallurgist and 'sky-smith' Everett Vinzant speaks of 'the sacred alloys', 'the alloys eternal', 'the alloys sufficient', 'the alloys intendant'…"
+  },
+  {
+    "id": "wainscot-histories",
+    "name": "Wainscot Histories",
+    "principle": "lantern",
+    "mystery": 6,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Baronial",
+    "lesson": {
+      "skill": "auroral-contemplations",
+      "count": 1
+    },
+    "memory": "Memory: Contradiction",
+    "tally": 3,
+    "multitudinous": false,
+    "description": "Subtitled 'Stories from Behind the Walls': a miscellany of non-traditional histories, including battles not generally acknowledged and countries which appear on no map, told in a playful, apparently fictional manner."
+  },
+  {
+    "id": "warming-draughts-to-uplift-the-heart",
+    "name": "Warming Draughts to Uplift the Heart",
+    "principle": "heart",
+    "mystery": 8,
+    "language": null,
+    "languageName": "Greek",
+    "type": "Codex",
+    "period": "Curia",
+    "lesson": {
+      "skill": "herbs-and-infusions",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 2,
+    "multitudinous": false,
+    "description": "A wonderful compendium of healing tisanes compiled by Natan of Regensburg."
+  },
+  {
+    "id": "what-does-not-bark",
+    "name": "What Does Not Bark",
+    "principle": "moon",
+    "mystery": 4,
+    "language": null,
+    "languageName": null,
+    "type": "Codex",
+    "period": "Nocturnal",
+    "lesson": {
+      "skill": "edicts-inviolable",
+      "count": 1
+    },
+    "memory": "Memory: Storm",
+    "tally": 1,
+    "multitudinous": false,
+    "description": "Alexander Probst writes warily of 'Calyptra' - a law, principle or society which prevents the dissemination of dangerous knowledge."
+  },
+  {
+    "id": "where-has-she-gone",
+    "name": "Where Has She Gone?",
+    "principle": "rose",
+    "mystery": 16,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "sand-stories",
+      "count": 3
+    },
+    "memory": "Memory: Intuition",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "'The Speeth' - perhaps a single adept, perhaps a council of scholars - hypothesises secret events from limited evidence with persuasive accuracy."
+  },
+  {
+    "id": "white-jade-tablet",
+    "name": "White Jade Tablet",
+    "principle": "moth",
+    "mystery": 14,
+    "language": "cracktrack",
+    "languageName": "Cracktrack",
+    "type": "Codex",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "rites-of-the-roots",
+      "count": 2
+    },
+    "memory": "Memory: Impulse",
+    "tally": 5,
+    "multitudinous": false,
+    "description": "Supposedly copied from a tablet of white jade which serves as the Covenant-stone of the Grove of the Green Immortals - the token which gives that Library shelter beneath the Watchman's Tree."
+  },
+  {
+    "id": "xenodicene-odes",
+    "name": "Xenodicene Odes",
+    "principle": "knock",
+    "mystery": 21,
+    "language": "vak",
+    "languageName": "Vak",
+    "type": "Multitudinous",
+    "period": "Dawn",
+    "lesson": {
+      "skill": "preliminal-meter",
+      "count": 3
+    },
+    "memory": "Confounding Parable",
+    "tally": 5,
+    "multitudinous": true,
+    "description": "Poetry attributed to Xenodice, Name of the Horned-Axe."
+  }
+]

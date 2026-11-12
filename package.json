@@ -1,0 +1,29 @@
+{
+  "name": "boh-companion",
+  "private": true,
+  "version": "0.1.0",
+  "license": "CC-BY-SA-3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "data": "python3 scripts/build_data.py"
+  },
+  "dependencies": {
+    "@fontsource/inknut-antiqua": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^5.5.4",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0"
+  }
+}
