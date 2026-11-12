@@ -140,7 +140,7 @@ describe('tree', () => {
     const stats = treeStats(data, preset.tree, [], true);
     expect(stats.committed).toBe(73);
   });
-  it.each(['v2', 'v3'])('preset %s reaches level 9 everywhere with at least 7 evolutions per element', (id) => {
+  it.each(['v3'])('preset %s reaches level 9 everywhere with at least 7 evolutions per element', (id) => {
     const preset = PRESETS.find((p) => p.id === id)!;
     for (const w of WISDOM_IDS) expect(preset.tree[w][8]).toBeTruthy();
     for (const e of treeStats(data, preset.tree, [], true).elements) expect(e.attuned).toBeGreaterThanOrEqual(7);

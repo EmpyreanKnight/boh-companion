@@ -8,18 +8,6 @@ import type { TreeState, WisdomId } from './types';
  */
 type Raw = Record<WisdomId, (string | null)[]>;
 
-const V2: Raw = {
-  illumination: ['Purifications & Exaltations', 'Meniscate Reflections', 'Glaziery & Lightsmithing', 'Pyroglyphics', 'Disciplines of the Hammer', null, 'Preliminal Meter', 'Disciplines of the Scar', 'Auroral Contemplations'],
-  hushery: ['Ericapaean', 'Sharps', null, 'Inks of Power', 'Maggephene Mysteries', 'Snow Stories', 'Serpents & Venoms', 'Inks of Revelation', 'Sights & Sensations'],
-  nyctodromy: ['Vak', 'Hyksos', "Watchman's Paradoxes", 'Door & Wall', 'Path & Pilgrim', null, 'Pearl & Tide', 'Sickle & Eclipse', 'Coil & Chasm'],
-  skolekosophy: [null, 'Killasimi', 'Lockworks & Clockworks', 'Ragged Crossroads', 'Rhyme & Remembrance', 'Solutions & Separations', 'Putrefactions & Calcinations', 'Horns & Ivories', 'Edicts Liminal'],
-  'the-bosk': ['Furs & Feathers', 'Orchids & Narcotics', null, 'Desires & Dissolutions', 'Applebright Euphonies', 'Weaving & Knotworking', 'Drums & Dances', 'Insects & Nectars', 'Resurgences & Emergences'],
-  preservation: ['Cracktrack', 'Stone Stories', 'Herbs & Infusions', 'Hill & Hollow', 'Surgeries & Exsanguinations', 'Quenchings & Quellings', 'Edicts Inviolable', 'Rites of the Roots', 'Tridesma Hiera'],
-  birdsong: ['Ramsund', 'Sky Stories', 'Wolf Stories', null, 'Leaves & Thorns', 'Sea Stories', 'Sand Stories', 'Pentiments & Precursors', 'Strings & Songs'],
-  horomachistry: [null, 'Sabazine', 'Sacra Solis Invicti', 'Ouranoscopy', 'Bells & Brazieries', 'The Great Signs and the Great Scars', 'Inks of Containment', 'Sacra Limiae', 'Edicts Martial'],
-  ithastry: ['Deep Mandaic', 'Fucine', 'Kernewek Henavek', null, 'Glassblowing & Vesselcrafting', 'Spices & Savours', 'Stitching & Binding', 'Transformations & Liberations', 'Anbary & Lapidary'],
-};
-
 const V3: Raw = {
   illumination: ['Purifications & Exaltations', 'Pyroglyphics', 'Disciplines of the Scar', 'Glaziery & Lightsmithing', 'Meniscate Reflections', null, 'Disciplines of the Hammer', 'Preliminal Meter', 'Auroral Contemplations'],
   hushery: ['Ericapaean', 'Snow Stories', null, 'Maggephene Mysteries', 'Sharps', 'Glassblowing & Vesselcrafting', 'Serpents & Venoms', 'Sights & Sensations', 'Inks of Power'],
@@ -53,7 +41,6 @@ function toTree(raw: Raw): TreeState {
 
 export const PRESETS: { id: string; name: string; note: string; tree: TreeState }[] = [
   { id: 'v3', name: 'Minmax v3 (SCPantera)', note: 'All 73 skills, level 9 on every branch; ordered by crafting usefulness and rarity.', tree: toTree(V3) },
-  { id: 'v2', name: 'Minmax v2 (SCPantera)', note: 'All 73 skills, level 9 on every branch; the earlier ordering.', tree: toTree(V2) },
   { id: 'ocd', name: 'Tree of OCDs (AllNamesTaken1)', note: 'Even spread of elements. The source gives no node order, so the order here is arbitrary.', tree: toTree(OCD) },
 ];
 export const PRESET_SOURCE = 'https://steamcommunity.com/sharedfiles/filedetails/?id=3173709809';

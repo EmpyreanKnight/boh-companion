@@ -191,8 +191,8 @@ rows (rows are not rendered until opened), font fallback metric matching, and an
 
 ## Tests (`src/engine/engine.test.ts`)
 
-38 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
-language rules, a recipe going from blocked to ready, flying lines, the three preset trees passing every tree
+36 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
+language rules, a recipe going from blocked to ready, flying lines, the two preset trees passing every tree
 rule, evolution arithmetic, the "what I have" sources, craftable things counting as held, foraging (seasons,
 accepted cards, order), caches, the sea and Numa, Librarians and save migration, and helper and room logic
 (boost stacking, card-opened rooms, every room reachable from the Cucurbit Bridge).
