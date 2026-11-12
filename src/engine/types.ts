@@ -9,7 +9,10 @@ export type PMap = Partial<Record<PrincipleId, number>>;
 
 export interface Skill {
   id: string; name: string; icon?: boolean; primary: PrincipleId; secondary: PrincipleId; isLanguage: boolean;
-  commit: { wisdom: WisdomId; element: ElementId }[]; specialties: string[];
+  /** The two Wisdoms it can be committed to: the Element granted, and the text the game shows on committing
+   *  (with its title). */
+  commit: { wisdom: WisdomId; element: ElementId; text?: string | null; title?: string | null }[];
+  specialties: string[];
   description?: string | null;   // the in-game text, as quoted on the wiki (also on books, items, stations, rooms, caches)
 }
 export interface Book {

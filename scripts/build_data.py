@@ -89,11 +89,11 @@ def template(text, names):
             return params
     return None
 
-def quote(text):
-    """The in-game description: the first {{Quote|...}} on a page, with its attribution if it has one."""
+def quote_parts(text):
+    """The first {{Quote|...}} in `text` as (words, attribution); (None, None) when there is none."""
     m = re.search(r"\{\{\s*[Qq]uote\s*\|", text or "")
     if not m:
-        return None
+        return None, None
     depth, j = 1, m.end()
     while j < len(text) and depth:
         if text.startswith("{{", j): depth += 1; j += 2
@@ -101,15 +101,49 @@ def quote(text):
         else: j += 1
     # an inline Principle icon stands for its name
     body = re.sub(r"\[\[File:([^.\]|]+?)(?: PNG)?\.[^\]]*\]\]", r"\1", text[m.end():j - 2])
-    body = re.sub(r"\{\{\s*Lore\s*\|\s*(\w+)\s*(?:\|\s*(\d+))?[^}]*\}\}", lambda x: " ".join(g for g in x.groups() if g), body)
+    body = plain_templates(body)
     # the attribution follows a | that is not inside a [[link|label]]
     parts = [html.unescape(strip_markup(re.sub(r"^\s*\w+\s*=", "", p))) for p in re.split(r"\|(?![^\[\]]*\]\])", body)]
     parts = [re.sub(r"\s+", " ", p).strip() for p in parts if p.strip()]
     if not parts:
-        return None
-    out = parts[0] + (f" ({parts[1]})" if len(parts) > 1 else "")
-    while out.count("]") > out.count("[") and out.endswith("]"):
-        out = out[:-1].rstrip()      # a stray bracket typed on the wiki
+        return None, None
+    words = parts[0]
+    while words.count("]") > words.count("[") and words.endswith("]"):
+        words = words[:-1].rstrip()      # a stray bracket typed on the wiki
+    return words, parts[1] if len(parts) > 1 else None
+
+def plain_templates(s):
+    """{{Lore|Edge|2}} -> "Edge 2", {{Soul|Chor}} -> "Chor", {{PAGENAME}} left to the caller."""
+    s = re.sub(r"\{\{\s*Lore\s*\|\s*(\w+)\s*(?:\|\s*(\d+))?[^}]*\}\}", lambda x: " ".join(g for g in x.groups() if g), s)
+    return re.sub(r"\{\{\s*Soul\s*\|\s*(\w+)[^}]*\}\}", r"\1", s)
+
+def quote(text):
+    """The in-game description: the first {{Quote|...}} on a page, with its attribution if it has one."""
+    words, by = quote_parts(text)
+    return words + (f" ({by})" if by else "") if words else None
+
+def attunements(text):
+    """The "Wisdom Attunement" section of a skill page: wisdom id -> the text the game shows on committing the
+    skill there, and its title. The wiki's own sentences only tell which quote belongs to which Wisdom."""
+    # the section goes by several headings (and one misspelling) across the skill pages
+    m = re.search(r"==\s*(?:Wisdom At+unements?|Committing to Wisdoms?|Wisdoms?)\s*==(.*?)(?:\n==[^=]|\Z)", text or "", flags=re.S)
+    body = m.group(1) if m else ""
+    # the section is a run of quotes and "Committing X to [[Wisdom]] ..." paragraphs, usually quote first
+    tokens = [(q.start(), "quote", q) for q in re.finditer(r"\{\{\s*[Qq]uote\s*\|", body)]
+    tokens += [(c.start(), "commit", c) for c in re.finditer(r"[^\n]*\b[Cc]ommitt(?:ing|ed)\b[^\n]*", body)]
+    tokens.sort(key=lambda t: t[0])
+    out, used = {}, set()
+    for i, (_, kind, c) in enumerate(tokens):
+        # the first link may be the skill itself; the Wisdom is the first link that names one
+        target = [t for t, _ in links(c.group(0)) if slug(t) in WISDOMS or slug(t) == "bosk"] if kind == "commit" else []
+        if not target:
+            continue
+        # its quote stands just before it, or just after when the page put the paragraph first
+        near = next((j for j in (i - 1, i + 1) if 0 <= j < len(tokens) and tokens[j][1] == "quote" and j not in used), None)
+        words, name = quote_parts(body[tokens[near][0]:]) if near is not None else (None, None)
+        used.add(near)
+        wid = slug(target[0])
+        out["the-bosk" if wid == "bosk" else wid] = {"text": words, "title": name}
     return out
 
 def tables(text):
@@ -192,10 +226,15 @@ def build_skills():
             if len(prim) != 1 or len(sec) != 1 or len(wis) != 2 or len(els) != 2:
                 warn(f"skill {name}: prim={prim} sec={sec} wis={wis} els={els}")
                 continue
+            page = PAGES.get(name, {}).get("text")
+            said = attunements(page)
+            for w in wis:
+                if not said.get(w, {}).get("text"):
+                    warn(f"skill {name}: no attunement text for {w}")
             skills[slug(name)] = {"id": slug(name), "name": name, "icon": has_icon("skill", slug(name)), "primary": prim[0], "secondary": sec[0],
                                   "isLanguage": is_lang,
-                                  "commit": [{"wisdom": wis[0], "element": els[0]}, {"wisdom": wis[1], "element": els[1]}],
-                                  "description": quote(PAGES.get(name, {}).get("text")),
+                                  "commit": [{"wisdom": w, "element": e, **said.get(w, {})} for w, e in zip(wis, els)],
+                                  "description": quote(page),
                                   "specialties": []}
     # specialties table
     for before, caption, rows in tables(text):

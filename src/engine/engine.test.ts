@@ -32,6 +32,18 @@ describe('data', () => {
     for (const b of data.books) { expect(b.description, b.name).toBeTruthy(); }
     for (const x of data.items) expect(x.description).not.toMatch(/\[\[|\]\]|[{}|<>]|''/);   // no wiki markup left over
   });
+  it('every skill carries the text shown on committing it to each of its Wisdoms', () => {
+    for (const s of data.skills) for (const c of s.commit) {
+      expect(c.text, `${s.name} / ${c.wisdom}`).toBeTruthy();
+      expect(c.title, `${s.name} / ${c.wisdom}`).toBeTruthy();
+    }
+    const sharps = data.skillById['sharps'].commit.find((c) => c.wisdom === 'hushery')!;
+    expect(sharps.title).toBe('A Wound in Dreams');
+    expect(sharps.text).toMatch(/^Before speech, we could not dream.*Hushery recognises this truth\.$/);
+    expect(Object.keys(sharps).sort()).toEqual(['element', 'text', 'title', 'wisdom']);   // game text only, no wiki commentary
+    // on this page the second paragraph comes before its quote
+    expect(data.skillById['edicts-inviolable'].commit.find((c) => c.wisdom === 'horomachistry')!.title).toBe('Fire');
+  });
   it('every skill has two distinct wisdoms and every reference resolves', () => {
     for (const s of data.skills) {
       expect(s.commit).toHaveLength(2);

@@ -138,7 +138,7 @@ function Skills({ data, q, p, focus }: Props) {
               <td>{s.commit.map((c) => <div key={c.wisdom}><WisdomName id={c.wisdom} name={wisdom(c.wisdom).name} /> → <Soul id={c.element} /></div>)}</td>
               <td>{books.length ? `${books.length} book${books.length > 1 ? 's' : ''}` : s.isLanguage ? 'a tutor' : '—'}</td>
             </tr>,
-            open === s.id && <tr key={s.id + ':d'} className="detail"><td colSpan={5}>{!hidden && <Lore text={s.description} />}<SkillDetail data={data} s={s} books={books} /></td></tr>,
+            open === s.id && <tr key={s.id + ':d'} className="detail"><td colSpan={5}>{!hidden && <Lore text={s.description} />}<SkillDetail data={data} s={s} books={books} hidden={hidden} /></td></tr>,
           ];
         })}</tbody>
       </table></TableWrap>
@@ -146,9 +146,14 @@ function Skills({ data, q, p, focus }: Props) {
   );
 }
 
-function SkillDetail({ data, s, books }: { data: GameData; s: Skill; books: Book[] }) {
+function SkillDetail({ data, s, books, hidden }: { data: GameData; s: Skill; books: Book[]; hidden: boolean }) {
   const recipes = data.recipes.filter((r) => r.skills.includes(s.id));
   return (
+    <>
+    {!hidden && <div className="cols attune">{s.commit.map((c) => (
+      <div key={c.wisdom}><h4>Committed to <WisdomName id={c.wisdom} name={wisdom(c.wisdom).name} /> → <Soul id={c.element} /></h4>
+        {c.title && <p className="attune-title">{c.title}</p>}
+        <Lore text={c.text} /></div>))}</div>}
     <div className="cols">
       <div><h4>Books that teach it</h4>
         {books.length ? <ul>{books.map((b) => <li key={b.id}><a href={`#/db/books/${b.id}`}>{b.name}</a> <P id={b.principle} value={b.mystery} short /> × {b.lesson!.count}</li>)}</ul> : <p className="muted">None.</p>}
@@ -157,6 +162,7 @@ function SkillDetail({ data, s, books }: { data: GameData; s: Skill; books: Book
         {s.isLanguage ? <p className="muted">Languages are not used in crafting; they unlock books and can be committed to the Tree.</p>
           : recipes.length ? <ul>{recipes.map((r) => <li key={r.id}><a href={`#/crafting/${encodeURIComponent(r.id)}`}>{r.resultName}</a> <span className="muted">({r.tier}, <P id={r.principle} short />)</span></li>)}</ul> : <p className="muted">None.</p>}</div>
     </div>
+    </>
   );
 }
 

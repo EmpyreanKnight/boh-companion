@@ -30,7 +30,7 @@ browser: loadData() -> indexData() -> GameData ---+                             
 
 | File | Record | Key fields |
 | --- | --- | --- |
-| `skills.json` | Skill | `primary`, `secondary`, `isLanguage`, `commit[2]` as `{wisdom, element}`, `specialties`, `icon` |
+| `skills.json` | Skill | `primary`, `secondary`, `isLanguage`, `commit[2]` as `{wisdom, element, text, title}` (the text and title the game shows on committing the skill to that Wisdom), `specialties`, `icon` |
 | `books.json` | Book | `principle`, `mystery`, `language` (skill id, or null when known by default), `languageName`, `type`, `period`, `lesson {skill, count}`, `memory`, `tally` (price), `multitudinous` |
 | `items.json` | Item | `principles`, `aspects[]`, `yieldsMemory`, `considerDestroys`, `sources[]`, `craftable`, `icon` |
 | `workstations.json` | Workstation | `kind`, `room`, `principles[]`, `slots[][]` (aspects the 4th and 5th slots accept), `evolveVia[]`, `canCraft` |
@@ -58,6 +58,9 @@ How `scripts/build_data.py` derives the less obvious parts:
 - **Foraging:** the Gathering page lists the stations, the Decks page holds their seasonal decks, the Garden
   page the garden yields; swimming and renouncing a penny are parsed from the Sea's Edge and Brancrug Boathouse
   pages. Chances are percentages of a full deck.
+- **Commit texts:** the section of each skill page titled "Wisdom Attunement" (or one of three other headings),
+  pairing each quote with the "Committing ... to" paragraph beside it to learn its Wisdom. Only the game's own
+  text is kept. Shown in the Database only.
 - **Caches:** the list under "Consider" on each cache page, equal shares unless the page gives a weight; where
   each is found comes from the table on the Cache page.
 
@@ -191,7 +194,7 @@ rows (rows are not rendered until opened), font fallback metric matching, and an
 
 ## Tests (`src/engine/engine.test.ts`)
 
-36 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
+37 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
 language rules, a recipe going from blocked to ready, flying lines, the two preset trees passing every tree
 rule, evolution arithmetic, the "what I have" sources, craftable things counting as held, foraging (seasons,
 accepted cards, order), caches, the sea and Numa, Librarians and save migration, and helper and room logic

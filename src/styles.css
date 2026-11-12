@@ -166,3 +166,5 @@ select { min-width: 0; text-overflow: ellipsis; }
 .recipe-list li { content-visibility: auto; contain-intrinsic-size: auto 3.6rem; }
 .table-wrap:focus-visible { outline-offset: -2px; }
 .footnote { font-size: 0.8125rem; color: var(--muted); border-left: 2px solid var(--gold); padding-left: 10px; margin: 10px 0 4px; max-width: 80ch; }
+.attune { margin-bottom: 6px; } .attune .lore { max-width: none; }
+.attune-title { font-family: var(--serif); color: var(--gold2); margin: 2px 0 0; }
