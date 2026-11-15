@@ -36,12 +36,12 @@ def links(s):
     return out
 
 def lore(s):
-    """Parse {{Lore|Edge|2}} occurrences into {principle: n}. Missing number -> 1."""
+    """Parse {{Lore|Edge|2}} or {{Lore|Edge}} 2 occurrences into {principle: n}. Missing number -> 1."""
     out = {}
-    for m in re.finditer(r"\{\{\s*Lore\s*\|\s*([A-Za-z]+)\s*(?:\|\s*(\d+))?[^}]*\}\}", s):
+    for m in re.finditer(r"\{\{\s*Lore\s*\|\s*([A-Za-z]+)\s*(?:\|\s*(\d+))?[^}]*\}\}(?:[ \t]*(\d+)\b)?", s):
         p = m.group(1).lower()
         if p in PRINCIPLES:
-            out[p] = int(m.group(2) or 1)
+            out[p] = int(m.group(2) or m.group(3) or 1)
     return out
 
 def lore_list(s):
@@ -332,10 +332,14 @@ def aspect_name(target, disp):
     t = re.sub(r"\s*\(Aspect\)", "", t)
     return t[:1].upper() + t[1:]
 
+# The game's name for a card whose wiki page is titled differently (confirmed by the owner).
+OWNER_ITEM_NAMES = {"Intuition": "Memory: Intuition"}
+
 def build_items():
     items = {}
     for title, p in PAGES.items():
         text = p["text"]
+        title = OWNER_ITEM_NAMES.get(title, title)
         cats = p["categories"]
         info = template(text, {"boh item"})
         kind = "item"
@@ -368,7 +372,7 @@ def build_items():
             if d not in sources and t not in ("Hush House", "Cache"):
                 sources.append(d)
         items[slug(title)] = {"id": slug(title), "name": title, "icon": has_icon("item", slug(title)), "principles": principles, "aspects": aspects,
-                              "yieldsMemory": gm.group(1) if gm else None,
+                              "yieldsMemory": OWNER_ITEM_NAMES.get(gm.group(1), gm.group(1)) if gm else None,
                               "considerDestroys": bool(gm and re.match(r"[^.\n]*destroys", text[gm.end():gm.end() + 80])),
                               "sources": sources[:8],
                               "craftable": "Crafting" in cats, "description": quote(text)}

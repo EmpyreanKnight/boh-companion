@@ -167,8 +167,8 @@ the one mastered first leading. `haveMap` credits a memory the same way: a thing
 earliest mastered book, then a thing that is used up. Each source is `ready`, `reachable` or `locked` and carries the
 number of memories it is certain to give today: one per thing or book, one per sea place, one per recipe,
 nothing for a draw that depends on luck, and nothing from foraging until a season is chosen. Rows are ordered
-ready, reachable, locked. `itemIdByName` also answers to "Memory: X" for a card the wiki calls "X"
-(Intuition), so books and things naming it that way resolve.
+ready, reachable, locked. The wiki's "Intuition" page is built under the
+game's name, Memory: Intuition (`OWNER_ITEM_NAMES` in `build_data.py`), which is also the name books use for it.
 
 **Seasons (`helpersIn`).** Seasonal workers can be hired only in their season, and nobody during Numa.
 
@@ -279,6 +279,8 @@ Where the wiki and the owner disagree, the owner's rule wins and is recorded her
 - A Lesson of Many Facets (a special Lesson), Avenue of Enquiry and An Offering to St Tentreto are not
   memories, although the wiki files them under Memory (`isMemory` in `constants.ts`). They are listed under
   Items, not Memories, and are not offered for upgrading a skill.
+- The memory the wiki titles "Intuition" is called Memory: Intuition in the game and carries Moon 2 and
+  Rose 2 (`OWNER_ITEM_NAMES` in `build_data.py`; the Principles are the wiki's own).
 - Anything the player can craft right now counts as something they have, craftable memories included (for
   example Torgue's Cleansing).
 

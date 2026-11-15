@@ -11,8 +11,7 @@ export function indexData(raw: Raw): GameData {
   for (const w of raw.workstations) if (!roomIdByStation[w.id] && w.room && roomByName[w.room]) roomIdByStation[w.id] = roomByName[w.room];
   return { ...raw, skillById: byId<Skill>(raw.skills), itemById: byId<Item>(raw.items),
     bookById: byId<Book>(raw.books), stationById: byId<Workstation>(raw.workstations), roomById: byId<Room>(raw.rooms),
-    // the wiki calls some memories both "Intuition" and "Memory: Intuition"; accept either name
-    itemIdByName: Object.fromEntries([...raw.items.map((i) => [`Memory: ${i.name}`, i.id]), ...raw.items.map((i) => [i.name, i.id])]), roomIdByStation };
+    itemIdByName: Object.fromEntries(raw.items.map((i) => [i.name, i.id])), roomIdByStation };
 }
 
 declare const __BUILD__: string;

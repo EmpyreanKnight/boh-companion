@@ -490,14 +490,19 @@ describe('memories for upgrading a skill', () => {
     expect(row.state).toBe('ready');
     expect(row.sources.find((s) => s.kind === 'reread' && s.state === 'ready')!.things!.map((t) => t.name)).toContain(book.name);
   });
-  it('knows a memory under both of the wiki\'s names', () => {
-    expect(data.itemIdByName['Memory: Intuition']).toBe('intuition');
+  it('Intuition goes by the game\'s name, Memory: Intuition, with Moon 2 and Rose 2', () => {
+    expect(data.itemIdByName['Memory: Intuition']).toBe('memory-intuition');
+    expect(data.itemById['intuition']).toBeUndefined();
+    expect(data.itemById['memory-intuition']).toMatchObject({ name: 'Memory: Intuition', principles: { moon: 2, rose: 2 }, icon: true });
+    // every book and thing that names a memory names a card that exists
+    for (const b of data.books) if (b.memory) expect(data.itemIdByName[b.memory], b.name).toBeTruthy();
+    for (const i of data.items) if (i.yieldsMemory) expect(data.itemIdByName[i.yieldsMemory], i.name).toBeTruthy();
     expect(data.itemIdByName['Memory: Storm']).toBe('memory-storm');     // a card of its own, not the weather
     expect(data.itemIdByName['Storm']).toBe('storm');
     const p = defaultPlayer();
     const book = data.books.find((b) => b.memory === 'Memory: Intuition')!;
     p.booksMastered[book.id] = true;
-    expect(makeCtx(data, p).have.get('intuition')).toContain('re-read');
+    expect(makeCtx(data, p).have.get('memory-intuition')).toContain('re-read');
   });
   it('names weather, crafting and caches as sources', () => {
     const p = defaultPlayer();

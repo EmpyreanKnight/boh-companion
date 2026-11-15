@@ -1036,8 +1036,8 @@
     "icon": true,
     "principles": {
       "grail": 1,
-      "heart": 1,
-      "moth": 1
+      "heart": 2,
+      "moth": 2
     },
     "aspects": [
       "Wall Art"
@@ -1166,9 +1166,9 @@
     "name": "'The Witch-and-Sister'",
     "icon": true,
     "principles": {
-      "grail": 1,
+      "grail": 2,
       "heart": 1,
-      "moth": 1
+      "moth": 2
     },
     "aspects": [
       "Wall Art"
@@ -2185,7 +2185,7 @@
     "name": "Basket of Towels",
     "icon": true,
     "principles": {
-      "heart": 1
+      "heart": 2
     },
     "aspects": [
       "Thing",
@@ -3666,7 +3666,7 @@
     "icon": false,
     "principles": {
       "lantern": 1,
-      "nectar": 1
+      "nectar": 2
     },
     "aspects": [
       "Thing",
@@ -3815,8 +3815,8 @@
     "name": "Dearday Lens",
     "icon": true,
     "principles": {
-      "lantern": 1,
-      "sky": 1,
+      "lantern": 2,
+      "sky": 2,
       "edge": 1,
       "forge": 1
     },
@@ -5777,26 +5777,6 @@
     "description": "A stone tablet with rows of badly worn scratches that once, probably, were writing."
   },
   {
-    "id": "intuition",
-    "name": "Intuition",
-    "icon": true,
-    "principles": {
-      "moon": 1,
-      "rose": 1
-    },
-    "aspects": [
-      "Memory"
-    ],
-    "yieldsMemory": null,
-    "considerDestroys": false,
-    "sources": [
-      "Consider",
-      "Talk"
-    ],
-    "craftable": false,
-    "description": "You just know, you know?"
-  },
-  {
     "id": "invincible-audacity",
     "name": "Invincible Audacity",
     "icon": true,
@@ -6398,9 +6378,9 @@
     "name": "Lignum Vitae Blank",
     "icon": true,
     "principles": {
-      "edge": 1,
-      "nectar": 1,
-      "scale": 1
+      "edge": 3,
+      "nectar": 3,
+      "scale": 3
     },
     "aspects": [
       "Thing",
@@ -6780,7 +6760,7 @@
     "icon": true,
     "principles": {
       "knock": 1,
-      "moon": 1
+      "moon": 2
     },
     "aspects": [
       "Memory"
@@ -6901,6 +6881,26 @@
     "sources": [],
     "craftable": false,
     "description": "It doesn't exactly make sense - but I understand it anyway."
+  },
+  {
+    "id": "memory-intuition",
+    "name": "Memory: Intuition",
+    "icon": true,
+    "principles": {
+      "moon": 2,
+      "rose": 2
+    },
+    "aspects": [
+      "Memory"
+    ],
+    "yieldsMemory": null,
+    "considerDestroys": false,
+    "sources": [
+      "Consider",
+      "Talk"
+    ],
+    "craftable": false,
+    "description": "You just know, you know?"
   },
   {
     "id": "memory-loss",
@@ -7058,7 +7058,7 @@
     "name": "Memory: Solace",
     "icon": true,
     "principles": {
-      "heart": 1,
+      "heart": 2,
       "sky": 1
     },
     "aspects": [
@@ -9840,7 +9840,7 @@
     "icon": false,
     "principles": {
       "forge": 1,
-      "rose": 1
+      "rose": 2
     },
     "aspects": [
       "Thing",
@@ -11782,7 +11782,7 @@
       "Thing",
       "Liquid"
     ],
-    "yieldsMemory": "Intuition",
+    "yieldsMemory": "Memory: Intuition",
     "considerDestroys": true,
     "sources": [
       "Tower Clock",
@@ -12697,7 +12697,7 @@
     "name": "Wolf-Snow Ampoule",
     "icon": true,
     "principles": {
-      "winter": 1
+      "winter": 4
     },
     "aspects": [
       "Thing",
