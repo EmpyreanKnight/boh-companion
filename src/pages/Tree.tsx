@@ -45,12 +45,28 @@ export function Tree({ data }: { data: GameData }) {
     setSel(null);
   };
 
+  const saved = player.savedPlans;
+  const save = () => {
+    const name = prompt('Save the current tree under which name?', saved[0]?.name ?? 'My plan')?.trim();
+    if (!name) return;
+    if (saved.some((x) => x.name === name) && !confirm(`Replace the saved plan "${name}"?`)) return;
+    player.savePlan(name);
+  };
+  const loadSaved = (name: string) => {
+    if (Object.keys(placement(tree)).length && !confirm(`Replace the current tree with your saved plan "${name}"?`)) return;
+    player.loadPlan(name);
+    setSel(null);
+  };
+
   return (
     <div className="tree-layout">
       <Panel title="Tree of Wisdoms" actions={<>
         <label className="check" title="Ignore which skills you own and their levels"><input type="checkbox" checked={plan} onChange={(e) => player.setSetting('planMode', e.target.checked)} /> plan ahead</label>
         <select value="" onChange={(e) => load(e.target.value)} aria-label="Load a preset plan">
           <option value="">Load a preset…</option>{PRESETS.map((p) => <option key={p.id} value={p.id}>{p.name}</option>)}</select>
+        <button onClick={save} disabled={!Object.keys(placement(tree)).length} title="Keep this tree under a name, in this browser">Save plan…</button>
+        {saved.length > 0 && <select value="" onChange={(e) => loadSaved(e.target.value)} aria-label="Load one of my saved plans">
+          <option value="">My plans ({saved.length})…</option>{saved.map((x) => <option key={x.name} value={x.name}>{x.name} ({Object.keys(placement(x.tree)).length} skills)</option>)}</select>}
         <button onClick={() => { if (confirm('Clear every node of the tree?')) { player.setTree(emptyTree()); setSel(null); } }}>Clear</button></>}>
         <div className="tree-scroll" tabIndex={0} role="region" aria-label="Tree of Wisdoms diagram">
         <svg className="tree" viewBox="-700 -610 1400 1220" role="group" aria-label="Tree of Wisdoms">
@@ -108,6 +124,12 @@ export function Tree({ data }: { data: GameData }) {
         </div>
         <p className="muted small">Commit your journal at the root to open the first node of every Wisdom. Dotted curves are flying lines. A further node opens when a neighbour on its branch, or the node at the other end of a flying line, is filled.
           Preset plans are from <a href={PRESET_SOURCE} target="_blank" rel="noreferrer">Minmax'd Wisdom Trees et al.</a> by SCPantera.</p>
+        {saved.length > 0 && <p className="row small saved-plans"><span className="muted">My saved plans (kept in this browser, and in an exported save):</span>
+          {saved.map((x) => <span key={x.name} className="saved-plan">
+            <button className="link" onClick={() => loadSaved(x.name)} title={`Load "${x.name}"`}>{x.name}</button>
+            <span className="muted"> {Object.keys(placement(x.tree)).length} skills</span>
+            <button className="link" onClick={() => { if (confirm(`Delete the saved plan "${x.name}"?`)) player.deletePlan(x.name); }} aria-label={`Delete the saved plan ${x.name}`} title="Delete">✕</button>
+          </span>)}</p>}
         {issues.length > 0 && <div className="issues"><b>{issues.length} node(s) break a rule{plan ? '' : ' with your current skill levels'}:</b>
           <ul>{issues.slice(0, 8).map((i, k) => <li key={k}>{wisdom(i.wisdom).name} {i.level} · {data.skillById[i.skill]?.name ?? i.skill}: {i.problem}</li>)}</ul>
           {issues.length > 8 && <p className="small muted">…and {issues.length - 8} more. Turn on "plan ahead" to ignore skill levels.</p>}</div>}

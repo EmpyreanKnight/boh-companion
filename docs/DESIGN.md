@@ -81,11 +81,12 @@ Librarians, tier thresholds (5 / 10 / 15).
 
 Ids are slugs of the wiki page title; `slug()` exists in both Python and TypeScript and must stay identical.
 
-## Player state (`src/engine/types.ts`, `PlayerState`, schema 2)
+## Player state (`src/engine/types.ts`, `PlayerState`, schema 3)
 
 `skills` (id -> level 1..9), `tree` (wisdom -> 9 node slots), `soul` (element -> counts at base, +, ++,
 +++), `booksMastered`, `itemsOwned`, `stationsUnlocked`, `roomsUnlocked`, `pinnedRecipes`,
-`journalCommitted`, and `settings` (`librarian`, `librarianVariant`, `weather`, `season`,
+`journalCommitted`, `savedPlans` (Tree plans kept under a name: `{ name, tree, journal }`, newest first, one
+per name), and `settings` (`librarian`, `librarianVariant`, `weather`, `season`,
 `countRoomContents`, `assumeAllStationsUnlocked`, `planMode`, `hideUnfound`). `season` is `''` (not chosen),
 one of the four seasons, or `Numa`; the Foraging and Hush House pages share it.
 
@@ -93,10 +94,10 @@ Of the preferences only `countRoomContents` is on by default. A workstation coun
 unlocked, `assumeAllStationsUnlocked` is on, or
 it is ticked in the Database (`stationUnlocked`).
 
-Export writes the state as JSON; import accepts schema 1 or 2 and passes it through `migrate()`.
+Export writes the state as JSON; import accepts schema 1, 2 or 3 and passes it through `migrate()`.
 
 `migrate()` in `src/store.ts` upgrades schema 1 saves (which stored the two starting Elements instead of
-a Librarian).
+a Librarian) and gives saves older than schema 3 an empty `savedPlans`.
 
 ## Engine rules
 
@@ -157,7 +158,7 @@ card, then locked; with a season chosen only that season's yields are returned, 
 
 **Memories for upgrading a skill (`memorySources`, `upgradePlan`).** Upgrading a skill of level N takes the
 skill, an Element of the Soul, a Lesson and N memories, each sharing a Principle with the skill; strength does
-not matter. `upgradePlan` lists every memory that fits (Lessons excluded) with its sources from
+not matter. `upgradePlan` lists every memory that fits (`isMemory`) with its sources from
 `memorySources`: today's weather, Considering a thing (held or not), re-reading a book (mastered, masterable
 with what the player has, or beyond), a recipe, a foraging place in the chosen season, and a cache (out of
 reach while it lies only in locked rooms). Each source is `ready`, `reachable` or `locked` and carries the
@@ -186,7 +187,7 @@ Hash routes, rendered by `src/App.tsx`. Pages only render engine results; none h
 | `#/crafting[/<id>]` | Crafting | Recipe list and one recipe's workstations. `#/recipes/...` is the old address and still works. |
 | `#/foraging` | Foraging | Five season buttons; pressing the chosen one again shows all five seasons side by side. |
 | `#/house` | Hush House | Rooms with the best way to open each, and a per-helper table. The same five season buttons as Foraging sit above the rooms and above the helper table. |
-| `#/tree` | Tree of Wisdoms | The diagram takes most of the width, the skill picker stays in view beside it and the statistics sit below. Nodes, flying lines, journal at the root, presets. "Plan ahead" (`planMode`) ignores owned skills and levels. |
+| `#/tree` | Tree of Wisdoms | The diagram takes most of the width, the skill picker stays in view beside it and the statistics sit below. Nodes, flying lines, journal at the root, presets. "Save plan…" keeps the current tree and its journal under a name (`savePlan`, `loadPlan`, `deletePlan` in the store); saved plans are loaded from a menu or the list under the diagram, deleted there, and travel with an exported save. "Plan ahead" (`planMode`) ignores owned skills and levels. |
 | `#/settings` | Settings | Preferences, export, import, reset. |
 
 `hideUnfound` (the spoiler guard) hides the names and descriptions of books not mastered and skills not owned.
@@ -209,10 +210,10 @@ rows (rows are not rendered until opened), font fallback metric matching, and an
 
 ## Tests (`src/engine/engine.test.ts`)
 
-42 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
+44 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
 language rules, a recipe going from blocked to ready, flying lines, the two preset trees passing every tree
 rule, evolution arithmetic, the "what I have" sources, craftable things counting as held, foraging (seasons,
-accepted cards, order), caches, the sea and Numa, Librarians and save migration, memories for upgrading a skill (count, fit, order, sources by season), and helper and room logic
+accepted cards, order), caches, the sea and Numa, Librarians, save migration and saved Tree plans, memories for upgrading a skill (count, fit, order, sources by season), and helper and room logic
 (boost stacking, card-opened rooms, every room reachable from the Cucurbit Bridge).
 
 There are no browser tests in the repository; pages were checked by hand in headless Firefox.
@@ -272,6 +273,9 @@ Where the wiki and the owner disagree, the owner's rule wins and is recorded her
   and Fuel; `OWNER_SLOTS` in `build_data.py`).
 - Upgrading a skill of level N (1 to 8) takes the skill, an Element of the Soul, a Lesson and N memories;
   each card needs at least one of the skill's Principles.
+- A Lesson of Many Facets (a special Lesson), Avenue of Enquiry and An Offering to St Tentreto are not
+  memories, although the wiki files them under Memory (`isMemory` in `constants.ts`). They are listed under
+  Items, not Memories, and are not offered for upgrading a skill.
 - Anything the player can craft right now counts as something they have, craftable memories included (for
   example Torgue's Cleansing).
 

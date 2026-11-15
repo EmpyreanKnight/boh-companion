@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { TREE_LINKS, WISDOM_IDS } from './constants';
+import { isMemory, TREE_LINKS, WISDOM_IDS } from './constants';
 import { indexData } from './data';
 import { defaultPlayer } from './defaults';
 import {
@@ -8,7 +8,7 @@ import {
   startElements, stationQualifies, stranded, treeIssues, treeStats, emptyTree, upgradePlan,
 } from './engine';
 import { PRESETS } from './presets';
-import { migrate } from '../store';
+import { exportState, migrate, usePlayer } from '../store';
 import { LIBRARIANS } from './constants';
 
 const read = (n: string) => JSON.parse(readFileSync(new URL(`../../public/data/${n}.json`, import.meta.url), 'utf8'));
@@ -339,6 +339,32 @@ describe('librarians', () => {
     expect(m.skills.sharps).toBe(2);
     expect(m.pinnedRecipes).toEqual({});
   });
+  it('a schema 2 save gains an empty list of saved plans, and saved plans survive a round trip', () => {
+    expect(migrate({ schemaVersion: 2, skills: { sharps: 2 } }).savedPlans).toEqual([]);
+    const tree = PRESETS[0].tree;
+    const m = migrate({ schemaVersion: 3, savedPlans: [{ name: 'Mine', tree, journal: true }, { name: 'Mine', tree: emptyTree(), journal: false },
+      { name: ' ', tree }, { name: 'Short', tree: { hushery: ['sharps'] } }] });
+    expect(m.schemaVersion).toBe(3);
+    expect(m.savedPlans.map((x) => x.name)).toEqual(['Mine', 'Short']);       // one per name, nameless dropped
+    expect(m.savedPlans[0]).toEqual({ name: 'Mine', tree, journal: true });
+    expect(m.savedPlans[1].tree.hushery).toEqual(['sharps', null, null, null, null, null, null, null, null]);
+    expect(m.savedPlans[1].tree.birdsong).toHaveLength(9);
+  });
+  it('saving, loading and deleting a plan in the store', () => {
+    const st = usePlayer.getState;
+    st().reset(); st().setTree(PRESETS[0].tree); st().setJournal(true); st().savePlan('A');
+    st().setTree(emptyTree()); st().setJournal(false); st().savePlan('B'); st().savePlan('A');   // A replaced, now the empty tree
+    expect(st().savedPlans.map((x) => x.name)).toEqual(['A', 'B']);
+    st().setTree(PRESETS[0].tree); st().savePlan('C'); st().setTree(emptyTree());
+    st().loadPlan('C');
+    expect(st().tree).toEqual(PRESETS[0].tree);
+    st().tree.hushery[0] = null;                                   // editing the live tree leaves the saved copy alone
+    expect(st().savedPlans.find((x) => x.name === 'C')!.tree).toEqual(PRESETS[0].tree);
+    st().deletePlan('C');
+    expect(st().savedPlans.map((x) => x.name)).toEqual(['A', 'B']);
+    expect(exportState().savedPlans).toHaveLength(2);
+    st().reset();
+  });
 });
 
 describe('helpers and rooms', () => {
@@ -433,7 +459,13 @@ describe('memories for upgrading a skill', () => {
       expect(r.item.aspects).toContain('Memory');
       expect(plan.principles.some((x) => (r.item.principles[x] ?? 0) > 0), r.item.name).toBe(true);
     }
-    expect(plan.rows.map((r) => r.item.id)).not.toContain('a-lesson-of-many-facets');   // a Lesson, not a memory
+    // the owner's list: a special Lesson and two things of another kind are not memories
+    const all = data.skills.flatMap((s) => upgradePlan(makeCtx(data, p), s.id, '')!.rows.map((r) => r.item.id));
+    for (const id of ['a-lesson-of-many-facets', 'avenue-of-enquiry', 'an-offering-to-st-tentreto']) {
+      expect(isMemory(data.itemById[id])).toBe(false);
+      expect(all).not.toContain(id);
+    }
+    expect(data.items.filter(isMemory)).toHaveLength(71);
     // ordered: to hand today, then within reach, then out of reach
     const rank = { ready: 0, reachable: 1, locked: 2 };
     for (let i = 1; i < plan.rows.length; i++) expect(rank[plan.rows[i].state]).toBeGreaterThanOrEqual(rank[plan.rows[i - 1].state]);

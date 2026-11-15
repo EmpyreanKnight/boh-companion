@@ -178,3 +178,5 @@ select { min-width: 0; text-overflow: ellipsis; }
 .sources { list-style: none; padding: 0; margin: 0; } .sources li { padding: 1px 0; }
 details.inline { display: inline-block; vertical-align: top; margin-left: 6px; } details.inline[open] { display: block; margin-left: 0; }
 table.memories td { vertical-align: top; } table.memories { margin-top: 6px; }
+
+.saved-plan { border: 1px solid var(--line); border-radius: 6px; padding: 1px 8px; display: inline-flex; gap: 6px; align-items: baseline; }

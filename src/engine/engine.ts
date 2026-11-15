@@ -1,4 +1,4 @@
-import { ELEMENT_IDS, element, LIBRARIANS, PRINCIPLE_IDS, TIER_THRESHOLD, TREE_LINKS, WISDOM_IDS } from './constants';
+import { ELEMENT_IDS, element, isMemory, LIBRARIANS, PRINCIPLE_IDS, TIER_THRESHOLD, TREE_LINKS, WISDOM_IDS } from './constants';
 import type {
   Assistant, Book, ElementId, Forage, ForageDrop, GameData, Item, PlayerState, PMap, PrincipleId, Recipe, Room, Skill, TreeState, WisdomId,
   Workstation,
@@ -628,7 +628,7 @@ export function memorySources(ctx: Ctx, memory: Item, season: string): MemorySou
   const { data, player } = ctx;
   const ix = memoryIndex(data);
   const out: MemorySource[] = [];
-  const item = (i: Item) => ({ name: i.name + (i.considerDestroys ? ' (used up)' : ''), href: `#/db/${i.aspects.includes('Memory') ? 'memories' : 'items'}/${i.id}` });
+  const item = (i: Item) => ({ name: i.name + (i.considerDestroys ? ' (used up)' : ''), href: `#/db/${isMemory(i) ? 'memories' : 'items'}/${i.id}` });
   const book = (b: Book) => ({ name: b.name, href: `#/db/books/${b.id}` });
 
   if (memory.aspects.includes('Weather')) {
@@ -709,7 +709,7 @@ export function upgradePlan(ctx: Ctx, skillId: string, season: string): UpgradeP
   const principles = [...new Set([skill.primary, skill.secondary])];
   const fits = (m: PMap) => principles.some((p) => power(m, p) > 0);
   const rows = ctx.data.items
-    .filter((i) => i.aspects.includes('Memory') && !i.aspects.some((a) => a.startsWith('Memory#Lesson')) && fits(i.principles))
+    .filter((i) => isMemory(i) && fits(i.principles))
     .map((item): MemoryRow => {
       const sources = memorySources(ctx, item, season);
       // a memory already in hand with no recorded origin (ticked by the player) still counts once

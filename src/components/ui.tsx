@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react';
-import { element, LEVEL_SUFFIX, principle, PRINCIPLE_IDS } from '../engine/constants';
+import { element, isMemory, LEVEL_SUFFIX, principle, PRINCIPLE_IDS } from '../engine/constants';
 import type { ElementId, PMap, PrincipleId, WisdomId } from '../engine/types';
 
 const ICONS = import.meta.env.VITE_ICONS !== 'off';
@@ -20,7 +20,7 @@ export function SkillIcon({ skill, size = 28 }: { skill: { id: string; icon?: bo
   return <Icon group="skill" id={skill.icon ? skill.id : 'language'} size={size} square />;
 }
 /** A thing's Database entry: memories have a tab of their own. */
-export const itemHref = (item: { id: string; aspects: string[] }) => `#/db/${item.aspects.includes('Memory') ? 'memories' : 'items'}/${item.id}`;
+export const itemHref = (item: { id: string; aspects: string[] }) => `#/db/${isMemory(item) ? 'memories' : 'items'}/${item.id}`;
 /** A link to the memory called `name` (as books and things name it), or the bare name when it is not a known card. */
 export function MemoryLink({ data, name }: { data: { itemIdByName: Record<string, string> }; name: string | null | undefined }) {
   if (!name) return <>—</>;

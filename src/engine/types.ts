@@ -82,8 +82,10 @@ export interface GameData {
 }
 
 export type TreeState = Record<WisdomId, (string | null)[]>;
+/** A Tree of Wisdoms kept under a name, with whether the journal sat at its root. */
+export interface SavedPlan { name: string; tree: TreeState; journal: boolean }
 export interface PlayerState {
-  schemaVersion: 2;
+  schemaVersion: 3;
   skills: Record<string, number>;          // skill id -> level 1..9 (absent = not owned)
   tree: TreeState;                          // wisdom -> 9 nodes, index 0 = level 1
   soul: Record<ElementId, number[]>;        // element -> card counts at base, +, ++, +++
@@ -93,6 +95,7 @@ export interface PlayerState {
   roomsUnlocked: Record<string, true>;
   pinnedRecipes: Record<string, true>;
   journalCommitted: boolean;                // the journal placed at the root of the Tree
+  savedPlans: SavedPlan[];                  // Tree plans kept under a name, newest first
   settings: {
     assumeAllStationsUnlocked: boolean;
     planMode: boolean;                      // tree: ignore owned skills and their levels

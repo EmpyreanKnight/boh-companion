@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ItemIcon, itemHref, Lore, MemoryLink, P, Panel, PList, PrincipleFilter, SeasonPicker, SkillIcon, Soul, Status, Stepper, TableWrap, WisdomName } from '../components/ui';
-import { ALL_SEASONS, wisdom } from '../engine/constants';
+import { ALL_SEASONS, isMemory, wisdom } from '../engine/constants';
 import { canReadBook, skillPrinciples, stationQualifies, stationUnlocked, memorySources, upgradePlan, type MemorySource } from '../engine/engine';
 import type { Book, GameData, Item, PrincipleId, Skill, Workstation } from '../engine/types';
 import { useCtx, usePlayer } from '../store';
@@ -177,7 +177,6 @@ function SkillDetail({ data, s, books, hidden }: { data: GameData; s: Skill; boo
   );
 }
 
-const isMemory = (i: Item) => i.aspects.includes('Memory');
 const SOURCE_LABEL = { ready: 'Now', reachable: 'Within reach', locked: 'Not yet' } as const;
 const SOURCE_KIND = { ready: 'ready', reachable: 'items', locked: 'blocked' } as const;
 

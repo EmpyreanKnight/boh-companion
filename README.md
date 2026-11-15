@@ -22,7 +22,7 @@ browser you use and is never sent anywhere.
 | **Crafting** | Every recipe, the workstations that can make it, the cards to place in each slot, and what is still missing. |
 | **Foraging** | The beach, the moor, the gardens and the other gathering places: what each yields in each season, Numa included, and whether you can go there yet. |
 | **Hush House** | Every room, what unlocks it, and the cheapest helper and boosts that will open it with what you have. |
-| **Tree of Wisdoms** | Plan which skill to commit where, with the game's reach rules checked for you, preset plans, and the Elements of the Soul the plan produces. |
+| **Tree of Wisdoms** | Plan which skill to commit where, with the game's reach rules checked for you, preset plans, your own plans saved under a name, and the Elements of the Soul the plan produces. |
 | **Settings** | The spoiler guard, a few counting preferences, and export, import or reset of your save. |
 
 ## Getting started

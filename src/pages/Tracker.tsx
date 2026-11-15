@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { ItemIcon, P, Panel, PList, PrincipleFilter, SkillIcon, Soul, Status, Stepper, TableWrap } from '../components/ui';
-import { ELEMENTS, LEVEL_SUFFIX, OPPORTUNITIES } from '../engine/constants';
+import { ELEMENTS, isMemory, LEVEL_SUFFIX, OPPORTUNITIES } from '../engine/constants';
 import { BANDS, craftList, readingTable, skillPrinciples, type CraftRow, type Solution } from '../engine/engine';
 import type { GameData, PrincipleId } from '../engine/types';
 import { useCtx, usePlayer } from '../store';
@@ -22,7 +22,7 @@ export function Tracker({ data }: { data: GameData }) {
   const craftable = crafts.filter((c) => c.state === 'craftable');
   const held = crafts.filter((c) => c.state === 'have');
   const blocked = crafts.filter((c) => c.state === 'blocked');
-  const memories = ctx.items.filter((c) => c.have && c.aspects.includes('Memory'));
+  const memories = ctx.items.filter((c) => c.have && isMemory(c));
   // nothing left that is certain to succeed: point at the game's random help
   const stuck = rows.every((r) => r.unlocked.have.length === 0) && rows.some((r) => r.near.length > 0);
   const opportunity = <>If you attempt a book while a little short, the game may offer an Opportunity: one more card whose Principles are added.
