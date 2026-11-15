@@ -161,7 +161,10 @@ skill, an Element of the Soul, a Lesson and N memories, each sharing a Principle
 not matter. `upgradePlan` lists every memory that fits (`isMemory`) with its sources from
 `memorySources`: today's weather, Considering a thing (held or not), re-reading a book (mastered, masterable
 with what the player has, or beyond), a recipe, a foraging place in the chosen season, and a cache (out of
-reach while it lies only in locked rooms). Each source is `ready`, `reachable` or `locked` and carries the
+reach while it lies only in locked rooms). Things that survive being Considered are listed apart from those it uses up, and within each state the
+sources that use nothing up come first (`consumes`); mastered books are named in the order they were ticked,
+the one mastered first leading. `haveMap` credits a memory the same way: a thing that survives, then the
+earliest mastered book, then a thing that is used up. Each source is `ready`, `reachable` or `locked` and carries the
 number of memories it is certain to give today: one per thing or book, one per sea place, one per recipe,
 nothing for a draw that depends on luck, and nothing from foraging until a season is chosen. Rows are ordered
 ready, reachable, locked. `itemIdByName` also answers to "Memory: X" for a card the wiki calls "X"
@@ -210,7 +213,7 @@ rows (rows are not rendered until opened), font fallback metric matching, and an
 
 ## Tests (`src/engine/engine.test.ts`)
 
-44 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
+45 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
 language rules, a recipe going from blocked to ready, flying lines, the two preset trees passing every tree
 rule, evolution arithmetic, the "what I have" sources, craftable things counting as held, foraging (seasons,
 accepted cards, order), caches, the sea and Numa, Librarians, save migration and saved Tree plans, memories for upgrading a skill (count, fit, order, sources by season), and helper and room logic

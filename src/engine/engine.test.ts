@@ -510,3 +510,31 @@ describe('memories for upgrading a skill', () => {
     expect(memorySources(ctx, data.itemById['memory-sight'], '').some((s) => s.kind === 'cache' && /every time/.test(s.note!))).toBe(true);
   });
 });
+
+describe('sources that use nothing up come first', () => {
+  const sight = data.itemById['memory-sight'];
+  const keeps = data.items.find((i) => i.yieldsMemory === 'Memory: Sight' && !i.considerDestroys)!;
+  const spent = data.items.find((i) => i.yieldsMemory === 'Memory: Sight' && i.considerDestroys)!;
+  it('a memory is credited to a thing that survives, then a book, then a thing that is used up', () => {
+    expect(keeps && spent).toBeTruthy();
+    const p = defaultPlayer();
+    p.settings.countRoomContents = false;
+    p.itemsOwned[spent.id] = true;
+    expect(makeCtx(data, p).have.get(sight.id)).toBe(`consider ${spent.name}, which uses it up`);
+    p.itemsOwned[keeps.id] = true;                       // ticked later, preferred all the same
+    expect(makeCtx(data, p).have.get(sight.id)).toBe(`consider ${keeps.name}`);
+    const salt = data.books.filter((b) => b.memory === 'Memory: Salt');
+    const sand = data.itemById['sand'];                  // considering Sand gives Memory: Salt and uses the Sand up
+    expect(sand.yieldsMemory).toBe('Memory: Salt'); expect(sand.considerDestroys).toBe(true);
+    p.itemsOwned['sand'] = true;
+    p.booksMastered = { [salt[2].id]: true, [salt[0].id]: true };          // salt[2] was mastered first
+    const ctx = makeCtx(data, p);
+    expect(ctx.have.get('memory-salt')).toBe(`re-read ${salt[2].name}`);
+    const sources = memorySources(ctx, data.itemById['memory-salt'], '');
+    const ready = sources.filter((s) => s.state === 'ready');
+    expect(ready.map((s) => [s.kind, s.consumes])).toEqual([['reread', false], ['consider', true]]);
+    expect(ready[0].things!.map((t) => t.name)).toEqual([salt[2].name, salt[0].name]);
+    expect(ready[1].note).toBe('uses the thing up');
+    for (let i = 1; i < sources.length; i++) if (sources[i].state === sources[i - 1].state) expect(Number(sources[i].consumes)).toBeGreaterThanOrEqual(Number(sources[i - 1].consumes));
+  });
+});

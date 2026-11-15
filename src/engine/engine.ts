@@ -62,7 +62,7 @@ export function skillCards(data: GameData, player: PlayerState): Card[] {
 /**
  * Everything the player has or can summon today, with how:
  * items marked owned, things lying in unlocked rooms, today's weather, memories from considering
- * things they have, and memories from re-reading mastered books.
+ * things they have, and memories from re-reading mastered books. Ways that use nothing up come first.
  */
 export function haveMap(data: GameData, player: PlayerState): Map<string, string> {
   const have = new Map<string, string>();
@@ -72,13 +72,15 @@ export function haveMap(data: GameData, player: PlayerState): Map<string, string
     for (const r of data.rooms) if (player.roomsUnlocked[r.id]) for (const id of r.contents) add(id, `found in ${r.name}`);
   }
   if (player.settings.weather) add(player.settings.weather, "today's weather");
-  for (const [id] of [...have]) {
-    const it = data.itemById[id];
-    if (it?.yieldsMemory) add(data.itemIdByName[it.yieldsMemory], `consider ${it.name}${it.considerDestroys ? ', which uses it up' : ''}`);
+  // a memory is credited to the way that costs nothing first: a thing that survives being considered, then
+  // the book mastered earliest (the save keeps the order of ticking), and only then a thing that is used up
+  const held = [...have.keys()].map((id) => data.itemById[id]).filter((it) => it?.yieldsMemory);
+  for (const it of held) if (!it.considerDestroys) add(data.itemIdByName[it.yieldsMemory!], `consider ${it.name}`);
+  for (const id of Object.keys(player.booksMastered)) {
+    const b = data.bookById[id];
+    if (b?.memory) add(data.itemIdByName[b.memory], `re-read ${b.name}`);
   }
-  for (const b of data.books) {
-    if (player.booksMastered[b.id] && b.memory) add(data.itemIdByName[b.memory], `re-read ${b.name}`);
-  }
+  for (const it of held) if (it.considerDestroys) add(data.itemIdByName[it.yieldsMemory!], `consider ${it.name}, which uses it up`);
   return have;
 }
 
@@ -588,6 +590,7 @@ export type SourceState = 'ready' | 'reachable' | 'locked';
 export interface MemorySource {
   kind: SourceKind; state: SourceState;
   label: string; note?: string; href?: string;
+  consumes: boolean;                           // getting the memory this way uses something up
   things?: { name: string; href: string }[];   // the paintings, books, ... behind a grouped source
   count: number;                               // memories this is certain to give today; 0 when it is luck or not yet possible
 }
@@ -623,37 +626,43 @@ function memoryIndex(data: GameData): MemoryIndex {
 
 const SOURCE_RANK: Record<SourceState, number> = { ready: 0, reachable: 1, locked: 2 };
 
-/** Every way the wiki records of getting one memory, the ways open today first. `season` '' = not chosen. */
+/** Every way the wiki records of getting one memory: the ways open today first, and among those the ones that use nothing up. `season` '' = not chosen. */
 export function memorySources(ctx: Ctx, memory: Item, season: string): MemorySource[] {
   const { data, player } = ctx;
   const ix = memoryIndex(data);
   const out: MemorySource[] = [];
-  const item = (i: Item) => ({ name: i.name + (i.considerDestroys ? ' (used up)' : ''), href: `#/db/${isMemory(i) ? 'memories' : 'items'}/${i.id}` });
+  const item = (i: Item) => ({ name: i.name, href: `#/db/${isMemory(i) ? 'memories' : 'items'}/${i.id}` });
   const book = (b: Book) => ({ name: b.name, href: `#/db/books/${b.id}` });
 
   if (memory.aspects.includes('Weather')) {
     const today = player.settings.weather === memory.id;
-    out.push({ kind: 'weather', state: today ? 'ready' : 'reachable', count: today ? 1 : 0,
+    out.push({ kind: 'weather', state: today ? 'ready' : 'reachable', count: today ? 1 : 0, consumes: false,
       label: today ? "Today's weather" : 'Comes with the weather', note: today ? undefined : 'a matter of luck and season' });
   }
 
-  const things = ix.consider.get(memory.id) ?? [];
-  const held = things.filter((i) => ctx.have.has(i.id));
-  const absent = things.filter((i) => !ctx.have.has(i.id));
-  if (held.length) out.push({ kind: 'consider', state: 'ready', count: held.length, things: held.map(item),
-    label: `Consider ${held.length === 1 ? 'a thing' : `any of ${held.length} things`} you have` });
-  if (absent.length) out.push({ kind: 'consider', state: 'locked', count: 0, things: absent.map(item),
-    label: `Consider ${absent.length === 1 ? 'a thing' : `any of ${absent.length} things`} you do not have yet` });
+  // things that survive being considered are kept apart from those it uses up
+  for (const consumes of [false, true]) {
+    const things = (ix.consider.get(memory.id) ?? []).filter((i) => !!i.considerDestroys === consumes);
+    const held = things.filter((i) => ctx.have.has(i.id));
+    const absent = things.filter((i) => !ctx.have.has(i.id));
+    const note = consumes ? 'uses the thing up' : undefined;
+    if (held.length) out.push({ kind: 'consider', state: 'ready', count: held.length, things: held.map(item), consumes, note,
+      label: `Consider ${held.length === 1 ? 'a thing' : `any of ${held.length} things`} you have` });
+    if (absent.length) out.push({ kind: 'consider', state: 'locked', count: 0, things: absent.map(item), consumes, note,
+      label: `Consider ${absent.length === 1 ? 'a thing' : `any of ${absent.length} things`} you do not have yet` });
+  }
 
   const books = ix.books.get(memory.id) ?? [];
-  const mastered = books.filter((b) => player.booksMastered[b.id]);
+  // mastered books in the order they were ticked, so the one mastered first is named first
+  const order = Object.keys(player.booksMastered);
+  const mastered = books.filter((b) => player.booksMastered[b.id]).sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
   const inReach = books.filter((b) => !player.booksMastered[b.id] && canReadBook(ctx, b).band && canReadBook(ctx, b).band !== 'max');
   const beyond = books.filter((b) => !player.booksMastered[b.id] && !inReach.includes(b));
-  if (mastered.length) out.push({ kind: 'reread', state: 'ready', count: mastered.length, things: mastered.map(book),
+  if (mastered.length) out.push({ kind: 'reread', state: 'ready', consumes: false, count: mastered.length, things: mastered.map(book),
     label: `Re-read ${mastered.length === 1 ? 'a book' : `any of ${mastered.length} books`} you have mastered` });
-  if (inReach.length) out.push({ kind: 'reread', state: 'reachable', count: 0, things: inReach.map(book),
+  if (inReach.length) out.push({ kind: 'reread', state: 'reachable', consumes: false, count: 0, things: inReach.map(book),
     label: `Master ${inReach.length === 1 ? 'a book' : `any of ${inReach.length} books`} within your reach, then re-read it` });
-  if (beyond.length) out.push({ kind: 'reread', state: 'locked', count: 0, things: beyond.map(book),
+  if (beyond.length) out.push({ kind: 'reread', state: 'locked', consumes: false, count: 0, things: beyond.map(book),
     label: `${beyond.length === 1 ? 'A book' : `${beyond.length} books`} you cannot master yet` });
 
   const recipes = statics(data).recipesByResult.get(memory.id) ?? [];
@@ -661,7 +670,7 @@ export function memorySources(ctx: Ctx, memory: Item, season: string): MemorySou
     const r = [...recipes].sort((a, b) => STATUS_RANK[recipeStatus(ctx, a)] - STATUS_RANK[recipeStatus(ctx, b)])[0];
     const plan = planRecipe(ctx, r)[0];
     const ok = !!plan && plan.status !== 'blocked';
-    out.push({ kind: 'craft', state: ok ? 'ready' : 'locked', count: ok ? 1 : 0, href: `#/crafting/${encodeURIComponent(r.id)}`,
+    out.push({ kind: 'craft', state: ok ? 'ready' : 'locked', count: ok ? 1 : 0, consumes: !!r.ingredient, href: `#/crafting/${encodeURIComponent(r.id)}`,
       label: ok ? `Craft it at ${plan.station.name}` : 'Craft it', note: ok ? undefined : plan ? plan.gaps.join('; ') : 'no workstation known' });
   }
 
@@ -682,7 +691,7 @@ export function memorySources(ctx: Ctx, memory: Item, season: string): MemorySou
         spot.needs ? `costs a ${spot.needs}` : '',
         !row.available ? `unlock ${row.room?.name}` : !row.ready ? 'you lack a fitting card' : '',
       ].filter(Boolean);
-      out.push({ kind: 'forage', count: sure ? 1 : 0, href: '#/foraging', label: `${spot.name}${spot.name.includes(spot.place) ? '' : ` (${spot.place})`}`,
+      out.push({ kind: 'forage', consumes: !!spot.needs, count: sure ? 1 : 0, href: '#/foraging', label: `${spot.name}${spot.name.includes(spot.place) ? '' : ` (${spot.place})`}`,
         state: !row.available || !inSeason ? 'locked' : row.ready && extra ? 'ready' : 'reachable', note: notes.join('; ') });
     }
   }
@@ -691,11 +700,12 @@ export function memorySources(ctx: Ctx, memory: Item, season: string): MemorySou
     // a cache lying only in rooms still locked is out of reach; one from foraging or another cache is not
     const rooms = cache.sources.map((x) => data.rooms.find((r) => r.name === x.name));
     const open = !rooms.length || rooms.some((r) => !r || player.roomsUnlocked[r.id]);
-    out.push({ kind: 'cache', state: open ? 'reachable' : 'locked', count: 0, href: `#/db/caches/${cache.id}`, label: `Open ${cache.name}`,
+    out.push({ kind: 'cache', state: open ? 'reachable' : 'locked', consumes: true, count: 0, href: `#/db/caches/${cache.id}`, label: `Open ${cache.name}`,
       note: [always ? 'every time' : chance != null ? `${Math.round(chance)}%` : '', cache.sources.length ? `found: ${cache.sources.map((x) => x.name).join(', ')}` : '']
         .filter(Boolean).join('; ') });
   }
-  return out.sort((a, b) => SOURCE_RANK[a.state] - SOURCE_RANK[b.state]);
+  // within each state, the ways that use nothing up come first
+  return out.sort((a, b) => SOURCE_RANK[a.state] - SOURCE_RANK[b.state] || Number(a.consumes) - Number(b.consumes));
 }
 
 /**
