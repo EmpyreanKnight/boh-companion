@@ -72,6 +72,7 @@ tr.open > td { background: #ffffff0a; } tr.detail > td { background: #0004; padd
 .skill-card { background: #0003; border: 1px solid #5d4a3588; border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
 .skill-card.owned { background: var(--parch); color: var(--parch-ink); border-color: #b79b5b; }
 .skill-card.owned .chip { background: #2b1f18; } .skill-card.owned .stepper button { color: var(--ink); } .skill-card.owned .tag { color: #6b5a48; border-color: #9b8463; }
+.skill-card.owned a { color: var(--parch-ink); text-decoration-color: #6b4a1e99; } .skill-card.owned a:hover { color: #000; }
 .skill-name { font-weight: 600; font-size: 0.8438rem; }
 .soul-table td { min-width: 120px; } .soul-table .small { margin-top: 4px; }
 .split { display: grid; grid-template-columns: minmax(300px, 400px) minmax(0, 1fr); gap: 16px; align-items: start; }
