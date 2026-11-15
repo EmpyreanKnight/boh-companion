@@ -582,6 +582,146 @@ export function forageRows(data: GameData, player: PlayerState, season: string):
   }).sort((a, b) => rank(a) - rank(b));
 }
 
+// ------------------------------------------------------------------ memories for upgrading a skill
+export type SourceKind = 'weather' | 'consider' | 'reread' | 'craft' | 'forage' | 'cache';
+export type SourceState = 'ready' | 'reachable' | 'locked';
+export interface MemorySource {
+  kind: SourceKind; state: SourceState;
+  label: string; note?: string; href?: string;
+  things?: { name: string; href: string }[];   // the paintings, books, ... behind a grouped source
+  count: number;                               // memories this is certain to give today; 0 when it is luck or not yet possible
+}
+export interface MemoryRow { item: Item; state: SourceState; ready: number; sources: MemorySource[] }
+export interface UpgradePlan {
+  skill: Skill; level: number;
+  need: number;                    // memories the upgrade asks for: one per level the skill has now
+  principles: PrincipleId[];
+  souls: Card[];                   // Elements of the Soul held that carry one of the skill's Principles
+  rows: MemoryRow[];               // every fitting memory, the ones to hand today first
+  ready: number;                   // fitting memories certain to be had today
+}
+
+/** Who gives each memory, by the memory's item id. Depends on the game data only. */
+interface MemoryIndex { consider: Map<string, Item[]>; books: Map<string, Book[]>; forage: Map<string, { spot: Forage; drop: ForageDrop }[]>;
+  caches: Map<string, { cache: GameData['caches'][number]; chance: number | null; always: boolean }[]> }
+const memoryIndexCache = new WeakMap<GameData, MemoryIndex>();
+function memoryIndex(data: GameData): MemoryIndex {
+  let ix = memoryIndexCache.get(data);
+  if (ix) return ix;
+  ix = { consider: new Map(), books: new Map(), forage: new Map(), caches: new Map() };
+  const push = <T,>(m: Map<string, T[]>, id: string | undefined | null, x: T) => { if (id) m.set(id, [...(m.get(id) ?? []), x]); };
+  for (const i of data.items) if (i.yieldsMemory) push(ix.consider, data.itemIdByName[i.yieldsMemory], i);
+  for (const b of data.books) if (b.memory) push(ix.books, data.itemIdByName[b.memory], b);
+  for (const spot of data.foraging) for (const drop of spot.drops) push(ix.forage, drop.item, { spot, drop });
+  for (const cache of data.caches) {
+    for (const d of cache.drops) push(ix.caches, d.item, { cache, chance: d.chance, always: false });
+    if (cache.alsoGives) push(ix.caches, data.itemIdByName[cache.alsoGives], { cache, chance: null, always: true });
+  }
+  memoryIndexCache.set(data, ix);
+  return ix;
+}
+
+const SOURCE_RANK: Record<SourceState, number> = { ready: 0, reachable: 1, locked: 2 };
+
+/** Every way the wiki records of getting one memory, the ways open today first. `season` '' = not chosen. */
+export function memorySources(ctx: Ctx, memory: Item, season: string): MemorySource[] {
+  const { data, player } = ctx;
+  const ix = memoryIndex(data);
+  const out: MemorySource[] = [];
+  const item = (i: Item) => ({ name: i.name + (i.considerDestroys ? ' (used up)' : ''), href: `#/db/${i.aspects.includes('Memory') ? 'memories' : 'items'}/${i.id}` });
+  const book = (b: Book) => ({ name: b.name, href: `#/db/books/${b.id}` });
+
+  if (memory.aspects.includes('Weather')) {
+    const today = player.settings.weather === memory.id;
+    out.push({ kind: 'weather', state: today ? 'ready' : 'reachable', count: today ? 1 : 0,
+      label: today ? "Today's weather" : 'Comes with the weather', note: today ? undefined : 'a matter of luck and season' });
+  }
+
+  const things = ix.consider.get(memory.id) ?? [];
+  const held = things.filter((i) => ctx.have.has(i.id));
+  const absent = things.filter((i) => !ctx.have.has(i.id));
+  if (held.length) out.push({ kind: 'consider', state: 'ready', count: held.length, things: held.map(item),
+    label: `Consider ${held.length === 1 ? 'a thing' : `any of ${held.length} things`} you have` });
+  if (absent.length) out.push({ kind: 'consider', state: 'locked', count: 0, things: absent.map(item),
+    label: `Consider ${absent.length === 1 ? 'a thing' : `any of ${absent.length} things`} you do not have yet` });
+
+  const books = ix.books.get(memory.id) ?? [];
+  const mastered = books.filter((b) => player.booksMastered[b.id]);
+  const inReach = books.filter((b) => !player.booksMastered[b.id] && canReadBook(ctx, b).band && canReadBook(ctx, b).band !== 'max');
+  const beyond = books.filter((b) => !player.booksMastered[b.id] && !inReach.includes(b));
+  if (mastered.length) out.push({ kind: 'reread', state: 'ready', count: mastered.length, things: mastered.map(book),
+    label: `Re-read ${mastered.length === 1 ? 'a book' : `any of ${mastered.length} books`} you have mastered` });
+  if (inReach.length) out.push({ kind: 'reread', state: 'reachable', count: 0, things: inReach.map(book),
+    label: `Master ${inReach.length === 1 ? 'a book' : `any of ${inReach.length} books`} within your reach, then re-read it` });
+  if (beyond.length) out.push({ kind: 'reread', state: 'locked', count: 0, things: beyond.map(book),
+    label: `${beyond.length === 1 ? 'A book' : `${beyond.length} books`} you cannot master yet` });
+
+  const recipes = statics(data).recipesByResult.get(memory.id) ?? [];
+  if (recipes.length) {
+    const r = [...recipes].sort((a, b) => STATUS_RANK[recipeStatus(ctx, a)] - STATUS_RANK[recipeStatus(ctx, b)])[0];
+    const plan = planRecipe(ctx, r)[0];
+    const ok = !!plan && plan.status !== 'blocked';
+    out.push({ kind: 'craft', state: ok ? 'ready' : 'locked', count: ok ? 1 : 0, href: `#/crafting/${encodeURIComponent(r.id)}`,
+      label: ok ? `Craft it at ${plan.station.name}` : 'Craft it', note: ok ? undefined : plan ? plan.gaps.join('; ') : 'no workstation known' });
+  }
+
+  const spots = ix.forage.get(memory.id) ?? [];
+  if (spots.length) {
+    const rows = new Map(forageRows(data, player, '').map((r) => [r.spot.id, r]));
+    for (const { spot, drop } of spots) {
+      const row = rows.get(spot.id)!;
+      const seasons = Object.keys(drop.chance);
+      const inSeason = !season || drop.chance[season] != null;
+      const extra = !drop.with || ctx.have.has(data.itemIdByName[drop.with] ?? '');
+      const chance = season ? drop.chance[season] : Math.max(...Object.values(drop.chance));
+      const sure = !!season && inSeason && row.ready && extra && chance >= 100;
+      const notes = [
+        !inSeason ? `only in ${seasons.join(', ')}` : season ? (chance >= 100 ? '' : `${chance}% of a full deck`)
+          : `${seasons.length === 5 ? 'every season' : seasons.join(', ')}${chance >= 100 ? '' : `, up to ${chance}%`}`,
+        drop.with ? `with a ${drop.with}${extra ? '' : ', which you do not have'}` : '',
+        spot.needs ? `costs a ${spot.needs}` : '',
+        !row.available ? `unlock ${row.room?.name}` : !row.ready ? 'you lack a fitting card' : '',
+      ].filter(Boolean);
+      out.push({ kind: 'forage', count: sure ? 1 : 0, href: '#/foraging', label: `${spot.name}${spot.name.includes(spot.place) ? '' : ` (${spot.place})`}`,
+        state: !row.available || !inSeason ? 'locked' : row.ready && extra ? 'ready' : 'reachable', note: notes.join('; ') });
+    }
+  }
+
+  for (const { cache, chance, always } of ix.caches.get(memory.id) ?? []) {
+    // a cache lying only in rooms still locked is out of reach; one from foraging or another cache is not
+    const rooms = cache.sources.map((x) => data.rooms.find((r) => r.name === x.name));
+    const open = !rooms.length || rooms.some((r) => !r || player.roomsUnlocked[r.id]);
+    out.push({ kind: 'cache', state: open ? 'reachable' : 'locked', count: 0, href: `#/db/caches/${cache.id}`, label: `Open ${cache.name}`,
+      note: [always ? 'every time' : chance != null ? `${Math.round(chance)}%` : '', cache.sources.length ? `found: ${cache.sources.map((x) => x.name).join(', ')}` : '']
+        .filter(Boolean).join('; ') });
+  }
+  return out.sort((a, b) => SOURCE_RANK[a.state] - SOURCE_RANK[b.state]);
+}
+
+/**
+ * Upgrading a skill of level N takes the skill, an Element of the Soul, a Lesson and N memories, each sharing
+ * a Principle with the skill. Lists the memories that fit and where each comes from.
+ */
+export function upgradePlan(ctx: Ctx, skillId: string, season: string): UpgradePlan | null {
+  const skill = ctx.data.skillById[skillId];
+  if (!skill) return null;
+  const level = ctx.player.skills[skillId] ?? 0;
+  const principles = [...new Set([skill.primary, skill.secondary])];
+  const fits = (m: PMap) => principles.some((p) => power(m, p) > 0);
+  const rows = ctx.data.items
+    .filter((i) => i.aspects.includes('Memory') && !i.aspects.some((a) => a.startsWith('Memory#Lesson')) && fits(i.principles))
+    .map((item): MemoryRow => {
+      const sources = memorySources(ctx, item, season);
+      // a memory already in hand with no recorded origin (ticked by the player) still counts once
+      const ready = sources.reduce((n, s) => n + s.count, 0) || (ctx.player.itemsOwned[item.id] ? 1 : 0);
+      return { item, sources, ready, state: ready ? 'ready' : sources[0]?.state ?? 'locked' };
+    })
+    .sort((a, b) => SOURCE_RANK[a.state] - SOURCE_RANK[b.state] || b.ready - a.ready || Number(!a.sources.length) - Number(!b.sources.length)
+      || a.item.name.localeCompare(b.item.name));
+  return { skill, level, need: level >= 9 ? 0 : level, principles, souls: ctx.souls.filter((c) => fits(c.principles)), rows,
+    ready: rows.reduce((n, r) => n + r.ready, 0) };
+}
+
 // ------------------------------------------------------------------ tree
 export const emptyTree = (): TreeState =>
   Object.fromEntries(WISDOM_IDS.map((w) => [w, Array(9).fill(null)])) as TreeState;

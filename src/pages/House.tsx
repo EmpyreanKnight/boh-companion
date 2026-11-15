@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Icon, Lore, P, Panel, PList, SeasonPicker, Status, TableWrap } from '../components/ui';
+import { Icon, Lore, P, Panel, PList, SeasonPicker, Status, TableWrap, itemHref } from '../components/ui';
 import { ALL_SEASONS, PRINCIPLE_IDS } from '../engine/constants';
 import { HELPER_CATEGORIES, helperBest, helperPool, helpersIn, prerequisiteMet, roomStatuses, trimPlan, type RoomState, type RoomStatus } from '../engine/engine';
 import type { Assistant, GameData, PrincipleId, Room } from '../engine/types';
@@ -120,7 +120,7 @@ function RoomDetail({ data, s }: { data: GameData; s: RoomStatus }) {
         {r.exposes.length > 0 && <p>Opening it reveals {names(r.exposes).join(', ')}.</p>}
         {r.workstations.length > 0 && <p>Workstations: {r.workstations.map((w) => data.stationById[w]?.name ?? w).join(', ')}.</p>}</div>
       <div><h4>Found inside ({r.contents.length})</h4>
-        {r.contents.length ? <p className="wrap">{r.contents.map((id) => <a key={id} className="pill" href={`#/db/items/${id}`}>{data.itemById[id]?.name ?? id}</a>)}</p> : <p className="muted">Nothing the database tracks.</p>}</div>
+        {r.contents.length ? <p className="wrap">{r.contents.map((id) => <a key={id} className="pill" href={data.itemById[id] ? itemHref(data.itemById[id]) : `#/db/items/${id}`}>{data.itemById[id]?.name ?? id}</a>)}</p> : <p className="muted">Nothing the database tracks.</p>}</div>
       {s.plan && s.state !== 'unlocked' && <div><h4>Best attempt: {s.plan.assistant.name}, {s.plan.total} of {s.need}</h4>
         <ul className="picks"><li><span className="slot">Helper</span> {s.plan.assistant.name} <b>+{s.plan.base}</b></li>
           {s.plan.picks.map((k, i) => <li key={i}><span className="slot">{k.slot}</span> {k.card ? <>{k.card.name} <b>+{k.value}</b>{k.card.via && <span className="muted small"> ({k.card.via})</span>}</> : <span className="muted">nothing useful</span>}</li>)}</ul></div>}

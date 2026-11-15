@@ -155,6 +155,17 @@ listed as foraging places too, parsed from the Sea's Edge and Brancrug Boathouse
 the exact Elements (`soulElements`), those are used. Rows are ordered usable, then reachable without a fitting
 card, then locked; with a season chosen only that season's yields are returned, likeliest first.
 
+**Memories for upgrading a skill (`memorySources`, `upgradePlan`).** Upgrading a skill of level N takes the
+skill, an Element of the Soul, a Lesson and N memories, each sharing a Principle with the skill; strength does
+not matter. `upgradePlan` lists every memory that fits (Lessons excluded) with its sources from
+`memorySources`: today's weather, Considering a thing (held or not), re-reading a book (mastered, masterable
+with what the player has, or beyond), a recipe, a foraging place in the chosen season, and a cache (out of
+reach while it lies only in locked rooms). Each source is `ready`, `reachable` or `locked` and carries the
+number of memories it is certain to give today: one per thing or book, one per sea place, one per recipe,
+nothing for a draw that depends on luck, and nothing from foraging until a season is chosen. Rows are ordered
+ready, reachable, locked. `itemIdByName` also answers to "Memory: X" for a card the wiki calls "X"
+(Intuition), so books and things naming it that way resolve.
+
 **Seasons (`helpersIn`).** Seasonal workers can be hired only in their season, and nobody during Numa.
 
 **Tree (`reachable`, `pickerRows`, `stranded`, `treeIssues`, `treeStats`, `evolve`).** Node rules are under
@@ -170,8 +181,8 @@ Hash routes, rendered by `src/App.tsx`. Pages only render engine results; none h
 | Route | Page | Notes |
 | --- | --- | --- |
 | `#/` | Home | The epigraph, the letter with the "I remember...?" choice of Librarian, progress tiles, pinned recipes. Choosing a Librarian also resets the soul cards to that origin's starting hand, but only while the player has not edited them. |
-| `#/db/<tab>[/<id>]` | Database | Tabs `books`, `skills`, `items`, `workstations`, `caches`. With an id, that row is listed first (whatever the filters and the 120-row page size), opened and scrolled into view; every link into the Database relies on this. Mastered, level, owned and unlocked are edited in place. |
-| `#/tracker` | Tracker | Reading table with today's weather, skill levels, "What I have" (tools and inks in the house, things I can craft, memories), soul cards. |
+| `#/db/<tab>[/<id>]` | Database | Tabs `books`, `skills`, `items`, `memories`, `workstations`, `caches`. Memories are listed in their own tab, not under items, with where each comes from; a skill's entry shows how many memories its next level takes and the candidates with their sources. Links to a memory go to `#/db/memories/<id>` (`itemHref`, `MemoryLink` in `ui.tsx`). With an id, that row is listed first (whatever the filters and the 120-row page size), opened and scrolled into view; every link into the Database relies on this. Mastered, level, owned and unlocked are edited in place. |
+| `#/tracker` | Tracker | Reading table with today's weather, skill levels (each name links to the skill's Database entry), "What I have" (tools and inks in the house, things I can craft, memories), soul cards. |
 | `#/crafting[/<id>]` | Crafting | Recipe list and one recipe's workstations. `#/recipes/...` is the old address and still works. |
 | `#/foraging` | Foraging | Five season buttons; pressing the chosen one again shows all five seasons side by side. |
 | `#/house` | Hush House | Rooms with the best way to open each, and a per-helper table. The same five season buttons as Foraging sit above the rooms and above the helper table. |
@@ -198,10 +209,10 @@ rows (rows are not rendered until opened), font fallback metric matching, and an
 
 ## Tests (`src/engine/engine.test.ts`)
 
-38 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
+42 tests, run against the checked-in data: data integrity and descriptions, the wiki's reading example,
 language rules, a recipe going from blocked to ready, flying lines, the two preset trees passing every tree
 rule, evolution arithmetic, the "what I have" sources, craftable things counting as held, foraging (seasons,
-accepted cards, order), caches, the sea and Numa, Librarians and save migration, and helper and room logic
+accepted cards, order), caches, the sea and Numa, Librarians and save migration, memories for upgrading a skill (count, fit, order, sources by season), and helper and room logic
 (boost stacking, card-opened rooms, every room reachable from the Cucurbit Bridge).
 
 There are no browser tests in the repository; pages were checked by hand in headless Firefox.
@@ -259,6 +270,8 @@ Where the wiki and the owner disagree, the owner's rule wins and is recorded her
   at the Sea's Edge gives Memory: Impulse (Horizon-Sight in Numa). Discarding things there is not tracked.
 - The Barber's Chair takes an Element of the Soul and a Memory in its two extra slots (the wiki lists Liquid
   and Fuel; `OWNER_SLOTS` in `build_data.py`).
+- Upgrading a skill of level N (1 to 8) takes the skill, an Element of the Soul, a Lesson and N memories;
+  each card needs at least one of the skill's Principles.
 - Anything the player can craft right now counts as something they have, craftable memories included (for
   example Torgue's Cleansing).
 

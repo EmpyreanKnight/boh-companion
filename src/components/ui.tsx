@@ -19,6 +19,15 @@ export function SkillIcon({ skill, size = 28 }: { skill: { id: string; icon?: bo
   if (!skill.icon && !skill.isLanguage) return null;
   return <Icon group="skill" id={skill.icon ? skill.id : 'language'} size={size} square />;
 }
+/** A thing's Database entry: memories have a tab of their own. */
+export const itemHref = (item: { id: string; aspects: string[] }) => `#/db/${item.aspects.includes('Memory') ? 'memories' : 'items'}/${item.id}`;
+/** A link to the memory called `name` (as books and things name it), or the bare name when it is not a known card. */
+export function MemoryLink({ data, name }: { data: { itemIdByName: Record<string, string> }; name: string | null | undefined }) {
+  if (!name) return <>—</>;
+  const id = data.itemIdByName[name];
+  const label = name.replace('Memory: ', '');
+  return id ? <a href={`#/db/memories/${id}`}>{label}</a> : <>{label}</>;
+}
 export function ItemIcon({ item, size = 28 }: { item?: { id: string; icon?: boolean } | null; size?: number }) {
   if (!item?.icon) return null;
   return <Icon group="item" id={item.id} size={size} square />;

@@ -46,7 +46,8 @@ button.link.name { font-weight: 600; }
 .chips { display: inline-flex; flex-wrap: wrap; gap: 4px; vertical-align: middle; }
 .chip { display: inline-flex; align-items: center; gap: 4px; border: 1px solid; border-radius: 999px; padding: 0 7px 0 3px; font-size: 0.7812rem; line-height: 20px; background: #0005; white-space: nowrap; }
 .chip b { color: var(--ink); } .chip .icon { vertical-align: 0; }
-.soul { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; font-weight: 600; }
+/* the name sits on the surrounding text's baseline; only the icon is centred against it */
+.soul { display: inline-flex; align-items: baseline; gap: 4px; white-space: nowrap; font-weight: 600; } .soul .icon { align-self: center; }
 .tag { margin-left: 6px; font-size: 0.6875rem; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; color: var(--muted); font-weight: 400; }
 .table-wrap { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: 0.875rem; }
@@ -172,3 +173,8 @@ select { min-width: 0; text-overflow: ellipsis; }
 .footnote { font-size: 0.8125rem; color: var(--muted); border-left: 2px solid var(--gold); padding-left: 10px; margin: 10px 0 4px; max-width: 80ch; }
 .attune { margin-bottom: 6px; } .attune .lore { max-width: none; }
 .attune-title { font-family: var(--serif); color: var(--gold2); margin: 2px 0 0; }
+
+/* memories for upgrading a skill */
+.sources { list-style: none; padding: 0; margin: 0; } .sources li { padding: 1px 0; }
+details.inline { display: inline-block; vertical-align: top; margin-left: 6px; } details.inline[open] { display: block; margin-left: 0; }
+table.memories td { vertical-align: top; } table.memories { margin-top: 6px; }

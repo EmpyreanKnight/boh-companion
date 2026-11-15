@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ItemIcon, P, Panel, SeasonPicker, Soul, Status, TableWrap } from '../components/ui';
+import { ItemIcon, P, Panel, SeasonPicker, Soul, Status, TableWrap, itemHref } from '../components/ui';
 import { ALL_SEASONS } from '../engine/constants';
 import { forageRows, type ForageRow } from '../engine/engine';
 import type { ForageDrop, GameData } from '../engine/types';
@@ -56,7 +56,7 @@ function availability(r: ForageRow) {
 function Name({ data, drop }: { data: GameData; drop: ForageDrop }) {
   const item = drop.item ? data.itemById[drop.item] : null;
   if (drop.cache) return <span className="withicon"><ItemIcon item={data.caches.find((c) => c.id === drop.cache)} size={22} /><a href={`#/db/caches/${drop.cache}`} title="A cache: open it for one of several things">{drop.name}</a></span>;
-  return <span className="withicon"><ItemIcon item={item} size={22} />{item ? <a href={`#/db/items/${item.id}`}>{drop.name}</a> : drop.name}</span>;
+  return <span className="withicon"><ItemIcon item={item} size={22} />{item ? <a href={itemHref(item)}>{drop.name}</a> : drop.name}</span>;
 }
 
 function Yields({ data, drops, season }: { data: GameData; drops: ForageDrop[]; season: string }) {

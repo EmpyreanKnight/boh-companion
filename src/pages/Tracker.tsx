@@ -85,12 +85,13 @@ export function Tracker({ data }: { data: GameData }) {
       <Panel title={`Skills (${Object.keys(player.skills).length} owned)`} actions={
         <label className="check"><input type="checkbox" checked={onlyOwned} onChange={(e) => setOnlyOwned(e.target.checked)} /> owned only</label>}>
         <PrincipleFilter value={p} onChange={setP} />
+        <p className="muted small">Click a skill's name for its Database entry, which lists the memories that will upgrade it and where to get them.</p>
         <div className="skill-grid">
           {skills.map((s) => {
             const lvl = player.skills[s.id] ?? 0;
             return (
               <div key={s.id} className={`skill-card ${lvl ? 'owned' : ''}`}>
-                <div className="skill-name"><SkillIcon skill={s} size={30} /><span>{player.settings.hideUnfound && !lvl ? 'Unfound skill' : s.name}{s.isLanguage && <span className="tag">Language</span>}</span></div>
+                <div className="skill-name"><SkillIcon skill={s} size={30} /><span><a href={`#/db/skills/${s.id}`} title="Open in the Database: what it does and the memories that upgrade it">{player.settings.hideUnfound && !lvl ? 'Unfound skill' : s.name}</a>{s.isLanguage && <span className="tag">Language</span>}</span></div>
                 <div>{lvl ? <PList map={skillPrinciples(s, lvl)} short /> : <span className="chips"><P id={s.primary} short /><P id={s.secondary} short /></span>}</div>
                 <Stepper value={lvl} onChange={(n) => player.setSkill(s.id, n)} label={`${s.name} level`} />
               </div>);
@@ -121,7 +122,7 @@ export function Tracker({ data }: { data: GameData }) {
         {held.length > 0 && <details><summary>Already held ({held.length})</summary><ul className="toolgrid craftgrid">{held.map(craftRow)}</ul></details>}
         {blocked.length > 0 && <details><summary>Not yet craftable ({blocked.length}), with what is missing</summary><ul className="toolgrid craftgrid">{blocked.map(craftRow)}</ul></details>}
         <h4>Memories I can call up today ({memories.length})</h4>
-        {memories.length ? <ul className="memlist">{memories.map((m) => <li key={m.id}><ItemIcon item={data.itemById[m.id]} size={20} /> <b>{m.name}</b> <PList map={m.principles} short /> <span className="muted small">{m.via}</span></li>)}</ul>
+        {memories.length ? <ul className="memlist">{memories.map((m) => <li key={m.id}><ItemIcon item={data.itemById[m.id]} size={20} /> <a href={`#/db/memories/${m.id}`}><b>{m.name}</b></a> <PList map={m.principles} short /> <span className="muted small">{m.via}</span></li>)}</ul>
           : <p className="muted">None yet. Pick the weather, tick mastered books (re-reading one gives its memory), unlock rooms, or raise a skill that crafts one.</p>}
       </Panel>
 

@@ -4,8 +4,8 @@ import { TREE_LINKS, WISDOM_IDS } from './constants';
 import { indexData } from './data';
 import { defaultPlayer } from './defaults';
 import {
-  bestReading, canReadBook, craftList, evolve, forageRows, helperBest, helpersIn, helperPool, makeCtx, neighbours, planRecipe, reachable, roomStatuses,
-  startElements, stationQualifies, stranded, treeIssues, treeStats, emptyTree,
+  bestReading, canReadBook, craftList, evolve, forageRows, helperBest, helpersIn, helperPool, makeCtx, memorySources, neighbours, planRecipe, reachable, roomStatuses,
+  startElements, stationQualifies, stranded, treeIssues, treeStats, emptyTree, upgradePlan,
 } from './engine';
 import { PRESETS } from './presets';
 import { migrate } from '../store';
@@ -418,5 +418,63 @@ describe('helpers and rooms', () => {
     p.roomsUnlocked['cucurbit-bridge'] = true;
     const st = roomStatuses(makeCtx(data, p), data.assistants).find((s) => s.room.id === 'keepers-lodge')!;
     expect(st.state).toBe('openable');
+  });
+});
+
+describe('memories for upgrading a skill', () => {
+  const skill = data.skills.find((s) => !s.isLanguage && s.primary !== 'knock' && s.secondary !== 'knock' && (s.primary === 'winter' || s.secondary === 'winter'))!;
+  it('asks for one memory per level and lists only memories sharing a Principle', () => {
+    const p = defaultPlayer();
+    p.skills[skill.id] = 3;
+    const plan = upgradePlan(makeCtx(data, p), skill.id, '')!;
+    expect(plan.need).toBe(3);
+    expect(plan.rows.length).toBeGreaterThan(5);
+    for (const r of plan.rows) {
+      expect(r.item.aspects).toContain('Memory');
+      expect(plan.principles.some((x) => (r.item.principles[x] ?? 0) > 0), r.item.name).toBe(true);
+    }
+    expect(plan.rows.map((r) => r.item.id)).not.toContain('a-lesson-of-many-facets');   // a Lesson, not a memory
+    // ordered: to hand today, then within reach, then out of reach
+    const rank = { ready: 0, reachable: 1, locked: 2 };
+    for (let i = 1; i < plan.rows.length; i++) expect(rank[plan.rows[i].state]).toBeGreaterThanOrEqual(rank[plan.rows[i - 1].state]);
+    p.skills[skill.id] = 9;
+    expect(upgradePlan(makeCtx(data, p), skill.id, '')!.need).toBe(0);
+  });
+  it('counts the sea, mastered books and things in hand, by season', () => {
+    const p = defaultPlayer();
+    p.skills[skill.id] = 2;
+    p.roomsUnlocked['crowcross-sands'] = true;
+    const salt = data.itemById['memory-salt'];           // Knock, Moon, Winter: from swimming, except in Numa
+    const swim = (season: string) => memorySources(makeCtx(data, p), salt, season).filter((s) => s.kind === 'forage');
+    expect(swim('Summer').some((s) => s.state === 'ready' && s.count === 1)).toBe(true);
+    expect(swim('Numa').every((s) => s.state === 'locked' && s.count === 0)).toBe(true);
+    expect(swim('').every((s) => s.count === 0)).toBe(true);    // no season chosen: nothing is promised
+    const before = upgradePlan(makeCtx(data, p), skill.id, 'Summer')!;
+    const book = data.books.find((b) => b.memory === 'Memory: Salt')!;
+    p.booksMastered[book.id] = true;
+    const after = upgradePlan(makeCtx(data, p), skill.id, 'Summer')!;
+    expect(after.ready).toBe(before.ready + 1);
+    const row = after.rows.find((r) => r.item.id === 'memory-salt')!;
+    expect(row.state).toBe('ready');
+    expect(row.sources.find((s) => s.kind === 'reread' && s.state === 'ready')!.things!.map((t) => t.name)).toContain(book.name);
+  });
+  it('knows a memory under both of the wiki\'s names', () => {
+    expect(data.itemIdByName['Memory: Intuition']).toBe('intuition');
+    expect(data.itemIdByName['Memory: Storm']).toBe('memory-storm');     // a card of its own, not the weather
+    expect(data.itemIdByName['Storm']).toBe('storm');
+    const p = defaultPlayer();
+    const book = data.books.find((b) => b.memory === 'Memory: Intuition')!;
+    p.booksMastered[book.id] = true;
+    expect(makeCtx(data, p).have.get('intuition')).toContain('re-read');
+  });
+  it('names weather, crafting and caches as sources', () => {
+    const p = defaultPlayer();
+    p.settings.weather = 'snow';
+    const ctx = makeCtx(data, p);
+    expect(memorySources(ctx, data.itemById['snow'], '')[0]).toMatchObject({ kind: 'weather', state: 'ready', count: 1 });
+    expect(memorySources(ctx, data.itemById['hail'], '')[0]).toMatchObject({ kind: 'weather', count: 0 });
+    expect(memorySources(ctx, data.itemById['torgues-cleansing'], '').some((s) => s.kind === 'craft')).toBe(true);
+    expect(memorySources(ctx, data.itemById['didumos'], '').filter((s) => s.kind === 'cache').map((s) => s.label)).toContain('Open Imperial Casket');
+    expect(memorySources(ctx, data.itemById['memory-sight'], '').some((s) => s.kind === 'cache' && /every time/.test(s.note!))).toBe(true);
   });
 });

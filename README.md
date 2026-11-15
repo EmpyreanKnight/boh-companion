@@ -17,7 +17,7 @@ browser you use and is never sent anywhere.
 | Page | What you get |
 | --- | --- |
 | **Home** | Choose which Librarian you were, see your progress at a glance, and keep pinned recipes in view. |
-| **Database** | Books, skills, items, workstations and caches, with their in-game descriptions. Tick the books you have mastered and the things you own. |
+| **Database** | Books, skills, items, memories, workstations and caches, with their in-game descriptions. Tick the books you have mastered and the things you own. A skill's entry lists the memories that will upgrade it and where to get each. |
 | **Tracker** | The highest Mystery you can read in each Principle, your skill levels, and what you have to hand: tools, things you can craft right now, and memories you can call up today. |
 | **Crafting** | Every recipe, the workstations that can make it, the cards to place in each slot, and what is still missing. |
 | **Foraging** | The beach, the moor, the gardens and the other gathering places: what each yields in each season, Numa included, and whether you can go there yet. |

@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ItemIcon, Lore, P, Panel, PList, PrincipleFilter, SkillIcon, Soul, Status, Stepper, TableWrap, WisdomName } from '../components/ui';
-import { wisdom } from '../engine/constants';
-import { canReadBook, skillPrinciples, stationQualifies, stationUnlocked } from '../engine/engine';
+import { ItemIcon, itemHref, Lore, MemoryLink, P, Panel, PList, PrincipleFilter, SeasonPicker, SkillIcon, Soul, Status, Stepper, TableWrap, WisdomName } from '../components/ui';
+import { ALL_SEASONS, wisdom } from '../engine/constants';
+import { canReadBook, skillPrinciples, stationQualifies, stationUnlocked, memorySources, upgradePlan, type MemorySource } from '../engine/engine';
 import type { Book, GameData, Item, PrincipleId, Skill, Workstation } from '../engine/types';
 import { useCtx, usePlayer } from '../store';
 
-const TABS = [['books', 'Books'], ['skills', 'Skills'], ['items', 'Items'], ['workstations', 'Workstations'], ['caches', 'Caches']] as const;
+const TABS = [['books', 'Books'], ['skills', 'Skills'], ['items', 'Items'], ['memories', 'Memories'], ['workstations', 'Workstations'], ['caches', 'Caches']] as const;
 const PAGE = 120;
 
 export function Database({ data, path }: { data: GameData; path: string }) {
@@ -24,6 +24,7 @@ export function Database({ data, path }: { data: GameData; path: string }) {
       {tab === 'books' && <Books data={data} q={q} p={p} focus={focus} />}
       {tab === 'skills' && <Skills data={data} q={q} p={p} focus={focus} />}
       {tab === 'items' && <Items data={data} q={q} p={p} focus={focus} />}
+      {tab === 'memories' && <Memories data={data} q={q} p={p} focus={focus} />}
       {tab === 'workstations' && <Stations data={data} q={q} p={p} focus={focus} />}
       {tab === 'caches' && <Caches data={data} q={q} p={p} focus={focus} />}
     </Panel>
@@ -94,7 +95,7 @@ function Books({ data, q, p, focus }: Props) {
               <td>{b.languageName ?? '—'}{b.language && (player.skills[b.language] ? '' : ' (unknown)')}</td>
               <td>{b.type}</td>
               <td>{b.lesson ? `${b.lesson.count} × ${data.skillById[b.lesson.skill].name}` : '—'}</td>
-              <td>{b.memory?.replace('Memory: ', '') ?? '—'}</td>
+              <td><MemoryLink data={data} name={b.memory} /></td>
               <td>{m ? <span className="muted">re-read freely</span>
                 : !r.language ? <Status kind="blocked">needs {b.languageName}</Status>
                 : r.band === 'self' ? <Status kind="ready">yes, soul &amp; skill</Status>
@@ -171,7 +172,126 @@ function SkillDetail({ data, s, books, hidden }: { data: GameData; s: Skill; boo
         {s.isLanguage ? <p className="muted">Languages are not used in crafting; they unlock books and can be committed to the Tree.</p>
           : recipes.length ? <ul>{recipes.map((r) => <li key={r.id}><a href={`#/crafting/${encodeURIComponent(r.id)}`}>{r.resultName}</a> <span className="muted">({r.tier}, <P id={r.principle} short />)</span></li>)}</ul> : <p className="muted">None.</p>}</div>
     </div>
+    <Upgrade data={data} s={s} />
     </>
+  );
+}
+
+const isMemory = (i: Item) => i.aspects.includes('Memory');
+const SOURCE_LABEL = { ready: 'Now', reachable: 'Within reach', locked: 'Not yet' } as const;
+const SOURCE_KIND = { ready: 'ready', reachable: 'items', locked: 'blocked' } as const;
+
+/** The ways of getting one memory, the ones open today first. */
+function Sources({ sources }: { sources: MemorySource[] }) {
+  const hide = usePlayer((s) => s.settings.hideUnfound);
+  return (
+    <ul className="sources">{sources.map((x, i) => {
+      // the spoiler guard keeps the names of unmastered books out of sight
+      const things = x.kind === 'reread' && x.state !== 'ready' && hide ? undefined : x.things;
+      const names = things?.map((t, j) => <span key={t.href}>{j > 0 && ', '}<a href={t.href}>{t.name}</a></span>);
+      return (
+        <li key={i}><Status kind={SOURCE_KIND[x.state]}>{SOURCE_LABEL[x.state]}</Status>{' '}
+          {x.href ? <a href={x.href}>{x.label}</a> : x.label}{x.count > 1 && <b> ×{x.count}</b>}
+          {x.note && <span className="muted small"> ({x.note})</span>}
+          {names && (names.length <= 3 ? <span className="small">: {names}</span>
+            : <details className="inline"><summary className="small muted">which</summary><div className="small">{names}</div></details>)}
+        </li>);
+    })}</ul>);
+}
+
+function Memories({ data, q, p, focus }: Props) {
+  const player = usePlayer();
+  const ctx = useCtx(data);
+  const [open, setOpen] = useState<string | null>(focus);
+  useFocus(focus, setOpen);
+  const season = ALL_SEASONS.includes(player.settings.season) ? player.settings.season : '';
+  const all = useMemo(() => data.items.filter(isMemory), [data]);
+  const rows = focusFirst(all.filter((i) => (!p || (i.principles[p] ?? 0) > 0) && match(i.name, q))
+    .sort((a, b) => (p ? (b.principles[p] ?? 0) - (a.principles[p] ?? 0) : 0) || a.name.localeCompare(b.name)), all, focus);
+  const used = (m: Item) => data.recipes.filter((r) => r.ingredient?.item === m.id);
+  return (
+    <>
+      <div className="row filters">
+        <span>Current season</span>
+        <SeasonPicker value={season} seasons={ALL_SEASONS} onChange={(v) => player.setSetting('season', v)} />
+        <span className="muted small">Decides what the sea and the foraging places give. A skill's entry lists the memories that upgrade it.</span>
+      </div>
+      <p className="muted count">{rows.length} of {all.length} shown</p>
+      <TableWrap label="Memories"><table className="memories">
+        <thead><tr><th>Held</th><th>Memory</th><th>Principles</th><th>Kind</th><th>Where it comes from</th></tr></thead>
+        <tbody>{rows.map((m) => {
+          const sources = memorySources(ctx, m, season);
+          const now = sources.filter((x) => x.state === 'ready');
+          return [
+            <tr key={m.id} id={`row-${m.id}`} className={open === m.id ? 'open' : ''}>
+              <td><input type="checkbox" checked={!!player.itemsOwned[m.id]} onChange={() => player.toggle('itemsOwned', m.id)} aria-label={`Held: ${m.name}`} /></td>
+              <td><span className="withicon"><ItemIcon item={m} size={30} /><button className="link name" onClick={() => setOpen(open === m.id ? null : m.id)}>{m.name}</button></span></td>
+              <td><PList map={m.principles} short /></td>
+              <td className="small">{m.aspects.filter((a) => a !== 'Memory' && !a.includes('#')).join(', ') || '—'}</td>
+              <td className="small">{now.length ? <><Status kind="ready">Now</Status> {now.map((x) => x.label).join('; ')}</>
+                : sources.length ? <span className="muted">{sources.length} {sources.length === 1 ? 'way' : 'ways'}, none open today</span>
+                : <span className="muted">not worked out</span>}</td>
+            </tr>,
+            open === m.id && <tr key={m.id + ':d'} className="detail"><td colSpan={5}><Lore text={m.description} />
+              <h4>Where it comes from</h4>
+              {sources.length ? <Sources sources={sources} /> : <p className="muted">No source could be worked out from the wiki's tables.</p>}
+              {m.sources.length > 0 && <p className="small muted">The wiki's page mentions: {m.sources.join(' · ')}</p>}
+              {used(m).length > 0 && <><h4>Used as an ingredient in</h4>
+                <ul>{used(m).map((r) => <li key={r.id}><a href={`#/crafting/${encodeURIComponent(r.id)}`}>{r.resultName}</a> <span className="muted">({r.tier})</span></li>)}</ul></>}
+            </td></tr>,
+          ];
+        })}</tbody>
+      </table></TableWrap>
+    </>
+  );
+}
+
+/** What the next level of a skill takes: how many memories, which ones fit and where each comes from. */
+function Upgrade({ data, s }: { data: GameData; s: Skill }) {
+  const player = usePlayer();
+  const ctx = useCtx(data);
+  const [all, setAll] = useState(false);
+  const season = ALL_SEASONS.includes(player.settings.season) ? player.settings.season : '';
+  const plan = upgradePlan(ctx, s.id, season)!;
+  const shown = plan.rows.filter((r) => all || r.state !== 'locked');
+  const either = plan.principles.length > 1 ? 'either Principle' : 'the Principle';
+  return (
+    <div className="upgrade">
+      <h4>Upgrading it</h4>
+      {plan.level >= 9 ? <p className="muted">At level 9 it cannot go higher.</p> : <>
+        <p>{plan.level > 0
+          ? <>From level {plan.level} to {plan.level + 1} takes <b>{plan.need} {plan.need === 1 ? 'memory' : 'memories'}</b></>
+          : <>Each upgrade takes <b>one memory per level</b> the skill has (you do not own it yet)</>}
+          , the skill itself, an Element of the Soul and a Lesson. Every card must carry{' '}
+          <span className="chips">{plan.principles.map((p) => <P key={p} id={p} />)}</span>{plan.principles.length > 1 && ' (either will do)'}; its strength does not matter.{' '}
+          {plan.need > 0 && <><Status kind={plan.ready >= plan.need ? 'ready' : 'items'}>{Math.min(plan.ready, plan.need)} of {plan.need} memories to hand today</Status>
+            {plan.ready > plan.need && <span className="muted small"> ({plan.ready} to choose from)</span>}</>}</p>
+        <p className="small">Element of the Soul: {plan.souls.length
+          ? <>{[...new Set(plan.souls.map((c) => c.name))].join(', ')} will do.</>
+          : <span className="warn">none of the cards you hold carries {either}.</span>}
+          {' '}<span className="muted">Lessons are not tracked here.</span></p>
+        <div className="row filters">
+          <span>Current season</span>
+          <SeasonPicker value={season} seasons={ALL_SEASONS} onChange={(v) => player.setSetting('season', v)} />
+          <label className="check"><input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> also show memories out of reach ({plan.rows.length - plan.rows.filter((r) => r.state !== 'locked').length})</label>
+        </div>
+        {shown.length > 0 && <table className="memories">
+          <thead><tr><th>Memory that fits</th><th className="num" title="How many you are certain to get today">Today</th><th>Where it comes from</th></tr></thead>
+          <tbody>{shown.map((r) => (
+            <tr key={r.item.id}>
+              <td><span className="withicon"><ItemIcon item={r.item} size={24} /><a href={`#/db/memories/${r.item.id}`}><b>{r.item.name}</b></a></span>
+                <div className="small"><PList map={r.item.principles} short /></div></td>
+              <td className="num">{r.ready ? <b>{r.ready}</b> : <span className="muted">–</span>}</td>
+              <td>{r.sources.length ? <Sources sources={r.sources} />
+                : r.ready ? <span className="muted small">ticked as held</span>
+                : <span className="muted small">{r.item.sources.length ? `No source worked out. The wiki mentions: ${r.item.sources.join(', ')}.` : 'The wiki records no source.'}</span>}</td>
+            </tr>))}</tbody>
+        </table>}
+        {!shown.length && <p className="muted">No fitting memory is within reach yet. Tick the box above to see every one that fits.</p>}
+        <p className="footnote">"Today" counts each painting, book or other thing once, the sea once per place and a recipe once; foraging that depends on the draw is not counted.
+          {!season && ' Choose the season to count the sea and to see what the foraging places yield now.'}</p>
+      </>}
+    </div>
   );
 }
 
@@ -182,17 +302,18 @@ function Items({ data, q, p, focus }: Props) {
   const [n, setN] = useState(PAGE);
   const aspects = useMemo(() => {
     const c = new Map<string, number>();
-    for (const i of data.items) for (const a of i.aspects) c.set(a, (c.get(a) ?? 0) + 1);
+    for (const i of data.items) if (!isMemory(i)) for (const a of i.aspects) c.set(a, (c.get(a) ?? 0) + 1);
     return [...c.entries()].filter(([, k]) => k >= 4).sort((a, b) => a[0].localeCompare(b[0]));
   }, [data]);
   useFocus(focus, setOpen);
-  const rows = focusFirst(data.items.filter((i) => (!p || (i.principles[p] ?? 0) > 0) && (!aspect || i.aspects.includes(aspect)) && match(i.name, q))
+  const rows = focusFirst(data.items.filter((i) => !isMemory(i) && (!p || (i.principles[p] ?? 0) > 0) && (!aspect || i.aspects.includes(aspect)) && match(i.name, q))
     .sort((a, b) => (p ? (b.principles[p] ?? 0) - (a.principles[p] ?? 0) : 0) || a.name.localeCompare(b.name)), data.items, focus);
   return (
     <>
       <div className="row filters">
         <label>Aspect <select value={aspect} onChange={(e) => setAspect(e.target.value)}>
           <option value="">any</option>{aspects.map(([a, k]) => <option key={a} value={a}>{a} ({k})</option>)}</select></label>
+        <span className="muted small">Memories have <a href="#/db/memories">a tab of their own</a>.</span>
       </div>
       <More shown={n} total={rows.length} onMore={() => setN(n + PAGE)} />
       <TableWrap label="Items"><table>
@@ -203,7 +324,7 @@ function Items({ data, q, p, focus }: Props) {
             <td><span className="withicon"><ItemIcon item={i} size={30} /><button className="link name" onClick={() => setOpen(open === i.id ? null : i.id)}>{i.name}</button></span></td>
             <td><PList map={i.principles} short /></td>
             <td className="small">{i.aspects.filter((a) => a !== 'Thing').join(', ')}</td>
-            <td>{i.yieldsMemory?.replace('Memory: ', '') ?? '—'}</td>
+            <td><MemoryLink data={data} name={i.yieldsMemory} /></td>
           </tr>,
           open === i.id && <tr key={i.id + ':d'} className="detail"><td colSpan={5}><Lore text={i.description} /><ItemDetail data={data} i={i} /></td></tr>,
         ])}</tbody>
@@ -280,7 +401,7 @@ function Caches({ data, q, p, focus }: Props) {
               {!c.sources.length && <span className="muted">not recorded on the wiki</span>}</td>
             <td>{c.alsoGives && <p className="small">Always gives <b>{c.alsoGives}</b>, and one of:</p>}
               <p className="wrap">{c.drops.map((d) => {
-                const href = d.cache ? `#/db/caches/${d.cache}` : d.item ? `#/db/items/${d.item}` : null;
+                const href = d.cache ? `#/db/caches/${d.cache}` : d.item ? (data.itemById[d.item] ? itemHref(data.itemById[d.item]) : `#/db/items/${d.item}`) : null;
                 const label = <>{d.name}{d.chance != null && <span className="muted"> {d.chance}%</span>}</>;
                 return href ? <a key={d.name} className="pill" href={href}>{label}</a> : <span key={d.name} className="pill">{label}</span>;
               })}</p>

@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ItemIcon, Lore, P, Panel, PList, PrincipleFilter, SkillIcon, Status, TableWrap } from '../components/ui';
+import { ItemIcon, Lore, P, Panel, PList, PrincipleFilter, SkillIcon, Status, TableWrap, itemHref } from '../components/ui';
 import { TIER_THRESHOLD } from '../engine/constants';
 import { BANDS, planRecipe, recipeStatus, STATUS_RANK } from '../engine/engine';
 import type { GameData, PrincipleId, Recipe, Tier } from '../engine/types';
@@ -91,7 +91,7 @@ function RecipeDetail({ data, recipe }: { data: GameData; recipe: Recipe }) {
           <div><h4>Requires</h4>
             <p><b>{need}</b> <P id={recipe.principle} /> <span className="muted">({TIER_NAME[recipe.tier]}-level)</span></p>
             {recipe.ingredient && <p>Ingredient: {recipe.ingredient.item
-              ? <><ItemIcon item={data.itemById[recipe.ingredient.item]} size={22} /> <a href={`#/db/items/${recipe.ingredient.item}`}>{recipe.ingredient.label}</a></>
+              ? <><ItemIcon item={data.itemById[recipe.ingredient.item]} size={22} /> <a href={itemHref(data.itemById[recipe.ingredient.item] ?? { id: recipe.ingredient.item, aspects: [] })}>{recipe.ingredient.label}</a></>
               : <>any card with the aspect <b>{recipe.ingredient.label}</b></>}
               {recipe.ingredient.item && <> {ctx.have.has(recipe.ingredient.item) ? <Status kind="ready">have it ({ctx.have.get(recipe.ingredient.item)})</Status> : <Status kind="blocked">do not have it</Status>}</>}</p>}
             <p>One of these skills:</p>
@@ -100,7 +100,7 @@ function RecipeDetail({ data, recipe }: { data: GameData; recipe: Recipe }) {
               return <li key={id} className={lvl ? '' : 'muted'}><SkillIcon skill={s} size={22} /> <a href={`#/db/skills/${id}`}>{s.name}</a> {lvl ? <b>level {lvl}</b> : '(not owned)'}</li>;
             })}</ul></div>
           <div><h4>Makes</h4>
-            <p><a href={`#/db/items/${recipe.result}`}>{recipe.resultName}</a></p>
+            <p><a href={itemHref(data.itemById[recipe.result] ?? { id: recipe.result, aspects: [] })}>{recipe.resultName}</a></p>
             <Lore text={item?.description} />
             <p><PList map={item?.principles ?? recipe.resultPrinciples} /></p>
             <p className="small">{(item?.aspects ?? recipe.resultAspects).filter((a) => a !== 'Thing').join(', ')}</p>
