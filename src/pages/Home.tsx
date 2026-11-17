@@ -23,7 +23,7 @@ export function Home({ data }: { data: GameData }) {
     [`${owned} / ${data.skills.length}`, 'skills learnt', '#/tracker', 'Record skills and soul cards'],
     [`${readable}`, 'unread books you can master with what you have', '#/tracker', 'See the reading calculator'],
     [`${rooms} / ${data.rooms.length}`, 'rooms unlocked', '#/house', 'Open the Hush House page'],
-    [`${committed} / 73`, 'skills committed to the Tree', '#/tree', 'Open the Tree of Wisdoms'],
+    [`${committed} / ${data.skills.length}`, 'skills committed to the Tree', '#/tree', 'Open the Tree of Wisdoms'],
   ];
   const lib = librarianOf(player);
   const start = startElements(player);

@@ -13,8 +13,8 @@ export function startingSoul(librarian: LibrarianId, variant: ElementId | null):
 }
 
 export function defaultPlayer(): PlayerState {
-  return { schemaVersion: 3, skills: {}, tree: emptyTree(), soul: startingSoul('twice-born', null), booksMastered: {},
+  return { schemaVersion: 4, skills: {}, tree: emptyTree(), soul: startingSoul('twice-born', null), booksMastered: {},
     itemsOwned: {}, stationsUnlocked: {}, roomsUnlocked: {}, pinnedRecipes: {}, journalCommitted: false, savedPlans: [],
-    settings: { assumeAllStationsUnlocked: false, planMode: false, librarian: 'twice-born', librarianVariant: null,
+    settings: { assumeAllStationsUnlocked: false, planMode: false, evolveAll: true, librarian: 'twice-born', librarianVariant: null,
       weather: '', season: '', countRoomContents: true, hideUnfound: false } };
 }

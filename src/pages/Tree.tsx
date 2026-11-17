@@ -19,7 +19,7 @@ export function Tree({ data }: { data: GameData }) {
   const lib = librarianOf(player);
   const start = useMemo(() => startElements(player), [player.settings.librarian, player.settings.librarianVariant]);
   const journal = player.journalCommitted ? lib.journal.element : null;
-  const [evolveAll, setEvolveAll] = useState(true);
+  const evolveAll = player.settings.evolveAll;
   const plan = player.settings.planMode;
   const tree = player.tree;
   const stats = useMemo(() => treeStats(data, tree, start, evolveAll, journal), [data, tree, start, evolveAll, journal]);
@@ -148,8 +148,8 @@ export function Tree({ data }: { data: GameData }) {
       </div>
       <div className="tree-stats">
         <Panel title="Elements of the Soul" actions={
-          <label className="check"><input type="checkbox" checked={evolveAll} onChange={(e) => setEvolveAll(e.target.checked)} /> evolve as far as possible</label>}>
-          <p className="muted small">{stats.committed} of 73 skills committed. {lib.name} started with Health, {start.map((e) => element(e).name).join(', ')}{journal ? `; journal adds ${element(journal).name}` : '; journal not committed'} (<a href="#/settings">change</a>).</p>
+          <label className="check"><input type="checkbox" checked={evolveAll} onChange={(e) => player.setSetting('evolveAll', e.target.checked)} /> evolve as far as possible</label>}>
+          <p className="muted small">{stats.committed} of {data.skills.length} skills committed. {lib.name} started with Health, {start.map((e) => element(e).name).join(', ')}{journal ? `; journal adds ${element(journal).name}` : '; journal not committed'} (<a href="#/settings">change</a>).</p>
           <table className="stats">
             <thead><tr><th>Element</th><th className="num" title="Starting cards (and journal) + cards from the tree">Cards</th><th className="num" title="Committed skills attuned to it; each powers one evolution">Attuned</th><th>Resulting hand</th></tr></thead>
             <tbody>{stats.elements.map((e) => (

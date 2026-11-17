@@ -28,11 +28,11 @@ python3 scripts/build_data.py        # raw pages -> public/data/*.json (run last
 ## Layout
 
 - `src/engine/` — pure TypeScript rules, no React. `engine.ts` (cards, "what I have", reading, recipes,
-  helpers, rooms, foraging, tree), `constants.ts` (Principles, soul elements, Wisdoms, flying lines, Librarians),
+  helpers, rooms, foraging, memories for upgrading a skill, tree), `constants.ts` (Principles, soul elements, Wisdoms, flying lines, Librarians),
   `presets.ts` (preset trees), `data.ts` (load and index JSON), `defaults.ts`, `types.ts`,
   `engine.test.ts`.
 - `src/store.ts` — Zustand store persisted to `localStorage` key `boh-companion:player:v1`
-  (persist version 3), `migrate()`, export/import.
+  (persist version 4), `migrate()`, export/import.
 - `src/pages/` — `Home`, `Database`, `Tracker`, `Crafting`, `Foraging`, `House`, `Tree`, `Settings`.
 - `src/components/ui.tsx` — shared chips, icons, panel, stepper, hash router hook.
 - `scripts/` — Python crawler and data builder. `data-src/raw/pages.json` is the cached crawl.

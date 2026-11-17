@@ -19,6 +19,10 @@ export function SkillIcon({ skill, size = 28 }: { skill: { id: string; icon?: bo
   if (!skill.icon && !skill.isLanguage) return null;
   return <Icon group="skill" id={skill.icon ? skill.id : 'language'} size={size} square />;
 }
+type Guard = { settings: { hideUnfound: boolean }; booksMastered: Record<string, true> };
+/** The spoiler guard: a book that is not mastered keeps its name to itself. */
+export const bookHidden = (b: { id: string }, player: Guard) => player.settings.hideUnfound && !player.booksMastered[b.id];
+export const bookName = (b: { id: string; name: string; type: string }, player: Guard) => (bookHidden(b, player) ? `Unfound ${b.type.toLowerCase()}` : b.name);
 /** A thing's Database entry: memories have a tab of their own. */
 export const itemHref = (item: { id: string; aspects: string[] }) => `#/db/${isMemory(item) ? 'memories' : 'items'}/${item.id}`;
 /** A link to the memory called `name` (as books and things name it), or the bare name when it is not a known card. */
@@ -75,7 +79,7 @@ export function TableWrap({ label, children }: { label: string; children: ReactN
   return <div className="table-wrap" tabIndex={0} role="region" aria-label={label}>{children}</div>;
 }
 
-/** The current season as five buttons; pressing the chosen one again clears it. Shared by Foraging and Hush House. */
+/** The current season as five buttons; pressing the chosen one again clears it. One setting, shown on Foraging, Hush House and in the Database. */
 export function SeasonPicker({ value, onChange, seasons }: { value: string; onChange: (s: string) => void; seasons: string[] }) {
   return (
     <div className="pfilter" role="group" aria-label="Current season">

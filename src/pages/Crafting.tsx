@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { ItemIcon, Lore, P, Panel, PList, PrincipleFilter, SkillIcon, Status, TableWrap, itemHref } from '../components/ui';
 import { TIER_THRESHOLD } from '../engine/constants';
 import { BANDS, planRecipe, recipeStatus, STATUS_RANK } from '../engine/engine';
@@ -20,7 +20,7 @@ const TIER_NAME: Record<Tier, string> = { prentice: 'Prentice', scholar: 'Schola
 
 export function Crafting({ data, path }: { data: GameData; path: string }) {
   const player = usePlayer();
-  const selected = decodeURIComponent(path.split('/')[2] ?? '');
+  const selected = useMemo(() => { try { return decodeURIComponent(path.split('/')[2] ?? ''); } catch { return ''; } }, [path]);
   const [q, setQ] = useState('');
   const [p, setP] = useState<PrincipleId | ''>('');
   const [tier, setTier] = useState<Tier | ''>('');
@@ -28,7 +28,23 @@ export function Crafting({ data, path }: { data: GameData; path: string }) {
   const [pinnedOnly, setPinnedOnly] = useState(false);
   const ctx = useCtx(data);
   const statuses = useMemo(() => new Map(data.recipes.map((r) => [r.id, recipeStatus(ctx, r)])), [ctx, data]);
-  const list = data.recipes.filter((r) => {
+  // A recipe reached by a link (from another page, or from the detail beside the list) leads the list, whatever
+  // the filters, until a filter changes. One picked in the list itself stays where it is.
+  const sig = JSON.stringify([q, p, tier, only, pinnedOnly]);
+  const [clicked, setClicked] = useState('');
+  const [seen, setSeen] = useState('');
+  const [pin, setPin] = useState({ id: '', sig });
+  let lead = pin;
+  if (seen !== selected) {
+    setSeen(selected);
+    if (clicked === selected) setClicked(''); else lead = { id: selected, sig };
+  }
+  if (lead.id && lead.sig !== sig) lead = { id: '', sig };   // a filter changed: the lead is given up for good
+  if (lead !== pin) setPin(lead);
+  const leadId = lead.id;
+  const listRef = useRef<HTMLUListElement>(null);
+  useEffect(() => { if (leadId && listRef.current) listRef.current.scrollTop = 0; }, [leadId]);
+  const filtered = data.recipes.filter((r) => {
     if (p && r.principle !== p) return false;
     if (tier && r.tier !== tier) return false;
     if (only && !['ready', 'items'].includes(statuses.get(r.id)!)) return false;
@@ -39,6 +55,8 @@ export function Crafting({ data, path }: { data: GameData; path: string }) {
     || STATUS_RANK[statuses.get(a.id)!] - STATUS_RANK[statuses.get(b.id)!]);
   const pinCount = Object.keys(player.pinnedRecipes).length;
   const recipe = data.recipes.find((r) => r.id === selected) ?? null;
+  const led = leadId ? data.recipes.find((r) => r.id === leadId) : undefined;
+  const list = led ? [led, ...filtered.filter((r) => r !== led)] : filtered;
   return (
     <div className="split">
       <Panel title="Crafting">
@@ -51,9 +69,9 @@ export function Crafting({ data, path }: { data: GameData; path: string }) {
           <label className="check"><input type="checkbox" checked={pinnedOnly} onChange={(e) => setPinnedOnly(e.target.checked)} /> pinned ({pinCount})</label>
         </div>
         <p className="muted count">{list.length} of {data.recipes.length} recipes</p>
-        <ul className="recipe-list">
+        <ul className="recipe-list" ref={listRef}>
           {list.map((r) => (
-            <li key={r.id} className={player.pinnedRecipes[r.id] ? 'pinned' : ''}><a href={`#/crafting/${encodeURIComponent(r.id)}`} className={r.id === selected ? 'on' : ''}>
+            <li key={r.id} className={player.pinnedRecipes[r.id] ? 'pinned' : ''}><a href={`#/crafting/${encodeURIComponent(r.id)}`} className={r.id === selected ? 'on' : ''} onClick={() => { if (r.id !== selected) setClicked(r.id); }}>
               <span className="ricon"><ItemIcon item={data.itemById[r.result]} size={34} /></span>
               <span className="rname">{r.resultName}</span>
               <span className="rmeta"><P id={r.principle} short /> {TIER_NAME[r.tier]}{r.ingredient && <> · {r.ingredient.label}</>}</span>

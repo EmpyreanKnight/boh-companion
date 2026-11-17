@@ -85,7 +85,7 @@ export type TreeState = Record<WisdomId, (string | null)[]>;
 /** A Tree of Wisdoms kept under a name, with whether the journal sat at its root. */
 export interface SavedPlan { name: string; tree: TreeState; journal: boolean }
 export interface PlayerState {
-  schemaVersion: 3;
+  schemaVersion: 4;
   skills: Record<string, number>;          // skill id -> level 1..9 (absent = not owned)
   tree: TreeState;                          // wisdom -> 9 nodes, index 0 = level 1
   soul: Record<ElementId, number[]>;        // element -> card counts at base, +, ++, +++
@@ -99,6 +99,7 @@ export interface PlayerState {
   settings: {
     assumeAllStationsUnlocked: boolean;
     planMode: boolean;                      // tree: ignore owned skills and their levels
+    evolveAll: boolean;                     // tree: show the hand evolved as far as the committed skills allow
     librarian: LibrarianId;
     librarianVariant: ElementId | null;     // the one free choice the Archaeologist and Artist have
     weather: string;                        // item id of today's weather memory, or ''

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ItemIcon, itemHref, Lore, MemoryLink, P, Panel, PList, PrincipleFilter, SeasonPicker, SkillIcon, Soul, Status, Stepper, TableWrap, WisdomName } from '../components/ui';
+import { bookHidden, bookName, ItemIcon, itemHref, Lore, MemoryLink, P, Panel, PList, PrincipleFilter, SeasonPicker, SkillIcon, Soul, Status, Stepper, TableWrap, WisdomName } from '../components/ui';
 import { ALL_SEASONS, isMemory, wisdom } from '../engine/constants';
 import { canReadBook, skillPrinciples, stationQualifies, stationUnlocked, memorySources, upgradePlan, type MemorySource } from '../engine/engine';
 import type { Book, GameData, Item, PrincipleId, Skill, Workstation } from '../engine/types';
@@ -9,7 +9,8 @@ const TABS = [['books', 'Books'], ['skills', 'Skills'], ['items', 'Items'], ['me
 const PAGE = 120;
 
 export function Database({ data, path }: { data: GameData; path: string }) {
-  const tab = (path.split('/')[2] ?? 'books') as (typeof TABS)[number][0];
+  const named = path.split('/')[2];
+  const tab = TABS.find(([id]) => id === named)?.[0] ?? 'books';   // an unknown section falls back to the books
   const focus = path.split('/')[3] ?? null;
   const [q, setQ] = useState('');
   const [p, setP] = useState<PrincipleId | ''>('');
@@ -34,13 +35,23 @@ export function Database({ data, path }: { data: GameData; path: string }) {
 const match = (name: string, q: string) => name.toLowerCase().includes(q.trim().toLowerCase());
 type Props = { data: GameData; q: string; p: PrincipleId | ''; focus: string | null };
 
-/** Open the row a link points at (`#/db/items/<id>`) and bring it into view. */
-function useFocus(focus: string | null, setOpen: (id: string) => void) {
+/**
+ * Open the row a link points at (`#/db/items/<id>`) and bring it into view. Returns the id to list first:
+ * the linked row, but only while the filters stay as they were when the link was followed. Once the reader
+ * searches or filters, the row is treated like any other.
+ */
+function useFocus(focus: string | null, setOpen: (id: string) => void, filters: unknown[]): string | null {
+  const sig = JSON.stringify(filters);
+  const [at, setAt] = useState({ focus, sig, live: true });
+  let cur = at.focus === focus ? at : { focus, sig, live: true };   // a new link pins again, under the filters as they are now
+  if (cur.live && cur.sig !== sig) cur = { ...cur, live: false };   // a filter changed: the pin is gone for good
+  if (cur !== at) setAt(cur);
   useEffect(() => {
     if (!focus) return;
     setOpen(focus);
     document.getElementById(`row-${focus}`)?.scrollIntoView({ block: 'center' });
   }, [focus]);   // eslint-disable-line react-hooks/exhaustive-deps
+  return cur.live ? focus : null;
 }
 /** The linked row goes first, so it shows whatever the filters and the page size are. */
 function focusFirst<T extends { id: string }>(rows: T[], all: T[], focus: string | null): T[] {
@@ -61,7 +72,7 @@ function Books({ data, q, p, focus }: Props) {
   const ctx = useCtx(data);
   const reads = useMemo(() => new Map(data.books.map((b) => [b.id, canReadBook(ctx, b)])), [ctx, data]);
   const langs = useMemo(() => [...new Set(data.books.map((b) => b.languageName).filter(Boolean))].sort() as string[], [data]);
-  useFocus(focus, setOpen);
+  const pin = useFocus(focus, setOpen, [q, p, state, lang]);
   const rows = focusFirst(data.books.filter((b) => {
     const m = !!player.booksMastered[b.id];
     if (p && b.principle !== p) return false;
@@ -70,8 +81,8 @@ function Books({ data, q, p, focus }: Props) {
     if (state === 'unread' && m) return false;
     if (state === 'readable' && (m || !['self', 'have'].includes(reads.get(b.id)!.band ?? ''))) return false;
     return match(b.name, q) || (b.lesson && match(data.skillById[b.lesson.skill].name, q));
-  }).sort((a, b) => a.mystery - b.mystery || a.name.localeCompare(b.name)), data.books, focus);
-  const hide = (b: Book) => player.settings.hideUnfound && !player.booksMastered[b.id];
+  }).sort((a, b) => a.mystery - b.mystery || a.name.localeCompare(b.name)), data.books, pin);
+  const hide = (b: Book) => bookHidden(b, player);
   return (
     <>
       <div className="row filters">
@@ -90,7 +101,7 @@ function Books({ data, q, p, focus }: Props) {
           return [
             <tr key={b.id} id={`row-${b.id}`} className={open === b.id ? 'open' : ''}>
               <td><input type="checkbox" checked={m} onChange={() => player.toggle('booksMastered', b.id)} aria-label={`Mastered: ${b.name}`} /></td>
-              <td><button className="link name" onClick={() => setOpen(open === b.id ? null : b.id)}>{hide(b) ? `Unfound ${b.type.toLowerCase()}` : b.name}</button></td>
+              <td><button className="link name" onClick={() => setOpen(open === b.id ? null : b.id)}>{bookName(b, player)}</button></td>
               <td><P id={b.principle} value={b.mystery} /></td>
               <td>{b.languageName ?? '—'}{b.language && (player.skills[b.language] ? '' : ' (unknown)')}</td>
               <td>{b.type}</td>
@@ -129,8 +140,8 @@ function ReadTexts({ b }: { b: Book }) {
 function Skills({ data, q, p, focus }: Props) {
   const player = usePlayer();
   const [open, setOpen] = useState<string | null>(focus);
-  useFocus(focus, setOpen);
-  const rows = focusFirst(data.skills.filter((s) => (!p || s.primary === p || s.secondary === p) && match(s.name, q)), data.skills, focus);
+  const pin = useFocus(focus, setOpen, [q, p]);
+  const rows = focusFirst(data.skills.filter((s) => (!p || s.primary === p || s.secondary === p) && match(s.name, q)), data.skills, pin);
   return (
     <>
       <p className="muted count">{rows.length} of {data.skills.length} shown</p>
@@ -157,6 +168,7 @@ function Skills({ data, q, p, focus }: Props) {
 }
 
 function SkillDetail({ data, s, books, hidden }: { data: GameData; s: Skill; books: Book[]; hidden: boolean }) {
+  const player = usePlayer();
   const recipes = data.recipes.filter((r) => r.skills.includes(s.id));
   return (
     <>
@@ -166,7 +178,7 @@ function SkillDetail({ data, s, books, hidden }: { data: GameData; s: Skill; boo
         <Lore text={c.text} /></div>))}</div>}
     <div className="cols">
       <div><h4>Books that teach it</h4>
-        {books.length ? <ul>{books.map((b) => <li key={b.id}><a href={`#/db/books/${b.id}`}>{b.name}</a> <P id={b.principle} value={b.mystery} short /> × {b.lesson!.count}</li>)}</ul> : <p className="muted">None.</p>}
+        {books.length ? <ul>{books.map((b) => <li key={b.id}><a href={`#/db/books/${b.id}`}>{bookName(b, player)}</a> <P id={b.principle} value={b.mystery} short /> × {b.lesson!.count}</li>)}</ul> : <p className="muted">None.</p>}
         {s.specialties.length > 0 && <p>Specialty: {s.specialties.join(', ')}</p>}</div>
       <div><h4>Recipes</h4>
         {s.isLanguage ? <p className="muted">Languages are not used in crafting; they unlock books and can be committed to the Tree.</p>
@@ -202,11 +214,11 @@ function Memories({ data, q, p, focus }: Props) {
   const player = usePlayer();
   const ctx = useCtx(data);
   const [open, setOpen] = useState<string | null>(focus);
-  useFocus(focus, setOpen);
+  const pin = useFocus(focus, setOpen, [q, p]);
   const season = ALL_SEASONS.includes(player.settings.season) ? player.settings.season : '';
   const all = useMemo(() => data.items.filter(isMemory), [data]);
   const rows = focusFirst(all.filter((i) => (!p || (i.principles[p] ?? 0) > 0) && match(i.name, q))
-    .sort((a, b) => (p ? (b.principles[p] ?? 0) - (a.principles[p] ?? 0) : 0) || a.name.localeCompare(b.name)), all, focus);
+    .sort((a, b) => (p ? (b.principles[p] ?? 0) - (a.principles[p] ?? 0) : 0) || a.name.localeCompare(b.name)), all, pin);
   const used = (m: Item) => data.recipes.filter((r) => r.ingredient?.item === m.id);
   return (
     <>
@@ -304,9 +316,9 @@ function Items({ data, q, p, focus }: Props) {
     for (const i of data.items) if (!isMemory(i)) for (const a of i.aspects) c.set(a, (c.get(a) ?? 0) + 1);
     return [...c.entries()].filter(([, k]) => k >= 4).sort((a, b) => a[0].localeCompare(b[0]));
   }, [data]);
-  useFocus(focus, setOpen);
+  const pin = useFocus(focus, setOpen, [q, p, aspect]);
   const rows = focusFirst(data.items.filter((i) => !isMemory(i) && (!p || (i.principles[p] ?? 0) > 0) && (!aspect || i.aspects.includes(aspect)) && match(i.name, q))
-    .sort((a, b) => (p ? (b.principles[p] ?? 0) - (a.principles[p] ?? 0) : 0) || a.name.localeCompare(b.name)), data.items, focus);
+    .sort((a, b) => (p ? (b.principles[p] ?? 0) - (a.principles[p] ?? 0) : 0) || a.name.localeCompare(b.name)), data.items, pin);
   return (
     <>
       <div className="row filters">
@@ -350,8 +362,8 @@ function Stations({ data, q, p, focus }: Props) {
   const [kind, setKind] = useState('');
   const [open, setOpen] = useState<string | null>(focus);
   const kinds = useMemo(() => [...new Set(data.workstations.map((w) => w.kind))].sort(), [data]);
-  useFocus(focus, setOpen);
-  const rows = focusFirst(data.workstations.filter((w) => (!p || w.principles.includes(p)) && (!kind || w.kind === kind) && match(w.name, q)), data.workstations, focus);
+  const pin = useFocus(focus, setOpen, [q, p, kind]);
+  const rows = focusFirst(data.workstations.filter((w) => (!p || w.principles.includes(p)) && (!kind || w.kind === kind) && match(w.name, q)), data.workstations, pin);
   return (
     <>
       <div className="row filters">
@@ -382,10 +394,10 @@ function Stations({ data, q, p, focus }: Props) {
 
 /** Things opened for one of several things. Reference only: they do not enter "what I have" or any calculation. */
 function Caches({ data, q, p, focus }: Props) {
-  const rows = data.caches.filter((c) => (!p || (c.principles[p] ?? 0) > 0)
-    && (match(c.name, q) || c.drops.some((d) => match(d.name, q)) || c.sources.some((s) => match(s.name, q))));
-  // a link from another cache or from Foraging names the row to show
-  useEffect(() => { if (focus) document.getElementById(`cache-${focus}`)?.scrollIntoView({ block: 'center' }); }, [focus]);
+  // a link from another cache, a memory or Foraging names the row to show; it leads the list until a filter changes
+  const pin = useFocus(focus, () => {}, [q, p]);
+  const rows = focusFirst(data.caches.filter((c) => (!p || (c.principles[p] ?? 0) > 0)
+    && (match(c.name, q) || c.drops.some((d) => match(d.name, q)) || c.sources.some((s) => match(s.name, q)))), data.caches, pin);
   return (
     <>
       <p className="muted">Caches are opened with Consider and turn into one of the things listed, at the chance shown. Search also matches what is inside and where a cache is found.</p>
@@ -393,7 +405,7 @@ function Caches({ data, q, p, focus }: Props) {
       <TableWrap label="Caches"><table className="forage">
         <thead><tr><th>Cache</th><th>Found</th><th>Opens into one of</th></tr></thead>
         <tbody>{rows.map((c) => (
-          <tr key={c.id} id={`cache-${c.id}`} className={focus === c.id ? 'open' : ''}>
+          <tr key={c.id} id={`row-${c.id}`} className={focus === c.id ? 'open' : ''}>
             <td><span className="withicon"><ItemIcon item={c} size={30} /><b className="name">{c.name}</b></span>
               <div className="small"><PList map={c.principles} short /></div><Lore text={c.description} /></td>
             <td className="small">{c.sources.map((s) => <div key={s.name}>{s.repeatable ? <b>{s.name}</b> : s.name}{s.repeatable && <span className="muted"> (repeatable)</span>}</div>)}

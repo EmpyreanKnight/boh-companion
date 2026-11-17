@@ -16,6 +16,8 @@ browser: loadData() -> indexData() -> GameData ---+                             
   wiki at run time, and player state never leaves the device.
 - The build is a static site. `vite.config.ts` takes the sub-path from `BASE_PATH` (the deploy workflow sets
   `/<repo>/`); `VITE_ICONS=off` builds without the wiki artwork.
+- Each build stamps a build id (`__BUILD__` in `vite.config.ts`) onto the data requests
+  (`data/<name>.json?v=<id>`), so a new deploy is never served the previous deploy's cached data.
 - `src/engine/` is pure TypeScript with no React imports; every page calls it through a context made by
   `makeCtx(data, player)`.
 - Pages get that context from `useCtx(data)` in `src/store.ts`. One context is shared by all pages and rebuilt
@@ -48,6 +50,10 @@ How `scripts/build_data.py` derives the less obvious parts:
 - **Items in scope:** an item is kept when it gives a memory, is used or made by a recipe, or carries an aspect
   some workstation slot accepts. Books are a separate table. Caches (the wiki's Cache category) are a separate
   table too, so they never enter the rules.
+- **Principles:** `lore()` reads a value written inside the template (`{{Lore|Moon|2}}`) or after it
+  (`{{Lore|Moon}} 2`); with neither, the value is 1.
+- **Names:** `OWNER_ITEM_NAMES` renames a card whose wiki title differs from the game's name (Intuition is
+  built as Memory: Intuition), both as an item and where another item names it as the memory it gives.
 - **Workstations:** every page in the wiki's Workstation category except gathering stations and the two sea
   stations, which go to `foraging.json`. `canCraft` is false for beds, fireplaces and stations without Principles.
 - **Rooms:** prerequisites are the union of the "Opening it exposes" sentence on each room page and the
@@ -77,27 +83,34 @@ shown while a room is being unlocked; the wiki does not record it, so the app ha
 
 Static tables live in `src/engine/constants.ts`: the 13 Principles and their colours, the 9 Elements of
 the Soul with Principles per evolution level, the 9 Wisdoms in ring order, the 14 flying lines, the 9
-Librarians, tier thresholds (5 / 10 / 15).
+Librarians, tier thresholds (5 / 10 / 15), the five seasons, the wiki's chances for each kind of Opportunity
+(`OPPORTUNITIES`) and `isMemory`, which says which cards count as memories.
 
 Ids are slugs of the wiki page title; `slug()` exists in both Python and TypeScript and must stay identical.
 
-## Player state (`src/engine/types.ts`, `PlayerState`, schema 3)
+## Player state (`src/engine/types.ts`, `PlayerState`, schema 4)
 
 `skills` (id -> level 1..9), `tree` (wisdom -> 9 node slots), `soul` (element -> counts at base, +, ++,
 +++), `booksMastered`, `itemsOwned`, `stationsUnlocked`, `roomsUnlocked`, `pinnedRecipes`,
 `journalCommitted`, `savedPlans` (Tree plans kept under a name: `{ name, tree, journal }`, newest first, one
 per name), and `settings` (`librarian`, `librarianVariant`, `weather`, `season`,
-`countRoomContents`, `assumeAllStationsUnlocked`, `planMode`, `hideUnfound`). `season` is `''` (not chosen),
-one of the four seasons, or `Numa`; the Foraging and Hush House pages share it.
+`countRoomContents`, `assumeAllStationsUnlocked`, `planMode`, `evolveAll`, `hideUnfound`). `season` is `''` (not chosen),
+one of the four seasons, or `Numa`; one setting, shown as five buttons on the Foraging and Hush House pages
+and in the Database (the Memories tab and each skill's "Upgrading it" section).
 
-Of the preferences only `countRoomContents` is on by default. A workstation counts as unlocked when its room is
+The order of the keys in `booksMastered` is the order in which the books were ticked; the engine reads it as
+the order of mastering.
+
+Of the three preferences on the Settings page only `countRoomContents` is on by default; `evolveAll`, set on the
+Tree page, is on by default too. A workstation counts as unlocked when its room is
 unlocked, `assumeAllStationsUnlocked` is on, or
 it is ticked in the Database (`stationUnlocked`).
 
-Export writes the state as JSON; import accepts schema 1, 2 or 3 and passes it through `migrate()`.
+Export writes the state as JSON; import accepts schema 1 to 4 and passes it through `migrate()`.
 
 `migrate()` in `src/store.ts` upgrades schema 1 saves (which stored the two starting Elements instead of
-a Librarian) and gives saves older than schema 3 an empty `savedPlans`.
+a Librarian) and gives saves older than schema 3 an empty `savedPlans` and saves older than schema 4 `evolveAll` switched on. Ids in a save that the data no longer
+has (an item renamed on the wiki or by `OWNER_ITEM_NAMES`) are ignored, so that tick is lost.
 
 ## Engine rules
 
@@ -106,7 +119,9 @@ primary L+1 and secondary L. Items carry the Principles and aspects the wiki lis
 
 **What I have (`haveMap`).** Items marked owned; contents of unlocked rooms (if `countRoomContents`);
 today's weather; the memory given by considering anything already held; the memory of each mastered book
-(re-reading always gives it). Each entry records how it is available, shown in the UI.
+(re-reading always gives it). Each entry records how it is available, shown in the UI. When a memory can be
+had in several ways it is credited to the one that costs least: a thing that survives being Considered, then
+the book mastered first, then a thing that Considering uses up.
 
 **Craftable things (`addCraftable`, `craftList`).** `makeCtx` then adds the result of every recipe that works
 at an unlocked station with what the player has, and the memory from considering it, repeating until nothing
@@ -125,7 +140,8 @@ recipe. `craftList` gives every recipe result as held, craftable now, or blocked
 station with a slot that accepts the readable, plus the Consider verb for texts) and the best card per
 slot: Soul, Skill, Memory, and the station's other slot (Tool or Ink at a desk). Soul cards and skills
 must share a Principle with the station. Languages never fill the Skill slot; a foreign book also needs
-its language skill owned.
+its language skill owned. The Memory slot takes any card the wiki files under Memory, including the three the
+owner does not count as memories (see `isMemory`); that only shows in the Game maximum band.
 
 **Recipes (`stationQualifies`, `planRecipe`).** A station qualifies when one of the recipe's skills shares a
 Principle with it and the ingredient can be placed; it need not carry the recipe's own Principle, whose total
@@ -185,15 +201,18 @@ Hash routes, rendered by `src/App.tsx`. Pages only render engine results; none h
 | Route | Page | Notes |
 | --- | --- | --- |
 | `#/` | Home | The epigraph, the letter with the "I remember...?" choice of Librarian, progress tiles, pinned recipes. Choosing a Librarian also resets the soul cards to that origin's starting hand, but only while the player has not edited them. |
-| `#/db/<tab>[/<id>]` | Database | Tabs `books`, `skills`, `items`, `memories`, `workstations`, `caches`. Memories are listed in their own tab, not under items, with where each comes from; a skill's entry shows how many memories its next level takes and the candidates with their sources. Links to a memory go to `#/db/memories/<id>` (`itemHref`, `MemoryLink` in `ui.tsx`). With an id, that row is listed first (whatever the filters and the 120-row page size), opened and scrolled into view; every link into the Database relies on this. Mastered, level, owned and unlocked are edited in place. |
+| `#/db/<tab>[/<id>]` | Database | Tabs `books`, `skills`, `items`, `memories`, `workstations`, `caches`. Memories are listed in their own tab, not under items, with where each comes from; a skill's entry shows how many memories its next level takes and the candidates with their sources. Links to a memory go to `#/db/memories/<id>` (`itemHref`, `MemoryLink` in `ui.tsx`). With an id, that row is opened, scrolled into view and listed first, whatever the filters and the 120-row page size (`useFocus`, `focusFirst`); every link into the Database relies on this. The row leads only until the reader changes the search or a filter; after that it is listed like any other. An unknown tab shows the books. Mastered, level, owned and unlocked are edited in place. |
 | `#/tracker` | Tracker | Reading table with today's weather, skill levels (each name links to the skill's Database entry), "What I have" (tools and inks in the house, things I can craft, memories), soul cards. |
-| `#/crafting[/<id>]` | Crafting | Recipe list and one recipe's workstations. `#/recipes/...` is the old address and still works. |
+| `#/crafting[/<id>]` | Crafting | Recipe list and one recipe's workstations. A recipe reached by a link, from another page or from the detail beside the list, is put first in the list and the list scrolls to it, until a filter changes; one picked in the list itself stays where it is. `#/recipes/...` is the old address and still works. |
 | `#/foraging` | Foraging | Five season buttons; pressing the chosen one again shows all five seasons side by side. |
 | `#/house` | Hush House | Rooms with the best way to open each, and a per-helper table. The same five season buttons as Foraging sit above the rooms and above the helper table. |
-| `#/tree` | Tree of Wisdoms | The diagram takes most of the width, the skill picker stays in view beside it and the statistics sit below. Nodes, flying lines, journal at the root, presets. "Save plan…" keeps the current tree and its journal under a name (`savePlan`, `loadPlan`, `deletePlan` in the store); saved plans are loaded from a menu or the list under the diagram, deleted there, and travel with an exported save. "Plan ahead" (`planMode`) ignores owned skills and levels. |
+| `#/tree` | Tree of Wisdoms | The diagram takes most of the width, the skill picker stays in view beside it and the statistics sit below. Nodes, flying lines, journal at the root, presets. "Save plan…" keeps the current tree and its journal under a name (`savePlan`, `loadPlan`, `deletePlan` in the store); saved plans are loaded from a menu or the list under the diagram, deleted there, and travel with an exported save. "Plan ahead" (`planMode`) ignores owned skills and levels; "evolve as far as possible" (`evolveAll`) shows the hand merged upward. Both are kept in the save. |
 | `#/settings` | Settings | Preferences, export, import, reset. |
 
-`hideUnfound` (the spoiler guard) hides the names and descriptions of books not mastered and skills not owned.
+`hideUnfound` (the spoiler guard) hides the names and descriptions of books not mastered and skills not owned
+in the Database lists and on the Tracker, and the names of unmastered books wherever they are listed (books
+that teach a skill, books within reach, books that give a memory; `bookName` in `ui.tsx`). Skill names in
+recipes and in the Tree's picker are shown regardless: both are for planning ahead.
 
 ## Web platform practices
 
@@ -303,7 +322,12 @@ Where the wiki and the owner disagree, the owner's rule wins and is recorded her
 - Foraging leaves out discarding things and releasing beasts, the Loading Dock Crane (no swimming, no
   penny), the alternative Beehive deck from the House of Light DLC, and the wiki's "Chrysalis" deck, which
   no page explains. Foraged things do not count as things the player has.
-- The season setting is shared by the Foraging and Hush House pages.
+- Memories for upgrading a skill: Lessons are not tracked, so the app cannot say whether one is to hand. The
+  "Today" count assumes each thing or book gives its memory once a day and that nothing has been used up. One
+  memory, Memory: Loss, has no source the app can work out (it comes from discarding things into the sea,
+  which is not tracked); its entry shows what the wiki page mentions instead.
+- Loading a saved Tree plan does not switch on "plan ahead", so a plan with skills not yet owned or too low
+  shows those nodes as breaking a rule.
 - One book, The Radical Measure (Glossed), has no period on the wiki. Books are shown without cover pictures, by the
   owner's choice.
 - On a phone the Tree diagram is wider than the screen and scrolls sideways, so that its nodes stay large

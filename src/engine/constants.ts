@@ -55,13 +55,13 @@ export const OPPORTUNITIES: { kind: string; chance: number }[] = [
   { kind: "the day's Weather", chance: 8 }, { kind: 'a piece of Wall Art', chance: 8 },
 ];
 export const SEASONS = ['Spring', 'Summer', 'Autumn', 'Winter'];
-/** The four regular seasons and Numa, the short season that arrives at random. */
 /**
  * Cards the wiki files under Memory that the owner does not count as memories: a special Lesson, and two
  * things of another kind. They are listed with the items and are not offered for upgrading a skill.
  */
 const NOT_MEMORIES = new Set(['a-lesson-of-many-facets', 'avenue-of-enquiry', 'an-offering-to-st-tentreto']);
 export const isMemory = (item: { id: string; aspects: string[] }) => item.aspects.includes('Memory') && !NOT_MEMORIES.has(item.id);
+/** The four regular seasons and Numa, the short season that arrives at random. */
 export const ALL_SEASONS = [...SEASONS, 'Numa'];
 
 export type Art = 'Bright Arts' | 'Night Arts' | 'Arts Unregarded';

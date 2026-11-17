@@ -75,7 +75,7 @@ export const usePlayer = create<PlayerState & Actions>()(
       replaceAll: (p) => set({ ...defaultPlayer(), ...p, settings: { ...defaultPlayer().settings, ...p.settings } }),
       reset: () => set(defaultPlayer()),
     }),
-    { name: STORAGE_KEY, version: 3, migrate: (old) => migrate(old) as PlayerState & Actions },
+    { name: STORAGE_KEY, version: 4, migrate: (old) => migrate(old) as PlayerState & Actions },
   ),
 );
 
@@ -102,6 +102,7 @@ export function migrate(raw: unknown): PlayerState {
     return out;
   };
   const tree = readTree(p.tree);
+  // settings added later (schema 4: evolveAll) take their default above
   // saved Tree plans arrived with schema 3; drop anything without a name, keep one plan per name
   const savedPlans: SavedPlan[] = [];
   for (const x of Array.isArray(p.savedPlans) ? p.savedPlans : []) {
@@ -120,7 +121,7 @@ export function migrate(raw: unknown): PlayerState {
     const l = LIBRARIANS.find((x) => x.fixed.every((e) => pair.includes(e)) && (!x.choice || x.choice.some((e) => pair.includes(e))));
     if (l) { settings.librarian = l.id; settings.librarianVariant = l.choice?.find((e) => pair.includes(e)) ?? null; }
   }
-  return { schemaVersion: 3, skills: p.skills ?? {}, tree, soul, booksMastered: p.booksMastered ?? {},
+  return { schemaVersion: 4, skills: p.skills ?? {}, tree, soul, booksMastered: p.booksMastered ?? {},
     itemsOwned: p.itemsOwned ?? {}, stationsUnlocked: p.stationsUnlocked ?? {}, roomsUnlocked: p.roomsUnlocked ?? {},
     pinnedRecipes: p.pinnedRecipes ?? {}, journalCommitted: !!p.journalCommitted, savedPlans, settings };
 }
@@ -128,13 +129,13 @@ export function migrate(raw: unknown): PlayerState {
 /** Only the serialisable player state, for export. */
 export function exportState(): PlayerState {
   const s = usePlayer.getState();
-  return { schemaVersion: 3, skills: s.skills, tree: s.tree, soul: s.soul, booksMastered: s.booksMastered,
+  return { schemaVersion: 4, skills: s.skills, tree: s.tree, soul: s.soul, booksMastered: s.booksMastered,
     itemsOwned: s.itemsOwned, stationsUnlocked: s.stationsUnlocked, roomsUnlocked: s.roomsUnlocked,
     pinnedRecipes: s.pinnedRecipes, journalCommitted: s.journalCommitted, savedPlans: s.savedPlans, settings: s.settings };
 }
 
 export function validateImport(raw: unknown): PlayerState {
   const v = (raw as { schemaVersion?: number } | null)?.schemaVersion;
-  if (!raw || typeof raw !== 'object' || (v !== 1 && v !== 2 && v !== 3)) throw new Error('Not a Book of Hours Companion save.');
+  if (!raw || typeof raw !== 'object' || (v !== 1 && v !== 2 && v !== 3 && v !== 4)) throw new Error('Not a Book of Hours Companion save.');
   return migrate(raw);
 }

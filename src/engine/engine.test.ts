@@ -341,10 +341,13 @@ describe('librarians', () => {
   });
   it('a schema 2 save gains an empty list of saved plans, and saved plans survive a round trip', () => {
     expect(migrate({ schemaVersion: 2, skills: { sharps: 2 } }).savedPlans).toEqual([]);
+    // schema 4 keeps the Tree's "evolve as far as possible" choice: on for older saves, kept when stored
+    expect(migrate({ schemaVersion: 3, settings: { planMode: true } }).settings).toMatchObject({ planMode: true, evolveAll: true });
+    expect(migrate({ schemaVersion: 4, settings: { evolveAll: false } }).settings.evolveAll).toBe(false);
     const tree = PRESETS[0].tree;
     const m = migrate({ schemaVersion: 3, savedPlans: [{ name: 'Mine', tree, journal: true }, { name: 'Mine', tree: emptyTree(), journal: false },
       { name: ' ', tree }, { name: 'Short', tree: { hushery: ['sharps'] } }] });
-    expect(m.schemaVersion).toBe(3);
+    expect(m.schemaVersion).toBe(4);
     expect(m.savedPlans.map((x) => x.name)).toEqual(['Mine', 'Short']);       // one per name, nameless dropped
     expect(m.savedPlans[0]).toEqual({ name: 'Mine', tree, journal: true });
     expect(m.savedPlans[1].tree.hushery).toEqual(['sharps', null, null, null, null, null, null, null, null]);

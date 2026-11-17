@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ItemIcon, P, Panel, PList, PrincipleFilter, SkillIcon, Soul, Status, Stepper, TableWrap } from '../components/ui';
+import { bookName, ItemIcon, P, Panel, PList, PrincipleFilter, SkillIcon, Soul, Status, Stepper, TableWrap } from '../components/ui';
 import { ELEMENTS, isMemory, LEVEL_SUFFIX, OPPORTUNITIES } from '../engine/constants';
 import { BANDS, craftList, readingTable, skillPrinciples, type CraftRow, type Solution } from '../engine/engine';
 import type { GameData, PrincipleId } from '../engine/types';
@@ -71,11 +71,11 @@ export function Tracker({ data }: { data: GameData }) {
                   <p className="small muted">at {detail.bands[b.id].station?.name}</p></div>))}
             </div>
             <h4>Unread books you can master with what you have ({detail.unlocked.have.length})</h4>
-            <p className="wrap">{[...detail.unlocked.have].sort((a, b) => b.mystery - a.mystery).map((b) => <a key={b.id} className="pill" href={`#/db/books/${b.id}`}>{b.name} <b>{b.mystery}</b></a>)}
+            <p className="wrap">{[...detail.unlocked.have].sort((a, b) => b.mystery - a.mystery).map((b) => <a key={b.id} className="pill" href={`#/db/books/${b.id}`}>{bookName(b, player)} <b>{b.mystery}</b></a>)}
               {!detail.unlocked.have.length && <span className="muted">None yet.</span>}</p>
             <h4>Next step</h4>
             {detail.near.length ? <ul>{detail.near.slice(0, 8).map((x) => (
-              <li key={x.book.id}><a href={`#/db/books/${x.book.id}`}>{x.book.name}</a> (Mystery {x.book.mystery}): {x.missing > 0 && <>needs {x.missing} more</>}
+              <li key={x.book.id}><a href={`#/db/books/${x.book.id}`}>{bookName(x.book, player)}</a> (Mystery {x.book.mystery}): {x.missing > 0 && <>needs {x.missing} more</>}
                 {x.missing > 0 && x.needsLanguage && ' and '}{x.needsLanguage && <>needs the language {x.book.languageName}</>}</li>))}</ul>
               : <p className="muted">No unread book within 3 points.</p>}
             {detail.unlocked.have.length === 0 && detail.near.some((x) => x.missing > 0) && <p className="footnote">{opportunity}</p>}
